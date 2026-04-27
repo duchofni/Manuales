@@ -14,9 +14,9 @@
 1. [Acceder al panel de inicio](#1-acceder-al-panel-de-inicio)
 2. [Barra superior](#2-barra-superior)
 3. [KPIs de centros](#3-kpis-de-centros)
-4. [Tipo de sede (gráfico)](#4-tipo-de-sede-grafico)
+4. [Tipo de sede (gráfico)](#4-tipo-de-sede-gráfico)
 5. [Equipos gestionados](#5-equipos-gestionados)
-6. [Líneas activas](#6-lineas-activas)
+6. [Líneas activas](#6-líneas-activas)
 7. [Equipos por modelo](#7-equipos-por-modelo)
 8. [Incidencias abiertas](#8-incidencias-abiertas)
 9. [Pedidos pendientes de instalaciones](#9-pedidos-pendientes-de-instalaciones)
@@ -28,7 +28,7 @@
 
 1. Abre la aplicación Web BDU en tu navegador.
 2. El panel de inicio es la **primera pantalla** que aparece al acceder a la aplicacion.
-3. También puedes volver a el en cualquier momento haciendo clic en **Inicio** en el menu lateral.
+3. También puedes volver a el en cualquier momento haciendo clic en **Inicio** en el menu superior.
 
 ![Vista general del panel de inicio completo](./imagenes/captura-01-vista-general-del-panel-de-inicio-comple.png)
 
@@ -67,7 +67,7 @@ La primera seccion muestra **6 tarjetas** con los indicadores clave de los centr
 
 ## 4. Tipo de sede (gráfico)
 
-En la columna izquierda aparece un **gráfico de anillo (donut)** que muestra la distribucion de centros por tipo de sede.
+En la columna izquierda aparece un **gráfico de anillo (donut)** que muestra la distribución de centros por tipo de sede.
 
 - El gráfico usa colores diferentes para cada tipo de sede.
 - En el centro del anillo se muestra el **total de centros activos**.
@@ -79,14 +79,14 @@ En la columna izquierda aparece un **gráfico de anillo (donut)** que muestra la
 
 ## 5. Equipos gestionados
 
-Debajo del gráfico de tipo de sede, se muestra la seccion de **equipos gestionados**:
+Debajo del gráfico de tipo de sede, se muestra la sección de **equipos gestionados**:
 
 - **Equipos datos activos** -- Número total de equipos de datos en servicio
 - **Gestionables** -- Cuantos de esos equipos son gestionables remotamente
-- **Con IP de gestión** -- Equipos que tienen asignada una IP de gestión
-- **Con switch cliente** -- Equipos que tienen switch del cliente
+- **Equipos voz activos** -- Número total de equipos de voz en servicio
+- **Equipos 2º Nivel** -- Número total de equipos de 2º nivel en servicio
 
-Cada indicador se muestra con una **barra de progreso** que permite ver de un vistazo la proporcion.
+Cada indicador se muestra con una **barra de progreso** que permite ver de un vistazo la proporción.
 
 ![Seccion de equipos gestionados con barras de progreso](./imagenes/captura-05-seccion-de-equipos-gestionados-con-barra.png)
 
@@ -101,7 +101,7 @@ La columna central muestra las **líneas activas** de la red:
 - Cada barra muestra:
   - El nombre del tipo de línea
   - El número de líneas activas de ese tipo
-  - La proporcion respecto al total (barra de color)
+  - La proporción respecto al total (barra de color)
 
 ![Seccion de líneas activas con el total y las barras por tipo de línea](./imagenes/captura-06-seccion-de-lineas-activas-con-el-total-y.png)
 
@@ -121,7 +121,7 @@ La columna derecha muestra los **12 modelos de equipo más frecuentes**:
 
 ## 8. Incidencias abiertas
 
-La seccion de **incidencias abiertas** muestra tarjetas con las incidencias que están actualmente sin resolver:
+La sección de **incidencias abiertas** muestra tarjetas con las incidencias que están actualmente sin resolver:
 
 - **Total** de incidencias abiertas.
 - Desglose por **tipo de incidencia**, cada uno con su propia tarjeta y barra de progreso.
@@ -134,7 +134,7 @@ Esto permite ver rápidamente si hay incidencias acumuladas y de que tipo son.
 
 ## 9. Pedidos pendientes de instalaciones
 
-Esta seccion muestra los **pedidos de instalación** que están pendientes de realizarse:
+Esta sección muestra los **pedidos de instalación** que están pendientes de realizarse:
 
 | Tarjeta    | Que indica                                            |
 |------------|-------------------------------------------------------|
@@ -150,7 +150,7 @@ Cada tarjeta muestra el número de pedidos pendientes.
 
 ## 10. Infraestructura
 
-La seccion inferior del panel muestra el estado en tiempo real de los servidores y sistemas que soportan la aplicación BDU. Esta información es util para saber si hay algun problema en la infraestructura.
+La sección inferior del panel muestra el estado en tiempo real de los servidores y sistemas que soportan la aplicación BDU. Esta información es util para saber si hay algun problema en la infraestructura.
 
 ### 10.1 Servidores Proxmox (PVE)
 
@@ -161,14 +161,14 @@ Se muestran **dos nodos** de servidor Proxmox. Para cada nodo veras:
 | **CPU**               | Porcentaje de uso del procesador                        |
 | **RAM**               | Memoria usada / total (en GB) y porcentaje              |
 | **Disco**             | Espacio en disco usado / total y porcentaje             |
-| **VMs activas**       | Maquinas virtuales que están funcionando                |
+| **VMs activas**       | Maquinas virtuales que están funciónando                |
 | **VMs paradas**       | Maquinas virtuales apagadas                             |
 | **Contenedores**      | Contenedores LXC activos y parados                     |
 | **Storage pools**     | Almacenamiento: nombre, tipo, uso y porcentaje          |
 
 Las barras de progreso cambian de color según el nivel de uso:
 - **Verde** -- Uso normal
-- **Amarillo** -- Uso alto (atencion)
+- **Amarillo** -- Uso alto (atención)
 - **Rojo** -- Uso critico (posible problema)
 
 ![Panel de un nodo Proxmox con barras de CPU, RAM y disco](./imagenes/captura-10-panel-de-un-nodo-proxmox-con-barras-de-c.png)
@@ -202,7 +202,7 @@ Muestra el estado del NAS QNAP:
 
 ### 10.4 Base de datos MariaDB
 
-Muestra estadisticas de la base de datos de la aplicacion:
+Muestra estadisticas de la base de datos de la aplicación:
 
 | Indicador          | Que significa                                           |
 |--------------------|---------------------------------------------------------|
@@ -215,7 +215,7 @@ Muestra estadisticas de la base de datos de la aplicacion:
 
 ---
 
-## Guia de interpretacion de colores
+## Guia de interpretación de colores
 
 ### Barras de infraestructura
 
@@ -230,17 +230,17 @@ Muestra estadisticas de la base de datos de la aplicacion:
 | Color      | Significado                                      |
 |------------|--------------------------------------------------|
 | Normal     | Temperatura dentro del rango esperado            |
-| Amarillo   | Temperatura elevada (atencion)                   |
+| Amarillo   | Temperatura elevada (atención)                   |
 | Rojo       | Temperatura critica (posible problema de hardware)|
 
 ---
 
 ## Resumen rápido
 
-| Seccion                 | Que muestra                                      |
+| Sección                 | Que muestra                                      |
 |-------------------------|--------------------------------------------------|
 | KPIs Centros            | Total, activos, cerrados, criticos, FlexWAN, DCT |
-| Tipo de sede            | Distribucion gráfica por tipo de sede            |
+| Tipo de sede            | Distribución gráfica por tipo de sede            |
 | Equipos gestionados     | Equipos activos, gestionables, con IP, con switch|
 | Líneas activas          | Total y desglose por tipo de línea               |
 | Equipos por modelo      | Los 12 modelos más frecuentes                    |
@@ -252,4 +252,4 @@ Muestra estadisticas de la base de datos de la aplicacion:
 
 ---
 
-*Fin del manual -- Módulo Inicio v1.5*
+*Fin del manual -- Módulo Inicio v1.6*
