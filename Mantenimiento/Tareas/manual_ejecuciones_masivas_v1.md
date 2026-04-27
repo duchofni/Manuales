@@ -372,7 +372,7 @@ El `(enter)` (botón "Insertar Enter" sobre la caja Cisco) responde al `[confirm
 
 **Comandos Cisco:**
 ```
-show version | include uptime|Software release|System
+show versión | include uptime|Software release|System
 ```
 
 **Extracciones:**
@@ -402,7 +402,7 @@ get system status
 
 **Comandos Juniper:**
 ```
-show version
+show versión
 show interfaces terse | match "Local"
 ```
 

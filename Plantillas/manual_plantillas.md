@@ -63,7 +63,7 @@ Al entrar en Plantillas verás 4 tarjetas (categorías) y un botón **📂 Hist�
 
 Al pulsar una tarjeta se abre un **acordeón** debajo con las opciones disponibles. Pulsa la opción que necesites para entrar al formulario correspondiente.
 
-![Acordeon abierto bajo la tarjeta Completa mostrando la opcion Completa Teldat](./imagenes/captura-02-acordeon-abierto-bajo-la-tarjeta-completa.png)
+![Acordeon abierto bajo la tarjeta Completa mostrando la opción Completa Teldat](./imagenes/captura-02-acordeon-abierto-bajo-la-tarjeta-completa.png)
 
 El botón **📂 Histórico** lleva al listado de todas las plantillas generadas hasta la fecha (ver sección [8. Histórico](#8-histórico)).
 
@@ -108,7 +108,7 @@ El formulario tiene unos 35 campos agrupados en bloques. Los marcados con `*` so
 
 La ACL del cliente (`FILTRO_LAN_SEDE` en Cisco / `access-list 1000` en Teldat) **es obligatoria**. Aparece como un campo especial con un badge de estado y un botón para abrir un popup donde la pegas.
 
-![Campo ACL FILTRO_LAN_SEDE con el badge Falta ACL en rojo y el boton Anadir ACL](./imagenes/captura-04-campo-acl-filtro-lan-sede-con-badge-falta-acl.png)
+![Campo ACL FILTRO_LAN_SEDE con el badge Falta ACL en rojo y el boton Añadir ACL](./imagenes/captura-04-campo-acl-filtro-lan-sede-con-badge-falta-acl.png)
 
 **Pasos:**
 
@@ -137,7 +137,7 @@ Cuando todos los campos obligatorios estén rellenos y la ACL cargada:
 3. Pulsa **📋 Copiar** para copiarla al portapapeles.
 4. La configuración se **guarda automáticamente** en `/mnt/centros/plantillas/<nemónico>/`. Puedes consultarla luego desde el [Histórico](#8-histórico).
 
-![Resultado de Completa con el textarea de configuracion generada y el aviso verde de guardado en el historico](./imagenes/captura-06-resultado-completa-con-textarea-y-aviso-de-guardado.png)
+![Resultado de Completa con el textarea de configuración generada y el aviso verde de guardado en el historico](./imagenes/captura-06-resultado-completa-con-textarea-y-aviso-de-guardado.png)
 
 ---
 
@@ -189,7 +189,7 @@ Cuando tecleas una de las **VLANs estándar** del SERGAS, el formulario rellena 
 
 Solo tienes que rellenar el resto (nemónico, IP de red, máscara…). En Cisco solo se rellena descripción + ACL; el grupo VRRP y la secuencia prefix-list son específicos de Teldat.
 
-![Formulario Alta VLAN Teldat tras teclear VLAN 38, mostrando descripcion ELECTRO, ACL 138, grupo VRRP 4 y secuencia prefix-list 4 autorrellenados](./imagenes/captura-09-autorelleno-tras-teclear-vlan-38.png)
+![Formulario Alta VLAN Teldat tras teclear VLAN 38, mostrando descripción ELECTRO, ACL 138, grupo VRRP 4 y secuencia prefix-list 4 autorrellenados](./imagenes/captura-09-autorelleno-tras-teclear-vlan-38.png)
 
 > **Nota:** Si el campo **Sede** todavía no está elegido, la **Secuencia prefix-list** está oculta y se rellenará automáticamente cuando elijas la sede.
 
@@ -311,7 +311,7 @@ Las plantillas se agrupan **por nemónico** (un grupo por centro). Por cada plan
 
 Pulsa **Ver** en cualquier fila para abrir la configuración completa en pantalla. Hay un botón **📋 Copiar** para volver a llevártela al portapapeles.
 
-![Vista de detalle del historico con el textarea de configuracion y el boton copiar](./imagenes/captura-15-vista-detalle-del-historico.png)
+![Vista de detalle del historico con el textarea de configuración y el boton copiar](./imagenes/captura-15-vista-detalle-del-historico.png)
 
 > **Dónde se guarda físicamente:** en el NAS, en `/mnt/centros/plantillas/<nemónico>/`. Cada plantilla genera dos ficheros: el `.txt` con la configuración y un `.meta.json` con los datos de quién, cuándo, qué tipo y qué parámetros se usaron.
 

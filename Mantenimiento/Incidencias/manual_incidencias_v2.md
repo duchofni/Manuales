@@ -184,7 +184,7 @@ Si el tipo es **DATOS**, aparecerá un selector:
 
 ### 6.3. Validaciones al guardar
 
-El sistema valida la **cadena de fechas**:
+El sistema válida la **cadena de fechas**:
 - La fecha de respuesta no puede ser anterior a la de apertura.
 - La fecha del GDIA no puede ser anterior a la de apertura.
 - La fecha de solución debe ser posterior a apertura, respuesta y GDIAs.

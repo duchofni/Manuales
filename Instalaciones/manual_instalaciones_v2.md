@@ -1,9 +1,9 @@
-# Manual de Usuario -- Modulo Instalaciones
+# Manual de Usuario -- Módulo Instalaciones
 
 | Campo       | Valor                          |
 |-------------|--------------------------------|
-| **Modulo**  | Instalaciones                  |
-| **Version** | 1.5                            |
+| **Módulo**  | Instalaciones                  |
+| **Versión** | 1.5                            |
 | **Fecha**   | Abril 2026                     |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -11,7 +11,7 @@
 
 ## Indice
 
-1. [Acceder al modulo Instalaciones](#1-acceder-al-modulo-instalaciones)
+1. [Acceder al módulo Instalaciones](#1-acceder-al-modulo-instalaciones)
 2. [Pestana LOGOS (instalaciones de datos)](#2-pestana-logos-instalaciones-de-datos)
 3. [Pestana BJ (instalaciones de voz)](#3-pestana-bj-instalaciones-de-voz)
 4. [Pestana ATLAS (ordenes de acceso)](#4-pestana-atlas-ordenes-de-acceso)
@@ -20,14 +20,14 @@
 
 ---
 
-## 1. Acceder al modulo Instalaciones
+## 1. Acceder al módulo Instalaciones
 
-1. Abre la aplicacion Web BDU en tu navegador.
+1. Abre la aplicación Web BDU en tu navegador.
 2. En el menu lateral, haz clic en **Instalaciones**.
-3. Aparecera la pestana LOGOS por defecto.
+3. Aparecerá la pestana LOGOS por defecto.
 4. Usa las **pestanas** de la parte superior para cambiar entre LOGOS, BJ, ATLAS, Calendario y Proyectos.
 
-![Pantalla principal del modulo Instalaciones con las 5 pestanas visibles](./imagenes/captura-01-pantalla-principal-del-modulo-instalacio.png)
+![Pantalla principal del módulo Instalaciones con las 5 pestanas visibles](./imagenes/captura-01-pantalla-principal-del-modulo-instalacio.png)
 
 ---
 
@@ -38,17 +38,17 @@
 La pantalla se divide en dos paneles:
 
 - **Panel izquierdo (sidebar):** Lista de tarjetas con las instalaciones activas
-- **Panel derecho (detalle):** Informacion completa de la instalacion seleccionada
+- **Panel derecho (detalle):** Información completa de la instalación seleccionada
 
 ![Vista split de LOGOS con sidebar de tarjetas a la izquierda y panel de detalle a la derecha](./imagenes/captura-02-vista-split-de-logos-con-sidebar-de-tarj.png)
 
-#### Buscar una instalacion
+#### Buscar una instalación
 
 1. Escribe en el campo de **busqueda** de la sidebar.
 2. Las tarjetas se filtran en tiempo real mientras escribes.
 3. El contador muestra cuantas instalaciones coinciden.
 
-#### Seleccionar una instalacion
+#### Seleccionar una instalación
 
 1. Haz clic en una tarjeta de la sidebar.
 2. La tarjeta se resaltara y el detalle se cargara en el panel derecho.
@@ -57,9 +57,9 @@ Cada tarjeta muestra:
 - **ID SGC** -- Identificador del pedido
 - **Centro** -- Nombre del centro
 - **Badges de estado** -- Etiquetas de color indicando el estado, si tiene cita, etc.
-- Las tarjetas que **ya no aparecen en el ultimo CSV de LOGOS** se muestran con un estilo diferente ("No en LOGOS")
+- Las tarjetas que **ya no aparecen en el último CSV de LOGOS** se muestran con un estilo diferente ("No en LOGOS")
 
-#### Ver el detalle de una instalacion
+#### Ver el detalle de una instalación
 
 El panel de detalle se divide en secciones:
 
@@ -69,19 +69,19 @@ El panel de detalle se divide en secciones:
 | **Centro -- BDU**   | Nombre del centro y su horario (datos automaticos de la BDU)|
 | **Datos LOGOS**     | Tarea, grupo pendiente, fecha, estado, etc. (solo lectura)  |
 | **Datos Indico**    | Responsable, grupo, incidencias LOGOS (solo lectura)         |
-| **Gestion CGE**     | Campos editables: proyecto, fecha concertada, observaciones, realizada |
+| **Gestión CGE**     | Campos editables: proyecto, fecha concertada, observaciones, realizada |
 
-#### Editar los campos de Gestion CGE
+#### Editar los campos de Gestión CGE
 
-1. En la seccion **Gestion CGE** del detalle:
+1. En la seccion **Gestión CGE** del detalle:
    - **Proyecto** -- Selecciona de la lista desplegable
-   - **Fecha concertada** -- Haz clic en el campo; se rellenara automaticamente con la fecha y hora actual (puedes modificarla)
+   - **Fecha concertada** -- Haz clic en el campo; se rellenara automáticamente con la fecha y hora actual (puedes modificarla)
    - **Observaciones** -- Escribe texto libre
-   - **Realizada** -- Marca la casilla cuando la instalacion se haya completado
+   - **Realizada** -- Marca la casilla cuando la instalación se haya completado
 2. Haz clic en **Guardar cambios**.
-3. Si marcas "Realizada", se registrara automaticamente la fecha de realizacion.
+3. Si marcas "Realizada", se registrara automáticamente la fecha de realizacion.
 
-![Seccion Gestion CGE con el campo de fecha concertada relleno y el boton Guardar](./imagenes/captura-03-seccion-gestion-cge-con-el-campo-de-fech.png)
+![Seccion Gestión CGE con el campo de fecha concertada relleno y el boton Guardar](./imagenes/captura-03-seccion-gestion-cge-con-el-campo-de-fech.png)
 
 ### 2.2 Importar CSV de LOGOS
 
@@ -92,7 +92,7 @@ El panel de detalle se divide en secciones:
 5. El sistema procesara el archivo y mostrara un resumen:
    - Registros nuevos
    - Registros actualizados
-   - Registros desaparecidos (ya no estan en el CSV)
+   - Registros desaparecidos (ya no están en el CSV)
    - Errores (si los hay)
 
 ![Ventana de importacion CSV con el selector de archivo y el boton Importar](./imagenes/captura-04-ventana-de-importacion-csv-con-el-select.png)
@@ -101,11 +101,11 @@ El panel de detalle se divide en secciones:
 
 1. Haz clic en el boton **Actualizar Indico** (en la parte superior de la sidebar).
 2. Se abrira una ventana pidiendo credenciales de Indico.
-3. Introduce tu usuario y contrasena de Indico.
+3. Introduce tu usuario y contraseña de Indico.
 4. Haz clic en **Actualizar**.
 5. El sistema descargara los datos actualizados de Indico y los cruzara con los registros LOGOS.
 
-![Ventana de actualizacion Indico con campos de usuario y contrasena](./imagenes/captura-05-ventana-de-actualizacion-indico-con-camp.png)
+![Ventana de actualización Indico con campos de usuario y contraseña](./imagenes/captura-05-ventana-de-actualizacion-indico-con-camp.png)
 
 > **Nota:** Las credenciales de Indico no se guardan en el sistema; solo se usan para esa descarga puntual.
 
@@ -129,7 +129,7 @@ La pantalla tiene el mismo formato split que LOGOS:
 - **Sidebar** con tarjetas de pedidos BJ activos
 - **Panel de detalle** a la derecha
 
-Cada tarjeta muestra: numero de pedido, centro, MIDAS, BJ y area sanitaria.
+Cada tarjeta muestra: número de pedido, centro, MIDAS, BJ y area sanitaria.
 
 #### Buscar un pedido
 
@@ -142,7 +142,7 @@ Cada tarjeta muestra: numero de pedido, centro, MIDAS, BJ y area sanitaria.
 
 | Seccion          | Contenido                                                  |
 |------------------|-------------------------------------------------------------|
-| **Cabecera**     | Numero de pedido, badges (Finalizado, Cita, Activo, En tuberias) |
+| **Cabecera**     | Número de pedido, badges (Finalizado, Cita, Activo, En tuberias) |
 | **Centro -- BDU**| Centro con autocompletado, horario y centralita automaticos  |
 | **Referencias**  | Pedido, MIDAS, BJ, empresa, motivo                          |
 | **Fechas**       | Fecha entrada, fecha coordinada, fecha finalizado, checkbox Finalizado |
@@ -162,7 +162,7 @@ Cada tarjeta muestra: numero de pedido, centro, MIDAS, BJ y area sanitaria.
 
 1. Haz clic en el boton **Nuevo pedido** (en la parte superior de la sidebar).
 2. Se abrira el formulario de detalle vacio.
-3. Busca y selecciona el **centro** con el autocompletado (el horario y centralita se rellenaran automaticamente).
+3. Busca y selecciona el **centro** con el autocompletado (el horario y centralita se rellenaran automáticamente).
 4. Rellena los campos: pedido, MIDAS, BJ, area sanitaria, motivo, empresa, fechas, observaciones.
 5. Haz clic en **Crear**.
 
@@ -172,7 +172,7 @@ Cada tarjeta muestra: numero de pedido, centro, MIDAS, BJ y area sanitaria.
 
 1. Haz clic en el boton **Tuberias** (en la parte superior de la sidebar).
 2. Se abrira una ventana con la tabla de tuberias BJ.
-3. Columnas: peticion, tipo obra, tipo orden, modulo, RAI, estado, jalon, descripcion, responsable.
+3. Columnas: peticion, tipo obra, tipo orden, módulo, RAI, estado, jalon, descripción, responsable.
 4. Usa los botones:
    - **Copiar tabla** -- Copia la tabla al portapapeles
    - **Cerrar** -- Cierra la ventana
@@ -208,12 +208,12 @@ Las tarjetas muestran: orden Atlas, tipo de orden, badges de estado.
 | **Centro -- BDU**| Administrativo editable; al guardar, el centro se recalcula    |
 | **Datos ATLAS**  | Tipo orden, estado, origen, destino, fechas, etc. (solo lectura)|
 | **Datos Indico** | Grupo operativo, jalon, incidencia (cruzado por orden Atlas)   |
-| **Gestion CGE**  | Proyecto, fecha concertada, observaciones, realizada (editable)|
+| **Gestión CGE**  | Proyecto, fecha concertada, observaciones, realizada (editable)|
 
 #### Editar los campos
 
 1. Modifica los campos editables (proyecto, fecha concertada, observaciones, realizada).
-2. Si necesitas cambiar el **administrativo**, escribe el nuevo numero y al guardar se recalculara automaticamente el centro asociado.
+2. Si necesitas cambiar el **administrativo**, escribe el nuevo número y al guardar se recalculara automáticamente el centro asociado.
 3. Haz clic en **Guardar**.
 
 ![Detalle de una orden ATLAS con los campos editables](./imagenes/captura-09-detalle-de-una-orden-atlas-con-los-campo.png)
@@ -226,7 +226,7 @@ Las tarjetas muestran: orden Atlas, tipo de orden, badges de estado.
 4. Haz clic en **Importar**.
 5. El sistema procesara los archivos, cruzara datos con LOGOS y con la BDU, y mostrara un resumen.
 
-![Ventana de importacion de CSV de ATLAS con seleccion multiple de archivos](./imagenes/captura-10-ventana-de-importacion-de-csv-de-atlas-c.png)
+![Ventana de importacion de CSV de ATLAS con seleccion múltiple de archivos](./imagenes/captura-10-ventana-de-importacion-de-csv-de-atlas-c.png)
 
 ### 4.3 Vista de historico ATLAS
 
@@ -237,17 +237,17 @@ Las tarjetas muestran: orden Atlas, tipo de orden, badges de estado.
 
 ## 5. Pestana Calendario
 
-El calendario muestra las **instalaciones programadas** (con fecha concertada) de los tres modulos (LOGOS, BJ, ATLAS) en una unica vista.
+El calendario muestra las **instalaciones programadas** (con fecha concertada) de los tres módulos (LOGOS, BJ, ATLAS) en una única vista.
 
 ### 5.1 Vista mensual
 
 1. Haz clic en la pestana **Calendario**.
 2. Por defecto se muestra la vista de **mes**.
-3. Cada dia del calendario muestra los eventos programados como botones de colores:
+3. Cada día del calendario muestra los eventos programados como botones de colores:
    - **Azul** -- Instalaciones LOGOS
    - **Verde** -- Instalaciones BJ
    - **Ambar** -- Ordenes ATLAS
-4. Si un dia tiene muchos eventos, aparecera un boton **"+N mas"** para ver todos.
+4. Si un día tiene muchos eventos, aparecerá un boton **"+N más"** para ver todos.
 5. Pasa el raton por encima de un evento para ver un **tooltip** con los detalles (centro, orden, proyecto, responsable, observaciones).
 
 ![Calendario en vista mensual con eventos de colores y tooltip visible](./imagenes/captura-11-calendario-en-vista-mensual-con-eventos.png)
@@ -255,7 +255,7 @@ El calendario muestra las **instalaciones programadas** (con fecha concertada) d
 ### 5.2 Vista semanal
 
 1. Haz clic en el boton para cambiar a vista de **semana**.
-2. Se mostrara una tabla con las columnas: Fecha, Hora, Modulo, Orden, Centro, Proyecto, Responsable.
+2. Se mostrara una tabla con las columnas: Fecha, Hora, Módulo, Orden, Centro, Proyecto, Responsable.
 3. Los eventos aparecen ordenados cronologicamente.
 
 ![Calendario en vista semanal mostrando la tabla con eventos](./imagenes/captura-12-calendario-en-vista-semanal-mostrando-la.png)
@@ -270,7 +270,7 @@ El calendario muestra las **instalaciones programadas** (con fecha concertada) d
 
 1. Haz clic en el boton **Exportar semana**.
 2. Se abrira una nueva ventana con una tabla imprimible de la semana.
-3. Columnas: Modulo, Centro, Horario, Orden, Proyecto, Tipo, Referencia, Fecha concertada, Responsable, Observaciones.
+3. Columnas: Módulo, Centro, Horario, Orden, Proyecto, Tipo, Referencia, Fecha concertada, Responsable, Observaciones.
 4. Usa los botones:
    - **Copiar tabla** -- Copia la tabla al portapapeles
    - **Imprimir/PDF** -- Abre el dialogo de impresion del navegador (puedes guardar como PDF)
@@ -286,29 +286,29 @@ La pestana Proyectos muestra los proyectos de despliegue del SERGAS. Al hacer cl
 
 ### 6.1 Proyectos finalizados (solo consulta)
 
-Estos proyectos ya estan completados y se pueden consultar pero no editar:
+Estos proyectos ya están completados y se pueden consultar pero no editar:
 
-| Proyecto                              | Descripcion                              |
+| Proyecto                              | Descripción                              |
 |---------------------------------------|------------------------------------------|
 | **FlexWAN 2024-2027**                 | 206 centros, migracion FlexWAN           |
-| **Upgrades Sedes 2024-2027**          | 349 sedes, actualizacion de equipos      |
+| **Upgrades Sedes 2024-2027**          | 349 sedes, actualización de equipos      |
 | **Upgrades Sedes Criticas 2024-2027** | 30 sedes criticas                        |
 | **Renovacion Terminales ALE20**       | 250 centros, 1.703 extensiones           |
 
 Para cada proyecto puedes:
 
 1. **Ver la tabla** -- Haz clic en el proyecto para ver la tabla completa.
-2. **Filtrar** -- Usa los filtros disponibles (busqueda, provincia, fase, tipo de linea, etc.) para encontrar un centro concreto.
-3. **Ver estadisticas** -- Haz clic en el boton de estadisticas para ver graficos de progreso (donuts y barras).
+2. **Filtrar** -- Usa los filtros disponibles (busqueda, provincia, fase, tipo de línea, etc.) para encontrar un centro concreto.
+3. **Ver estadisticas** -- Haz clic en el boton de estadisticas para ver gráficos de progreso (donuts y barras).
 4. **Exportar** -- Descarga los datos en formato CSV.
 
 ![Tabla de un proyecto con filtros y boton de estadisticas](./imagenes/captura-14-tabla-de-un-proyecto-con-filtros-y-boton.png)
 
-![Pantalla de estadisticas con graficos donut y barras de progreso](./imagenes/captura-15-pantalla-de-estadisticas-con-graficos-do.png)
+![Pantalla de estadisticas con gráficos donut y barras de progreso](./imagenes/captura-15-pantalla-de-estadisticas-con-graficos-do.png)
 
 ### 6.2 Tensiometros (proyecto activo -- editable)
 
-Este es el unico proyecto activo que permite edicion directa en la tabla.
+Este es el único proyecto activo que permite edición directa en la tabla.
 
 #### Ver la tabla de tensiometros
 
@@ -333,14 +333,14 @@ Usa los filtros de la parte superior:
 
 Cada fila de la tabla tiene campos editables:
 
-| Campo              | Descripcion                                      |
+| Campo              | Descripción                                      |
 |--------------------|--------------------------------------------------|
 | **Instalado**      | Casilla para marcar si el DCT esta instalado     |
-| **N. Largo**       | Numero largo del dispositivo                     |
-| **N. Corto**       | Extension corta del dispositivo                  |
-| **ICC**            | Numero de ICC del dispositivo                    |
+| **N. Largo**       | Número largo del dispositivo                     |
+| **N. Corto**       | Extensión corta del dispositivo                  |
+| **ICC**            | Número de ICC del dispositivo                    |
 | **Area sanitaria** | Area sanitaria del centro                        |
-| **GDIA**           | Codigo GDIA                                      |
+| **GDIA**           | Código GDIA                                      |
 | **Fecha realizada**| Fecha en que se instalo                          |
 | **Comentarios**    | Observaciones                                    |
 
@@ -357,21 +357,21 @@ Cada fila de la tabla tiene campos editables:
 #### Ver estadisticas de tensiometros
 
 1. Haz clic en el boton de **estadisticas**.
-2. Se mostraran graficos con:
+2. Se mostraran gráficos con:
    - Progreso por semana
    - Progreso por mes
    - Distribucion por provincia (proporcional)
    - Distribucion por tipo de sede
 
-![Estadisticas de tensiometros con graficos de progreso por semana y por provincia](./imagenes/captura-18-estadisticas-de-tensiometros-con-grafico.png)
+![Estadisticas de tensiometros con gráficos de progreso por semana y por provincia](./imagenes/captura-18-estadisticas-de-tensiometros-con-grafico.png)
 
 ---
 
-## Resumen rapido
+## Resumen rápido
 
 | Accion                              | Como hacerlo                                          |
 |-------------------------------------|-------------------------------------------------------|
-| Buscar instalacion (LOGOS/BJ/ATLAS) | Escribir en el buscador de la sidebar                  |
+| Buscar instalación (LOGOS/BJ/ATLAS) | Escribir en el buscador de la sidebar                  |
 | Ver detalle                         | Clic en la tarjeta de la sidebar                       |
 | Editar campos CGE                   | Modificar campos en el panel de detalle + Guardar      |
 | Importar CSV (LOGOS)                | Boton "CSV manual" + seleccionar archivo               |
@@ -390,4 +390,4 @@ Cada fila de la tabla tiene campos editables:
 
 ---
 
-*Fin del manual -- Modulo Instalaciones v1.5*
+*Fin del manual -- Módulo Instalaciones v1.5*
