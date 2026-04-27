@@ -60,6 +60,7 @@ Tareas de configuración y validación de equipos de planta.
 | Revisión Serial         | Comprobar números de serie de equipos vía SSH                  |
 | Validación Logos-PT     | Comparar datos de Logos-PT con los de la BDU                   |
 | Licencias OXE/CISCO     | Gestión mensual de licencias OXE, CISCO, NGN y SBC             |
+| Ejecuciones Masivas     | Gestión masiva de revisiones/configuraciones sobre equipos de la planta |
 
 ### 3.3. Incidencias
 
@@ -90,19 +91,6 @@ Seguimiento de incidencias de Telefónica.
 | Herramienta         | Descripción                                                        |
 |---------------------|--------------------------------------------------------------------|
 | Seguimiento INC     | Buscar, suscribirse y hacer seguimiento de INC en Grilloweb       |
-
-### 3.6. Plantillas
-
-Generador de configuraciones de router (Cisco y Teldat) desde formularios web. Sustituye los antiguos Excel con macros y los programas Python heredados. Cada configuración generada se guarda automáticamente en `/mnt/centros/plantillas/<nemónico>/` para auditoría.
-
-| Herramienta              | Descripción                                                              |
-|--------------------------|--------------------------------------------------------------------------|
-| Completa                 | Configuración completa de un router Teldat (sede + rol elige plantilla)  |
-| Modificaciones           | Alta de VLAN nueva en Cisco o Teldat (incluye sede FLEXWAN en Teldat)    |
-| Traductor                | Traducir ACLs Cisco ⇄ Teldat, renumerar entries, habilitar/deshabilitar  |
-| Migración red 69→10      | **TEMPORAL.** Comandos de migración de direccionamiento 69.x a 10.x      |
-
-> **Manual detallado:** [`Plantillas/manual_plantillas.md`](../Plantillas/manual_plantillas.md)
 
 ---
 
