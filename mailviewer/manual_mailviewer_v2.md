@@ -3,7 +3,7 @@
 | Campo       | Valor                              |
 |-------------|------------------------------------|
 | **Módulo**  | Visor de Correos (MailViewer)      |
-| **Versión** | 1.5                                |
+| **Versión** | 1.6                                |
 | **Fecha**   | Abril 2026                         |
 | **Para**    | Operadores CGE SERGAS              |
 
@@ -119,4 +119,4 @@ Si una conversación tiene **varios correos** (badge con número > 1):
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.5 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
