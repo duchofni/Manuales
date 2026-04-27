@@ -145,7 +145,6 @@ La plantilla de **Incidencia masiva** permite acumular líneas de varios centros
 2. Selecciona las líneas afectadas de ese centro.
 3. Las líneas se anadiran a un **panel acumulativo** que muestra todos los centros agregados.
 4. Haz clic en **Añadir más centros** para repetir el proceso con otro centro.
-5. Puedes quitar líneas individuales del panel haciendo clic en el boton de eliminar.
 
 ![Panel acumulativo de incidencia masiva mostrando líneas de varios centros con opción de quitar](./imagenes/captura-07-panel-acumulativo-de-incidencia-masiva-m.png)
 
