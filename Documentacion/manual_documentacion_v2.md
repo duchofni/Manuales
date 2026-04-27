@@ -11,7 +11,7 @@
 
 ## Indice
 
-1. [Acceder al módulo Documentación](#1-acceder-al-modulo-documentacion)
+1. [Acceder al módulo Documentación](#1-acceder-al-módulo-documentación)
 2. [Navegar por las carpetas](#2-navegar-por-las-carpetas)
 3. [Buscar documentos](#3-buscar-documentos)
 4. [Subir un documento](#4-subir-un-documento)
