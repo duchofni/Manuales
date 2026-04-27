@@ -9,6 +9,19 @@
 
 ---
 
+## Indice
+
+1. [Descripción general](#1-descripción-general)
+2. [Importar BTPs desde Excel](#2-importar-btps-desde-excel)
+3. [Consulta por estado](#3-consulta-por-estado)
+4. [Consulta por número de BTP](#4-consulta-por-número-de-btp)
+5. [BTP Manual](#5-btp-manual)
+6. [BTPs Pendientes](#6-btps-pendientes)
+7. [Revisión diaria](#7-revisión-diaria)
+8. [Resumen del flujo típico del operador](#8-resumen-del-flujo-típico-del-operador)
+
+---
+
 ## 1. Descripción general
 
 El módulo **BTPs** permite gestionar los **Boletines de Trabajo Programados** en la red de Telefónica para SERGAS: importarlos desde los ficheros Excel que envía Telefónica, consultarlos por estado o por número, dar de alta BTPs manuales, y controlar cuáles están pendientes de informar al cliente.
