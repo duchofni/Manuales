@@ -27,7 +27,7 @@
 2. En el menu lateral, haz clic en **Consultas**.
 3. Aparecera la pantalla principal con tarjetas grandes, una por cada consulta disponible.
 
-[CAPTURA: Pantalla principal del modulo Consultas mostrando las tarjetas de las consultas disponibles]
+![Pantalla principal del modulo Consultas mostrando las tarjetas de las consultas disponibles](./imagenes/captura-01-pantalla-principal-del-modulo-consultas.png)
 
 ---
 
@@ -52,7 +52,7 @@
 3. Una vez seleccionada, la tabla de resultados se mostrara con todos los datos.
 4. En la parte superior aparecera una barra de pestanas para cambiar rapidamente entre consultas sin volver al menu.
 
-[CAPTURA: Barra de pestanas (pills) con la consulta activa resaltada y la tabla de resultados debajo]
+![Barra de pestanas (pills) con la consulta activa resaltada y la tabla de resultados debajo](./imagenes/captura-02-barra-de-pestanas-pills-con-la-consulta.png)
 
 ### Caso especial: Circuitos por Nodo
 
@@ -64,7 +64,7 @@ Esta consulta requiere un paso adicional:
 4. Se mostraran todas las lineas que pasan por ese nodo.
 5. Los nombres de nodo en los resultados son enlaces: puedes hacer clic en ellos para ver los circuitos de otro nodo.
 
-[CAPTURA: Formulario de busqueda por nodo con un ejemplo de resultado]
+![Formulario de busqueda por nodo con un ejemplo de resultado](./imagenes/captura-03-formulario-de-busqueda-por-nodo-con-un-e.png)
 
 ---
 
@@ -76,7 +76,7 @@ Esta consulta requiere un paso adicional:
 4. El campo se resaltara en azul cuando hay un filtro activo.
 5. Para limpiar la busqueda, haz clic en la **X** junto al campo de busqueda.
 
-[CAPTURA: Barra de herramientas con el buscador activo (resaltado en azul) y la X para limpiar]
+![Barra de herramientas con el buscador activo (resaltado en azul) y la X para limpiar](./imagenes/captura-04-barra-de-herramientas-con-el-buscador-ac.png)
 
 > **Nota:** La busqueda se realiza en todas las columnas a la vez. Por ejemplo, si escribes "Pontevedra", encontrara tanto centros en esa provincia como cualquier otro campo que contenga ese texto.
 
@@ -89,7 +89,7 @@ Esta consulta requiere un paso adicional:
 3. Haz clic de nuevo en la misma cabecera para invertir el orden (Z-A o mayor a menor).
 4. La ordenacion funciona tanto con texto como con numeros.
 
-[CAPTURA: Tabla con una cabecera de columna resaltada indicando que se puede ordenar]
+![Tabla con una cabecera de columna resaltada indicando que se puede ordenar](./imagenes/captura-05-tabla-con-una-cabecera-de-columna-resalt.png)
 
 ---
 
@@ -102,7 +102,7 @@ Las consultas muestran **50 registros por pagina**. Si hay mas datos, aparecera 
 3. Usa los botones de principio y fin para ir a la primera o ultima pagina.
 4. Debajo del paginador veras la informacion: "Pagina X de Y -- mostrando N-M de Total".
 
-[CAPTURA: Paginador mostrando botones de pagina y la informacion de registros]
+![Paginador mostrando botones de pagina y la informacion de registros](./imagenes/captura-06-paginador-mostrando-botones-de-pagina-y.png)
 
 > **Nota:** Si tienes una busqueda activa, la paginacion se aplica sobre los resultados filtrados.
 
@@ -123,7 +123,7 @@ Puedes exportar los datos de cualquier consulta en tres formatos:
 
 3. El archivo se descargara automaticamente.
 
-[CAPTURA: Barra de herramientas mostrando los tres botones de exportacion (CSV, PDF, Excel)]
+![Barra de herramientas mostrando los tres botones de exportacion (CSV, PDF, Excel)](./imagenes/captura-07-barra-de-herramientas-mostrando-los-tres.png)
 
 > **Nota:** Si tienes una busqueda activa, se exportaran solo los datos filtrados, no todos los registros.
 
@@ -157,7 +157,7 @@ La consulta **Control de Cambios** tiene funcionalidades adicionales de edicion.
    - **Autor** -- Quien lo registro
    - **Corregido** -- Indicador Si (verde) o No (rojo)
 
-[CAPTURA: Tabla de Control de Cambios en modo lectura con las columnas visibles]
+![Tabla de Control de Cambios en modo lectura con las columnas visibles](./imagenes/captura-08-tabla-de-control-de-cambios-en-modo-lect.png)
 
 ### 7.2 Activar el modo editor
 
@@ -168,7 +168,7 @@ Para poder editar la solucion o marcar como corregido, necesitas activar el modo
 3. Introduce la contrasena y pulsa **Entrar** (o presiona la tecla Enter).
 4. Si la contrasena es correcta, la pagina se recargara con el modo editor activo.
 
-[CAPTURA: Ventana emergente pidiendo la contrasena de edicion]
+![Ventana emergente pidiendo la contrasena de edicion](./imagenes/captura-09-ventana-emergente-pidiendo-la-contrasena.png)
 
 > **Importante:** Si introduces la contrasena incorrecta 3 veces, el acceso se bloqueara durante unos minutos.
 
@@ -180,7 +180,7 @@ Para poder editar la solucion o marcar como corregido, necesitas activar el modo
 3. Haz clic en **Guardar** para guardar los cambios.
 4. Haz clic en **Cancelar** si no quieres guardar.
 
-[CAPTURA: Celda de solucion en modo edicion con el area de texto abierta y los botones Guardar/Cancelar]
+![Celda de solucion en modo edicion con el area de texto abierta y los botones Guardar/Cancelar](./imagenes/captura-10-celda-de-solucion-en-modo-edicion-con-el.png)
 
 ### 7.4 Marcar un registro como corregido
 
@@ -189,7 +189,7 @@ Para poder editar la solucion o marcar como corregido, necesitas activar el modo
 3. Si quieres desmarcar, haz clic de nuevo en **Si** y volvera a **No**.
 4. El cambio se guarda automaticamente al hacer clic.
 
-[CAPTURA: Columna Corregido mostrando la etiqueta cambiando de No (rojo) a Si (verde)]
+![Columna Corregido mostrando la etiqueta cambiando de No (rojo) a Si (verde)](./imagenes/captura-11-columna-corregido-mostrando-la-etiqueta.png)
 
 ### 7.5 Desactivar el modo editor
 

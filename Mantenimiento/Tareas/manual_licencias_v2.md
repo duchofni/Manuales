@@ -36,7 +36,7 @@ El dashboard muestra 3 gráficas de evolución:
 - **CISCO**: % disponible medio por cluster (hosp_pro, chus, c061_pro).
 - **NGN**: picos históricos APV/AUIP.
 
-[CAPTURA: Dashboard de Licencias mostrando la tabla de meses, las alertas y las 3 gráficas de evolución]
+![Dashboard de Licencias mostrando la tabla de meses, las alertas y las 3 gráficas de evolución](./imagenes/captura-01-dashboard-de-licencias-mostrando-la-tabl.png)
 
 ### 2.4. Acceso rápido
 
@@ -67,7 +67,7 @@ La vista de detalle muestra una **barra de progreso** con las 5 secciones:
 
 Cada sección tiene un icono que indica si está completada. Pulsa en el enlace de cada sección para acceder a su formulario.
 
-[CAPTURA: Vista de detalle de un mes con la barra de progreso mostrando las 5 secciones]
+![Vista de detalle de un mes con la barra de progreso mostrando las 5 secciones](./imagenes/captura-02-vista-de-detalle-de-un-mes-con-la-barra.png)
 
 ---
 
@@ -91,7 +91,7 @@ Cada sección tiene un icono que indica si está completada. Pulsa en el enlace 
    - **Rojo**: menos del 5% libre (crítico)
 5. Pulsa **Guardar datos OXE**.
 
-[CAPTURA: Formulario OXE con la tabla de nodos y los badges de porcentaje debajo]
+![Formulario OXE con la tabla de nodos y los badges de porcentaje debajo](./imagenes/captura-03-formulario-oxe-con-la-tabla-de-nodos-y-l.png)
 
 ### 5.2. Recoger datos OXE automáticamente
 
@@ -104,7 +104,7 @@ En lugar de rellenar a mano, puedes recoger los datos directamente de los equipo
 5. Al terminar, verás una **tabla con los datos recogidos**.
 6. Revisa los datos y pulsa **Guardar** para almacenarlos en la base de datos.
 
-[CAPTURA: Recogida automática OXE mostrando la barra de progreso y los datos pendientes de guardar]
+![Recogida automática OXE mostrando la barra de progreso y los datos pendientes de guardar](./imagenes/captura-04-recogida-automatica-oxe-mostrando-la-bar.png)
 
 ---
 
@@ -117,7 +117,7 @@ En lugar de rellenar a mano, puedes recoger los datos directamente de los equipo
 5. El **% libre** se calcula automáticamente en tiempo real al cambiar los valores.
 6. Pulsa **Guardar datos CISCO**.
 
-[CAPTURA: Formulario CISCO con la tabla de tipos de licencia por cluster y los porcentajes calculados]
+![Formulario CISCO con la tabla de tipos de licencia por cluster y los porcentajes calculados](./imagenes/captura-05-formulario-cisco-con-la-tabla-de-tipos-d.png)
 
 > **Nota:** También puedes importar datos CISCO desde un fichero CSV/Excel pulsando el botón correspondiente.
 
@@ -141,7 +141,7 @@ En lugar de rellenar a mano, puedes recoger los datos directamente de los equipo
 3. Para cada serie puedes ver el nombre, fecha de pico y porcentaje de ocupación.
 4. Hay un **modal con gráficas** que muestra la evolución histórica de los datos NGN.
 
-[CAPTURA: Sección NGN con los datos importados y el botón para ver las gráficas]
+![Sección NGN con los datos importados y el botón para ver las gráficas](./imagenes/captura-06-seccion-ngn-con-los-datos-importados-y-e.png)
 
 ---
 
@@ -157,7 +157,7 @@ En lugar de rellenar a mano, puedes recoger los datos directamente de los equipo
    - Datos NGN con gráficas
    - Datos SBC
 
-[CAPTURA: Enlace de descarga del PDF generado]
+![Enlace de descarga del PDF generado](./imagenes/captura-07-enlace-de-descarga-del-pdf-generado.png)
 
 ---
 
@@ -180,7 +180,7 @@ En lugar de rellenar a mano, puedes recoger los datos directamente de los equipo
 1. Pulsa el botón de **eliminar** junto a la captura que quieras borrar.
 2. Confirma la eliminación.
 
-[CAPTURA: Sección de capturas mostrando varias imágenes con los botones Subir y Eliminar]
+![Sección de capturas mostrando varias imágenes con los botones Subir y Eliminar](./imagenes/captura-08-seccion-de-capturas-mostrando-varias-ima.png)
 
 ---
 

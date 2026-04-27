@@ -22,7 +22,7 @@ El módulo DDIs permite gestionar los **DDI (Direct Dial-In)** de voz para GDIA.
 3. Selecciona el centro deseado.
 4. Pulsa **Ver DDIs**.
 
-[CAPTURA: Campo de búsqueda de centro con desplegable de sugerencias]
+![Campo de búsqueda de centro con desplegable de sugerencias](./imagenes/captura-01-campo-de-busqueda-de-centro-con-desplega.png)
 
 ---
 
@@ -41,7 +41,7 @@ Tras seleccionar un centro, se mostrará:
 | Operador       | Quién lo usó                                          |
 | Acción         | Botón para marcar como usado (solo si está disponible)|
 
-[CAPTURA: Tabla de DDIs de un centro mostrando DDIs disponibles y bloqueados con sus datos]
+![Tabla de DDIs de un centro mostrando DDIs disponibles y bloqueados con sus datos](./imagenes/captura-02-tabla-de-ddis-de-un-centro-mostrando-ddi.png)
 
 ### 3.1. Filtrar DDIs
 
@@ -65,7 +65,7 @@ Tras seleccionar un centro, se mostrará:
 
 > **Nota:** Los DDIs bloqueados no se pueden volver a marcar hasta que pasen los 60 días.
 
-[CAPTURA: DDI recién marcado como usado mostrando el estado Bloqueado, la fecha y el operador]
+![DDI recién marcado como usado mostrando el estado Bloqueado, la fecha y el operador](./imagenes/captura-03-ddi-recien-marcado-como-usado-mostrando.png)
 
 ---
 

@@ -30,7 +30,7 @@ Cada tarjeta muestra:
 - **Última actuación**
 - **Hora**
 
-[CAPTURA: Pantalla de Incidencias con el sidebar de tarjetas a la izquierda y el panel vacío a la derecha con el mensaje "Selecciona una incidencia"]
+![Pantalla de Incidencias con el sidebar de tarjetas a la izquierda y el panel vacío a la derecha con el mensaje "Selecciona una incidencia"](./imagenes/captura-01-pantalla-de-incidencias-con-el-sidebar-d.png)
 
 ### 2.1. Filtrar por tipo
 
@@ -70,7 +70,7 @@ Cada tarjeta muestra:
 3. Rellena solo los campos que quieras cambiar. Los campos vacíos no se modifican.
 4. Pulsa **Aplicar**.
 
-[CAPTURA: Modal de edición masiva con los campos rellenables y el botón Aplicar]
+![Modal de edición masiva con los campos rellenables y el botón Aplicar](./imagenes/captura-02-modal-de-edicion-masiva-con-los-campos-r.png)
 
 > **Importante para cerrar en bloque:** Si pones el estado CERRADA, debes rellenar obligatoriamente las fechas de Respuesta, Solución y Cierre.
 
@@ -85,7 +85,7 @@ Cada tarjeta muestra:
    - **Buscar** con el campo de búsqueda
    - **Editar** pulsando el icono del lápiz de cualquier fila
 
-[CAPTURA: Vista de incidencias cerradas en formato tabla con las columnas Centro, Tipo, SIXPI, GDIA, Asunto, fechas y Responsable]
+![Vista de incidencias cerradas en formato tabla con las columnas Centro, Tipo, SIXPI, GDIA, Asunto, fechas y Responsable](./imagenes/captura-03-vista-de-incidencias-cerradas-en-formato.png)
 
 ---
 
@@ -100,7 +100,7 @@ Cada tarjeta muestra:
 2. Selecciona el centro. Se cargará automáticamente su **horario**.
 3. Puedes modificar el **Horario de atención** si es diferente.
 
-[CAPTURA: Campo de búsqueda de centro con desplegable de sugerencias y el campo de horario autorellenado]
+![Campo de búsqueda de centro con desplegable de sugerencias y el campo de horario autorellenado](./imagenes/captura-04-campo-de-busqueda-de-centro-con-desplega.png)
 
 ### 5.2. Tipo y subtipo
 
@@ -180,7 +180,7 @@ Si el tipo es **DATOS**, aparecerá un selector:
 3. Aparecerá brevemente un mensaje de confirmación.
 4. Pega esta información donde la necesites al abrir un GDIA.
 
-[CAPTURA: Botón "Copiar para GDIA" en la parte superior del formulario de edición]
+![Botón "Copiar para GDIA" en la parte superior del formulario de edición](./imagenes/captura-05-boton-copiar-para-gdia-en-la-parte-super.png)
 
 ### 6.3. Validaciones al guardar
 

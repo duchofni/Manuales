@@ -26,7 +26,7 @@
 2. En el menu lateral, haz clic en **Informacion** (o **Ayuda**).
 3. Aparecera el panel principal con tres secciones disponibles.
 
-[CAPTURA: Panel principal del modulo Informacion mostrando las tres tarjetas de navegacion]
+![Panel principal del modulo Informacion mostrando las tres tarjetas de navegacion](./imagenes/captura-01-panel-principal-del-modulo-informacion-m.png)
 
 ---
 
@@ -60,7 +60,7 @@ El modo editor permite crear, modificar y eliminar datos en las tres secciones (
 4. Si es correcta, la pagina se recargara con el modo editor activo.
 5. Veras una etiqueta **EDITOR** junto a tu nombre de usuario.
 
-[CAPTURA: Ventana de login de editor con el campo de contrasena y el boton Entrar]
+![Ventana de login de editor con el campo de contrasena y el boton Entrar](./imagenes/captura-02-ventana-de-login-de-editor-con-el-campo.png)
 
 > **Atencion:** Si introduces la contrasena incorrecta **3 veces seguidas**, tu acceso se bloqueara durante **5 minutos**. Deberas esperar antes de volver a intentarlo.
 
@@ -82,7 +82,7 @@ El modo editor permite crear, modificar y eliminar datos en las tres secciones (
    - El nombre del enlace (haz clic para abrirlo en una nueva pestana)
 4. Las primeras 3 categorias aparecen en la fila superior; el resto debajo.
 
-[CAPTURA: Vista de enlaces de interes con varias categorias y enlaces agrupados por colores]
+![Vista de enlaces de interes con varias categorias y enlaces agrupados por colores](./imagenes/captura-03-vista-de-enlaces-de-interes-con-varias-c.png)
 
 ### 4.2 Crear un enlace nuevo (modo editor)
 
@@ -95,7 +95,7 @@ El modo editor permite crear, modificar y eliminar datos en las tres secciones (
    - **Descripcion** -- Descripcion adicional (opcional)
 4. Haz clic en **Guardar**.
 
-[CAPTURA: Ventana de crear enlace con los campos Nombre, URL, Abreviatura y Descripcion]
+![Ventana de crear enlace con los campos Nombre, URL, Abreviatura y Descripcion](./imagenes/captura-04-ventana-de-crear-enlace-con-los-campos-n.png)
 
 ### 4.3 Editar un enlace (modo editor)
 
@@ -143,7 +143,7 @@ El modo editor permite crear, modificar y eliminar datos en las tres secciones (
 3. Cada pestana muestra un **contador** con el numero de contactos.
 4. Haz clic en una pestana para ver los contactos de esa seccion.
 
-[CAPTURA: Barra de pestanas de escalados con los contadores y una seccion seleccionada]
+![Barra de pestanas de escalados con los contadores y una seccion seleccionada](./imagenes/captura-05-barra-de-pestanas-de-escalados-con-los-c.png)
 
 ### 5.2 Ver los contactos
 
@@ -156,7 +156,7 @@ Cada tarjeta muestra:
 - **Campos extra** (varian segun la seccion, por ejemplo: "Descripcion", "Usuario Telefonica", "DNI/Matricula", etc.)
 - **Notas** (si las hay)
 
-[CAPTURA: Tarjetas de contactos mostrando nombre, telefono, correo y campos extra]
+![Tarjetas de contactos mostrando nombre, telefono, correo y campos extra](./imagenes/captura-06-tarjetas-de-contactos-mostrando-nombre-t.png)
 
 ### 5.3 Buscar un contacto
 
@@ -166,7 +166,7 @@ Cada tarjeta muestra:
 4. Los resultados se mostraran agrupados por seccion.
 5. Para limpiar la busqueda, haz clic en **Limpiar**.
 
-[CAPTURA: Resultados de busqueda de contactos mostrando coincidencias de varias secciones]
+![Resultados de busqueda de contactos mostrando coincidencias de varias secciones](./imagenes/captura-07-resultados-de-busqueda-de-contactos-most.png)
 
 ### 5.4 Crear un contacto nuevo (modo editor)
 
@@ -181,7 +181,7 @@ Cada tarjeta muestra:
    - **Notas**
 4. Haz clic en **Guardar**.
 
-[CAPTURA: Ventana de crear contacto con los campos del formulario]
+![Ventana de crear contacto con los campos del formulario](./imagenes/captura-08-ventana-de-crear-contacto-con-los-campos.png)
 
 ### 5.5 Editar un contacto (modo editor)
 
@@ -211,7 +211,7 @@ Puedes exportar los contactos de la seccion activa en dos formatos:
 
 El archivo descargado incluira solo los contactos de la seccion seleccionada.
 
-[CAPTURA: Botones de exportar Excel y PDF junto a la cabecera de la seccion]
+![Botones de exportar Excel y PDF junto a la cabecera de la seccion](./imagenes/captura-09-botones-de-exportar-excel-y-pdf-junto-a.png)
 
 ---
 
@@ -226,7 +226,7 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
    - Barra de progreso (uso del rango)
    - Estadisticas: IPs usadas / libres
 
-[CAPTURA: Tarjetas de rangos NAT con barras de progreso de colores (verde, naranja, rojo)]
+![Tarjetas de rangos NAT con barras de progreso de colores (verde, naranja, rojo)](./imagenes/captura-10-tarjetas-de-rangos-nat-con-barras-de-pro.png)
 
 3. Debajo se muestra la tabla con todos los registros NAT:
 
@@ -267,7 +267,7 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
 2. Haz clic en **Filtrar**.
 3. Para quitar los filtros, haz clic en **Limpiar**.
 
-[CAPTURA: Barra de filtros con los selectores de grupo, estado y ping]
+![Barra de filtros con los selectores de grupo, estado y ping](./imagenes/captura-11-barra-de-filtros-con-los-selectores-de-g.png)
 
 ### 6.3 Editar un registro NAT (modo editor)
 
@@ -287,7 +287,7 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
      * Si pones IP Outside y Ping = NO -> Estado pasa a **COMPROBAR**
 4. Haz clic en **Guardar**.
 
-[CAPTURA: Ventana de edicion de registro NAT mostrando los campos editables y la previsualizacion del estado]
+![Ventana de edicion de registro NAT mostrando los campos editables y la previsualizacion del estado](./imagenes/captura-12-ventana-de-edicion-de-registro-nat-mostr.png)
 
 > **Nota:** No necesitas elegir el estado manualmente. El sistema lo calcula automaticamente segun los valores de IP Outside y Ping.
 

@@ -57,7 +57,7 @@ Hay **346 centros** en el proyecto.
 4. En la categoria **Mantenimiento**, haz clic en la tarjeta
    **Unificacion FILTRO_LAN_SEDE**.
 
-[CAPTURA: Pantalla de Proyectos con las dos categorias (Provision y Mantenimiento) y la tarjeta de Unificacion ACLs marcada]
+![Pantalla de Proyectos con las dos categorias (Provision y Mantenimiento) y la tarjeta de Unificacion ACLs marcada](./imagenes/captura-01-pantalla-de-proyectos-con-las-dos-catego.png)
 
 ---
 
@@ -130,7 +130,7 @@ Dependiendo del estado del centro veras unos u otros botones:
 | **Pdte cliente** 💬 | Checkbox + **📄** (verde) Ver informe + **↻** (naranja) Re-ejecutar |
 | **Ejecutado** ✓ | **📄** (verde) Ver informe + **↻** (naranja) Re-ejecutar |
 
-[CAPTURA: Tabla principal con varias filas en distintos estados, mostrando los botones de la columna de acciones]
+![Tabla principal con varias filas en distintos estados, mostrando los botones de la columna de acciones](./imagenes/captura-02-tabla-principal-con-varias-filas-en-dist.png)
 
 ---
 
@@ -169,7 +169,7 @@ Cuando un centro esta en estado **Pdte ejecutar**, su fila tiene un boton
 en **modo manual** y te muestra un cuadro de texto. Pega ahi el `show running-config`
 del router y pulsa **Procesar**.
 
-[CAPTURA: Pagina de ejecucion en modo automatico, mostrando el centro y el resumen de procesado]
+![Pagina de ejecucion en modo automatico, mostrando el centro y el resumen de procesado](./imagenes/captura-03-pagina-de-ejecucion-en-modo-automatico-m.png)
 
 ---
 
@@ -224,7 +224,7 @@ En cada pestana, arriba a la derecha:
 Y arriba en la cabecera del visor:
 - **✓ Marcar como aplicado** (solo aparece si el centro esta en Pdte cliente).
 
-[CAPTURA: Visor del informe con las 3 pestanas y los botones]
+![Visor del informe con las 3 pestanas y los botones](./imagenes/captura-04-visor-del-informe-con-las-3-pestanas-y-l.png)
 
 ---
 
@@ -251,7 +251,7 @@ intervencion** (tipicamente fuera de la aplicacion). Una vez aplicado:
 > El campo **Usuario** de cada fila se rellena automaticamente con tu LDAP
 > al marcar como aplicado.
 
-[CAPTURA: Tabla con varios checkboxes marcados y el boton de marcado masivo visible]
+![Tabla con varios checkboxes marcados y el boton de marcado masivo visible](./imagenes/captura-05-tabla-con-varios-checkboxes-marcados-y-e.png)
 
 ---
 
@@ -322,7 +322,7 @@ Cuatro pares de **donut + barras**, uno al lado del otro:
 | **Por router** | Cuantos centros Teldat vs Cisco vs sin ejecutar. |
 | **ACEs clasificadas** | Sumatorio de las 5 categorias en todos los centros: Cubiertas, Whitelist, IntraLAN, Huerfanas+, Huerfanas-. |
 
-[CAPTURA: Pagina de estadisticas con los KPIs arriba y las 4 graficas]
+![Pagina de estadisticas con los KPIs arriba y las 4 graficas](./imagenes/captura-06-pagina-de-estadisticas-con-los-kpis-arri.png)
 
 Volver al listado: boton **<- Volver a la tabla** arriba a la izquierda.
 

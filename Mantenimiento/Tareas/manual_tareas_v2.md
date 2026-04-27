@@ -35,7 +35,7 @@ Al entrar en cualquiera de estas tareas, verás tres pestañas o vistas:
 - **Equipos excluidos**: equipos que no cumplen los requisitos.
 - **Histórico**: resultados de ejecuciones anteriores.
 
-[CAPTURA: Vista de una tarea SSH mostrando la tabla de equipos válidos con las columnas de datos del equipo]
+![Vista de una tarea SSH mostrando la tabla de equipos válidos con las columnas de datos del equipo](./imagenes/captura-01-vista-de-una-tarea-ssh-mostrando-la-tabl.png)
 
 ### 2.2. Ejecutar una tarea
 
@@ -48,7 +48,7 @@ Al entrar en cualquiera de estas tareas, verás tres pestañas o vistas:
 4. La tarea se lanzará en segundo plano. El botón cambiará a **"Tarea en curso o en cola"** y quedará deshabilitado.
 5. Espera a que termine. La página se actualiza automáticamente.
 
-[CAPTURA: Ventana emergente de credenciales SSH con los campos Usuario, Contraseña y Confirmar contraseña]
+![Ventana emergente de credenciales SSH con los campos Usuario, Contraseña y Confirmar contraseña](./imagenes/captura-02-ventana-emergente-de-credenciales-ssh-co.png)
 
 > **Importante:** Si las contraseñas no coinciden, aparecerá un mensaje de error y no se podrá ejecutar.
 
@@ -72,7 +72,7 @@ Al entrar en cualquiera de estas tareas, verás tres pestañas o vistas:
 4. En la parte superior verás las **estadísticas**: total de equipos, cuántos OK, FAIL, etc., y el porcentaje de éxito.
 5. Puedes **filtrar** por estado usando los botones: TODOS, OK, FAIL, AUTH_FAIL, NO_PING, UNKNOWN, DISCREPANCIA.
 
-[CAPTURA: Vista de histórico mostrando las estadísticas arriba y la tabla de resultados con colores por estado]
+![Vista de histórico mostrando las estadísticas arriba y la tabla de resultados con colores por estado](./imagenes/captura-03-vista-de-historico-mostrando-las-estadis.png)
 
 ### 2.4. Copiar tabla
 
@@ -147,7 +147,7 @@ Esta tarea es diferente a las anteriores. No se conecta por SSH sino que compara
 2. Pulsa **Seleccionar archivo** y elige el fichero CSV exportado desde Logos-PT (separador `|`).
 3. Pulsa **Comparar**.
 
-[CAPTURA: Formulario de subida del CSV de Logos-PT con el botón Comparar]
+![Formulario de subida del CSV de Logos-PT con el botón Comparar](./imagenes/captura-04-formulario-de-subida-del-csv-de-logos-pt.png)
 
 ### 7.2. Ver resultados
 
@@ -160,7 +160,7 @@ Tras la comparación, verás dos tablas:
 
 Cada tabla tiene un botón **Copiar tabla** para copiar los datos al portapapeles.
 
-[CAPTURA: Resultados de la comparación mostrando la tabla de discrepancias y la tabla de no encontrados]
+![Resultados de la comparación mostrando la tabla de discrepancias y la tabla de no encontrados](./imagenes/captura-05-resultados-de-la-comparacion-mostrando-l.png)
 
 ### 7.3. Histórico
 

@@ -43,7 +43,7 @@ La tabla muestra todos los equipos con las siguientes columnas:
 | Ourense       | Cantidad en la delegación de Ourense       | **Sí**   |
 | Pontevedra    | Cantidad en la delegación de Pontevedra    | **Sí**   |
 
-[CAPTURA: Tabla de Stock EECC mostrando las columnas de fabricante, descripción y las delegaciones con campos editables]
+![Tabla de Stock EECC mostrando las columnas de fabricante, descripción y las delegaciones con campos editables](./imagenes/captura-01-tabla-de-stock-eecc-mostrando-las-column.png)
 
 ### 3.2. Buscar equipos
 
@@ -51,7 +51,7 @@ La tabla muestra todos los equipos con las siguientes columnas:
 2. Escribe cualquier texto (fabricante, descripción, LORCET, etc.).
 3. La tabla se filtra en **tiempo real** mientras escribes, mostrando solo las filas que coinciden.
 
-[CAPTURA: Campo de búsqueda con un texto escrito y la tabla filtrada mostrando solo las filas que coinciden]
+![Campo de búsqueda con un texto escrito y la tabla filtrada mostrando solo las filas que coinciden](./imagenes/captura-02-campo-de-busqueda-con-un-texto-escrito-y.png)
 
 ### 3.3. Modificar cantidades
 
@@ -76,7 +76,7 @@ En la barra superior hay botones para exportar la tabla:
 1. Pulsa el botón del formato deseado.
 2. Se descargará automáticamente el fichero con todos los datos de la tabla.
 
-[CAPTURA: Botones de exportación CSV, Excel y PDF en la barra superior]
+![Botones de exportación CSV, Excel y PDF en la barra superior](./imagenes/captura-03-botones-de-exportacion-csv-excel-y-pdf-e.png)
 
 ---
 

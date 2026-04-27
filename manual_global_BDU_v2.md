@@ -62,7 +62,7 @@ Cada modulo de BDU tiene su propio manual detallado con instrucciones paso a pas
 4. Introducir las credenciales del dominio (usuario y contrasena de red, las mismas que se usan para iniciar sesion en el ordenador)
 5. Pulsar **Entrar**
 
-[CAPTURA: Pantalla de login con campos de usuario y contrasena]
+![Pantalla de login con campos de usuario y contrasena](./imagenes/captura-01-pantalla-de-login-con-campos-de-usuario.png)
 
 **Informacion importante sobre el acceso:**
 
@@ -76,7 +76,7 @@ Cada modulo de BDU tiene su propio manual detallado con instrucciones paso a pas
 
 Una vez autenticado, la interfaz de BDU se compone de los siguientes elementos:
 
-[CAPTURA: Vista general de la aplicacion con los elementos de navegacion senalados]
+![Vista general de la aplicacion con los elementos de navegacion senalados](./imagenes/captura-02-vista-general-de-la-aplicacion-con-los-e.png)
 
 ### 2.1 Menu superior (barra de navegacion)
 
@@ -95,7 +95,7 @@ En la barra superior, junto a los botones de utilidad, se encuentra el boton de 
 - Pulsar el icono de sol para volver al **modo claro** (fondo blanco, texto oscuro)
 - La preferencia se guarda automaticamente en el navegador: al volver a entrar, se mantiene el ultimo modo seleccionado
 
-[CAPTURA: Boton de modo oscuro en la barra superior]
+![Boton de modo oscuro en la barra superior](./imagenes/captura-03-boton-de-modo-oscuro-en-la-barra-superio.png)
 
 ### 2.3 Boton de feedback
 
@@ -146,7 +146,7 @@ Al entrar en BDU, el modulo Inicio muestra un panel con la vision global del est
 
 Los datos se actualizan automaticamente cada 2 minutos. Este modulo es solo de lectura (no se modifican datos).
 
-[CAPTURA: Panel de Inicio con KPIs y graficos]
+![Panel de Inicio con KPIs y graficos](./imagenes/captura-04-panel-de-inicio-con-kpis-y-graficos.png)
 
 > **Manual detallado:** `Inicio/manual_inicio.md`
 
@@ -166,7 +166,7 @@ El modulo Centros permite buscar cualquier centro sanitario del SERGAS y ver tod
 - **Equipos de segundo nivel** con imagen del modelo
 - **Documentacion del centro** almacenada en el NAS (subida de archivos, carpetas, visor integrado)
 
-[CAPTURA: Ficha de un centro con sus lineas y equipos]
+![Ficha de un centro con sus lineas y equipos](./imagenes/captura-05-ficha-de-un-centro-con-sus-lineas-y-equi.png)
 
 > **Manual detallado:** `Centros/manual_centros.md`
 
@@ -187,7 +187,7 @@ El modulo Provision permite gestionar el ciclo de vida de la infraestructura:
 
 Al entrar en Provision, se solicita una contrasena adicional ademas de la sesion LDAP ya iniciada. Esta contrasena es compartida por el equipo y protege las operaciones de modificacion de datos.
 
-[CAPTURA: Menu principal de Provision con las opciones de alta, baja y modificacion]
+![Menu principal de Provision con las opciones de alta, baja y modificacion](./imagenes/captura-06-menu-principal-de-provision-con-las-opci.png)
 
 > **Manual detallado:** `provision/manual_provision.md`
 
@@ -205,7 +205,7 @@ Este modulo gestiona los pedidos e instalaciones de infraestructura, organizado 
 - **Calendario:** vista mensual y semanal de instalaciones programadas con colores por tipo. Exportacion para impresion y copia para Outlook
 - **Proyectos:** estadisticas agregadas de proyectos del CGE
 
-[CAPTURA: Vista de Instalaciones con las pestanas LOGOS, BJ, ATLAS, Calendario y Proyectos]
+![Vista de Instalaciones con las pestanas LOGOS, BJ, ATLAS, Calendario y Proyectos](./imagenes/captura-07-vista-de-instalaciones-con-las-pestanas.png)
 
 > **Manual detallado:** `Instalaciones/manual_instalaciones.md`
 
@@ -233,7 +233,7 @@ El modulo Consultas ofrece un conjunto de consultas preparadas sobre los datos d
 - Ordenacion por columnas
 - Exportacion a CSV, PDF y Excel
 
-[CAPTURA: Resultado de una consulta con opciones de filtro y exportacion]
+![Resultado de una consulta con opciones de filtro y exportacion](./imagenes/captura-08-resultado-de-una-consulta-con-opciones-d.png)
 
 > **Manual detallado:** `Consultas/manual_consultas.md`
 
@@ -250,7 +250,7 @@ El modulo Stock permite gestionar el inventario de equipos en los almacenes prov
 - Actualizacion de cantidades
 - Exportacion de datos
 
-[CAPTURA: Vista del modulo Stock con listado de equipos]
+![Vista del modulo Stock con listado de equipos](./imagenes/captura-09-vista-del-modulo-stock-con-listado-de-eq.png)
 
 > **Manual detallado:** `Stock/manual_stock.md`
 
@@ -278,7 +278,7 @@ El modulo Correos permite generar correos operativos estandarizados de forma rap
 3. Rellenar los datos solicitados
 4. Pulsar el boton para copiar la tabla al portapapeles y abrir el cliente de correo con el asunto y cuerpo predefinidos
 
-[CAPTURA: Seleccion de plantilla de correo y formulario de datos]
+![Seleccion de plantilla de correo y formulario de datos](./imagenes/captura-10-seleccion-de-plantilla-de-correo-y-formu.png)
 
 > **Manual detallado:** `Correos/manual_correos.md`
 
@@ -327,7 +327,7 @@ Gestion de suscripciones a alertas Grilloweb.
 
 > **Nota:** El acceso a los modulos de KPIs esta restringido a determinados usuarios segun su grupo en el directorio.
 
-[CAPTURA: Panel de Mantenimiento con las tarjetas desplegables]
+![Panel de Mantenimiento con las tarjetas desplegables](./imagenes/captura-11-panel-de-mantenimiento-con-las-tarjetas.png)
 
 > **Manual detallado:** `Mantenimiento/manual_mantenimiento.md`
 
@@ -345,7 +345,7 @@ El modulo Documentacion permite subir y gestionar la documentacion interna del C
 - **Descarga del original:** siempre se puede descargar el fichero en su formato original
 - **Filtros por tipo:** los documentos se organizan en carpetas/tipos configurados
 
-[CAPTURA: Listado de documentos con visor PDF integrado]
+![Listado de documentos con visor PDF integrado](./imagenes/captura-12-listado-de-documentos-con-visor-pdf-inte.png)
 
 > **Manual detallado:** `Documentacion/manual_documentacion.md`
 
@@ -368,7 +368,7 @@ Catalogo de enlaces utiles organizados por categorias con colores personalizable
 
 > **Nota:** Las secciones de Info/Ayuda tienen un **modo editor** protegido con contrasena adicional para modificar los datos. Los operadores que solo necesitan consultar no necesitan esta contrasena.
 
-[CAPTURA: Vista del modulo Info/Ayuda con las tres secciones]
+![Vista del modulo Info/Ayuda con las tres secciones](./imagenes/captura-13-vista-del-modulo-info-ayuda-con-las-tres.png)
 
 > **Manual detallado:** `Informacion/manual_informacion.md`
 
@@ -389,7 +389,7 @@ El modulo Mailviewer permite buscar y consultar los correos almacenados en el bu
 - **Ordenacion:** por fecha, remitente o asunto
 - **Paginacion:** 50 resultados por pagina
 
-[CAPTURA: Vista de Mailviewer con resultados de busqueda y un correo abierto]
+![Vista de Mailviewer con resultados de busqueda y un correo abierto](./imagenes/captura-14-vista-de-mailviewer-con-resultados-de-bu.png)
 
 > **Manual detallado:** `mailviewer/manual_mailviewer.md`
 

@@ -33,7 +33,7 @@ El modulo Provision requiere una **contrasena adicional** ademas de tu sesion no
 4. Introduce la contrasena de provision y haz clic en **Entrar**.
 5. Si la contrasena es correcta, accederas al menu principal.
 
-[CAPTURA: Pantalla de login de Provision con el campo de contrasena y el boton Entrar]
+![Pantalla de login de Provision con el campo de contrasena y el boton Entrar](./imagenes/captura-01-pantalla-de-login-de-provision-con-el-ca.png)
 
 > **Atencion:** Si introduces la contrasena incorrecta **3 veces seguidas**, tu acceso se bloqueara durante **5 minutos**.
 
@@ -58,7 +58,7 @@ Una vez dentro, veras un menu con tarjetas para cada opcion disponible:
 
 Haz clic en la tarjeta que necesites. Tambien puedes usar la **barra de pestanas** en la parte superior para cambiar entre opciones sin volver al menu.
 
-[CAPTURA: Menu principal de Provision con las 8 tarjetas de opciones]
+![Menu principal de Provision con las 8 tarjetas de opciones](./imagenes/captura-02-menu-principal-de-provision-con-las-8-ta.png)
 
 ---
 
@@ -120,7 +120,7 @@ Haz clic en la tarjeta que necesites. Tambien puedes usar la **barra de pestanas
 5. El sistema pedira confirmacion antes de guardar.
 6. Si todo es correcto, veras un mensaje de exito con el nombre y el ID del nuevo centro.
 
-[CAPTURA: Formulario de alta de centro con los campos rellenos y el boton Guardar]
+![Formulario de alta de centro con los campos rellenos y el boton Guardar](./imagenes/captura-03-formulario-de-alta-de-centro-con-los-cam.png)
 
 > **Nota:** Si intentas dar de alta un centro con un nombre o ID de cliente que ya existe, el sistema mostrara un error de duplicado.
 
@@ -133,7 +133,7 @@ Haz clic en la tarjeta que necesites. Tambien puedes usar la **barra de pestanas
    - **Sin equipo** -- Solo se creara la linea
    - **Con equipo** -- Se creara la linea y un equipo de datos
 
-[CAPTURA: Selector de modo "Sin equipo" / "Con equipo" al inicio del formulario]
+![Selector de modo "Sin equipo" / "Con equipo" al inicio del formulario](./imagenes/captura-04-selector-de-modo-sin-equipo-con-equipo-a.png)
 
 ### Datos de la linea
 
@@ -185,7 +185,7 @@ Para cada VLAN disponible, marca la casilla para activarla y escribe la red LAN 
 
 Marca la casilla de la VLAN para habilitar el campo de red.
 
-[CAPTURA: Seccion de VLANs con algunas casillas marcadas y campos de red rellenos]
+![Seccion de VLANs con algunas casillas marcadas y campos de red rellenos](./imagenes/captura-05-seccion-de-vlans-con-algunas-casillas-ma.png)
 
 ### Switch Cliente
 
@@ -214,7 +214,7 @@ Marca la casilla de la VLAN para habilitar el campo de red.
 
 3. Haz clic en **Guardar** y confirma.
 
-[CAPTURA: Formulario de alta de linea de voz con los campos rellenos]
+![Formulario de alta de linea de voz con los campos rellenos](./imagenes/captura-06-formulario-de-alta-de-linea-de-voz-con-l.png)
 
 ---
 
@@ -236,7 +236,7 @@ Marca la casilla de la VLAN para habilitar el campo de red.
 
 3. Haz clic en **Guardar** y confirma.
 
-[CAPTURA: Formulario de alta de equipo de voz con los campos rellenos]
+![Formulario de alta de equipo de voz con los campos rellenos](./imagenes/captura-07-formulario-de-alta-de-equipo-de-voz-con.png)
 
 > **Nota:** Si el nemonico o la IP de gestion ya existen, el sistema mostrara un error de duplicado.
 
@@ -261,7 +261,7 @@ Marca la casilla de la VLAN para habilitar el campo de red.
 3. Al escribir en "Equipo 1.er Nivel", apareceran sugerencias de equipos existentes.
 4. Haz clic en **Guardar** y confirma.
 
-[CAPTURA: Formulario de alta de equipo 2.o nivel con sugerencias de equipo 1.er nivel]
+![Formulario de alta de equipo 2.o nivel con sugerencias de equipo 1.er nivel](./imagenes/captura-08-formulario-de-alta-de-equipo-2-o-nivel-c.png)
 
 ---
 
@@ -281,7 +281,7 @@ El modulo de modificaciones permite buscar cualquier registro de la base de dato
    - Equipos de voz
    - Equipos de 2.o nivel
 
-[CAPTURA: Selector de tabla con las opciones disponibles]
+![Selector de tabla con las opciones disponibles](./imagenes/captura-09-selector-de-tabla-con-las-opciones-dispo.png)
 
 #### Paso 2 -- Buscar el registro
 
@@ -289,14 +289,14 @@ El modulo de modificaciones permite buscar cualquier registro de la base de dato
 2. Apareceran sugerencias con los registros que coinciden.
 3. Haz clic en el registro que buscas.
 
-[CAPTURA: Campo de busqueda con sugerencias de registros]
+![Campo de busqueda con sugerencias de registros](./imagenes/captura-10-campo-de-busqueda-con-sugerencias-de-reg.png)
 
 #### Paso 3 -- Ver los campos del registro
 
 1. Se mostrara una tabla con todos los campos del registro y sus valores actuales.
 2. Cada campo tiene un enlace **Editar** a la derecha.
 
-[CAPTURA: Tabla con los campos de un registro mostrando valores actuales y enlaces "Editar"]
+![Tabla con los campos de un registro mostrando valores actuales y enlaces "Editar"](./imagenes/captura-11-tabla-con-los-campos-de-un-registro-most.png)
 
 #### Paso 4 -- Editar un campo
 
@@ -310,7 +310,7 @@ El modulo de modificaciones permite buscar cualquier registro de la base de dato
 4. Haz clic en **Guardar**.
 5. El sistema pedira confirmacion antes de guardar el cambio.
 
-[CAPTURA: Edicion de un campo con un desplegable de opciones y el boton Guardar]
+![Edicion de un campo con un desplegable de opciones y el boton Guardar](./imagenes/captura-12-edicion-de-un-campo-con-un-desplegable-d.png)
 
 > **Nota:** Algunos campos no se pueden editar (ID, estado de baja, cerrado). Estos no mostraran el enlace "Editar".
 
@@ -325,7 +325,7 @@ Esta opcion permite asociar un equipo de datos nuevo a una linea que no tiene eq
 5. Rellena los datos del equipo: nemonicos, IPs, modelo, VLANs, etc.
 6. Haz clic en **Guardar** y confirma.
 
-[CAPTURA: Formulario de anadir equipo a linea con los campos de equipo visibles]
+![Formulario de anadir equipo a linea con los campos de equipo visibles](./imagenes/captura-13-formulario-de-anadir-equipo-a-linea-con.png)
 
 ---
 
@@ -346,7 +346,7 @@ Esta opcion permite asociar un equipo de datos nuevo a una linea que no tiene eq
 6. El sistema pedira confirmacion.
 7. Tras confirmar, el elemento se marcara como dado de baja (no se elimina, solo se desactiva).
 
-[CAPTURA: Lista de elementos activos de un centro con botones "Dar de baja" junto a cada uno]
+![Lista de elementos activos de un centro con botones "Dar de baja" junto a cada uno](./imagenes/captura-14-lista-de-elementos-activos-de-un-centro.png)
 
 ### 9.2 Cerrar un centro completo
 
@@ -364,7 +364,7 @@ Si necesitas cerrar un centro entero (dar de baja el centro y todos sus elemento
    - Todos los equipos de 2.o nivel se daran de baja
    - Todos los equipos de datos se daran de baja
 
-[CAPTURA: Boton "Cerrar centro" con la ventana de confirmacion doble]
+![Boton "Cerrar centro" con la ventana de confirmacion doble](./imagenes/captura-15-boton-cerrar-centro-con-la-ventana-de-co.png)
 
 > **Importante:** El cierre completo de un centro es una operacion sensible. Asegurate de que realmente quieres cerrar el centro y todos sus elementos antes de confirmar.
 

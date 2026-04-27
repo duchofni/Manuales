@@ -30,7 +30,7 @@
 2. El panel de inicio es la **primera pantalla** que aparece al acceder a la aplicacion.
 3. Tambien puedes volver a el en cualquier momento haciendo clic en **Inicio** en el menu lateral.
 
-[CAPTURA: Vista general del panel de inicio completo]
+![Vista general del panel de inicio completo](./imagenes/captura-01-vista-general-del-panel-de-inicio-comple.png)
 
 > **Nota:** Los datos del panel se actualizan automaticamente cada **2 minutos**. No necesitas recargar la pagina manualmente.
 
@@ -44,7 +44,7 @@ En la parte superior del panel veras:
 - **Fecha y hora:** Se actualiza automaticamente con cada recarga de datos
 - **Estado de la base de datos:** Una etiqueta que indica si la conexion a la base de datos esta funcionando correctamente
 
-[CAPTURA: Barra superior mostrando el titulo, la fecha/hora y la etiqueta de estado de BD]
+![Barra superior mostrando el titulo, la fecha/hora y la etiqueta de estado de BD](./imagenes/captura-02-barra-superior-mostrando-el-titulo-la-fe.png)
 
 ---
 
@@ -61,7 +61,7 @@ La primera seccion muestra **6 tarjetas** con los indicadores clave de los centr
 | **Con FlexWAN**      | Centros que tienen el servicio FlexWAN activo               |
 | **Con DCT**          | Centros que tienen dispositivo de control de tension        |
 
-[CAPTURA: Fila de 6 tarjetas KPI de centros con sus valores numericos]
+![Fila de 6 tarjetas KPI de centros con sus valores numericos](./imagenes/captura-03-fila-de-6-tarjetas-kpi-de-centros-con-su.png)
 
 ---
 
@@ -73,7 +73,7 @@ En la columna izquierda aparece un **grafico de anillo (donut)** que muestra la 
 - En el centro del anillo se muestra el **total de centros activos**.
 - Debajo del grafico hay una **leyenda** con el nombre de cada tipo de sede, su color y su numero.
 
-[CAPTURA: Grafico donut de tipo de sede con leyenda]
+![Grafico donut de tipo de sede con leyenda](./imagenes/captura-04-grafico-donut-de-tipo-de-sede-con-leyend.png)
 
 ---
 
@@ -88,7 +88,7 @@ Debajo del grafico de tipo de sede, se muestra la seccion de **equipos gestionad
 
 Cada indicador se muestra con una **barra de progreso** que permite ver de un vistazo la proporcion.
 
-[CAPTURA: Seccion de equipos gestionados con barras de progreso]
+![Seccion de equipos gestionados con barras de progreso](./imagenes/captura-05-seccion-de-equipos-gestionados-con-barra.png)
 
 ---
 
@@ -103,7 +103,7 @@ La columna central muestra las **lineas activas** de la red:
   - El numero de lineas activas de ese tipo
   - La proporcion respecto al total (barra de color)
 
-[CAPTURA: Seccion de lineas activas con el total y las barras por tipo de linea]
+![Seccion de lineas activas con el total y las barras por tipo de linea](./imagenes/captura-06-seccion-de-lineas-activas-con-el-total-y.png)
 
 ---
 
@@ -115,7 +115,7 @@ La columna derecha muestra los **12 modelos de equipo mas frecuentes**:
 - Cada barra muestra el nombre del modelo y el numero de unidades activas.
 - Ordenados de mayor a menor.
 
-[CAPTURA: Seccion de equipos por modelo mostrando las barras de los 12 modelos mas frecuentes]
+![Seccion de equipos por modelo mostrando las barras de los 12 modelos mas frecuentes](./imagenes/captura-07-seccion-de-equipos-por-modelo-mostrando.png)
 
 ---
 
@@ -128,7 +128,7 @@ La seccion de **incidencias abiertas** muestra tarjetas con las incidencias que 
 
 Esto permite ver rapidamente si hay incidencias acumuladas y de que tipo son.
 
-[CAPTURA: Seccion de incidencias abiertas con tarjetas por tipo]
+![Seccion de incidencias abiertas con tarjetas por tipo](./imagenes/captura-08-seccion-de-incidencias-abiertas-con-tarj.png)
 
 ---
 
@@ -144,7 +144,7 @@ Esta seccion muestra los **pedidos de instalacion** que estan pendientes de real
 
 Cada tarjeta muestra el numero de pedidos pendientes.
 
-[CAPTURA: Tarjetas de pedidos pendientes de LOGOS, BJ y ATLAS]
+![Tarjetas de pedidos pendientes de LOGOS, BJ y ATLAS](./imagenes/captura-09-tarjetas-de-pedidos-pendientes-de-logos.png)
 
 ---
 
@@ -171,7 +171,7 @@ Las barras de progreso cambian de color segun el nivel de uso:
 - **Amarillo** -- Uso alto (atencion)
 - **Rojo** -- Uso critico (posible problema)
 
-[CAPTURA: Panel de un nodo Proxmox con barras de CPU, RAM y disco]
+![Panel de un nodo Proxmox con barras de CPU, RAM y disco](./imagenes/captura-10-panel-de-un-nodo-proxmox-con-barras-de-c.png)
 
 ### 10.2 Servidor de backups (PBS)
 
@@ -183,7 +183,7 @@ Muestra el estado del servidor de copias de seguridad Proxmox Backup Server:
 | **RAM**          | Memoria usada / total y porcentaje           |
 | **Datastores**   | Almacenes de backup con espacio usado/total  |
 
-[CAPTURA: Panel del servidor PBS con indicadores de datastores]
+![Panel del servidor PBS con indicadores de datastores](./imagenes/captura-11-panel-del-servidor-pbs-con-indicadores-d.png)
 
 ### 10.3 NAS (almacenamiento en red)
 
@@ -198,7 +198,7 @@ Muestra el estado del NAS QNAP:
 | **Ventiladores**   | Velocidad de los ventiladores (RPM)                |
 | **Volumenes**      | Espacio usado / total de cada volumen montado      |
 
-[CAPTURA: Panel del NAS QNAP con temperaturas y volumenes]
+![Panel del NAS QNAP con temperaturas y volumenes](./imagenes/captura-12-panel-del-nas-qnap-con-temperaturas-y-vo.png)
 
 ### 10.4 Base de datos MariaDB
 
@@ -211,7 +211,7 @@ Muestra estadisticas de la base de datos de la aplicacion:
 | **Conexiones**     | Numero de conexiones activas                            |
 | **Ultimo backup**  | Fecha y hora de la ultima copia de seguridad            |
 
-[CAPTURA: Panel de MariaDB con tamano, tablas, conexiones y ultimo backup]
+![Panel de MariaDB con tamano, tablas, conexiones y ultimo backup](./imagenes/captura-13-panel-de-mariadb-con-tamano-tablas-conex.png)
 
 ---
 

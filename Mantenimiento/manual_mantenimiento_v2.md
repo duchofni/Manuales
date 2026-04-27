@@ -27,7 +27,7 @@ Al entrar en Mantenimiento verás una fila horizontal de **5 tarjetas** (categor
 4. Si pulsas de nuevo la misma tarjeta, el acordeón se cierra.
 5. Si pulsas otra tarjeta distinta, se cierra la anterior y se abre la nueva.
 
-[CAPTURA: Menú de Mantenimiento mostrando las 5 tarjetas horizontales y un acordeón desplegado con los botones de una categoría]
+![Menú de Mantenimiento mostrando las 5 tarjetas horizontales y un acordeón desplegado con los botones de una categoría](./imagenes/captura-01-menu-de-mantenimiento-mostrando-las-5-ta.png)
 
 > **Nota:** La tarjeta activa (la que tienes abierta o la que corresponde a la página en la que estás) aparece resaltada en azul.
 

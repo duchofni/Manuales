@@ -32,7 +32,7 @@ Este método importa el fichero Excel diario completo de Telefónica. Inserta lo
    - Registros **actualizados** (ya existían pero tenían cambios)
    - Registros **sin cambios** (ya estaban al día)
 
-[CAPTURA: Panel de importación Excel completo con el botón de seleccionar archivo y el botón Importar]
+![Panel de importación Excel completo con el botón de seleccionar archivo y el botón Importar](./imagenes/captura-01-panel-de-importacion-excel-completo-con.png)
 
 ### 2.2. Importar BTPs del día
 
@@ -65,7 +65,7 @@ Desde el menú BTPs, selecciona **Consulta Estado**.
    - RECHAZADO
 2. Se mostrará la tabla con todos los BTPs en ese estado.
 
-[CAPTURA: Desplegable de estados con la tabla de resultados debajo]
+![Desplegable de estados con la tabla de resultados debajo](./imagenes/captura-02-desplegable-de-estados-con-la-tabla-de-r.png)
 
 ### 3.2. Buscar dentro de los resultados
 
@@ -82,7 +82,7 @@ Desde el menú BTPs, selecciona **Consulta Estado**.
 2. Selecciona el nuevo estado.
 3. La fila desaparecerá con una animación (ya no pertenece al estado que estás consultando).
 
-[CAPTURA: Fila de un BTP con el desplegable de estado abierto mostrando las opciones]
+![Fila de un BTP con el desplegable de estado abierto mostrando las opciones](./imagenes/captura-03-fila-de-un-btp-con-el-desplegable-de-est.png)
 
 ### 3.5. Exportar resultados
 
@@ -107,7 +107,7 @@ Desde el menú BTPs, selecciona **Consulta N BTP**.
 3. Pulsa sobre el BTP deseado.
 4. Se mostrará la tabla con todas las líneas de ese BTP.
 
-[CAPTURA: Campo de búsqueda con el desplegable de sugerencias de BTPs]
+![Campo de búsqueda con el desplegable de sugerencias de BTPs](./imagenes/captura-04-campo-de-busqueda-con-el-desplegable-de.png)
 
 ### 4.2. Copiar tabla y enviar por correo
 
@@ -120,7 +120,7 @@ Desde el menú BTPs, selecciona **Consulta N BTP**.
    - **Asunto** con la fecha, número de BTP y si tiene o no afectación.
 5. **Pega** la tabla (Ctrl+V) en el cuerpo del correo y envía.
 
-[CAPTURA: Botón Copiar (rojo o azul) junto a la tabla de resultados del BTP]
+![Botón Copiar (rojo o azul) junto a la tabla de resultados del BTP](./imagenes/captura-05-boton-copiar-rojo-o-azul-junto-a-la-tabl.png)
 
 ### 4.3. Editar un BTP en el modal
 
@@ -134,7 +134,7 @@ Desde el menú BTPs, selecciona **Consulta N BTP**.
 
 > **Nota:** El número de BTP no se puede modificar.
 
-[CAPTURA: Modal de edición de BTP con los campos rellenados y el botón Guardar]
+![Modal de edición de BTP con los campos rellenados y el botón Guardar](./imagenes/captura-06-modal-de-edicion-de-btp-con-los-campos-r.png)
 
 ---
 
@@ -160,7 +160,7 @@ Desde el menú BTPs, selecciona **BTP Manual**.
    - **Generar tabla**: muestra una vista previa del BTP en formato tabla (sin guardarlo aún).
    - **Insertar en BBDD**: guarda el BTP en la base de datos (te pedirá confirmación).
 
-[CAPTURA: Formulario de alta manual de BTP con los campos rellenados y los dos botones: Generar tabla e Insertar en BBDD]
+![Formulario de alta manual de BTP con los campos rellenados y los dos botones: Generar tabla e Insertar en BBDD](./imagenes/captura-07-formulario-de-alta-manual-de-btp-con-los.png)
 
 ### 5.3. Copiar y enviar desde la vista previa
 
@@ -181,7 +181,7 @@ Esta vista muestra todos los BTPs con estado **AUTORIZADO** que aún **no se han
 - Están ordenados por fecha de corte (los más próximos primero).
 - Pulsa **Abrir** para ir a la consulta por número de ese BTP, donde podrás copiarlo y enviarlo.
 
-[CAPTURA: Tabla de BTPs pendientes de informar con la columna Abrir]
+![Tabla de BTPs pendientes de informar con la columna Abrir](./imagenes/captura-08-tabla-de-btps-pendientes-de-informar-con.png)
 
 ---
 

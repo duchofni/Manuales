@@ -30,7 +30,7 @@
 2. En el menu lateral, haz clic en **Centros**.
 3. Se mostrara la pantalla del buscador de centros.
 
-[CAPTURA: Pantalla inicial del modulo Centros mostrando el campo de busqueda vacio]
+![Pantalla inicial del modulo Centros mostrando el campo de busqueda vacio](./imagenes/captura-01-pantalla-inicial-del-modulo-centros-most.png)
 
 ---
 
@@ -45,7 +45,7 @@ Puedes buscar un centro de dos formas: por **autocompletado** o por **busqueda l
 3. Haz clic en el centro que buscas de la lista.
 4. Se abrira directamente la ficha de ese centro.
 
-[CAPTURA: Campo de busqueda con lista de sugerencias de autocompletado desplegada]
+![Campo de busqueda con lista de sugerencias de autocompletado desplegada](./imagenes/captura-02-campo-de-busqueda-con-lista-de-sugerenci.png)
 
 ### Opcion B -- Busqueda libre
 
@@ -65,7 +65,7 @@ Puedes buscar un centro de dos formas: por **autocompletado** o por **busqueda l
    - Boton **Abrir** para acceder a la ficha
 5. Los centros cerrados apareceran con una etiqueta **[CERRADO]** y en tono apagado.
 
-[CAPTURA: Tabla de resultados de busqueda con varios centros, uno de ellos marcado como CERRADO]
+![Tabla de resultados de busqueda con varios centros, uno de ellos marcado como CERRADO](./imagenes/captura-03-tabla-de-resultados-de-busqueda-con-vari.png)
 
 > **Nota:** La busqueda muestra un maximo de 50 resultados. Si no encuentras lo que buscas, prueba con un termino mas especifico.
 
@@ -93,7 +93,7 @@ Muestra toda la informacion basica del centro organizada en filas:
 - **RAI / Modulo** -- Identificadores RAI y modulo para CISCO, OXE y NGN
 - **Documentacion** -- Enlace para ver los documentos del centro
 
-[CAPTURA: Ficha del centro mostrando el bloque de datos con todos los campos rellenos]
+![Ficha del centro mostrando el bloque de datos con todos los campos rellenos](./imagenes/captura-04-ficha-del-centro-mostrando-el-bloque-de.png)
 
 ### Tablas de lineas y equipos
 
@@ -109,7 +109,7 @@ Cada tabla tiene:
 - **Paginacion** con informacion de pagina actual y total
 - Un boton **Copiar tabla** para copiar las filas visibles al portapapeles
 
-[CAPTURA: Vista general de la ficha de un centro con las tablas de lineas de datos y las tres tablas inferiores (voz, equipos voz, equipos 2.o nivel)]
+![Vista general de la ficha de un centro con las tablas de lineas de datos y las tres tablas inferiores (voz, equipos voz, equipos 2.o nivel)](./imagenes/captura-05-vista-general-de-la-ficha-de-un-centro-c.png)
 
 ---
 
@@ -145,7 +145,7 @@ Cada equipo aparece con un indicador de color:
 | Rojo     | El equipo esta **caido** (DOWN) en Nagios        |
 | Gris     | El equipo **no esta monitorizado** en Nagios     |
 
-[CAPTURA: Bloque de estado Nagios mostrando varios equipos con indicadores verde, rojo y gris]
+![Bloque de estado Nagios mostrando varios equipos con indicadores verde, rojo y gris](./imagenes/captura-06-bloque-de-estado-nagios-mostrando-varios.png)
 
 > **Nota:** Los datos de Nagios se actualizan automaticamente cada 30 segundos. No es necesario recargar la pagina.
 
@@ -162,7 +162,7 @@ Cada equipo aparece con un indicador de color:
    - **Borde verde** -- Guardado correctamente
    - **Borde rojo** -- Error al guardar (intentalo de nuevo)
 
-[CAPTURA: Campo de comentarios con borde verde indicando guardado correcto]
+![Campo de comentarios con borde verde indicando guardado correcto](./imagenes/captura-07-campo-de-comentarios-con-borde-verde-ind.png)
 
 > **Importante:** No necesitas pulsar ningun boton para guardar. El guardado es automatico al salir del campo.
 
@@ -196,7 +196,7 @@ Cada equipo aparece con un indicador de color:
 2. Selecciona el archivo de tu equipo.
 3. El archivo se subira automaticamente a la carpeta actual.
 
-[CAPTURA: Gestor de documentos del centro mostrando el arbol de carpetas a la izquierda y archivos a la derecha]
+![Gestor de documentos del centro mostrando el arbol de carpetas a la izquierda y archivos a la derecha](./imagenes/captura-08-gestor-de-documentos-del-centro-mostrand.png)
 
 ---
 
@@ -216,7 +216,7 @@ Cada equipo aparece con un indicador de color:
 
 4. Para cerrar la ventana, haz clic en el boton **Cerrar**, haz clic fuera de la ventana o pulsa la tecla **Escape**.
 
-[CAPTURA: Ventana emergente de detalle de linea mostrando las secciones de datos, equipo y VLANs]
+![Ventana emergente de detalle de linea mostrando las secciones de datos, equipo y VLANs](./imagenes/captura-09-ventana-emergente-de-detalle-de-linea-mo.png)
 
 ### Enlaces utiles en la tabla de lineas
 
@@ -234,7 +234,7 @@ Cada equipo aparece con un indicador de color:
 4. Se abrira una ventana con la fotografia del equipo a tamano grande.
 5. Para cerrar, haz clic fuera de la imagen o pulsa **Escape**.
 
-[CAPTURA: Visor de imagen mostrando la fotografia de un modelo de equipo (por ejemplo, un Fortigate 60F)]
+![Visor de imagen mostrando la fotografia de un modelo de equipo (por ejemplo, un Fortigate 60F)](./imagenes/captura-10-visor-de-imagen-mostrando-la-fotografia.png)
 
 ---
 
@@ -250,7 +250,7 @@ Si el centro tiene un dispositivo de control de tension (tensiometro), podras co
    - **Extension** -- Extension corta
 4. Para cerrar la ventana, haz clic en **Cerrar**, haz clic fuera de la ventana o pulsa **Escape**.
 
-[CAPTURA: Ventana emergente del tensiometro mostrando los campos ICC, Numero Largo y Extension]
+![Ventana emergente del tensiometro mostrando los campos ICC, Numero Largo y Extension](./imagenes/captura-11-ventana-emergente-del-tensiometro-mostra.png)
 
 ---
 

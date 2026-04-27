@@ -28,7 +28,7 @@
 2. En el menu lateral, haz clic en **Documentacion**.
 3. Aparecera la pantalla principal con las carpetas de documentos y las ultimas subidas.
 
-[CAPTURA: Pantalla principal del modulo Documentacion mostrando las tarjetas de carpetas y la tabla de documentos]
+![Pantalla principal del modulo Documentacion mostrando las tarjetas de carpetas y la tabla de documentos](./imagenes/captura-01-pantalla-principal-del-modulo-documentac.png)
 
 ---
 
@@ -41,7 +41,7 @@ Los documentos estan organizados en carpetas (tipos). Cada carpeta aparece como 
 3. La tarjeta seleccionada aparecera resaltada.
 4. Para ver los documentos mas recientes de todas las carpetas, haz clic en la tarjeta **"Ultimas subidas"**.
 
-[CAPTURA: Tarjetas de carpetas con una seleccionada (resaltada) y la tabla de documentos de esa carpeta]
+![Tarjetas de carpetas con una seleccionada (resaltada) y la tabla de documentos de esa carpeta](./imagenes/captura-02-tarjetas-de-carpetas-con-una-seleccionad.png)
 
 ### Filtrar por fecha
 
@@ -60,7 +60,7 @@ Cuando tienes una carpeta seleccionada, puedes filtrar por rango de fechas:
 3. Se mostraran solo los documentos que coincidan con el texto buscado.
 4. Para quitar la busqueda, haz clic en **Limpiar**.
 
-[CAPTURA: Campo de busqueda con texto escrito y boton Filtrar]
+![Campo de busqueda con texto escrito y boton Filtrar](./imagenes/captura-03-campo-de-busqueda-con-texto-escrito-y-bo.png)
 
 ---
 
@@ -79,7 +79,7 @@ Cuando tienes una carpeta seleccionada, puedes filtrar por rango de fechas:
 3. Haz clic en **Seleccionar archivo** y elige el documento de tu equipo.
 4. Haz clic en **Subir documento**.
 
-[CAPTURA: Formulario de subida con los campos Titulo, Tipo, Descripcion y selector de archivo]
+![Formulario de subida con los campos Titulo, Tipo, Descripcion y selector de archivo](./imagenes/captura-04-formulario-de-subida-con-los-campos-titu.png)
 
 ### Formatos y tamano permitidos
 
@@ -107,7 +107,7 @@ Despues de subir un documento, el sistema lo convierte automaticamente a PDF par
 - Si es un Word, Excel o PowerPoint, el estado sera **Convirtiendo...** durante unos segundos.
 - **No necesitas recargar la pagina.** La pantalla se actualizara automaticamente cuando termine la conversion.
 
-[CAPTURA: Tabla de documentos mostrando un documento en estado "Convirtiendo..." con el icono de rueda girando]
+![Tabla de documentos mostrando un documento en estado "Convirtiendo..." con el icono de rueda girando](./imagenes/captura-05-tabla-de-documentos-mostrando-un-documen.png)
 
 > Si el estado queda en "Error", puedes intentar subir el archivo de nuevo. Si el problema persiste, comprueba que el archivo no esta danado.
 
@@ -125,7 +125,7 @@ Despues de subir un documento, el sistema lo convierte automaticamente a PDF par
    - Usar las herramientas del visor PDF del navegador
 6. Para cerrar el visor, haz clic en el boton **Cerrar** o pulsa la tecla **Escape**.
 
-[CAPTURA: Visor de PDF mostrando un documento dentro de la ventana emergente con el boton Cerrar visible]
+![Visor de PDF mostrando un documento dentro de la ventana emergente con el boton Cerrar visible](./imagenes/captura-06-visor-de-pdf-mostrando-un-documento-dent.png)
 
 > **Nota:** El boton "Ver" solo esta disponible cuando el documento esta en estado "Listo". Si esta "Convirtiendo...", espera a que termine.
 
@@ -139,7 +139,7 @@ Despues de subir un documento, el sistema lo convierte automaticamente a PDF par
 4. Haz clic en **Aceptar**.
 5. El archivo original (en su formato original: docx, xlsx, pdf, etc.) se descargara a tu equipo.
 
-[CAPTURA: Mensaje de confirmacion de descarga con el nombre del archivo]
+![Mensaje de confirmacion de descarga con el nombre del archivo](./imagenes/captura-07-mensaje-de-confirmacion-de-descarga-con.png)
 
 > **Nota:** La descarga siempre es del archivo **original** (no del PDF convertido). Si subiste un Word, descargaras el Word original.
 
@@ -153,7 +153,7 @@ Despues de subir un documento, el sistema lo convierte automaticamente a PDF par
 4. Lee la advertencia: **esta accion es irreversible** (se eliminan tanto el archivo original como el PDF).
 5. Haz clic en **Eliminar** para confirmar, o en **Cancelar** para volver atras.
 
-[CAPTURA: Ventana de confirmacion de eliminacion mostrando el titulo del documento y la advertencia]
+![Ventana de confirmacion de eliminacion mostrando el titulo del documento y la advertencia](./imagenes/captura-08-ventana-de-confirmacion-de-eliminacion-m.png)
 
 > **Importante:** Una vez eliminado, el documento no se puede recuperar. Asegurate de que ya no se necesita antes de eliminarlo.
 

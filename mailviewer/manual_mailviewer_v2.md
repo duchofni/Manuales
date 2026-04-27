@@ -35,7 +35,7 @@ Al entrar en el Visor de Correos verás un formulario de búsqueda con los sigui
 2. Pulsa **Buscar**.
 3. Se mostrarán los resultados agrupados por conversación.
 
-[CAPTURA: Formulario de búsqueda con los 7 campos y los botones Buscar y Limpiar]
+![Formulario de búsqueda con los 7 campos y los botones Buscar y Limpiar](./imagenes/captura-01-formulario-de-busqueda-con-los-7-campos.png)
 
 ### 2.2. Limpiar filtros
 
@@ -54,7 +54,7 @@ Los resultados se muestran como una lista de conversaciones. Cada conversación 
 - **Remitente**, **fecha** y **carpeta**.
 - Enlace para **descargar** el correo en formato EML.
 
-[CAPTURA: Lista de resultados con varias conversaciones, mostrando el badge de conteo y los datos de cada correo]
+![Lista de resultados con varias conversaciones, mostrando el badge de conteo y los datos de cada correo](./imagenes/captura-02-lista-de-resultados-con-varias-conversac.png)
 
 ### 3.1. Ver un hilo de conversación
 
@@ -65,7 +65,7 @@ Si una conversación tiene **varios correos** (badge con número > 1):
 3. Para cada correo verás: remitente, fecha, carpeta y enlace EML.
 4. Pulsa de nuevo el título para cerrar el hilo.
 
-[CAPTURA: Conversación expandida mostrando la lista de correos del hilo]
+![Conversación expandida mostrando la lista de correos del hilo](./imagenes/captura-03-conversacion-expandida-mostrando-la-list.png)
 
 ---
 
@@ -85,7 +85,7 @@ Si una conversación tiene **varios correos** (badge con número > 1):
 
 > **Nota:** Los cuerpos de los correos se cargan bajo demanda para optimizar la velocidad. La primera vez puede tardar un momento.
 
-[CAPTURA: Cuerpo de un correo expandido con el término de búsqueda resaltado en amarillo]
+![Cuerpo de un correo expandido con el término de búsqueda resaltado en amarillo](./imagenes/captura-04-cuerpo-de-un-correo-expandido-con-el-ter.png)
 
 ---
 
@@ -106,7 +106,7 @@ Si una conversación tiene **varios correos** (badge con número > 1):
   - Información de la página actual.
   - Un campo para **ir directamente** a un número de página concreto.
 
-[CAPTURA: Barra de paginación con los botones Anterior, Siguiente y el campo Ir a página]
+![Barra de paginación con los botones Anterior, Siguiente y el campo Ir a página](./imagenes/captura-05-barra-de-paginacion-con-los-botones-ante.png)
 
 ---
 

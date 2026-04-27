@@ -29,7 +29,7 @@ Al entrar en KPIs verás unos botones de período en la parte superior:
 - Por defecto está seleccionada **Semana**.
 - Al cambiar de período, los datos se actualizan automáticamente.
 
-[CAPTURA: Barra superior del dashboard con los botones de período y la etiqueta mostrando el rango de fechas]
+![Barra superior del dashboard con los botones de período y la etiqueta mostrando el rango de fechas](./imagenes/captura-01-barra-superior-del-dashboard-con-los-bot.png)
 
 ### 2.1. Seleccionar fecha concreta
 
@@ -38,7 +38,7 @@ Al entrar en KPIs verás unos botones de período en la parte superior:
 3. Selecciona las fechas deseadas.
 4. Pulsa **Aplicar**.
 
-[CAPTURA: Panel de fechas desplegado con los campos Desde y Hasta y el botón Aplicar]
+![Panel de fechas desplegado con los campos Desde y Hasta y el botón Aplicar](./imagenes/captura-02-panel-de-fechas-desplegado-con-los-campo.png)
 
 ---
 
@@ -96,7 +96,7 @@ Mide cuánto tarda el primer nivel del CGE en actuar.
 | U2       | 90 minutos    |
 | U3       | 180 minutos   |
 
-[CAPTURA: Dashboard completo con los 4 bloques KPI mostrando las gráficas donut y las filas de datos]
+![Dashboard completo con los 4 bloques KPI mostrando las gráficas donut y las filas de datos](./imagenes/captura-03-dashboard-completo-con-los-4-bloques-kpi.png)
 
 ### 3.5. Gráficas
 
@@ -121,7 +121,7 @@ Cada bloque tiene:
    - Enlace para **editar** la incidencia directamente
 4. Pulsa fuera del modal o en la X para cerrarlo.
 
-[CAPTURA: Modal de detalle mostrando la tabla de incidencias fuera de umbral con las columnas descritas]
+![Modal de detalle mostrando la tabla de incidencias fuera de umbral con las columnas descritas](./imagenes/captura-04-modal-de-detalle-mostrando-la-tabla-de-i.png)
 
 ---
 

@@ -30,7 +30,7 @@
 2. En el menu lateral, haz clic en **Correos**.
 3. Aparecera el menu principal con todas las plantillas de correo organizadas por categorias.
 
-[CAPTURA: Menu principal del modulo Correos mostrando las 6 categorias con sus tarjetas]
+![Menu principal del modulo Correos mostrando las 6 categorias con sus tarjetas](./imagenes/captura-01-menu-principal-del-modulo-correos-mostra.png)
 
 > Para volver al menu principal desde cualquier correo, haz clic en el enlace **"Volver a correos"** que aparece en la parte superior.
 
@@ -65,7 +65,7 @@ Este es el flujo mas habitual. Se usa para correos como "Centro incomunicado", "
 4. Selecciona el centro de la lista de sugerencias.
 5. Haz clic en **Buscar** o pulsa Enter.
 
-[CAPTURA: Buscador de centros con sugerencias de autocompletado desplegadas]
+![Buscador de centros con sugerencias de autocompletado desplegadas](./imagenes/captura-02-buscador-de-centros-con-sugerencias-de-a.png)
 
 ### Paso 2 -- Rellenar los campos del correo
 
@@ -75,7 +75,7 @@ Este es el flujo mas habitual. Se usa para correos como "Centro incomunicado", "
 4. Otros son campos de texto libre.
 5. Haz clic en **Generar correo** (o el boton de enviar).
 
-[CAPTURA: Formulario de campos de una plantilla con varios campos rellenos y el boton de generar]
+![Formulario de campos de una plantilla con varios campos rellenos y el boton de generar](./imagenes/captura-03-formulario-de-campos-de-una-plantilla-co.png)
 
 ### Paso 3 -- Copiar la tabla y abrir el correo
 
@@ -89,7 +89,7 @@ Este es el flujo mas habitual. Se usa para correos como "Centro incomunicado", "
 4. Pega la tabla en el cuerpo del correo con **Ctrl+V**.
 5. Revisa el correo y envialo.
 
-[CAPTURA: Resultado del correo generado mostrando la tabla, el boton "Copiar tabla" y el enlace de correo]
+![Resultado del correo generado mostrando la tabla, el boton "Copiar tabla" y el enlace de correo](./imagenes/captura-04-resultado-del-correo-generado-mostrando.png)
 
 > **Importante:** La tabla se copia con formato HTML (bordes, colores de cabecera). Al pegar en el correo se vera como una tabla con formato.
 
@@ -110,7 +110,7 @@ Algunas plantillas (como "Centro incomunicado", "Corte electrico", "Linea datos 
 3. Marca las casillas de las lineas que estan afectadas.
 4. Haz clic en **Continuar** (o en el boton de siguiente paso).
 
-[CAPTURA: Tabla de seleccion de lineas con casillas de verificacion, algunas marcadas]
+![Tabla de seleccion de lineas con casillas de verificacion, algunas marcadas](./imagenes/captura-05-tabla-de-seleccion-de-lineas-con-casilla.png)
 
 ### Paso 3 -- Opciones adicionales
 
@@ -137,7 +137,7 @@ La plantilla de **Incidencia masiva** permite acumular lineas de varios centros 
 1. Al seleccionar "Incidencia masiva", lo primero que pedira es el **numero de incidencia de Telefonica**.
 2. Escribe el numero y pulsa **Continuar**.
 
-[CAPTURA: Formulario pidiendo el numero de incidencia de Telefonica]
+![Formulario pidiendo el numero de incidencia de Telefonica](./imagenes/captura-06-formulario-pidiendo-el-numero-de-inciden.png)
 
 ### Paso 2 -- Anadir centros y lineas
 
@@ -147,7 +147,7 @@ La plantilla de **Incidencia masiva** permite acumular lineas de varios centros 
 4. Haz clic en **Anadir mas centros** para repetir el proceso con otro centro.
 5. Puedes quitar lineas individuales del panel haciendo clic en el boton de eliminar.
 
-[CAPTURA: Panel acumulativo de incidencia masiva mostrando lineas de varios centros con opcion de quitar]
+![Panel acumulativo de incidencia masiva mostrando lineas de varios centros con opcion de quitar](./imagenes/captura-07-panel-acumulativo-de-incidencia-masiva-m.png)
 
 ### Paso 3 -- Generar el correo
 
@@ -177,7 +177,7 @@ Los escalados (Ibercom, CTM Zaragoza, Mesa Nacional) incluyen datos corporativos
 4. La tabla se generara con datos fijos corporativos (Director de Oficina, GST, Jefe de Sector, etc.) junto con los datos del centro y los campos que rellenaste.
 5. Copia la tabla y envia el correo.
 
-[CAPTURA: Tabla de escalado mostrando datos corporativos fijos y campos rellenos por el operador]
+![Tabla de escalado mostrando datos corporativos fijos y campos rellenos por el operador](./imagenes/captura-08-tabla-de-escalado-mostrando-datos-corpor.png)
 
 ---
 
@@ -205,7 +205,7 @@ Las plantillas de la categoria **Varios CGE** funcionan de manera especial:
 3. Rellena la informacion correspondiente.
 4. Copia la tabla con **Copiar tabla** y pega en el correo.
 
-[CAPTURA: Plantilla de cambio de turno mostrando el formato con tablas]
+![Plantilla de cambio de turno mostrando el formato con tablas](./imagenes/captura-09-plantilla-de-cambio-de-turno-mostrando-e.png)
 
 ### Informe Sergas / Informe Telefonica
 
@@ -231,7 +231,7 @@ Muchas plantillas de correo permiten crear automaticamente una incidencia en la 
    - Centro, tipo de incidencia, subtipo, urgencia, ticket, estado, etc.
 5. Seras redirigido al modulo de Mantenimiento (seccion Incidencias) para ver la incidencia creada.
 
-[CAPTURA: Boton "Crear incidencia" activado (azul) despues de copiar la tabla]
+![Boton "Crear incidencia" activado (azul) despues de copiar la tabla](./imagenes/captura-10-boton-crear-incidencia-activado-azul-des.png)
 
 > **Nota:** El sistema verifica automaticamente si ya existe una incidencia activa para el mismo equipo, evitando duplicados.
 

@@ -35,7 +35,7 @@ En la parte superior verás los botones de período:
 3. Selecciona las fechas.
 4. Pulsa **Aplicar**.
 
-[CAPTURA: Panel superior de KPIs Nubodata con los botones de período y el panel de fechas desplegado]
+![Panel superior de KPIs Nubodata con los botones de período y el panel de fechas desplegado](./imagenes/captura-01-panel-superior-de-kpis-nubodata-con-los.png)
 
 ---
 
@@ -62,7 +62,7 @@ El dashboard muestra el **SLA de resolución** Nubodata:
 
 - Una gráfica de barras muestra la **evolución** del cumplimiento a lo largo del período seleccionado.
 
-[CAPTURA: Dashboard de KPIs Nubodata con la gráfica donut, los contadores y la gráfica de tendencia]
+![Dashboard de KPIs Nubodata con la gráfica donut, los contadores y la gráfica de tendencia](./imagenes/captura-02-dashboard-de-kpis-nubodata-con-la-grafic.png)
 
 ---
 
@@ -81,7 +81,7 @@ El dashboard muestra el **SLA de resolución** Nubodata:
    - Enlace para **editar** la incidencia
 4. Cierra el modal pulsando fuera o en la X.
 
-[CAPTURA: Modal de detalle de incidencias Nubodata fuera de umbral]
+![Modal de detalle de incidencias Nubodata fuera de umbral](./imagenes/captura-03-modal-de-detalle-de-incidencias-nubodata.png)
 
 ---
 

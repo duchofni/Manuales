@@ -23,7 +23,7 @@ Al entrar en Grilloweb verás:
 - **INC disponibles**: incidencias activas del equipo a las que aún no estás suscrito.
 - **Mis INC**: incidencias a las que ya estás suscrito.
 
-[CAPTURA: Pantalla principal de Grilloweb mostrando las secciones de INC disponibles y Mis INC]
+![Pantalla principal de Grilloweb mostrando las secciones de INC disponibles y Mis INC](./imagenes/captura-01-pantalla-principal-de-grilloweb-mostrand.png)
 
 ---
 
@@ -40,7 +40,7 @@ Al entrar en Grilloweb verás:
 4. El sistema verificará las credenciales contra Grilloweb.
 5. Si todo es correcto, la INC aparecerá en la sección **Mis INC**.
 
-[CAPTURA: Formulario de nueva suscripción con los campos ID Incidencia, Usuario y Contraseña]
+![Formulario de nueva suscripción con los campos ID Incidencia, Usuario y Contraseña](./imagenes/captura-02-formulario-de-nueva-suscripcion-con-los.png)
 
 > **Nota sobre seguridad:** Las credenciales solo se usan para obtener la cookie de sesión de Grilloweb. No se almacenan en la base de datos.
 
@@ -87,7 +87,7 @@ Cuando el sistema detecta un cambio en una INC (cambio de estado, nueva actuaci�
 
 > **Importante:** Al eliminar una INC, esta desaparece de las listas de **todos los operadores**, no solo de la tuya. Los datos históricos se conservan en la base de datos.
 
-[CAPTURA: Panel de gestión mostrando la lista de INC con el botón Eliminar junto a cada una]
+![Panel de gestión mostrando la lista de INC con el botón Eliminar junto a cada una](./imagenes/captura-03-panel-de-gestion-mostrando-la-lista-de-i.png)
 
 ---
 

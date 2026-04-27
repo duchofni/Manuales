@@ -24,7 +24,7 @@ Al entrar en Nagios verás el **panel principal** con:
 - Una tabla con los equipos que actualmente están **caídos**.
 - Para cada host se muestra: nemónico, IP, tipo de equipo, centro y fecha de caída.
 
-[CAPTURA: Panel principal de Nagios mostrando la tabla de hosts actualmente DOWN]
+![Panel principal de Nagios mostrando la tabla de hosts actualmente DOWN](./imagenes/captura-01-panel-principal-de-nagios-mostrando-la-t.png)
 
 ### 2.2. Qué significa cada estado
 
@@ -43,7 +43,7 @@ Al entrar en Nagios verás el **panel principal** con:
   - Por **texto** (nemónico, centro, etc.)
   - Por **tipo de evento** (DOWN, RECOVERY, ERROR)
 
-[CAPTURA: Log de eventos de Nagios con los filtros de texto y tipo de evento]
+![Log de eventos de Nagios con los filtros de texto y tipo de evento](./imagenes/captura-02-log-de-eventos-de-nagios-con-los-filtros.png)
 
 ### 2.4. Crear incidencias desde hosts DOWN
 
@@ -68,7 +68,7 @@ Desde el menú de Incidencias, pulsa **Planta Nagios** para acceder a la gestió
    - Nemónico, IP, origen (DATOS o VOZ), tipo de línea
    - Administrativo, nodo, centro, horario, modelo
 
-[CAPTURA: Ficha del equipo buscado mostrando todos sus datos]
+![Ficha del equipo buscado mostrando todos sus datos](./imagenes/captura-03-ficha-del-equipo-buscado-mostrando-todos.png)
 
 ### 3.2. Dar de alta un equipo
 
@@ -92,7 +92,7 @@ Si el equipo **no está** dado de alta en Nagios:
 
 5. Nagios se recargará automáticamente para aplicar el cambio.
 
-[CAPTURA: Formulario de alta en Nagios con los campos Alias e IP y el botón Dar de alta]
+![Formulario de alta en Nagios con los campos Alias e IP y el botón Dar de alta](./imagenes/captura-04-formulario-de-alta-en-nagios-con-los-cam.png)
 
 ### 3.3. Dar de baja un equipo
 

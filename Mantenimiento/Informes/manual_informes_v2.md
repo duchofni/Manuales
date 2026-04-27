@@ -23,7 +23,7 @@ Al entrar en Informes verás:
 - **Tarjetas** para cada tipo de informe, con la fecha y hora de corte.
 - **Historial** de archivos generados anteriormente para cada tipo.
 
-[CAPTURA: Panel principal de Informes mostrando las tarjetas de los 5 tipos de informe y el resumen de incidencias]
+![Panel principal de Informes mostrando las tarjetas de los 5 tipos de informe y el resumen de incidencias](./imagenes/captura-01-panel-principal-de-informes-mostrando-la.png)
 
 ---
 
@@ -70,7 +70,7 @@ Al entrar en Informes verás:
 5. Cuando esté listo, aparecerá un **enlace de descarga**.
 6. Pulsa el enlace para descargar el fichero.
 
-[CAPTURA: Tarjeta de un informe mostrando el indicador de progreso y luego el enlace de descarga]
+![Tarjeta de un informe mostrando el indicador de progreso y luego el enlace de descarga](./imagenes/captura-02-tarjeta-de-un-informe-mostrando-el-indic.png)
 
 > **Nota:** El proceso de generación puede tardar unos segundos. No cierres la página mientras se genera.
 
@@ -81,7 +81,7 @@ Al entrar en Informes verás:
 - Debajo de cada tarjeta de informe verás el **historial** de los últimos archivos generados.
 - Pulsa sobre cualquier fichero del historial para descargarlo directamente.
 
-[CAPTURA: Historial de archivos generados debajo de una tarjeta de informe]
+![Historial de archivos generados debajo de una tarjeta de informe](./imagenes/captura-03-historial-de-archivos-generados-debajo-d.png)
 
 ---
 

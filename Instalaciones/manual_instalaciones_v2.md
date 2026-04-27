@@ -27,7 +27,7 @@
 3. Aparecera la pestana LOGOS por defecto.
 4. Usa las **pestanas** de la parte superior para cambiar entre LOGOS, BJ, ATLAS, Calendario y Proyectos.
 
-[CAPTURA: Pantalla principal del modulo Instalaciones con las 5 pestanas visibles]
+![Pantalla principal del modulo Instalaciones con las 5 pestanas visibles](./imagenes/captura-01-pantalla-principal-del-modulo-instalacio.png)
 
 ---
 
@@ -40,7 +40,7 @@ La pantalla se divide en dos paneles:
 - **Panel izquierdo (sidebar):** Lista de tarjetas con las instalaciones activas
 - **Panel derecho (detalle):** Informacion completa de la instalacion seleccionada
 
-[CAPTURA: Vista split de LOGOS con sidebar de tarjetas a la izquierda y panel de detalle a la derecha]
+![Vista split de LOGOS con sidebar de tarjetas a la izquierda y panel de detalle a la derecha](./imagenes/captura-02-vista-split-de-logos-con-sidebar-de-tarj.png)
 
 #### Buscar una instalacion
 
@@ -81,7 +81,7 @@ El panel de detalle se divide en secciones:
 2. Haz clic en **Guardar cambios**.
 3. Si marcas "Realizada", se registrara automaticamente la fecha de realizacion.
 
-[CAPTURA: Seccion Gestion CGE con el campo de fecha concertada relleno y el boton Guardar]
+![Seccion Gestion CGE con el campo de fecha concertada relleno y el boton Guardar](./imagenes/captura-03-seccion-gestion-cge-con-el-campo-de-fech.png)
 
 ### 2.2 Importar CSV de LOGOS
 
@@ -95,7 +95,7 @@ El panel de detalle se divide en secciones:
    - Registros desaparecidos (ya no estan en el CSV)
    - Errores (si los hay)
 
-[CAPTURA: Ventana de importacion CSV con el selector de archivo y el boton Importar]
+![Ventana de importacion CSV con el selector de archivo y el boton Importar](./imagenes/captura-04-ventana-de-importacion-csv-con-el-select.png)
 
 ### 2.3 Actualizar desde Indico
 
@@ -105,7 +105,7 @@ El panel de detalle se divide en secciones:
 4. Haz clic en **Actualizar**.
 5. El sistema descargara los datos actualizados de Indico y los cruzara con los registros LOGOS.
 
-[CAPTURA: Ventana de actualizacion Indico con campos de usuario y contrasena]
+![Ventana de actualizacion Indico con campos de usuario y contrasena](./imagenes/captura-05-ventana-de-actualizacion-indico-con-camp.png)
 
 > **Nota:** Las credenciales de Indico no se guardan en el sistema; solo se usan para esa descarga puntual.
 
@@ -117,7 +117,7 @@ El panel de detalle se divide en secciones:
 4. Navega por las paginas (50 registros por pagina).
 5. Haz clic en **Exportar CSV** para descargar el historico.
 
-[CAPTURA: Vista de historico con tabla paginada y boton de exportar CSV]
+![Vista de historico con tabla paginada y boton de exportar CSV](./imagenes/captura-06-vista-de-historico-con-tabla-paginada-y.png)
 
 ---
 
@@ -156,7 +156,7 @@ Cada tarjeta muestra: numero de pedido, centro, MIDAS, BJ y area sanitaria.
 3. Marca **Finalizado** cuando el pedido este completado.
 4. Haz clic en **Guardar**.
 
-[CAPTURA: Detalle de un pedido BJ con los campos editables y el boton Guardar]
+![Detalle de un pedido BJ con los campos editables y el boton Guardar](./imagenes/captura-07-detalle-de-un-pedido-bj-con-los-campos-e.png)
 
 ### 3.2 Crear un nuevo pedido BJ
 
@@ -166,7 +166,7 @@ Cada tarjeta muestra: numero de pedido, centro, MIDAS, BJ y area sanitaria.
 4. Rellena los campos: pedido, MIDAS, BJ, area sanitaria, motivo, empresa, fechas, observaciones.
 5. Haz clic en **Crear**.
 
-[CAPTURA: Formulario de nuevo pedido BJ con campos vacios y el boton Crear]
+![Formulario de nuevo pedido BJ con campos vacios y el boton Crear](./imagenes/captura-08-formulario-de-nuevo-pedido-bj-con-campos.png)
 
 ### 3.3 Ver las tuberias BJ
 
@@ -216,7 +216,7 @@ Las tarjetas muestran: orden Atlas, tipo de orden, badges de estado.
 2. Si necesitas cambiar el **administrativo**, escribe el nuevo numero y al guardar se recalculara automaticamente el centro asociado.
 3. Haz clic en **Guardar**.
 
-[CAPTURA: Detalle de una orden ATLAS con los campos editables]
+![Detalle de una orden ATLAS con los campos editables](./imagenes/captura-09-detalle-de-una-orden-atlas-con-los-campo.png)
 
 ### 4.2 Importar CSV(s) de ATLAS
 
@@ -226,7 +226,7 @@ Las tarjetas muestran: orden Atlas, tipo de orden, badges de estado.
 4. Haz clic en **Importar**.
 5. El sistema procesara los archivos, cruzara datos con LOGOS y con la BDU, y mostrara un resumen.
 
-[CAPTURA: Ventana de importacion de CSV de ATLAS con seleccion multiple de archivos]
+![Ventana de importacion de CSV de ATLAS con seleccion multiple de archivos](./imagenes/captura-10-ventana-de-importacion-de-csv-de-atlas-c.png)
 
 ### 4.3 Vista de historico ATLAS
 
@@ -250,7 +250,7 @@ El calendario muestra las **instalaciones programadas** (con fecha concertada) d
 4. Si un dia tiene muchos eventos, aparecera un boton **"+N mas"** para ver todos.
 5. Pasa el raton por encima de un evento para ver un **tooltip** con los detalles (centro, orden, proyecto, responsable, observaciones).
 
-[CAPTURA: Calendario en vista mensual con eventos de colores y tooltip visible]
+![Calendario en vista mensual con eventos de colores y tooltip visible](./imagenes/captura-11-calendario-en-vista-mensual-con-eventos.png)
 
 ### 5.2 Vista semanal
 
@@ -258,7 +258,7 @@ El calendario muestra las **instalaciones programadas** (con fecha concertada) d
 2. Se mostrara una tabla con las columnas: Fecha, Hora, Modulo, Orden, Centro, Proyecto, Responsable.
 3. Los eventos aparecen ordenados cronologicamente.
 
-[CAPTURA: Calendario en vista semanal mostrando la tabla con eventos]
+![Calendario en vista semanal mostrando la tabla con eventos](./imagenes/captura-12-calendario-en-vista-semanal-mostrando-la.png)
 
 ### 5.3 Navegar entre periodos
 
@@ -276,7 +276,7 @@ El calendario muestra las **instalaciones programadas** (con fecha concertada) d
    - **Imprimir/PDF** -- Abre el dialogo de impresion del navegador (puedes guardar como PDF)
    - **Cerrar** -- Cierra la ventana
 
-[CAPTURA: Ventana de exportacion semanal con la tabla y los botones Copiar, Imprimir y Cerrar]
+![Ventana de exportacion semanal con la tabla y los botones Copiar, Imprimir y Cerrar](./imagenes/captura-13-ventana-de-exportacion-semanal-con-la-ta.png)
 
 ---
 
@@ -302,9 +302,9 @@ Para cada proyecto puedes:
 3. **Ver estadisticas** -- Haz clic en el boton de estadisticas para ver graficos de progreso (donuts y barras).
 4. **Exportar** -- Descarga los datos en formato CSV.
 
-[CAPTURA: Tabla de un proyecto con filtros y boton de estadisticas]
+![Tabla de un proyecto con filtros y boton de estadisticas](./imagenes/captura-14-tabla-de-un-proyecto-con-filtros-y-boton.png)
 
-[CAPTURA: Pantalla de estadisticas con graficos donut y barras de progreso]
+![Pantalla de estadisticas con graficos donut y barras de progreso](./imagenes/captura-15-pantalla-de-estadisticas-con-graficos-do.png)
 
 ### 6.2 Tensiometros (proyecto activo -- editable)
 
@@ -320,7 +320,7 @@ Este es el unico proyecto activo que permite edicion directa en la tabla.
    - Pendientes
    - Porcentaje de avance
 
-[CAPTURA: Barra de progreso de tensiometros mostrando el porcentaje completado]
+![Barra de progreso de tensiometros mostrando el porcentaje completado](./imagenes/captura-16-barra-de-progreso-de-tensiometros-mostra.png)
 
 #### Filtrar la tabla
 
@@ -350,7 +350,7 @@ Cada fila de la tabla tiene campos editables:
 2. Haz clic en el boton **Guardar** de esa fila.
 3. Los contadores de la barra de progreso se actualizaran automaticamente.
 
-[CAPTURA: Fila de la tabla de tensiometros con campos editables y boton Guardar]
+![Fila de la tabla de tensiometros con campos editables y boton Guardar](./imagenes/captura-17-fila-de-la-tabla-de-tensiometros-con-cam.png)
 
 > **Nota:** Un centro se considera "realizado" cuando tiene marcado Instalado (DCT) **y** tiene rellenos los campos N. Largo, N. Corto e ICC.
 
@@ -363,7 +363,7 @@ Cada fila de la tabla tiene campos editables:
    - Distribucion por provincia (proporcional)
    - Distribucion por tipo de sede
 
-[CAPTURA: Estadisticas de tensiometros con graficos de progreso por semana y por provincia]
+![Estadisticas de tensiometros con graficos de progreso por semana y por provincia](./imagenes/captura-18-estadisticas-de-tensiometros-con-grafico.png)
 
 ---
 
