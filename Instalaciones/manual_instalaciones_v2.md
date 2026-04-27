@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Módulo**  | Instalaciones                  |
-| **Versión** | 1.5                            |
+| **Versión** | 1.6                            |
 | **Fecha**   | Abril 2026                     |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -11,7 +11,7 @@
 
 ## Indice
 
-1. [Acceder al módulo Instalaciones](#1-acceder-al-modulo-instalaciones)
+1. [Acceder al módulo Instalaciones](#1-acceder-al-módulo-instalaciones)
 2. [Pestana LOGOS (instalaciones de datos)](#2-pestana-logos-instalaciones-de-datos)
 3. [Pestana BJ (instalaciones de voz)](#3-pestana-bj-instalaciones-de-voz)
 4. [Pestana ATLAS (ordenes de acceso)](#4-pestana-atlas-ordenes-de-acceso)
@@ -25,7 +25,7 @@
 1. Abre la aplicación Web BDU en tu navegador.
 2. En el menu lateral, haz clic en **Instalaciones**.
 3. Aparecerá la pestana LOGOS por defecto.
-4. Usa las **pestanas** de la parte superior para cambiar entre LOGOS, BJ, ATLAS, Calendario y Proyectos.
+4. Usa las **pestañas** de la parte superior para cambiar entre LOGOS, BJ, ATLAS, Calendario y Proyectos.
 
 ![Pantalla principal del módulo Instalaciones con las 5 pestanas visibles](./imagenes/captura-01-pantalla-principal-del-modulo-instalacio.png)
 
@@ -63,7 +63,7 @@ Cada tarjeta muestra:
 
 El panel de detalle se divide en secciones:
 
-| Seccion             | Contenido                                                  |
+| Sección             | Contenido                                                  |
 |---------------------|-------------------------------------------------------------|
 | **Cabecera**        | ID SGC, fecha de importacion, NRI, orden Atlas, badges      |
 | **Centro -- BDU**   | Nombre del centro y su horario (datos automaticos de la BDU)|
@@ -73,7 +73,7 @@ El panel de detalle se divide en secciones:
 
 #### Editar los campos de Gestión CGE
 
-1. En la seccion **Gestión CGE** del detalle:
+1. En la sección **Gestión CGE** del detalle:
    - **Proyecto** -- Selecciona de la lista desplegable
    - **Fecha concertada** -- Haz clic en el campo; se rellenara automáticamente con la fecha y hora actual (puedes modificarla)
    - **Observaciones** -- Escribe texto libre
@@ -109,10 +109,10 @@ El panel de detalle se divide en secciones:
 
 > **Nota:** Las credenciales de Indico no se guardan en el sistema; solo se usan para esa descarga puntual.
 
-### 2.4 Vista de historico
+### 2.4 Vista de histórico
 
-1. Cambia a la vista **Historico** (boton en la sidebar).
-2. Se mostrara una tabla paginada con todas las instalaciones (activas e historicas).
+1. Cambia a la vista **Histórico** (boton en la sidebar).
+2. Se mostrara una tabla paginada con todas las instalaciones finalizadas.
 3. Usa el buscador para filtrar por ID SGC, poblacion, provincia, administrativo, etc.
 4. Navega por las paginas (50 registros por pagina).
 5. Haz clic en **Exportar CSV** para descargar el historico.
@@ -140,7 +140,7 @@ Cada tarjeta muestra: número de pedido, centro, MIDAS, BJ y area sanitaria.
 1. Haz clic en una tarjeta para ver el detalle.
 2. El detalle incluye:
 
-| Seccion          | Contenido                                                  |
+| Sección          | Contenido                                                  |
 |------------------|-------------------------------------------------------------|
 | **Cabecera**     | Número de pedido, badges (Finalizado, Cita, Activo, En tuberias) |
 | **Centro -- BDU**| Centro con autocompletado, horario y centralita automaticos  |
@@ -152,7 +152,7 @@ Cada tarjeta muestra: número de pedido, centro, MIDAS, BJ y area sanitaria.
 #### Editar campos
 
 1. Modifica los campos que necesites (fechas, observaciones, etc.).
-2. Para las fechas: haz clic en el campo vacio y se rellenara con la fecha actual.
+2. Para las fechas: haz clic en el campo vacío y se rellenará con la fecha actual.
 3. Marca **Finalizado** cuando el pedido este completado.
 4. Haz clic en **Guardar**.
 
@@ -188,7 +188,7 @@ Cada tarjeta muestra: número de pedido, centro, MIDAS, BJ y area sanitaria.
 
 1. Cambia a la vista **Historico**.
 2. Tabla paginada con busqueda por pedido, MIDAS, BJ, centro, area, motivo, empresa.
-3. Exportacion CSV disponible.
+3. Exportación CSV disponible.
 
 ---
 
@@ -202,7 +202,7 @@ Las tarjetas muestran: orden Atlas, tipo de orden, badges de estado.
 
 #### Ver el detalle de una orden
 
-| Seccion          | Contenido                                                     |
+| Sección          | Contenido                                                     |
 |------------------|----------------------------------------------------------------|
 | **Cabecera**     | Orden Atlas, badges (Realizada, estado, ID SGC si hay)        |
 | **Centro -- BDU**| Administrativo editable; al guardar, el centro se recalcula    |
@@ -221,21 +221,21 @@ Las tarjetas muestran: orden Atlas, tipo de orden, badges de estado.
 ### 4.2 Importar CSV(s) de ATLAS
 
 1. Haz clic en el boton **Importar CSV(s)**.
-2. Se abrira una ventana de seleccion de archivos.
+2. Se abrira una ventana de selección de archivos.
 3. Puedes seleccionar **uno o varios archivos** a la vez (formatos: .xls, .csv, .htm, .html).
 4. Haz clic en **Importar**.
 5. El sistema procesara los archivos, cruzara datos con LOGOS y con la BDU, y mostrara un resumen.
 
 ![Ventana de importacion de CSV de ATLAS con seleccion múltiple de archivos](./imagenes/captura-10-ventana-de-importacion-de-csv-de-atlas-c.png)
 
-### 4.3 Vista de historico ATLAS
+### 4.3 Vista de histórico ATLAS
 
 1. Cambia a la vista **Historico**.
-2. Tabla paginada con busqueda y exportacion CSV.
+2. Tabla paginada con busqueda y exportación CSV.
 
 ---
 
-## 5. Pestana Calendario
+## 5. Pestaña Calendario
 
 El calendario muestra las **instalaciones programadas** (con fecha concertada) de los tres módulos (LOGOS, BJ, ATLAS) en una única vista.
 
@@ -282,7 +282,7 @@ El calendario muestra las **instalaciones programadas** (con fecha concertada) d
 
 ## 6. Pestana Proyectos
 
-La pestana Proyectos muestra los proyectos de despliegue del SERGAS. Al hacer clic aparece una pantalla de seleccion con tarjetas de proyectos.
+La pestana Proyectos muestra los proyectos de despliegue del SERGAS. Al hacer clic aparece una pantalla de selección con tarjetas de proyectos.
 
 ### 6.1 Proyectos finalizados (solo consulta)
 
@@ -290,10 +290,10 @@ Estos proyectos ya están completados y se pueden consultar pero no editar:
 
 | Proyecto                              | Descripción                              |
 |---------------------------------------|------------------------------------------|
-| **FlexWAN 2024-2027**                 | 206 centros, migracion FlexWAN           |
+| **FlexWAN 2024-2027**                 | 206 centros, migración FlexWAN           |
 | **Upgrades Sedes 2024-2027**          | 349 sedes, actualización de equipos      |
 | **Upgrades Sedes Criticas 2024-2027** | 30 sedes criticas                        |
-| **Renovacion Terminales ALE20**       | 250 centros, 1.703 extensiones           |
+| **Renovación Terminales ALE20**       | 250 centros, 1.703 extensiones           |
 
 Para cada proyecto puedes:
 
@@ -325,7 +325,7 @@ Este es el único proyecto activo que permite edición directa en la tabla.
 #### Filtrar la tabla
 
 Usa los filtros de la parte superior:
-- **Busqueda** -- Por nombre de centro, area sanitaria o GDIA
+- **Búsqueda** -- Por nombre de centro, area sanitaria o GDIA
 - **Provincia** -- Selecciona una provincia
 - **Estado** -- Realizado o Pendiente
 
@@ -356,12 +356,12 @@ Cada fila de la tabla tiene campos editables:
 
 #### Ver estadisticas de tensiometros
 
-1. Haz clic en el boton de **estadisticas**.
+1. Haz clic en el boton de **estadísticas**.
 2. Se mostraran gráficos con:
    - Progreso por semana
    - Progreso por mes
-   - Distribucion por provincia (proporcional)
-   - Distribucion por tipo de sede
+   - Distribución por provincia (proporcional)
+   - Distribución por tipo de sede
 
 ![Estadisticas de tensiometros con gráficos de progreso por semana y por provincia](./imagenes/captura-18-estadisticas-de-tensiometros-con-grafico.png)
 
@@ -369,7 +369,7 @@ Cada fila de la tabla tiene campos editables:
 
 ## Resumen rápido
 
-| Accion                              | Como hacerlo                                          |
+| Acción                              | Como hacerlo                                          |
 |-------------------------------------|-------------------------------------------------------|
 | Buscar instalación (LOGOS/BJ/ATLAS) | Escribir en el buscador de la sidebar                  |
 | Ver detalle                         | Clic en la tarjeta de la sidebar                       |
@@ -390,4 +390,4 @@ Cada fila de la tabla tiene campos editables:
 
 ---
 
-*Fin del manual -- Módulo Instalaciones v1.5*
+*Fin del manual -- Módulo Instalaciones v1.6*
