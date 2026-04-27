@@ -4,7 +4,7 @@
 |-------------|--------------------------------|
 | **Módulo**  | Logos BJ -- Proyectos          |
 | **Proyecto**| Unificacion FILTRO_LAN_SEDE    |
-| **Versión** | 1.0                            |
+| **Versión** | 1.6                            |
 | **Fecha**   | Abril 2026                     |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -18,7 +18,7 @@
 4. [Filtrar la tabla](#4-filtrar-la-tabla)
 5. [Ejecutar el comparador en un centro](#5-ejecutar-el-comparador-en-un-centro)
 6. [Interpretar el informe](#6-interpretar-el-informe)
-7. [Aplicar el estándar al router y cerrar el centro](#7-aplicar-el-estandar-al-router-y-cerrar-el-centro)
+7. [Aplicar el estándar al router y cerrar el centro](#7-aplicar-el-estándar-al-router-y-cerrar-el-centro)
 8. [Re-ejecutar un centro](#8-re-ejecutar-un-centro)
 9. [Exportar a Excel](#9-exportar-a-excel)
 10. [Exportar a ZIP](#10-exportar-a-zip)
@@ -33,7 +33,7 @@ Todos los routers de los centros SERGAS tienen una **lista de control de
 acceso** llamada `FILTRO_LAN_SEDE`. Esa lista decide que tráfico se permite
 salir de la red del centro hacia el exterior.
 
-Con los anos, esa lista se ha ido ensuciando: cada centro tiene la suya con
+Con los años, esa lista se ha ido ensuciando: cada centro tiene la suya con
 entradas viejas, repetidas u obsoletas. El objetivo del proyecto es **dejar
 todos los centros con la misma lista limpia y estandarizada**, más un pequeño
 bloque propio del centro cuando haga falta.
@@ -52,10 +52,10 @@ Hay **346 centros** en el proyecto.
 ## 2. Acceder al proyecto
 
 1. Abre la aplicación **Web BDU** en tu navegador.
-2. En el menu lateral, haz clic en **Logos BJ**.
+2. En el menu superior, haz clic en **Instalaciones**.
 3. En la parte superior, abre la pestana **Proyectos**.
 4. En la categoría **Mantenimiento**, haz clic en la tarjeta
-   **Unificacion FILTRO_LAN_SEDE**.
+   **Unificación FILTRO_LAN_SEDE**.
 
 ![Pantalla de Proyectos con las dos categorías (Provision y Mantenimiento) y la tarjeta de Unificacion ACLs marcada](./imagenes/captura-01-pantalla-de-proyectos-con-las-dos-catego.png)
 
@@ -105,9 +105,9 @@ Una fila por centro. Las columnas son:
 | Columna | Que muestra |
 |---------|-------------|
 | **Centro** | Nombre del centro. |
-| **Area Sanitaria** | A que AS pertenece (Santiago, Coruna...). |
+| **Area Sanitaria** | A que AS pertenece (Santiago, Coruña...). |
 | **Tipo sede** | Categoría de la sede (CS, PAC, Hospital...). |
-| **Nemonico** | Identificador corto del router. |
+| **Nemonico** | Identificador del router. |
 | **Router** | Teldat o Cisco. Vacio si aun no se ha ejecutado. |
 | **ACEs** | Número total de entradas en la ACL del centro. |
 | **OK** | Cuantas están ya cubiertas por el estandar. |
@@ -230,8 +230,7 @@ Y arriba en la cabecera del visor:
 
 ## 7. Aplicar el estándar al router y cerrar el centro
 
-El paso de aplicar la ACL al router lo hace el **técnico de campo o de
-intervencion** (tipicamente fuera de la aplicación). Una vez aplicado:
+El paso de aplicar la ACL al router lo hace el **técnico N1 deL CGE**. Una vez aplicado:
 
 ### 7.1 Cerrar un centro individual
 
@@ -338,11 +337,11 @@ técnico responsable o usa el modo manual pegando el `show run` del router.
 - Comprueba en el detalle del centro (módulo Centros) que tiene **Area
   Sanitaria** asignada.
 - Si no esta dado de alta en el proyecto, avisa al administrador para que
-  lo anada a la lista.
+  lo añada a la lista.
 
 ### El comparador me marca como ELIMINAR una entrada que el cliente quiere conservar
 La entrada esta en la whitelist `aces_permitidas_eliminar.txt`. Si el cliente
-discrepa, comunicalo para que se revise el contenido de la whitelist y, si
+discrepa, comunícalo para que se revise el contenido de la whitelist y, si
 procede, se quite esa linea.
 
 ### Una entrada SAMBA aparece como CUBIERTA pero al aplicar el estándar se rompe el tráfico
@@ -374,4 +373,4 @@ Comunicalo para actualizar los catalogos.
 ## Soporte
 
 Cualquier incidencia o sugerencia, abrelo en el sistema de tickets habitual
-o contacta con el equipo del CGE SERGAS.
+o contacta con el Administrador de la aplicación.
