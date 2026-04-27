@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Módulo**  | Consultas                      |
-| **Versión** | 1.5                            |
+| **Versión** | 1.6                            |
 | **Fecha**   | Abril 2026                     |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -17,7 +17,8 @@
 4. [Ordenar columnas](#4-ordenar-columnas)
 5. [Navegar por las paginas](#5-navegar-por-las-paginas)
 6. [Exportar datos (CSV, PDF, Excel)](#6-exportar-datos-csv-pdf-excel)
-7. [Control de Cambios](#7-control-de-cambios)
+7. [Ver estadísticas de una consulta](#7-ver-estadisticas-de-una-consulta)
+8. [Control de Cambios](#8-control-de-cambios)
 
 ---
 
@@ -129,23 +130,56 @@ Puedes exportar los datos de cualquier consulta en tres formatos:
 
 ### Particularidad de la consulta Diversificacion
 
-En la exportacion a Excel de esta consulta, los centros se agrupan visualmente por colores según su estado de diversificacion:
+En la exportacion a Excel de esta consulta cada centro aparece en una sola fila, con la columna **Diversificacion** coloreada según su estado:
 
-| Estado                  | Color de fondo |
-|-------------------------|----------------|
-| Diversificado Total     | Verde          |
-| Diversificado Acceso    | Azul           |
-| Diversificado Parcial   | Amarillo       |
-| No Diversificado        | Rojo           |
-| Faltan Datos            | Gris           |
+| Estado                                       | Color de fondo  |
+|----------------------------------------------|-----------------|
+| Div. TOTAL (central)                         | Verde oscuro    |
+| Div. TOTAL (equipo central)                  | Verde claro     |
+| Div. PARCIAL (central)                       | Azul oscuro     |
+| Div. PARCIAL (equipo central)                | Azul claro      |
+| Div. PARCIAL (equipo central + tecnología)   | Naranja         |
+| Div. PARCIAL (Tarjeta)                       | Amarillo        |
+| Div. PARCIAL (Tarjeta + tecnología)          | Naranja oscuro  |
+| Div. PARCIAL (EDC)                           | Gris            |
+| No diversificado                             | Rojo            |
 
 ---
 
-## 7. Control de Cambios
+## 7. Ver estadísticas de una consulta
+
+Casi todas las consultas (todas salvo **Control de Cambios**) tienen una vista de estadísticas con KPIs y gráficos resumen.
+
+1. Abre la consulta que te interese.
+2. En la barra de herramientas, a la derecha de los botones de exportación, haz clic en **📊 Estadísticas**.
+3. Se cargara una pagina con:
+   - **KPIs** en la cabecera (totales, distintos, etc., depende de la consulta).
+   - **Donut + barras** por categoría: por tipo, por provincia, por modelo, por nodo, etc., según la consulta.
+4. Para volver a la tabla, haz clic en **← Volver a tabla** (arriba a la derecha).
+
+![Botón "📊 Estadísticas" en la barra de herramientas](./imagenes/captura-12-boton-estadisticas-en-la-barra-de-herramientas.png)
+
+![Vista de estadísticas con KPIs, donut y barras](./imagenes/captura-13-vista-de-estadisticas-con-kpis-y-graficos.png)
+
+> **Nota:** El botón solo aparece si la consulta tiene estadísticas disponibles. En **Control de Cambios** no aparece.
+
+### Particularidad de Diversificacion
+
+Las estadísticas de Diversificacion incluyen además:
+
+- **5 KPIs**: Centros totales, Diversificados, PARCIAL (Tarjeta), No diversificados, % Diversificación.
+- **Leyenda con los 9 estados** y sus colores (los mismos que se usan en la tabla y en el Excel).
+- **Barras apiladas** por TipoCentro y por Provincia, donde cada segmento de la barra representa un estado de diversificación.
+
+![Estadísticas de Diversificacion: KPIs, leyenda con 9 estados y barras apiladas](./imagenes/captura-14-estadisticas-de-diversificacion-con-leyenda-9-estados.png)
+
+---
+
+## 8. Control de Cambios
 
 La consulta **Control de Cambios** tiene funcionalidades adicionales de edicion. Se utiliza para registrar cambios e incidencias y hacer seguimiento de su solucion.
 
-### 7.1 Ver el registro de cambios (modo lectura)
+### 8.1 Ver el registro de cambios (modo lectura)
 
 1. Selecciona **Control de Cambios** en el menu de consultas.
 2. Veras una tabla con las columnas:
@@ -159,7 +193,7 @@ La consulta **Control de Cambios** tiene funcionalidades adicionales de edicion.
 
 ![Tabla de Control de Cambios en modo lectura con las columnas visibles](./imagenes/captura-08-tabla-de-control-de-cambios-en-modo-lect.png)
 
-### 7.2 Activar el modo editor
+### 8.2 Activar el modo editor
 
 Para poder editar la solucion o marcar como corregido, necesitas activar el modo editor:
 
@@ -172,7 +206,7 @@ Para poder editar la solucion o marcar como corregido, necesitas activar el modo
 
 > **Importante:** Si introduces la contraseña incorrecta 3 veces, el acceso se bloqueara durante unos minutos.
 
-### 7.3 Editar la solucion de un registro
+### 8.3 Editar la solucion de un registro
 
 1. Con el modo editor activo, haz clic en la celda de la columna **Solucion** del registro que quieras editar.
    - Si esta vacia, mostrara "Clic para anadir..." con un icono de lapiz.
@@ -182,7 +216,7 @@ Para poder editar la solucion o marcar como corregido, necesitas activar el modo
 
 ![Celda de solucion en modo edición con el area de texto abierta y los botones Guardar/Cancelar](./imagenes/captura-10-celda-de-solucion-en-modo-edicion-con-el.png)
 
-### 7.4 Marcar un registro como corregido
+### 8.4 Marcar un registro como corregido
 
 1. Con el modo editor activo, haz clic en la etiqueta **No** (roja) de la columna **Corregido**.
 2. La etiqueta cambiara automáticamente a **Si** (verde).
@@ -191,7 +225,7 @@ Para poder editar la solucion o marcar como corregido, necesitas activar el modo
 
 ![Columna Corregido mostrando la etiqueta cambiando de No (rojo) a Si (verde)](./imagenes/captura-11-columna-corregido-mostrando-la-etiqueta.png)
 
-### 7.5 Desactivar el modo editor
+### 8.5 Desactivar el modo editor
 
 1. Haz clic en el boton **Desactivar edición** en la barra de herramientas.
 2. La pagina se recargara en modo lectura.
@@ -208,9 +242,10 @@ Para poder editar la solucion o marcar como corregido, necesitas activar el modo
 | Ordenar por columna             | Clic en la cabecera de la columna                   |
 | Cambiar de pagina               | Botones del paginador                               |
 | Exportar datos                  | Botones CSV, PDF o Excel                            |
+| Ver estadísticas                | Botón **📊 Estadísticas** en la barra de herramientas |
 | Editar solucion                 | Activar editor + clic en celda Solucion             |
 | Marcar como corregido           | Activar editor + clic en etiqueta No/Si             |
 
 ---
 
-*Fin del manual -- Módulo Consultas v1.5*
+*Fin del manual -- Módulo Consultas v1.6*
