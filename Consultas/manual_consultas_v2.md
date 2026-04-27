@@ -11,13 +11,13 @@
 
 ## Indice
 
-1. [Acceder al módulo Consultas](#1-acceder-al-modulo-consultas)
+1. [Acceder al módulo Consultas](#1-acceder-al-módulo-consultas)
 2. [Seleccionar una consulta](#2-seleccionar-una-consulta)
 3. [Usar el buscador](#3-usar-el-buscador)
 4. [Ordenar columnas](#4-ordenar-columnas)
 5. [Navegar por las paginas](#5-navegar-por-las-paginas)
 6. [Exportar datos (CSV, PDF, Excel)](#6-exportar-datos-csv-pdf-excel)
-7. [Ver estadísticas de una consulta](#7-ver-estadisticas-de-una-consulta)
+7. [Ver estadísticas de una consulta](#7-ver-estadísticas-de-una-consulta)
 8. [Control de Cambios](#8-control-de-cambios)
 
 ---
