@@ -328,15 +328,6 @@ Dashboard analitico de **volumen y tendencias** de incidencias cerradas (no SLA)
 #### Grilloweb
 Gestión de suscripciones a alertas Grilloweb.
 
-#### Plantillas
-Generador de configuraciones de router (Cisco y Teldat) desde formularios web. Sustituye los antiguos Excel con macros y los programas Python heredados. Cuatro submodulos:
-- **Completa**: configuración completa de un router Teldat para un centro nuevo (la plantilla se elige automáticamente según sede y rol).
-- **Modificaciones**: alta de una VLAN nueva en Cisco o Teldat (incluye sede `FLEXWAN` en Teldat).
-- **Traductor**: traducir ACLs Cisco ⇄ Teldat, renumerar entries Teldat, habilitar/deshabilitar ACLs en interfaces.
-- **Migracion red 69→10**: **TEMPORAL.** Genera los 3 bloques de comandos (Preparativos / Migracion / Eliminacion) para migrar el direccionamiento del cliente.
-
-Cada configuración generada se guarda automáticamente en `/mnt/centros/plantillas/<nemonico>/` para auditoria.
-
 > **Nota:** El acceso a los módulos de KPIs (Inelcom, Nubodata, CGE) esta restringido a determinados usuarios según su grupo en el directorio.
 
 ![Panel de Mantenimiento con las tarjetas desplegables](./imagenes/captura-11-panel-de-mantenimiento-con-las-tarjetas.png)
@@ -404,6 +395,18 @@ El módulo Mailviewer permite buscar y consultar los correos almacenados en el b
 ![Vista de Mailviewer con resultados de busqueda y un correo abierto](./imagenes/captura-14-vista-de-mailviewer-con-resultados-de-bu.png)
 
 > **Manual detallado:** `mailviewer/manual_mailviewer.md`
+
+### 3.12 Plantillas
+
+**Generador de configuraciones de router (Cisco y Teldat) desde formularios web.** 
+
+Sustituye los antiguos Excel con macros y los programas Python heredados. Cuatro submodulos:
+- **Completa**: configuración completa de un router Teldat para un centro nuevo (la plantilla se elige automáticamente según sede y rol).
+- **Modificaciones**: alta de una VLAN nueva en Cisco o Teldat (incluye sede `FLEXWAN` en Teldat).
+- **Traductor**: traducir ACLs Cisco ⇄ Teldat, renumerar entries Teldat, habilitar/deshabilitar ACLs en interfaces.
+- **Migracion red 69→10**: **TEMPORAL.** Genera los 3 bloques de comandos (Preparativos / Migracion / Eliminacion) para migrar el direccionamiento del cliente.
+
+Cada configuración generada se guarda automáticamente en `/mnt/centros/plantillas/<nemonico>/` para auditoria.
 
 ---
 

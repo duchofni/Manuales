@@ -11,7 +11,7 @@
 
 ## 1. Descripción general
 
-El módulo BTPs permite gestionar los **Boletines de Trabajo Planificado** de Telefónica: importarlos desde Excel, consultarlos por estado o por número, crear BTPs manuales, y controlar cuáles están pendientes de informar al cliente.
+El módulo BTPs permite gestionar los **Boletines de Trabajo Programados** een la red de Telefónica: importarlos desde Excels, consultarlos por estado o por número, crear BTPs manuales, y controlar cuáles están pendientes de informar al cliente.
 
 ---
 
