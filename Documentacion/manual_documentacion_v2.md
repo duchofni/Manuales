@@ -109,7 +109,7 @@ Después de subir un documento, el sistema lo convierte automáticamente a PDF p
 
 ![Tabla de documentos mostrando un documento en estado "Convirtiendo..." con el icono de rueda girando](./imagenes/captura-05-tabla-de-documentos-mostrando-un-documen.png)
 
-> Si el estado queda en "Error", puedes intentar subir el archivo de nuevo. Si el problema persiste, comprueba que el archivo no esta danado.
+> Si el estado queda en "Error", puedes intentar subir el archivo de nuevo. Si el problema persiste, comprueba que el archivo no esta dañado.
 
 ---
 
@@ -155,7 +155,7 @@ Después de subir un documento, el sistema lo convierte automáticamente a PDF p
 
 ![Ventana de confirmacion de eliminacion mostrando el título del documento y la advertencia](./imagenes/captura-08-ventana-de-confirmacion-de-eliminacion-m.png)
 
-> **Importante:** Una vez eliminado, el documento no se puede recuperar. Asegurate de que ya no se necesita antes de eliminarlo.
+> **Importante:** Una vez eliminado, el documento no se puede recuperar. Asegúrate de que ya no se necesita antes de eliminarlo.
 
 ---
 
@@ -175,4 +175,4 @@ Después de subir un documento, el sistema lo convierte automáticamente a PDF p
 
 ---
 
-*Fin del manual -- Módulo Documentación v1.5*
+*Fin del manual -- Módulo Documentación v1.6*
