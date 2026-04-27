@@ -328,6 +328,15 @@ Dashboard analitico de **volumen y tendencias** de incidencias cerradas (no SLA)
 #### Grilloweb
 Gestion de suscripciones a alertas Grilloweb.
 
+#### Plantillas
+Generador de configuraciones de router (Cisco y Teldat) desde formularios web. Sustituye los antiguos Excel con macros y los programas Python heredados. Cuatro submodulos:
+- **Completa**: configuracion completa de un router Teldat para un centro nuevo (la plantilla se elige automaticamente segun sede y rol).
+- **Modificaciones**: alta de una VLAN nueva en Cisco o Teldat (incluye sede `FLEXWAN` en Teldat).
+- **Traductor**: traducir ACLs Cisco ⇄ Teldat, renumerar entries Teldat, habilitar/deshabilitar ACLs en interfaces.
+- **Migracion red 69→10**: **TEMPORAL.** Genera los 3 bloques de comandos (Preparativos / Migracion / Eliminacion) para migrar el direccionamiento del cliente.
+
+Cada configuracion generada se guarda automaticamente en `/mnt/centros/plantillas/<nemonico>/` para auditoria.
+
 > **Nota:** El acceso a los modulos de KPIs (Inelcom, Nubodata, CGE) esta restringido a determinados usuarios segun su grupo en el directorio.
 
 ![Panel de Mantenimiento con las tarjetas desplegables](./imagenes/captura-11-panel-de-mantenimiento-con-las-tarjetas.png)
@@ -518,7 +527,27 @@ Para evitarlo, basta con interactuar periodicamente con la aplicacion (cambiar d
 
 ---
 
-## 6. Referencia de manuales
+## 6. Funcionalidades transversales (sin manual propio)
+
+Ademas de los modulos principales, BDU dispone de tres utilidades transversales
+que aparecen integradas en la cabecera y no tienen un manual dedicado:
+
+- **Avisos entre turnos**: sistema de mensajes que los operadores se dejan al
+  cambio de turno. Permite listar los avisos pendientes, crear nuevos y
+  marcarlos como resueltos. Util para registrar tareas en curso, incidencias
+  abiertas o cualquier informacion que el siguiente turno deba conocer.
+
+- **Buscador global**: caja de busqueda en la barra superior que consulta
+  simultaneamente centros, lineas, equipos, BTPs e incidencias. Requiere al
+  menos 2 caracteres y muestra hasta 15 resultados por categoria. Al pulsar
+  un resultado se navega directamente al elemento.
+
+- **Acerca de**: pantalla informativa con la version actual de BDU, autor y
+  contacto. Accesible desde el menu de ayuda.
+
+---
+
+## 7. Referencia de manuales
 
 Cada modulo dispone de un manual detallado con instrucciones paso a paso. A continuacion se indica la ruta de cada manual:
 
@@ -532,6 +561,7 @@ Cada modulo dispone de un manual detallado con instrucciones paso a paso. A cont
 | Stock | `Stock/manual_stock.md` |
 | Correos | `Correos/manual_correos.md` |
 | Mantenimiento | `Mantenimiento/manual_mantenimiento.md` |
+| Plantillas (sub. de Mantenimiento) | `Plantillas/manual_plantillas.md` |
 | Documentacion | `Documentacion/manual_documentacion.md` |
 | Info/Ayuda | `Informacion/manual_informacion.md` |
 | Mailviewer | `mailviewer/manual_mailviewer.md` |
