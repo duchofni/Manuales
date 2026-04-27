@@ -11,7 +11,7 @@
 
 ## Indice
 
-1. [Acceder al módulo Información](#1-acceder-al-modulo-informacion)
+1. [Acceder al módulo Información](#1-acceder-al-módulo-información)
 2. [Panel principal](#2-panel-principal)
 3. [Activar el modo editor](#3-activar-el-modo-editor)
 4. [Enlaces de interes](#4-enlaces-de-interes)
@@ -50,15 +50,15 @@ En la cabecera veras:
 
 ## 3. Activar el modo editor
 
-El modo editor permite crear, modificar y eliminar datos en las tres secciones (enlaces, escalados y NAT). Esta protegido por contrasena.
+El modo editor permite crear, modificar y eliminar datos en las tres secciones (enlaces, escalados y NAT). Esta protegido por contraseña.
 
 ### Activar
 
-1. Haz clic en el boton **Editor** en la cabecera.
-2. Aparecerá una ventana pidiendo la contrasena.
+1. Haz clic en el botón **Editor** en la cabecera.
+2. Aparecerá una ventana pidiendo la contraseña.
 3. Introduce la contraseña y pulsa **Entrar** (o la tecla Enter).
-4. Si es correcta, la pagina se recargara con el modo editor activo.
-5. Veras una etiqueta **EDITOR** junto a tu nombre de usuario.
+4. Si es correcta, la página se recargara con el modo editor activo.
+5. Verás una etiqueta **EDITOR** junto a tu nombre de usuario.
 
 ![Ventana de login de editor con el campo de contraseña y el boton Entrar](./imagenes/captura-02-ventana-de-login-de-editor-con-el-campo.png)
 
@@ -88,7 +88,7 @@ El modo editor permite crear, modificar y eliminar datos en las tres secciones (
 
 1. Activa el modo editor (ver seccion 3).
 2. En la categoría donde quieras añadir el enlace, haz clic en el boton **+** (añadir enlace).
-3. Se abrira una ventana con los campos:
+3. Se abrirá una ventana con los campos:
    - **Nombre** (obligatorio) -- Texto que se mostrara
    - **URL** (obligatorio) -- Dirección web del enlace
    - **Abreviatura** -- Texto corto para el badge (opcional)
@@ -129,10 +129,10 @@ El modo editor permite crear, modificar y eliminar datos en las tres secciones (
 
 ## 5. Escalados / Directorio de contactos
 
-### 5.1 Navegar por las pestanas
+### 5.1 Navegar por las pestañas
 
 1. Desde el panel principal, haz clic en **Contactos / Escalados**.
-2. Aparecerá una barra de **pestanas** con las secciones disponibles:
+2. Aparecerá una barra de **pestañas** con las secciones disponibles:
    - Escalados Incidencias
    - Personal CGE
    - Personal CST
@@ -140,14 +140,16 @@ El modo editor permite crear, modificar y eliminar datos en las tres secciones (
    - Personal Nubodata
    - Circet
    - Envíos Zeleris
-3. Cada pestana muestra un **contador** con el número de contactos.
-4. Haz clic en una pestana para ver los contactos de esa seccion.
+   - Personal Minsait
+   - EDNON L3
+3. Cada pestaña muestra un **contador** con el número de contactos.
+4. Haz clic en una pestaña para ver los contactos de esa sección.
 
 ![Barra de pestanas de escalados con los contadores y una seccion seleccionada](./imagenes/captura-05-barra-de-pestanas-de-escalados-con-los-c.png)
 
 ### 5.2 Ver los contactos
 
-Los contactos se muestran como **tarjetas** agrupadas por grupos dentro de cada seccion.
+Los contactos se muestran como **tarjetas** agrupadas por grupos dentro de cada sección.
 
 Cada tarjeta muestra:
 - **Nombre**
@@ -160,9 +162,9 @@ Cada tarjeta muestra:
 
 ### 5.3 Buscar un contacto
 
-1. Escribe en el campo de **busqueda** (parte superior).
+1. Escribe en el campo de **búsqueda** (parte superior).
 2. Haz clic en **Buscar** o pulsa Enter.
-3. Se buscara en nombre, teléfono, correo y campos extra de **todas las secciones**.
+3. Se buscará en nombre, teléfono, correo y campos extra de **todas las secciones**.
 4. Los resultados se mostraran agrupados por seccion.
 5. Para limpiar la busqueda, haz clic en **Limpiar**.
 
@@ -185,7 +187,7 @@ Cada tarjeta muestra:
 
 ### 5.5 Editar un contacto (modo editor)
 
-1. Haz clic en el boton de editar en la tarjeta del contacto.
+1. Haz clic en el botón de editar en la tarjeta del contacto.
 2. Modifica los campos que necesites.
 3. Haz clic en **Guardar**.
 
@@ -193,11 +195,11 @@ Cada tarjeta muestra:
 
 1. Abre la ventana de edición del contacto.
 2. Haz clic en **Eliminar**.
-3. Confirma la eliminacion.
+3. Confirma la eliminación.
 
 ### 5.7 Crear una nueva seccion (modo editor)
 
-1. Haz clic en el boton **Nueva seccion**.
+1. Haz clic en el botón **Nueva seccion**.
 2. Introduce el nombre de la nueva seccion.
 3. Haz clic en **Crear**.
 4. La nueva seccion aparecerá como una pestana adicional.
@@ -206,8 +208,8 @@ Cada tarjeta muestra:
 
 Puedes exportar los contactos de la seccion activa en dos formatos:
 
-1. Haz clic en el boton **Excel** para descargar en formato Excel (.xlsx).
-2. Haz clic en el boton **PDF** para descargar en formato PDF.
+1. Haz clic en el botón **Excel** para descargar en formato Excel (.xlsx).
+2. Haz clic en el botón **PDF** para descargar en formato PDF.
 
 El archivo descargado incluira solo los contactos de la seccion seleccionada.
 
@@ -224,7 +226,7 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
    - Nombre del grupo
    - Rango de IPs (inicio - fin)
    - Barra de progreso (uso del rango)
-   - Estadisticas: IPs usadas / libres
+   - Estadísticas: IPs usadas / libres
 
 ![Tarjetas de rangos NAT con barras de progreso de colores (verde, naranja, rojo)](./imagenes/captura-10-tarjetas-de-rangos-nat-con-barras-de-pro.png)
 
@@ -260,8 +262,8 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
 ### 6.2 Filtrar registros
 
 1. Usa los campos de filtro en la parte superior de la tabla:
-   - **Buscar** -- Texto libre (busca en IP, nemonico, uso, ubicacion)
-   - **Grupo** -- Selecciona un grupo especifico
+   - **Buscar** -- Texto libre (busca en IP, nemonico, uso, ubicación)
+   - **Grupo** -- Selecciona un grupo específico
    - **Estado** -- Filtra por OCUPADO, LIBRE o COMPROBAR
    - **Ping** -- Filtra por SI o NO
 2. Haz clic en **Filtrar**.
@@ -272,7 +274,7 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
 ### 6.3 Editar un registro NAT (modo editor)
 
 1. Activa el modo editor (ver seccion 3).
-2. En la tabla, haz clic en el boton **Editar** del registro.
+2. En la tabla, haz clic en el botón **Editar** del registro.
 3. Se abrira una ventana con los datos del registro:
    - **IP Inside** -- Solo lectura (no se puede modificar)
    - **IP Outside** -- Editable
@@ -281,7 +283,7 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
    - **Ubicacion** -- Editable
    - **Grupo** -- Editable
    - **Ping** -- Seleccionar SI o NO
-   - **Estado** -- Se calcula automaticamente:
+   - **Estado** -- Se calcula automáticamente:
      * Si quitas la IP Outside -> Estado pasa a **LIBRE**
      * Si pones IP Outside y Ping = SI -> Estado pasa a **OCUPADO**
      * Si pones IP Outside y Ping = NO -> Estado pasa a **COMPROBAR**
@@ -295,10 +297,10 @@ El archivo descargado incluira solo los contactos de la seccion seleccionada.
 
 Puedes exportar los datos de la tabla NAT (respetando los filtros activos):
 
-1. Haz clic en el boton **Excel** para descargar en formato Excel (.xlsx).
-2. Haz clic en el boton **PDF** para descargar en formato PDF.
+1. Haz clic en el botón **Excel** para descargar en formato Excel (.xlsx).
+2. Haz clic en el botón **PDF** para descargar en formato PDF.
 
-> Los filtros aplicados se mantienen en la exportacion. Si tienes un filtro de grupo activo, solo se exportaran los registros de ese grupo.
+> Los filtros aplicados se mantienen en la exportación. Si tienes un filtro de grupo activo, solo se exportaran los registros de ese grupo.
 
 ---
 
@@ -306,20 +308,20 @@ Puedes exportar los datos de la tabla NAT (respetando los filtros activos):
 
 | Accion                          | Como hacerlo                                           |
 |---------------------------------|--------------------------------------------------------|
-| Activar modo editor             | Boton Editor + contraseña                              |
-| Desactivar modo editor          | Boton Salir                                            |
+| Activar modo editor             | botón Editor + contraseña                              |
+| Desactivar modo editor          | botón Salir                                            |
 | Ver enlaces                     | Panel principal > Herramientas                         |
-| Crear/editar enlace             | Modo editor + boton + / lapiz                          |
+| Crear/editar enlace             | Modo editor + botón + / lapiz                          |
 | Ver contactos                   | Panel principal > Contactos > pestana de seccion       |
 | Buscar contacto                 | Campo de busqueda (busca en todas las secciones)       |
 | Crear contacto                  | Modo editor + Nuevo contacto                           |
 | Crear nueva seccion             | Modo editor + Nueva seccion                            |
-| Exportar contactos              | Botones Excel / PDF                                    |
+| Exportar contactos              | botones Excel / PDF                                    |
 | Ver tabla NAT                   | Panel principal > Red y Conectividad                   |
 | Filtrar tabla NAT               | Campos de filtro + Filtrar                             |
-| Editar registro NAT             | Modo editor + boton Editar en la fila                  |
+| Editar registro NAT             | Modo editor + botón Editar en la fila                  |
 | Exportar tabla NAT              | Botones Excel / PDF                                    |
 
 ---
 
-*Fin del manual -- Módulo Información / Ayuda v1.5*
+*Fin del manual -- Módulo Información / Ayuda v1.6*
