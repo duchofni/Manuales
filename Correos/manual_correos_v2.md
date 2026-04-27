@@ -97,7 +97,7 @@ Este es el flujo más habitual. Se usa para correos como "Centro incomunicado", 
 
 ## 4. Generar un correo con seleccion de líneas
 
-Algunas plantillas (como "Centro incomunicado", "Corte eléctrico", "Línea datos caida") permiten seleccionar líneas especificas del centro.
+Algunas plantillas (como "Línea datos caida") permiten seleccionar líneas especificas del centro.
 
 ### Paso 1 -- Buscar el centro
 
@@ -169,7 +169,7 @@ Los escalados (Ibercom, CTM Zaragoza, Mesa Nacional) incluyen datos corporativos
 
 1. Selecciona la plantilla de escalado.
 2. Busca y selecciona el centro afectado.
-3. Rellena los campos del operador:
+3. Rellena los campos obligatorios:
    - Administrativo / ID del elemento afectado
    - Breve descripción del problema
    - Impacto en el cliente
@@ -190,7 +190,7 @@ Algunas plantillas tienen un centro fijo predefinido o no requieren seleccionar 
 3. Se generara el correo directamente.
 4. Copia y envia.
 
-Ejemplos: plantillas de Satec, Lote 3 (soporte TI), etc.
+Ejemplos: plantillas Grabadoras,IVR,Tarificador, etc.
 
 ---
 
@@ -210,8 +210,8 @@ Las plantillas de la categoría **Varios CGE** funcionan de manera especial:
 ### Informe Sergas / Informe Telefónica
 
 1. Haz clic en la plantilla correspondiente.
-2. Se mostrara el formulario del informe.
-3. Rellena los datos y genera el correo.
+2. Se mostrara en la opción de Sergasel tipo de informe.
+3. Genera el correo y añade los adjuntos (existe un enlace a los mismos correos desde el módulo de informes).
 
 > Estas plantillas se cargan directamente sin pasar por el buscador de centros.
 
@@ -248,8 +248,8 @@ Muchas plantillas de correo permiten crear automáticamente una incidencia en la
 | Centro incomunicado      | Buscar centro    | Si               | Si                    |
 | Corte eléctrico          | Buscar centro    | Si               | Si                    |
 | Línea datos caida        | Buscar centro    | Si               | Si                    |
-| Incidencia masiva        | N.o incidencia + múltiples centros | Si | Si               |
-| Incidencia Artemis       | Buscar centro    | No               | Si                    |
+| Incidencia masiva        | Nº incidencia + múltiples centros | Si | Si               |
+| Incidencia Artemis       | Nº incidencia    | No               | Si                    |
 | Averia DWDM              | Buscar centro    | No               | No                    |
 
 ### Averias Voz (11 plantillas)
@@ -259,10 +259,10 @@ Muchas plantillas de correo permiten crear automáticamente una incidencia en la
 | Sirios pendientes        | Carga directa    |
 | GLPI Nubodata            | Buscar centro    |
 | GLPI pendientes          | Carga directa    |
-| IVR CISCO                | Buscar centro    |
-| Tarificador              | Buscar centro    |
-| Grabadoras NICE          | Buscar centro    |
-| Grabadoras Infomicro     | Buscar centro    |
+| IVR CISCO                | Carga directa    |
+| Tarificador              | Carga directa    |
+| Grabadoras NICE          | Carga directa    |
+| Grabadoras Infomicro     | Carga directa    |
 | SIRIO Gotor              | Buscar centro    |
 | Nodo EB movil            | Buscar centro    |
 | Medidas Radio            | Buscar centro    |
