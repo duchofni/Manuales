@@ -322,10 +322,13 @@ Dashboard de cumplimiento de SLA sobre incidencias cerradas. 4 indicadores contr
 #### KPIs Nubodata
 Dashboard de SLA para incidencias Nubodata (Material No Ibercom). Semaforo tricolor: verde (dentro de plazo), naranja (proximo a vencer), rojo (fuera de plazo). Exportacion a Excel y PDF.
 
+#### KPIs CGE
+Dashboard analitico de **volumen y tendencias** de incidencias cerradas (no SLA). 6 bloques: volumen anual por tipo, evolucion mensual comparada por año, top subtipos y centros, evolucion de los subtipos TOP, totales y variacion interanual y bloque especifico de **cortes electricos**. Filtros globales por años, tipos y area sanitaria. Datos desde 2022 en adelante. Exportacion a Excel y PDF con las graficas embebidas.
+
 #### Grilloweb
 Gestion de suscripciones a alertas Grilloweb.
 
-> **Nota:** El acceso a los modulos de KPIs esta restringido a determinados usuarios segun su grupo en el directorio.
+> **Nota:** El acceso a los modulos de KPIs (Inelcom, Nubodata, CGE) esta restringido a determinados usuarios segun su grupo en el directorio.
 
 ![Panel de Mantenimiento con las tarjetas desplegables](./imagenes/captura-11-panel-de-mantenimiento-con-las-tarjetas.png)
 

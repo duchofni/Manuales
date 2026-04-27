@@ -75,12 +75,13 @@ Gestión de incidencias de red y herramientas asociadas.
 
 ### 3.4. Herramientas
 
-Indicadores y métricas de cumplimiento.
+Indicadores, métricas de cumplimiento y análisis de volumen.
 
-| Herramienta         | Descripción                                                        |
-|---------------------|--------------------------------------------------------------------|
-| KPIs Inelcom        | Dashboard de KPIs SLA del contrato Inelcom                        |
-| KPIs Nubodata       | Dashboard de KPIs SLA del contrato Nubodata                       |
+| Herramienta         | Descripción                                                                  |
+|---------------------|------------------------------------------------------------------------------|
+| KPIs Inelcom        | Dashboard de KPIs SLA del contrato Inelcom                                   |
+| KPIs Nubodata       | Dashboard de KPIs SLA del contrato Nubodata                                  |
+| KPIs CGE            | Dashboard de **volumen y tendencias** de incidencias (no SLA): evolución anual y mensual, top subtipos y centros, variación interanual y bloque específico de cortes eléctricos |
 
 ### 3.5. Grilloweb
 
