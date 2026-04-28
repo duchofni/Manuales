@@ -232,12 +232,11 @@ Además del **Mail CGP** del patrón común, esta tarea tiene dos botones extra:
 
 ## 9. Revisión DIBAs
 
-Revisión **semanal** del estado de las DIBAs. **No nos conectamos a las DIBAs**: nos conectamos a los **3 PEs de Telefónica enfrentados a las DIBAs** (modelo Juniper): **NMACMON5 ×2 + NMACESP5**. Sustituye al script VBScript heredado de SecureCRT.
+Revisión **semanal** del estado de las 3 DIBAs. Nos conectamos a los **2 PEs de Telefónica** (Juniper) **NMACMON5** y **NMACESP5**, donde están las 3 DIBAs. Sustituye al script VBScript heredado de SecureCRT.
 
 - **Modo:** **siempre Pasarela** (los PEs solo son alcanzables por la red Telefónica).
-- **Equipos:** los 3 PEs Juniper enfrentados a las DIBAs. No hay listado en la web — las IPs y las interfaces están definidas en el worker.
 - **Histórico:** `/mnt/centros/historico_dibas/revision_*.txt`.
-- **Tiempo aproximado:** ~45 min (1000 pings por PE).
+- **Tiempo aproximado:** ~45 min (1000 pings por DIBA).
 
 ### 9.1. Lanzar la revisión
 
@@ -252,7 +251,7 @@ Esta tarea tiene tres pestañas además del histórico:
 
 | Vista                  | Para qué sirve                                                                       |
 |------------------------|--------------------------------------------------------------------------------------|
-| **Tabla**              | Una tabla por revisión, con 3 filas (una por PE) y todas las métricas relevantes.   |
+| **Tabla**              | Una tabla por revisión, con 3 filas (una por DIBA) y todas las métricas relevantes. |
 | **Métricas**           | 6 gráficas (canvas 2D): RTT, transiciones, RX, TX, loss, bit error.                  |
 | **Texto**              | Visor del raw completo del log seleccionado (para diagnóstico fino).                 |
 
@@ -274,18 +273,18 @@ Esta tarea tiene tres pestañas además del histórico:
 
 ### 9.4. Cálculo automático de roles BGP
 
-El parser extrae el MED representativo de cada PE y compara los 3 MED de la revisión:
+El parser extrae el MED representativo de cada DIBA y compara los 3 MED de la revisión:
 
 - Menor MED → **PRINCIPAL** (verde).
 - Siguiente → **1º BACKUP** (naranja).
 - Siguiente → **2º BACKUP**.
-- Si hay empate de MED, los PEs comparten rol.
+- Si hay empate de MED, las DIBAs comparten rol.
 
 Si los MED cambian, el rol se recalcula automáticamente en la siguiente revisión.
 
 ### 9.5. Exportar Excel
 
-Pulsamos **⬇ Excel** para descargar un `.xlsx` con tres hojas (una por PE), cabecera azul corporativa y coloreado de LOSS/ROL.
+Pulsamos **⬇ Excel** para descargar un `.xlsx` con tres hojas (una por DIBA), cabecera azul corporativa y coloreado de LOSS/ROL.
 
 ### 9.6. Histórico legacy
 
