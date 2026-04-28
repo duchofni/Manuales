@@ -9,167 +9,288 @@
 
 ---
 
-## Indice
+## Índice
 
-1. [Descripción general](#1-descripción-general)
-2. [Importar BTPs desde Excel](#2-importar-btps-desde-excel)
-3. [Consulta por estado](#3-consulta-por-estado)
-4. [Consulta por número de BTP](#4-consulta-por-número-de-btp)
-5. [BTP Manual](#5-btp-manual)
-6. [BTPs Pendientes](#6-btps-pendientes)
-7. [Revisión diaria](#7-revisión-diaria)
-8. [Resumen del flujo típico del operador](#8-resumen-del-flujo-típico-del-operador)
+1. [Para qué sirve este módulo](#1-para-qué-sirve-este-módulo)
+2. [Conceptos básicos](#2-conceptos-básicos)
+3. [Cómo accedemos al módulo](#3-cómo-accedemos-al-módulo)
+4. [Visión global del ciclo de BTPs](#4-visión-global-del-ciclo-de-btps)
 
----
+### Procedimiento diario y semanal
 
-## 1. Descripción general
+5. [Tarea 1 — Correo TE_Grillo Comunicaciones (10:00 / 18:00 / 23:00)](#5-tarea-1--correo-te_grillo-comunicaciones)
+6. [Tarea 2 — Correo Control de Cambios (13:00)](#6-tarea-2--correo-control-de-cambios)
+7. [Tarea 3 — Correo TE_Trabajos Programados de Red (lunes)](#7-tarea-3--correo-te_trabajos-programados-de-red)
+8. [Tarea 4 — Revisión diaria en SAFI](#8-tarea-4--revisión-diaria-en-safi)
+9. [Tarea 5 — Reporte a SERGAS informando los trabajos](#9-tarea-5--reporte-a-sergas-informando-los-trabajos)
+10. [Cierre de turno — Revisión diaria](#10-cierre-de-turno--revisión-diaria)
 
-El módulo **BTPs** permite gestionar los **Boletines de Trabajo Programados** en la red de Telefónica para SERGAS: importarlos desde los ficheros Excel que envía Telefónica, consultarlos por estado o por número, dar de alta BTPs manuales, y controlar cuáles están pendientes de informar al cliente.
+### El día del BTP
 
-### 1.1. Conceptos básicos para nuevas incorporaciones
+11. [Turno de tarde](#11-turno-de-tarde)
+12. [Turno de noche](#12-turno-de-noche)
+13. [Pasos obligatorios en TODOS los BTPs](#13-pasos-obligatorios-en-todos-los-btps)
 
-- **BTP (Boletín de Trabajo Programado):** ventana de tiempo en la que se va a realizar un trabajo planificado sobre la red (un corte, una actuación, una migración, etc.). Cada BTP tiene un número único, una franja horaria y puede afectar a una o muchas líneas a la vez.
-- **Línea:** identificador del circuito o servicio afectado (administrativo, número de línea o id interno). Un mismo BTP puede arrastrar 1, 10 o 100 líneas si el trabajo afecta a varias sedes o circuitos.
-- **Estado del BTP:** indica en qué fase está. Los valores posibles son `AUTORIZADO`, `PTE AUTORIZACIÓN`, `CIERRE DE OBRA`, `CANCELADO`, `SUSPENDIDO` y `RECHAZADO`.
-- **Afectación al servicio:** indica si el trabajo cortará o no el servicio al usuario final (`SI` / `NO`). Influye en el color del botón de copiar y en el asunto del correo al cliente.
-- **Informado al cliente:** marca interna que indica que ya se ha enviado el correo de aviso al cliente sobre ese BTP. Una vez informado, la fila del BTP cambia a verde claro en las consultas.
+### Otras consultas y herramientas
 
-### 1.2. Cómo acceder al módulo
-
-1. En el menú lateral de BDU, pulsa **Mantenimiento**.
-2. Pulsa la tarjeta **BTPs**. Se desplegará un acordeón con todas las opciones del módulo: *Importación BTPs, Consulta Estado, Consulta Nº BTP, BTP Manual, BTPs Pendientes* y el botón morado *Revisión diaria*.
+14. [Consulta por estado](#14-consulta-por-estado)
+15. [BTPs Pendientes](#15-btps-pendientes)
+16. [Dudas frecuentes](#16-dudas-frecuentes)
 
 ---
 
-## 2. Importar BTPs desde Excel
+## 1. Para qué sirve este módulo
 
-Desde el menú de Mantenimiento, pulsa la tarjeta **BTPs** y selecciona **Importación BTPs**.
+El módulo **BTPs** nos permite gestionar los **Boletines de Trabajo Programados** de Telefónica que afectan al SERGAS: importarlos, consultarlos, dar de alta BTPs manuales, copiar la tabla para informar al cliente y controlar cuáles están pendientes de informar.
 
-Verás dos paneles de importación. Cada uno está pensado para un tipo de fichero distinto:
+El uso real del módulo se hace **junto con un procedimiento operativo diario** que combina correos externos, una plataforma corporativa (**SAFI**) y la propia web BDU. Este manual describe el flujo completo en orden cronológico.
 
-### 2.1. Importar Excel completo de Telefónica
+> **Cumplimiento obligatorio.** Es de **OBLIGATORIO CUMPLIMIENTO** llevar a rajatabla todos los puntos descritos.
 
-Este método se usa con el **fichero Excel diario completo** que envía Telefónica con todos los BTPs activos. Inserta los BTPs nuevos y **actualiza** los que ya existían si han cambiado (cambio de estado, fechas, motivo, etc.).
+---
 
-1. Pulsa **Seleccionar archivo** y elige el fichero `.xlsx` de Telefónica.
-2. Pulsa **Importar**.
-3. Espera a que se procese. Al terminar verás un resumen con:
-   - Registros **insertados** (BTPs nuevos que no existían).
-   - Registros **actualizados** (ya existían pero tenían cambios).
-   - Registros **sin cambios** (ya estaban al día).
+## 2. Conceptos básicos
 
-![Panel de importación Excel completo con el botón de seleccionar archivo y el botón Importar](./imagenes/captura-01-panel-de-importacion-excel-completo-con.png)
+- **BTP (Boletín de Trabajo Programado):** ventana de tiempo en la que se realiza un trabajo planificado sobre la red (corte, actuación, migración, etc.). Cada BTP tiene un número único, una franja horaria y puede afectar a una o muchas líneas a la vez.
+- **Línea afectada:** identificador del circuito o servicio (administrativo, número de línea o ID interno). Un mismo BTP puede arrastrar 1, 10 o 100 líneas.
+- **Estado del BTP:** indica en qué fase está. Valores: `AUTORIZADO`, `PTE AUTORIZACIÓN`, `CIERRE DE OBRA`, `CANCELADO`, `SUSPENDIDO`, `RECHAZADO`.
+- **Afectación al servicio:** si el trabajo cortará o no el servicio (`SI` / `NO`). Influye en el color del botón de copiar y en el asunto del correo al cliente.
+- **Informado al cliente:** marca interna que indica que ya se ha enviado el correo de aviso al cliente. Las filas pasan a verde claro.
+- **CIFs SERGAS en SAFI:** `Q6550006H` y `A78923125` (los dos administrativos del cliente).
 
-### 2.2. Importar BTPs del Día
+---
 
-Este método se usa con el **fichero de última hora** con los BTPs en ejecución hoy (pestaña `ADMIN_POR_BTP`, filtrado automáticamente por CIF de SERGAS `Q6550006H`). Inserta los BTPs nuevos y **actualiza** los que ya existían si han cambiado (estado, fechas, duración, equipo, afectación, motivo o descripción).
+## 3. Cómo accedemos al módulo
 
-1. Pulsa **Seleccionar archivo** y elige el fichero `.xlsx`.
-2. Pulsa **Importar BTPs del Día**.
-3. Al terminar verás un resumen con:
-   - Registros **insertados**.
-   - Registros **actualizados**.
-   - Registros **sin cambios**.
-   - Registros **ignorados** (de otro CIF, no son de SERGAS).
-   - **Errores** (si los hubiera).
+1. Abrimos la **Web BDU** en el navegador.
+2. En la barra superior pulsamos **Mantenimiento**.
+3. Pulsamos la tarjeta **BTPs**. Se despliega un acordeón con todas las opciones del módulo: *Importación BTPs, Consulta Estado, Consulta Nº BTP, BTP Manual, BTPs Pendientes* y el botón morado *Revisión diaria*.
 
-> **Diferencia entre las dos vías:** ambas insertan y actualizan; lo que cambia es el **fichero de origen** (la primera consume el Excel completo de Telefónica, la segunda la pestaña `ADMIN_POR_BTP` del fichero diario de última hora) y el **conjunto de columnas** que aporta cada uno.
+> **Atajo:** podemos llegar directamente con `?m=mantenimiento&sub=btps` añadido al final de la URL de BDU.
 
-### 2.3. Detalle de cambios tras la importación
+---
 
-Tanto en la importación del Excel completo como en la de BTPs del Día (y también en la importación masiva manual de la sección 5.1), justo debajo del resumen de contadores aparece un bloque plegable:
+## 4. Visión global del ciclo de BTPs
+
+Existen **tres correos** y **una revisión diaria en SAFI** que tratamos de lunes a viernes en el turno de tarde, además de la revisión final el día del BTP.
+
+| # | Cuándo | De dónde / qué | Resultado en BDU |
+|---|---|---|---|
+| 1 | Diario 10:00 / 18:00 / 23:00 | Correo de **TE_Grillo Comunicaciones** con Excel adjunto | **Importación BTPs Telefónica** |
+| 2 | Diario 13:00 | Correo de **controlcambios.csdatos@telefonica.com** con enlace SharePoint | **BTPs del Día** |
+| 3 | Lunes | Correo de **trabajosprogramadosdered@telefonica.com** con BTPs nacionales semanales | Alta manual de los nuevos BTPs |
+| 4 | Diario | Revisión en **SAFI** (`http://safi.sdr.tesa:9080/safi/`) | Alta de BTPs nuevos vía **BTP Manual** |
+| 5 | Diario | Reporte por correo a **SERGAS** con la afectación | Plantilla desde **Consulta Nº BTP** |
+| – | Día del BTP | Turnos tarde y noche revisan iGri / monitorización / CNCE | Cambios de estado en BDU |
+
+Al final de cada tarea (1, 2, 3, 4) **enviamos un correo `##INTERNO##`** a `cgp.sergas@telefonica.com` indicando que se ha realizado la comprobación.
+
+---
+
+## 5. Tarea 1 — Correo TE_Grillo Comunicaciones
+
+Recibimos un correo de **TE_Grillo Comunicaciones** a las **10:00 horas** con un Excel adjunto con los datos de los nuevos BTPs. Si hay modificaciones, recibimos otro a las **18:00** y otro a las **23:00**.
+
+![Correo de TE_Grillo Comunicaciones recibido a las 10:00 con el Excel adjunto](./imagenes/captura-10-correo-te-grillo-comunicaciones.png)
+
+### 5.1. Importar el Excel en BDU (Importación BTPs Telefónica)
+
+Esta importación se usa con el **Excel diario completo** que envía Telefónica con todos los BTPs activos. Inserta los nuevos y **actualiza** los existentes si han cambiado (estado, fechas, motivo, etc.).
+
+1. Descargamos el Excel adjunto al correo.
+2. En la BDU vamos a **Mantenimiento → BTPs → Importación BTPs**.
+3. En el panel **Importación BTPs Telefónica**, pulsamos **Seleccionar archivo** y elegimos el `.xlsx`.
+4. Pulsamos **Importar**.
+5. Esperamos a que termine. Vemos un resumen con:
+   - **Insertados** (BTPs nuevos).
+   - **Actualizados** (existían pero cambiaron).
+   - **Sin cambios** (estaban al día).
+
+![Panel de importación Excel completo con el botón Seleccionar archivo y el botón Importar](./imagenes/captura-01-panel-de-importacion-excel-completo-con.png)
+
+> **Columnas clave del Excel**: la **columna H** es el número de BTP (lo usamos para consultar en BDU) y la **columna I** es el estado (importante para detectar `RECHAZADO`, `AUTORIZADO` o `PENDIENTE`).
+
+### 5.2. Detalle de cambios tras la importación
+
+Justo debajo del resumen aparece un bloque plegable:
 
 > ▶ **Ver detalle de cambios** (N BTPs, M líneas afectadas)
 
-Pulsa sobre él para desplegarlo. Verás un sub-bloque por cada BTP modificado, y dentro de él la lista de campos que han cambiado, con el formato:
+Lo desplegamos para ver un sub-bloque por cada BTP modificado con la lista de campos que cambiaron:
 
 > **Estado:** AUTORIZADO → CANCELADO
 > **Fecha inicio corte:** 22/04/2026 08:00 → 23/04/2026 09:30
 
-Si un mismo cambio afecta a todas las líneas del BTP (por ejemplo, un cambio de estado que arrastra a las 100 líneas del boletín), se muestra **una sola vez** para no duplicar información.
+Si un cambio afecta a todas las líneas del BTP, se muestra **una sola vez** para no duplicar.
 
-Este detalle te permite confirmar exactamente qué se ha actualizado en cada importación, sin tener que adivinar qué BTPs han sido tocados.
+![Bloque desplegable con el detalle de cambios tras una importación](./imagenes/captura-09-detalle-cambios-importacion.png)
 
-![Bloque desplegable con el detalle de cambios tras una importación, mostrando un BTP con sus campos modificados](./imagenes/captura-09-detalle-cambios-importacion.png)
+### 5.3. Cierre de la tarea
 
----
-
-## 3. Consulta por estado
-
-Desde el menú BTPs, selecciona **Consulta Estado**.
-
-### 3.1. Buscar BTPs por estado
-
-1. Selecciona un **estado** en el desplegable:
-   - AUTORIZADO
-   - PTE AUTORIZACIÓN
-   - CIERRE DE OBRA
-   - CANCELADO
-   - SUSPENDIDO
-   - RECHAZADO
-2. Pulsa **Consultar**.
-3. Se mostrará la tabla con todos los BTPs en ese estado.
-
-![Desplegable de estados con la tabla de resultados debajo](./imagenes/captura-02-desplegable-de-estados-con-la-tabla-de-r.png)
-
-### 3.2. Buscar dentro de los resultados
-
-Encima de la tabla hay un **campo de búsqueda**. Escribe cualquier dato (centro, BTP, motivo, nemónico, administrativo, etc.) y pulsa **Buscar**. La tabla se filtrará por filas que contengan ese texto.
-
-Para volver a ver todos los resultados pulsa **Limpiar**.
-
-### 3.3. Navegar por páginas
-
-- La tabla muestra **50 registros por página**.
-- Si hay más, en la parte inferior aparece un paginador con los números de página y enlaces *Anterior / Siguiente*.
-
-### 3.4. Cambiar el estado de un BTP
-
-1. En la columna **ESTADO** de cada fila verás un desplegable con el estado actual.
-2. Selecciona el nuevo estado.
-3. La fila desaparecerá con una animación suave (porque ya no pertenece al estado que estás consultando).
-
-> **Importante:** el cambio de estado se aplica a **todas las líneas del BTP** en la base de datos, no solo a la fila que has tocado. Es decir, si un BTP tiene 100 líneas, las 100 cambian de estado a la vez.
-
-![Fila de un BTP con el desplegable de estado abierto mostrando las opciones](./imagenes/captura-03-fila-de-un-btp-con-el-desplegable-de-est.png)
-
-### 3.5. Exportar resultados (CSV / PDF / Excel)
-
-Los botones **CSV**, **PDF** y **Excel** **solo aparecen una vez has seleccionado un estado** y pulsado *Consultar*. Antes de eso, en la fila de filtro solo verás el botón *Consultar*.
-
-Una vez tengas la tabla cargada con un estado:
-
-1. Pulsa el formato deseado (**CSV**, **PDF** o **Excel**).
-2. Se descargará el fichero con todos los BTPs de ese estado (no se aplica el filtro del buscador a la exportación).
-
-### 3.6. Colores de las filas
-
-- **Fila con fondo verde claro:** BTP ya informado al cliente.
-- **Fila con fondo amarillo claro:** BTP `AUTORIZADO` pero pendiente de informar.
+Enviamos un correo **`##INTERNO##`** a `cgp.sergas@telefonica.com` indicando que se ha hecho la comprobación y se ha integrado el Excel en la BDU.
 
 ---
 
-## 4. Consulta por número de BTP
+## 6. Tarea 2 — Correo Control de Cambios
 
-Desde el menú BTPs, selecciona **Consulta Nº BTP**.
+Recibimos a las **13:00 horas** un correo de `controlcambios.csdatos@telefonica.com` con las modificaciones que hayan podido surgir en los BTPs previstos para ese mismo día.
 
-### 4.1. Buscar un BTP
+![Correo de controlcambios.csdatos@telefonica.com con el enlace al SharePoint](./imagenes/captura-11-correo-control-de-cambios.png)
 
-1. Escribe el **número de BTP** en el campo de búsqueda (mínimo 2 caracteres).
-2. Aparecerá un **desplegable de sugerencias** con los BTPs que coinciden.
-3. Pulsa sobre el BTP deseado o sigue escribiendo y pulsa **Consultar**.
-4. Se mostrará la tabla con todas las líneas afectadas por ese BTP.
+### 6.1. Acceder al SharePoint y descargar el Excel
+
+1. En el correo veremos un enlace **Fichero de Información de Cambios**. Lo pulsamos.
+2. Nos pedirá el correo de Telefónica y las credenciales **EDOMUS**.
+3. Accedemos al **SharePoint** con el Excel compartido.
+4. Descargamos el Excel de la carpeta compartida.
+
+![Carpeta SharePoint con el Excel de Control de Cambios](./imagenes/captura-12-sharepoint-control-cambios.png)
+
+### 6.2. Importar el Excel en BDU (BTPs del Día)
+
+Esta importación se usa con el **fichero de última hora** con los BTPs en ejecución hoy (pestaña `ADMIN_POR_BTP`, filtrado por CIF de SERGAS `Q6550006H`).
+
+1. En la BDU vamos a **Mantenimiento → BTPs → Importación BTPs**.
+2. En el panel **BTPs del Día**, pulsamos **Seleccionar archivo** y elegimos el Excel descargado.
+3. Pulsamos **Importar BTPs del Día**.
+4. Vemos el resumen con: **Insertados**, **Actualizados**, **Sin cambios**, **Ignorados** (otros CIF) y **Errores**.
+
+> **Diferencia con la importación de la Tarea 1**: ambas insertan y actualizan; lo que cambia es el **fichero de origen** (la primera consume el Excel diario completo, esta consume la pestaña `ADMIN_POR_BTP` del fichero de última hora) y las **columnas** que aporta cada uno.
+
+Tras la importación aparece el mismo bloque desplegable de detalle de cambios visto en la [sección 5.2](#52-detalle-de-cambios-tras-la-importación).
+
+### 6.3. Revisar el Excel manualmente y contrastar con BDU
+
+Antes de cerrar la tarea, revisamos el Excel en busca de información que pueda no estar bien integrada:
+
+1. **Filtramos por las provincias de Galicia**: *Ourense, A Coruña, Pontevedra, Lugo* en **todas las pestañas** del Excel.
+2. La pestaña más relevante suele ser **RED FUSIÓN**, pero no debemos saltarnos las demás (`PLTA.EXT`, `ENERGIA`...): pueden incluir BTPs no informados debidamente, como mantenimientos eléctricos de la central de Conxo.
+3. Contrastamos con los BTPs ya documentados en la BDU. Si hay modificaciones, las aplicamos y avisamos al cliente reenviando el correo correspondiente con las novedades.
+
+### 6.4. Cierre de la tarea
+
+Reenviamos el correo recibido añadiendo en el asunto **`##INTERNO##`** a `cgp.sergas@telefonica.com`, indicando que se ha realizado la comprobación.
+
+---
+
+## 7. Tarea 3 — Correo TE_Trabajos Programados de Red
+
+Los **lunes** recibimos un correo de `trabajosprogramadosdered@telefonica.com` con la previsión de BTPs por semanas a nivel nacional.
+
+![Correo de TE_Trabajos Programados de Red con el Excel semanal adjunto](./imagenes/captura-13-correo-trabajos-programados-red.png)
+
+### 7.1. Filtrar el Excel por provincias gallegas
+
+1. Abrimos el Excel adjunto.
+2. Pulsamos **Ctrl + Shift + L** sobre la línea **D [Provincia]** para activar el filtro.
+3. Filtramos por las **4 provincias de Galicia**: *Pontevedra, A Coruña, Ourense, Lugo*.
+4. Pulsamos **Aceptar**.
+
+### 7.2. Documentar los BTPs nuevos en la BDU (BTP Manual)
+
+El Excel **no tiene información cruzable** con la BDU directamente, así que la revisión es manual:
+
+1. Una vez filtradas las provincias gallegas, miramos qué BTPs ya tenemos documentados en la BDU para no duplicarlos.
+2. Los **BTPs nuevos** los damos de alta con la **importación masiva** de **BTP Manual** (ver detalle a continuación).
+
+#### Importación masiva por plantilla (BTP Manual)
+
+Útil para los BTPs que no vienen del Excel de Telefónica integrable.
+
+1. Vamos a **Mantenimiento → BTPs → BTP Manual**.
+2. En el panel de **importación masiva**, pulsamos **⬇ Descargar plantilla** para obtener un Excel con el formato correcto.
+3. Rellenamos la plantilla con los datos de los BTPs (una fila por BTP/línea). Los campos **Afectación** (`SI`/`NO`) y **Estado** tienen desplegables predefinidos en el Excel.
+4. Pulsamos **Seleccionar archivo** y elegimos la plantilla rellenada.
+5. Pulsamos **⬆ Importar Excel**.
+6. Vemos el resumen igual que en las importaciones de las tareas 1 y 2.
+
+### 7.3. Cierre de la tarea
+
+Reenviamos el correo recibido añadiendo en el asunto **`##INTERNO##`** a `cgp.sergas@telefonica.com`.
+
+---
+
+## 8. Tarea 4 — Revisión diaria en SAFI
+
+Tarea **diaria** de revisión en la plataforma **SAFI** de los BTPs afectados para el SERGAS.
+
+### 8.1. Abrir SAFI y buscar los CIFs del SERGAS
+
+1. Abrimos http://safi.sdr.tesa:9080/safi/ con el usuario **`PRUEBAS`**.
+2. Con el botón de búsqueda, buscamos los CIFs **`Q6550006H`** y **`A78923125`** marcando la opción **"Incluir BTPs"**.
+
+![Pantalla de SAFI con la búsqueda por CIF Q6550006H y la opción Incluir BTPs marcada](./imagenes/captura-14-safi-busqueda-cifs.png)
+
+3. Para el CIF del SERGAS revisamos la parte inferior de la ventana, donde aparecen los BTPs asociados.
+4. Podemos **ordenar** los BTPs y añadir o quitar criterios con los botones de la barra de herramientas.
+
+### 8.2. Pasar los BTPs nuevos a la BDU
+
+Copiamos cada BTP de SAFI (clic derecho) y lo buscamos en la BDU. Tendremos dos casos:
+
+| Caso | Acción |
+|---|---|
+| El BTP **ya está** en la BDU | Lo actualizamos si es necesario. |
+| El BTP **NO está** en la BDU | Lo damos de alta. |
+
+#### Sacar la lista de afectación de un BTP en SAFI
+
+1. Pulsamos el botón **Lista Priorizada** o el de la página de libreta para ver la lista filtrable.
+2. Filtramos por las líneas del SERGAS.
+3. Copiamos toda la lista y la **pegamos en un Excel nuevo** con el formato necesario.
+
+![SAFI con la lista priorizada del BTP filtrada por SERGAS](./imagenes/captura-15-safi-lista-priorizada.png)
+
+#### Dar de alta el BTP en BDU
+
+Tenemos dos opciones, según convenga:
+
+**A) Importación masiva** (varios BTPs a la vez): vamos a **BTP Manual**, descargamos la plantilla, rellenamos con los datos del BTP y los administrativos afectados, y la importamos como en la [sección 7.2](#72-documentar-los-btps-nuevos-en-la-bdu-btp-manual).
+
+**B) Alta individual** (un BTP suelto): vamos a **Mantenimiento → BTPs → BTP Manual** y rellenamos el formulario:
+
+1. Rellenamos los campos:
+   - **Nº BTP**, **Inicio trabajo**, **Fin trabajo**, **Inicio corte**, **Duración (min)**.
+   - **Centro**, **Número Línea**, **Tipo línea**, **Rol**, **Nemónico**, **Velocidad**, **Equipo**.
+   - **Afectación** (`CON afectación` / `SIN afectación`), **Estado**.
+   - **Motivo**, **Descripción del trabajo**.
+2. Tenemos **dos botones**:
+   - **Generar tabla**: vista previa del BTP en formato tabla, sin guardar nada.
+   - **Insertar en BBDD**: guarda el BTP. Pide confirmación.
+
+> **Atajo para líneas ya existentes en BDU**: si la línea (Número Línea) ya está dada de alta, **solo necesitamos cubrir** Nº BTP, las fechas, duración, número de línea, equipo, afectación, estado, motivo y descripción. Centro, tipo de línea, rol, nemónico y velocidad se rellenan solos al consultar el BTP después.
+
+![Formulario de alta manual de BTP con los dos botones Generar tabla e Insertar en BBDD](./imagenes/captura-07-formulario-de-alta-manual-de-btp-con-los.png)
+
+> Si pulsamos **Insertar en BBDD** y el BTP ya estaba dado de alta, vemos *"El BTP {número} ya existe en la base de datos"* y un botón **Consultar ese BTP** que nos lleva directamente a la consulta por número.
+
+### 8.3. Cierre de la tarea — correo "Revisión diaria"
+
+Como en cada tarea diaria, informamos al final con un correo. BDU tiene una plantilla — ver [sección 10](#10-cierre-de-turno--revisión-diaria).
+
+---
+
+## 9. Tarea 5 — Reporte a SERGAS informando los trabajos
+
+Cuando ya tenemos revisada la **afectación**, los **centros afectados** y la **fecha de ejecución**, enviamos un correo a **SERGAS** con esa información.
+
+### 9.1. Buscar el BTP en Consulta por Nº BTP
+
+1. Vamos a **Mantenimiento → BTPs → Consulta Nº BTP**.
+2. Escribimos el **número de BTP** (mínimo 2 caracteres).
+3. Aparece un **desplegable de sugerencias**. Pulsamos sobre el deseado o seguimos escribiendo y pulsamos **Consultar**.
+4. Se muestra la tabla con todas las líneas afectadas por ese BTP.
 
 ![Campo de búsqueda con el desplegable de sugerencias de BTPs](./imagenes/captura-04-campo-de-busqueda-con-el-desplegable-de.png)
 
-### 4.2. Copiar tabla e informar al cliente
+### 9.2. Copiar tabla e informar al cliente
 
 Sobre la tabla hay un único botón grande:
 
 - **"Copiar tabla e informar"** si el BTP aún no se ha informado.
 - **"✔ Ya informado — Volver a copiar"** si ya se había marcado como informado.
 
-El botón cambia de color según la afectación del BTP:
+El botón cambia de color según la afectación:
 
 - **Rojo** si el BTP tiene afectación al servicio.
 - **Azul** si no la tiene.
@@ -177,122 +298,194 @@ El botón cambia de color según la afectación del BTP:
 Al pulsarlo:
 
 1. La tabla se copia al portapapeles.
-2. El BTP se marca automáticamente como **informado al cliente** (las filas pasarán a verde claro al recargar).
-3. Se abre tu cliente de correo con un mensaje preparado:
-   - **Para:** soporte.comunicacions@sergas.es; soporte.voz@sergas.es
-   - **CC:** cgp.sergas@telefonica.com, Evolucion.Comunicacions@sergas.es, Coordinacion.Rede@sergas.es, etc.
-   - **Asunto:** "SERGAS Trabajos Programados - {fecha} - {nº BTP} (CON/SIN afectación)"
-4. **Pega** la tabla con `Ctrl+V` en el cuerpo del correo y envía.
+2. El BTP se marca automáticamente como **informado al cliente** (las filas pasan a verde claro al recargar).
+3. Se abre el cliente de correo con el mensaje preparado:
+   - **Para:** `soporte.comunicacions@sergas.es; soporte.voz@sergas.es`
+   - **CC:** `cgp.sergas@telefonica.com, Evolucion.Comunicacions@sergas.es, Coordinacion.Rede@sergas.es`, etc.
+   - **Asunto:** *"SERGAS Trabajos Programados - {fecha} - {nº BTP} (CON/SIN afectación)"*
+4. **Pegamos** la tabla con `Ctrl+V` en el cuerpo del correo.
+5. **Corregimos el detalle de los trabajos** para que se entienda y resumimos en el campo **MOTIVO** lo más claro posible.
 
 ![Botón Copiar (rojo o azul) junto a la tabla de resultados del BTP](./imagenes/captura-05-boton-copiar-rojo-o-azul-junto-a-la-tabl.png)
 
-### 4.3. Cambiar el estado de un BTP en esta vista
+![Ejemplo del correo a SERGAS con el motivo y la tabla de afectación pegada](./imagenes/captura-17-correo-sergas-ejemplo.png)
 
-En cada fila también puedes cambiar el estado desde el desplegable de la columna **ESTADO**, igual que en la consulta por estado.
+### 9.3. Editar el BTP si necesitamos retoques
 
-> **Diferencia con la consulta por estado:** aquí la fila **no desaparece** al cambiar el estado (porque sigues mirando el mismo BTP). El cambio se aplica a todas las filas del BTP.
+Si tenemos que ajustar fechas, motivo, etc. antes de informar:
 
-### 4.4. Editar un BTP en el modal
-
-1. Pulsa el **icono del lápiz** (✏️) en la columna de la izquierda de la fila que quieras modificar.
-2. Se abrirá una ventana modal con los campos editables agrupados en tres bloques:
-   - **Estado y Afectación:** Estado, Afectación al servicio.
-   - **Fechas y Duración:** Fecha inicio/fin trabajo, Fecha inicio/fin corte, Duración prevista (min), Criticidad.
-   - **Detalles:** Motivo, Equipo, Provincia, Dirección, Descripción del trabajo.
+1. Pulsamos el **icono del lápiz** (✏️) en la columna izquierda de la fila.
+2. Se abre un modal con los campos editables agrupados en tres bloques:
+   - **Estado y Afectación**: Estado, Afectación al servicio.
+   - **Fechas y Duración**: Fecha inicio/fin trabajo, Fecha inicio/fin corte, Duración prevista (min), Criticidad.
+   - **Detalles**: Motivo, Equipo, Provincia, Dirección, Descripción del trabajo.
 3. El número de BTP aparece en gris y **no se puede modificar**.
-4. Modifica los campos necesarios y pulsa **Guardar cambios**.
-5. La página se recargará con los datos actualizados.
+4. Modificamos los campos necesarios y pulsamos **Guardar cambios**.
 
-> **Importante:** los cambios del modal se aplican a **todas las filas de ese BTP** en la base de datos, no solo a la fila desde la que abriste el lápiz. Esto se indica también dentro del propio modal.
+> **Importante:** los cambios del modal se aplican a **todas las filas de ese BTP** en la base de datos, no solo a la fila desde donde abrimos el lápiz.
 
 ![Modal de edición de BTP con los campos rellenados y el botón Guardar](./imagenes/captura-06-modal-de-edicion-de-btp-con-los-campos-r.png)
 
----
+También podemos cambiar el estado directamente desde el desplegable de la columna **ESTADO** de cualquier fila. La fila no desaparece (seguimos mirando el mismo BTP) pero el cambio se aplica a todas las filas del BTP.
 
-## 5. BTP Manual
+### 9.4. Buenas prácticas en el correo
 
-Desde el menú BTPs, selecciona **BTP Manual**.
-
-Esta vista tiene **dos secciones**: importación masiva por plantilla Excel y alta individual por formulario.
-
-### 5.1. Importación masiva por plantilla
-
-Útil cuando tienes que dar de alta varios BTPs a la vez que no vienen del Excel de Telefónica (por ejemplo, BTPs internos del CGE).
-
-1. Pulsa **⬇ Descargar plantilla** para obtener un fichero Excel con el formato correcto.
-2. Rellena la plantilla con los datos de los BTPs (una fila por BTP/línea).
-   - Los campos **Afectación** (`SI` / `NO`) y **Estado** tienen desplegables predefinidos en el Excel.
-3. Pulsa **Seleccionar archivo** y elige la plantilla rellenada.
-4. Pulsa **⬆ Importar Excel**.
-5. Verás el mismo resumen que en las importaciones del apartado 2 (insertados, actualizados, sin cambios), incluyendo el detalle plegable de cambios si has actualizado BTPs existentes.
-
-### 5.2. Alta individual (formulario)
-
-1. Rellena los campos del formulario:
-   - **Nº BTP**, **Inicio trabajo**, **Fin trabajo**, **Inicio corte**, **Duración (min)**.
-   - **Centro**, **Número Línea**, **Tipo línea**, **Rol**, **Nemónico**, **Velocidad**, **Equipo**.
-   - **Afectación** (`CON afectación` / `SIN afectación`), **Estado**.
-   - **Motivo**, **Descripción del trabajo**.
-2. Tienes **dos botones**:
-   - **Generar tabla:** muestra una vista previa del BTP en formato tabla, igual que la consulta por número (sin guardar nada en BD aún).
-   - **Insertar en BBDD:** guarda el BTP en la base de datos. Antes de insertar **te pedirá confirmación** mediante un diálogo.
-
-> **Atajo para líneas ya existentes en BDU:** si la línea (Número Línea) ya está dada de alta, **solo necesitas cubrir** Nº BTP, las fechas, duración, número de línea, equipo, afectación, estado, motivo y descripción. Centro, tipo de línea, rol, nemónico y velocidad se rellenarán solos al consultar el BTP después.
-
-![Formulario de alta manual de BTP con los campos rellenados y los dos botones: Generar tabla e Insertar en BBDD](./imagenes/captura-07-formulario-de-alta-manual-de-btp-con-los.png)
-
-### 5.3. Si el BTP ya existe en BD
-
-Si pulsas **Insertar en BBDD** y el número de BTP ya está dado de alta, verás un mensaje:
-
-> *El BTP {número} ya existe en la base de datos.*
-
-Debajo aparece un botón **Consultar ese BTP** que te lleva directamente a la vista de "Consulta por Nº BTP" para que lo revises o lo edites desde el modal de edición (apartado 4.4).
-
-### 5.4. Copiar y enviar desde la vista previa
-
-Tras pulsar **Generar tabla**, debajo del formulario aparece la tabla con un botón **Copiar tabla** (rojo o azul según la afectación seleccionada). Funciona igual que en la consulta por número: copia la tabla al portapapeles y abre el cliente de correo con el mensaje preparado.
+- El **MOTIVO** debe ser claro y resumido — es la información en la que se fija el cliente.
+- En el cuerpo, un breve resumen de **lo que se va a realizar y el porqué**. **No copiar la información directamente de SAFI o iGRI** — los clientes no tienen por qué entender la jerga interna de Telefónica.
+- Si tenemos dudas sobre los trabajos, **consultamos con N2 o llamamos a las unidades operativas responsables** antes de enviar.
 
 ---
 
-## 6. BTPs Pendientes
+## 10. Cierre de turno — Revisión diaria
 
-Desde el menú BTPs, selecciona **BTPs Pendientes**.
+Dentro del acordeón de BTPs hay un **botón morado** llamado **Revisión diaria**.
 
-Esta vista muestra todos los BTPs con estado **AUTORIZADO** que aún **no se han informado al cliente**. Es la "bandeja" de trabajo del operador para asegurarse de que ningún BTP sale al servicio sin avisar al cliente.
+Al pulsarlo se abre el cliente de correo con un mensaje predefinido pensado para el envío diario al CGP de Telefónica:
+
+- **Para:** `cgp.sergas@telefonica.com`.
+- **Asunto:** incluye automáticamente la fecha del día.
+- **Cuerpo:** plantilla de revisión diaria de BTPs ya redactada.
+
+No hace falta rellenar nada manualmente: solo revisamos el contenido y enviamos.
+
+---
+
+## 11. Turno de tarde
+
+El día en que se ejecuta un trabajo programado, el turno de tarde revisa en **iGri** los BTPs que se ejecutarán esa noche y comprueba que siguen `AUTORIZADO`, así como sus anotaciones.
+
+| Estado al revisar       | Acción                                                                                  |
+|-------------------------|-----------------------------------------------------------------------------------------|
+| Sigue **`AUTORIZADO`**  | Lo dejamos reflejado en el **correo de cambio de turno**, en el apartado correspondiente. |
+| Pasó a **`RECHAZADO`** / **`CANCELADO`** / **`POSPUESTO`** | Enviamos correo a **SERGAS** informando del nuevo estado y modificamos el estado en la BDU. Avisamos al operador de la noche por correo o cambio de turno. |
+
+---
+
+## 12. Turno de noche
+
+El operador del turno de noche revisa **TODOS los trabajos programados** para esa noche para poder informar al cliente debidamente.
+
+### 12.1. Antes del comienzo
+
+- Comprobamos por última vez en iGri que el BTP sigue `AUTORIZADO`. Si hay notas de cancelación o aplazamiento, **avisamos a SERGAS por correo** antes de la ventana.
+- **Enviamos el correo de "comienzan los trabajos"** a SERGAS.
+
+### 12.2. Durante la ejecución
+
+- Comprobamos la **afectación** mirando los routers o las **alarmas sobre los circuitos en la monitorización WOCU**.
+- Para líneas fuera de nuestra monitorización (**DIBAs y troncales**), consultamos en **GEISER** el cese de la alarma y preguntamos a **SERGAS** si pueden confirmar la recuperación.
+
+### 12.3. Cierre del turno (07:00)
+
+A las **07:00** debe haberse enviado el correo según el estado del trabajo: en observación, finalizado, cancelado, etc.
+
+### 12.4. Si hay incidencias o más afectación de la prevista
+
+1. **Llamar al grupo responsable del BTP**.
+2. Desde el **CNCE** se habilita una **Webex** y un **Chat de seguimiento** donde se va informando de los trabajos: https://cnce.es.telefonica/. Allí podemos indicar más afectación o preguntar si todavía están realizando trabajos.
+
+> **Importante**: si las incidencias caen sobre líneas **dentro de la afectación inicial del BTP**, los CEx **NO deben abrir avería**. Lo denuncian en Webex / Chat / teléfono del CNCE para que el CNCE avise a la unidad ejecutora.
+
+> **Pero** si la incidencia es **fuera de la afectación del BTP**, sí se gestiona como incidencia normal.
+
+---
+
+## 13. Pasos obligatorios en TODOS los BTPs
+
+Resumen del checklist mínimo que se cumple en cada BTP:
+
+1. **A la hora de comienzo**: revisamos en **iGri** notas de cancelación o aplazamiento. Si todo sigue, **informamos a SERGAS por correo** del comienzo de los trabajos sobre cualquier BTP con administrativos del SERGAS, tenga o no afectación.
+2. **Conectarnos al chat del CNCE**: https://cnce.es.telefonica/.
+3. **Monitorizar y comprobar el servicio afectado** en WOCU / routers.
+4. **Informar en el chat del CNCE** la afectación del BTP (aunque sea la prevista). Sacamos un recorte y lo pegamos en el calendario para justificar el trabajo.
+5. **Comprobar que el servicio recupera** e informar a SERGAS de la finalización del trabajo y de la recuperación.
+
+> **Recordatorio:** si caen circuitos **fuera de la afectación**, abrimos incidencia normal (no es una caída del BTP).
+
+---
+
+## 14. Consulta por estado
+
+Vista de uso puntual cuando queremos sacar todos los BTPs en un estado concreto (por ejemplo, todos los `AUTORIZADO` para revisar pendientes manualmente, o todos los `RECHAZADO` para auditoría).
+
+Desde **Mantenimiento → BTPs → Consulta Estado**.
+
+### 14.1. Buscar BTPs por estado
+
+1. Seleccionamos un **estado** en el desplegable: AUTORIZADO, PTE AUTORIZACIÓN, CIERRE DE OBRA, CANCELADO, SUSPENDIDO o RECHAZADO.
+2. Pulsamos **Consultar**.
+3. Vemos la tabla con todos los BTPs en ese estado.
+
+![Desplegable de estados con la tabla de resultados debajo](./imagenes/captura-02-desplegable-de-estados-con-la-tabla-de-r.png)
+
+### 14.2. Buscar dentro de los resultados
+
+Encima de la tabla hay un **campo de búsqueda**. Escribimos cualquier dato (centro, BTP, motivo, nemónico, administrativo, etc.) y pulsamos **Buscar**. Para limpiar pulsamos **Limpiar**.
+
+### 14.3. Navegar por páginas
+
+La tabla muestra **50 registros por página**. Si hay más, abajo aparece el paginador con los números y los enlaces *Anterior / Siguiente*.
+
+### 14.4. Cambiar el estado de un BTP
+
+1. En la columna **ESTADO** de cada fila hay un desplegable con el estado actual.
+2. Seleccionamos el nuevo estado.
+3. La fila desaparece con una animación suave (ya no pertenece al estado consultado).
+
+> **Importante:** el cambio de estado se aplica a **todas las líneas del BTP** en la base de datos, no solo a la fila tocada.
+
+![Fila de un BTP con el desplegable de estado abierto mostrando las opciones](./imagenes/captura-03-fila-de-un-btp-con-el-desplegable-de-est.png)
+
+### 14.5. Exportar resultados
+
+Los botones **CSV**, **PDF** y **Excel** **solo aparecen tras seleccionar un estado** y pulsar *Consultar*.
+
+1. Pulsamos el formato deseado.
+2. Se descarga el fichero con todos los BTPs de ese estado (no se aplica el filtro del buscador a la exportación).
+
+### 14.6. Colores de las filas
+
+- **Verde claro:** BTP ya informado al cliente.
+- **Amarillo claro:** BTP `AUTORIZADO` pendiente de informar.
+
+---
+
+## 15. BTPs Pendientes
+
+Vista de bandeja diaria. Desde **Mantenimiento → BTPs → BTPs Pendientes**.
+
+Muestra todos los BTPs con estado **AUTORIZADO** que aún **no se han informado al cliente**. Es la "bandeja" del operador para asegurar que ningún BTP sale a producción sin avisar.
 
 - La tabla muestra: **Centro**, **Fecha de corte**, **Duración**, **Administrativo**, **BTP**, **Motivo**.
 - Las filas están ordenadas por **fecha de corte ascendente** (los más próximos primero).
-- Todas las filas aparecen con fondo amarillo claro (color "pendiente").
-- Pulsa el botón **Abrir** de cada fila para ir directamente a la consulta por número de ese BTP, donde podrás copiarlo, informarlo y enviar el correo (apartado 4.2).
+- Todas las filas aparecen con fondo **amarillo claro** (color "pendiente").
+- Pulsamos **Abrir** en cada fila para ir a la consulta por número de ese BTP, donde podemos copiarlo, informarlo y enviar el correo (ver [sección 9.2](#92-copiar-tabla-e-informar-al-cliente)).
 
 ![Tabla de BTPs pendientes de informar con la columna Abrir](./imagenes/captura-08-tabla-de-btps-pendientes-de-informar-con.png)
 
 ---
 
-## 7. Revisión diaria
+## 16. Dudas frecuentes
 
-Dentro del acordeón de BTPs, junto a las opciones del módulo, hay un **botón morado** llamado **Revisión diaria**.
+**¿Por qué hay dos importaciones distintas?**
+Porque vienen de dos correos distintos: el de TE_Grillo manda el Excel **completo** del día, y el de Control de Cambios manda solo las **modificaciones** de última hora con la pestaña `ADMIN_POR_BTP`. Las dos importaciones tienen el mismo comportamiento (insertar + actualizar), pero esperan ficheros distintos.
 
-Al pulsarlo se abre tu cliente de correo con un mensaje predefinido pensado para el envío diario al CGP de Telefónica:
+**¿Qué pasa si me equivoco y subo el Excel del día en el panel de Telefónica (o al revés)?**
+Cada panel espera un fichero con una estructura concreta (columnas y pestañas distintas: el de **BTPs del Día** busca la pestaña `ADMIN_POR_BTP`). Si subimos el fichero equivocado, lo normal es que la importación no procese nada o devuelva un error sin tocar la base de datos. Subimos entonces el fichero correcto en el panel correcto.
 
-- **Para:** cgp.sergas@telefonica.com.
-- **Asunto:** incluye automáticamente la fecha del día.
-- **Cuerpo:** plantilla de revisión diaria de BTPs ya redactada, lista para revisar y enviar.
+**¿Puedo cambiar el motivo o las fechas de un BTP ya informado?**
+Sí, desde el modal del lápiz (sección 9.3). Si los cambios afectan al cliente, **reenviamos** el correo a SERGAS con la novedad.
 
-No es necesario rellenar nada manualmente: solo revisar el contenido y pulsar enviar en el cliente de correo.
+**¿Por qué algunas filas de la consulta por estado están en verde?**
+Porque ya hemos pulsado *"Copiar tabla e informar"* sobre ese BTP — está marcado como informado al cliente.
 
----
+**¿La importación masiva de BTP Manual reemplaza datos existentes?**
+Sí: si el número de BTP ya existe en la BDU, se actualiza con los datos del fichero. Si no existe, se inserta como nuevo. Igual que las otras importaciones.
 
-## 8. Resumen del flujo típico del operador
-
-Para una nueva incorporación, el flujo del día a día con BTPs suele ser:
-
-1. **Por la mañana:** importar el Excel completo de Telefónica desde *Importación BTPs* (sección 2.1) y luego, a lo largo del día, los ficheros *BTPs del Día* (sección 2.2) según vayan llegando. Revisar el detalle plegable de cambios para confirmar qué BTPs se han modificado (sección 2.3).
-2. **Revisar pendientes de informar:** entrar en *BTPs Pendientes* (sección 6) y, por cada BTP pendiente, pulsar *Abrir* → *Copiar tabla e informar* → enviar el correo al cliente (sección 4.2).
-3. **Cambios puntuales:** si Telefónica notifica un cambio de estado o de fecha de un BTP concreto, buscar el BTP en *Consulta Nº BTP* (sección 4.1) y editarlo desde el modal del lápiz (sección 4.4) o desde el desplegable de estado.
-4. **Altas internas:** si el CGE necesita programar un BTP propio, darlo de alta desde *BTP Manual* (sección 5).
-5. **Cierre del día:** enviar la *Revisión diaria* (sección 7).
+**Si un BTP se cancela durante el turno de noche, ¿qué hago?**
+1. Cambiamos el estado en BDU desde *Consulta por Nº BTP* o desde el modal del lápiz.
+2. Enviamos un correo a SERGAS informando de la cancelación.
+3. Lo dejamos reflejado en el correo de cambio de turno.
 
 ---
 
