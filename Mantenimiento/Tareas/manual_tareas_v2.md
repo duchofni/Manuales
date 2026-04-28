@@ -204,7 +204,7 @@ Pulsamos **📥 Exportar Excel** en la vista de histórico para descargar el log
 
 ## 8. Revisión Serial
 
-- **Equipos incluidos:** equipos de datos con número de serie registrado en BDU.
+- **Equipos incluidos:** los mismos que Config. Planta (routers Cisco, Teldat y Juniper gestionables con IP de cliente válida o IP Telefónica).
 - **Propósito:** comparar el número de serie almacenado en la BDU con el real obtenido vía SSH.
 - **Histórico:** `/mnt/centros/historico_serial/run_*.log`.
 - **Flujo:** patrón común con tres acciones adicionales.
@@ -225,21 +225,19 @@ Si las simulaciones cuadran, pulsamos **Actualizar Seriales BBDD** y los seriale
 
 Además del **Mail CGP** del patrón común, esta tarea tiene dos botones extra:
 
-- **Mail Sergas** abre un correo a SERGAS con el cuerpo predefinido para reportar discrepancias.
-- **Mail Satec** abre un correo a Satec con su propio cuerpo.
-
-Ambos copian la tabla filtrada (sin OK) al portapapeles, igual que el Mail CGP.
+- **Mail Sergas** y **Mail Satec** abren un **pop-up** que nos pide adjuntar un fichero descargado previamente desde el módulo de **Consultas** (la consulta de inventario que pide cada destinatario).
+- Tras seleccionar el fichero, se prepara el correo correspondiente con la tabla filtrada (sin OK) y se envía al destinatario (SERGAS o Satec).
 
 ---
 
 ## 9. Revisión DIBAs
 
-Revisión **semanal** de las 3 DIBAs Juniper (NMACMON5 ×2 + NMACESP5). Sustituye al script VBScript heredado de SecureCRT.
+Revisión **semanal** del estado de las DIBAs. **No nos conectamos a las DIBAs**: nos conectamos a los **3 PEs de Telefónica enfrentados a las DIBAs** (modelo Juniper): **NMACMON5 ×2 + NMACESP5**. Sustituye al script VBScript heredado de SecureCRT.
 
-- **Modo:** **siempre Pasarela** (las DIBAs solo son alcanzables por la red Telefónica).
-- **Equipos:** 3 Junipers fijos (no hay listado en la web; los IPs y las interfaces están definidos en el worker).
+- **Modo:** **siempre Pasarela** (los PEs solo son alcanzables por la red Telefónica).
+- **Equipos:** los 3 PEs Juniper enfrentados a las DIBAs. No hay listado en la web — las IPs y las interfaces están definidas en el worker.
 - **Histórico:** `/mnt/centros/historico_dibas/revision_*.txt`.
-- **Tiempo aproximado:** ~45 min (1000 pings por DIBA).
+- **Tiempo aproximado:** ~45 min (1000 pings por PE).
 
 ### 9.1. Lanzar la revisión
 
@@ -250,11 +248,11 @@ Revisión **semanal** de las 3 DIBAs Juniper (NMACMON5 ×2 + NMACESP5). Sustituy
 
 ### 9.2. Las tres vistas
 
-DIBAs tiene tres pestañas además del histórico:
+Esta tarea tiene tres pestañas además del histórico:
 
 | Vista                  | Para qué sirve                                                                       |
 |------------------------|--------------------------------------------------------------------------------------|
-| **Tabla**              | Una tabla por revisión, con 3 filas (una por DIBA) y todas las métricas relevantes. |
+| **Tabla**              | Una tabla por revisión, con 3 filas (una por PE) y todas las métricas relevantes.   |
 | **Métricas**           | 6 gráficas (canvas 2D): RTT, transiciones, RX, TX, loss, bit error.                  |
 | **Texto**              | Visor del raw completo del log seleccionado (para diagnóstico fino).                 |
 
@@ -276,18 +274,18 @@ DIBAs tiene tres pestañas además del histórico:
 
 ### 9.4. Cálculo automático de roles BGP
 
-El parser extrae el MED representativo de cada DIBA y compara los 3 MED de la revisión:
+El parser extrae el MED representativo de cada PE y compara los 3 MED de la revisión:
 
 - Menor MED → **PRINCIPAL** (verde).
 - Siguiente → **1º BACKUP** (naranja).
 - Siguiente → **2º BACKUP**.
-- Si hay empate de MED, las DIBAs comparten rol.
+- Si hay empate de MED, los PEs comparten rol.
 
 Si los MED cambian, el rol se recalcula automáticamente en la siguiente revisión.
 
 ### 9.5. Exportar Excel
 
-Pulsamos **⬇ Excel** para descargar un `.xlsx` con tres hojas (una por DIBA), cabecera azul corporativa y coloreado de LOSS/ROL.
+Pulsamos **⬇ Excel** para descargar un `.xlsx` con tres hojas (una por PE), cabecera azul corporativa y coloreado de LOSS/ROL.
 
 ### 9.6. Histórico legacy
 
@@ -459,8 +457,6 @@ Tres gráficas Chart.js de evolución mensual:
 
 - Botón **Nuevo mes** para crear o abrir el mes actual.
 - Selector de **mes histórico** (año + mes) para consultar datos anteriores.
-
-> **Modo oscuro:** las gráficas y todos los elementos del módulo se adaptan automáticamente al modo oscuro de BDU.
 
 ---
 
@@ -787,7 +783,7 @@ Casos de uso típicos:
 - Recolectar la potencia óptica del SFP+ de los Cisco 5G.
 - Recolectar el SIM Card ID de los Teldat 5G por provincia.
 
-Sustituye a la antigua *"Tarea Gentest"* en SecureCRT (VBS), pero **full-web** y **escalable**: filtros sobre la BDU, sin subir ficheros por SSH al servidor.
+Sustituye a la antigua **"SEM"** en SecureCRT (VBS), pero **full-web** y **escalable**: filtros sobre la BDU, sin subir ficheros por SSH al servidor.
 
 ---
 
