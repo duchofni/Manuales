@@ -83,7 +83,7 @@ Una vez autenticados, la interfaz de BDU se compone de los siguientes elementos:
 
 En la parte superior de la pantalla se encuentra la barra de navegación con los módulos disponibles:
 
-**Inicio** | **Centros** | **Provisión** | **Instalaciones** | **Consultas** | **Stock** | **Correos** | **Mantenimiento** | **Plantillas** | **Documentación** | **Info/Ayuda** | **Mailviewer**
+**Inicio** | **Centros** | **Mantenimiento** | **Plantillas** | **Correos** | **Instalaciones** | **Consultas** | **Documentación** | **Provisión** | **Info/Ayuda** | **Stock** | **Mailviewer**
 
 - Pulsamos sobre cualquier nombre de módulo para acceder a él.
 - El módulo activo se resalta visualmente para que siempre sepamos en qué sección estamos trabajando.
@@ -108,13 +108,15 @@ El icono con forma de insecto permite **reportar incidencias o sugerencias** sob
 
 Este botón no está relacionado con las incidencias de red; es exclusivamente para comunicar fallos o mejoras de la herramienta BDU.
 
-### 2.4. Acerca de
+### 2.4. Accesos rápidos a herramientas externas
 
-El icono de información abre una ventana con los datos de la versión actual de BDU, incluyendo:
+En la barra superior disponemos de tres botones que abren en una pestaña nueva las herramientas externas más utilizadas en el día a día del CGE:
 
-- Número de versión.
-- Información del desarrollador.
-- Datos de contacto.
+- **Nagios** (icono **N**) — accede directamente al panel NagiosTV de monitorización de la infraestructura.
+- **Gitea / Git** (icono GitHub) — accede al repositorio interno de código y documentación de la propia aplicación BDU.
+- **Vaultwarden** (icono escudo) — accede al gestor de contraseñas corporativo.
+
+> **Nota:** las tres herramientas requieren credenciales propias. La primera vez que accedemos en el navegador puede aparecer un popup pidiendo usuario y contraseña.
 
 ### 2.5. Cerrar sesión
 
@@ -454,11 +456,10 @@ Para evitarlo, basta con interactuar periódicamente con la aplicación (cambiar
 
 ## 6. Funcionalidades transversales (sin manual propio)
 
-Además de los módulos principales, BDU dispone de tres utilidades transversales que aparecen integradas en la cabecera y no tienen un manual dedicado:
+Además de los módulos principales, BDU dispone de dos utilidades transversales que aparecen integradas en la cabecera y no tienen un manual dedicado:
 
 - **Avisos entre turnos:** sistema de mensajes que los operadores se dejan al cambio de turno. Permite listar los avisos pendientes, crear nuevos y marcarlos como resueltos. Útil para registrar tareas en curso, incidencias abiertas o cualquier información que el siguiente turno deba conocer.
 - **Buscador global:** caja de búsqueda en la barra superior que consulta simultáneamente centros, líneas, equipos, BTPs e incidencias. Requiere al menos 2 caracteres y muestra hasta 15 resultados por categoría. Al pulsar un resultado se navega directamente al elemento.
-- **Acerca de:** pantalla informativa con la versión actual de BDU, autor y contacto. Accesible desde el menú de ayuda.
 
 ---
 
