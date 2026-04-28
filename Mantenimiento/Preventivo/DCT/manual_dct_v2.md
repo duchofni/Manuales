@@ -166,7 +166,7 @@ Desde el detalle del lote podemos pulsar **🔍 Reintentar** para volver a lanza
 
 ## 7. Test DCT Masivo (tarea semanal)
 
-El **Test Masivo** se lanza desde **Mantenimiento → Tareas → Test DCT** (no desde aquí). Envía #016# a los ~405 DCTs para verificar la salud de todo el parque. Tarda **~5 horas** porque los SMS salen en lotes de 20 cada 10 minutos para no saturar Movistar.
+El **Test Masivo** se lanza desde **Mantenimiento → Tareas → Test DCT** (no desde aquí). Envía #016# a los ~405 DCTs para verificar la salud de todo el parque. Tarda **~5 horas** porque los SMS salen en lotes de 20 cada 10 minutos para no saturar la red o el módem.
 
 Para el detalle completo consultamos el manual del módulo **Tareas**.
 
@@ -284,7 +284,7 @@ Porque cuando se corta la luz en el centro, la batería interna del DCT no siemp
 
 ### ¿Y si recibimos solo el LOST y nunca el RESTORED?
 
-Suele indicar que el DCT se ha quedado sin batería o que sigue sin luz cuando ya debería haber vuelto. Normalmente un técnico de mantenimiento visita el centro para comprobarlo. El KPI de cortes cuenta la incidencia igualmente aunque no llegue el RESTORED.
+Puede indicar que el dispositivo se ha averiado o si probamos con un TEST y responde, que el SMS se ha perdido en algún punto del camino.
 
 ### ¿Cuánto tarda el informe en Excel / PDF?
 
@@ -294,9 +294,9 @@ Entre 5 y 30 segundos según el rango seleccionado (histórico completo tarda m�
 
 Sí, desde **⚙ Configuración**. Están todos los comandos del catálogo soportado por el DD5241. Si falta alguno, hay que ampliar `lib/comandos.php` (pedir al equipo técnico).
 
-### ¿Los correos los recibimos nosotros?
+### ¿Quién recibe los correos?
 
-Los correos automáticos de alerta se envían a `cgp.sergas@telefonica.com` (lista del CGP). Si no los vemos, puede ser un filtro de spam o que nuestra cuenta no esté en esa lista.
+Los correos automáticos de alerta se envían a `cgp.sergas@telefonica.com`. Si no los vemos, o el sms no ha llegado al servidor o se ha quedado bloqueado, contactar con el equipo técnico si se dejan de recibir correos.
 
 ---
 
