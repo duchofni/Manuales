@@ -3,104 +3,187 @@
 | Campo       | Valor                              |
 |-------------|------------------------------------|
 | **Módulo**  | Mantenimiento > Informes CGP       |
-| **Versión** | 1.5                                |
+| **Versión** | 1.6                                |
 | **Fecha**   | Abril 2026                         |
 | **Para**    | Operadores CGE SERGAS              |
 
 ---
 
-## 1. Descripción general
+## Índice
 
-El módulo Informes permite generar informes de incidencias en formato Excel y CSV. Hay **5 tipos** de informes: dos diarios CGP (Lote 1 y Lote 3), uno diario interno, uno semanal interno y uno semanal para SERGAS. Los informes se generan en segundo plano y se descargan cuando están listos.
-
----
-
-## 2. Panel principal
-
-Al entrar en Informes verás:
-
-- Un **resumen de incidencias abiertas** por tipo y estado.
-- **Tarjetas** para cada tipo de informe, con la fecha y hora de corte.
-- **Historial** de archivos generados anteriormente para cada tipo.
-
-![Panel principal de Informes mostrando las tarjetas de los 5 tipos de informe y el resumen de incidencias](./imagenes/captura-01-panel-principal-de-informes-mostrando-la.png)
+1. [Para qué sirve este módulo](#1-para-qué-sirve-este-módulo)
+2. [Cómo accedemos al módulo](#2-cómo-accedemos-al-módulo)
+3. [La pantalla principal](#3-la-pantalla-principal)
+4. [Tipos de informe disponibles](#4-tipos-de-informe-disponibles)
+5. [Generar un informe](#5-generar-un-informe)
+6. [Descargar informes (Excel y PDF)](#6-descargar-informes-excel-y-pdf)
+7. [Enlaces a correos del CGP](#7-enlaces-a-correos-del-cgp)
+8. [Resumen del flujo habitual](#8-resumen-del-flujo-habitual)
 
 ---
 
-## 3. Tipos de informes disponibles
+## 1. Para qué sirve este módulo
 
-### 3.1. Informe Diario CGP Lote 1
+El módulo **Informes** genera los informes diarios y semanales de incidencias en formato **Excel (.xlsx)** y, automáticamente, también en **PDF**. Los informes se generan en segundo plano: pulsamos el botón y podemos seguir trabajando mientras la página comprueba el estado y muestra el enlace de descarga cuando está listo.
 
-- **Corte:** Desde ayer a las 15:00h hasta hoy a las 15:00h.
-- **Contenido:** Incidencias de VOZ, DATOS, SOPORTE TI (L1) y MODIFICACIONES.
-- **Formato:** Excel (.xlsx) basado en plantilla CGP.
+Hay **5 tipos** de informe agrupados en 4 tarjetas:
 
-### 3.2. Informe Diario CGP Lote 3
+- **Informe diario CGP** (con dos botones: Lote 1 y Lote 3).
+- **Informe diario interno**.
+- **Informe semanal interno**.
+- **Semanal SERGAS** (CSV, sin PDF).
 
-- **Corte:** Mismo período que Lote 1 (ayer 15:00h - hoy 15:00h).
-- **Contenido:** Solo incluye SOP TI L3.
-- **Formato:** Excel (.xlsx).
-
-### 3.3. Informe Diario Interno
-
-- **Corte:** Mismo período que los diarios CGP.
-- **Contenido:** Los 5 tipos: VOZ, DATOS, SOP TI L1, SOP TI L3, Modificaciones.
-- **Formato:** Excel (.xlsx).
-
-### 3.4. Informe Semanal Interno
-
-- **Corte:** Desde el viernes a las 10:00h hasta el lunes siguiente a las 10:00h.
-- **Contenido:** Los 5 tipos de incidencia.
-- **Formato:** Excel (.xlsx) con hojas por tipo.
-
-### 3.5. Informe Semanal SERGAS
-
-- **Corte:** Mismo período que el semanal interno.
-- **Contenido:** Múltiples ficheros, uno por tipo de incidencia.
-- **Formato:** CSV.
+Cada tarjeta lleva además un **enlace a la plantilla de correo** correspondiente para enviar el informe al destinatario sin tener que copiar y pegar.
 
 ---
 
-## 4. Generar un informe
+## 2. Cómo accedemos al módulo
 
-1. Localiza la tarjeta del informe que quieres generar.
-2. Verifica que la **fecha de corte** mostrada es la correcta.
-3. Pulsa el botón **Generar** de esa tarjeta.
-4. Se mostrará un **indicador de progreso** mientras el informe se genera en segundo plano.
-5. Cuando esté listo, aparecerá un **enlace de descarga**.
-6. Pulsa el enlace para descargar el fichero.
+1. Abrimos la **Web BDU** en el navegador.
+2. En la barra superior pulsamos **Mantenimiento**.
+3. Pulsamos la tarjeta **Incidencias** y, en el acordeón, elegimos **Informes CGP**.
 
-![Tarjeta de un informe mostrando el indicador de progreso y luego el enlace de descarga](./imagenes/captura-02-tarjeta-de-un-informe-mostrando-el-indic.png)
-
-> **Nota:** El proceso de generación puede tardar unos segundos. No cierres la página mientras se genera.
+> **Atajo:** también podemos llegar directamente con `?m=mantenimiento&sub=informes` añadido al final de la URL.
 
 ---
 
-## 5. Descargar informes anteriores
+## 3. La pantalla principal
 
-- Debajo de cada tarjeta de informe verás el **historial** de los últimos archivos generados.
-- Pulsa sobre cualquier fichero del historial para descargarlo directamente.
+Al entrar vemos cuatro zonas, de arriba abajo:
 
-![Historial de archivos generados debajo de una tarjeta de informe](./imagenes/captura-03-historial-de-archivos-generados-debajo-d.png)
+![Panel principal de Informes con las tarjetas de generación, el resumen de incidencias abiertas y la tabla de últimos archivos generados](./imagenes/captura-01-panel-principal-de-informes-mostrando-la.png)
+
+### 3.1. Mensajes de estado
+
+Justo debajo del título aparecen, según el momento:
+
+- **⏳ Generando** *…nombre del informe…* — un job está activo. La página se recarga automáticamente cada 8 segundos.
+- **✅ Informe generado** — el último informe terminó correctamente.
+- **❌ Error al generar el informe** — el último intento falló (con el motivo).
+
+### 3.2. Tarjetas de generación
+
+Una tarjeta por tipo, con la **fecha y hora de corte** del rango que cubrirá el informe y los botones para lanzarlo.
+
+### 3.3. Resumen "Abiertas ahora"
+
+Tabla pequeña con el conteo de incidencias **no cerradas** por tipo y por estado:
+
+| Tipo            | Sol. | Obs. | Pte. | Total |
+|-----------------|------|------|------|-------|
+| VOZ             | …    | …    | …    | …     |
+| DATOS           | …    | …    | …    | …     |
+| Modificaciones  | …    | …    | …    | …     |
+| SOP TI L1       | …    | …    | …    | …     |
+| SOP TI L3       | …    | …    | …    | …     |
+
+Donde *Sol.* = `EN SOLUCION`, *Obs.* = `OBSERVACION`, *Pte.* = `PTE CONFIRMACION`.
+
+### 3.4. Últimos informes generados
+
+Tabla con los archivos generados durante el **mes en curso**, ordenados por fecha de generación descendente. Por cada archivo: tipo, nombre del fichero, fecha de generación, tamaño y los iconos de descarga.
 
 ---
 
-## 6. Estructura de los informes Excel
+## 4. Tipos de informe disponibles
 
-Los informes en formato Excel contienen:
+### 4.1. Informe diario CGP (Lote 1 y Lote 3)
 
-- **Hoja RESUMEN**: datos agrupados por tipo de incidencia con totales.
-- **Hojas individuales**: una hoja por cada tipo de incidencia con el detalle completo.
+- **Corte**: ayer 15:00h → hoy 15:00h.
+- **Lote 1**: incluye **VOZ**, **DATOS**, **SOP TI L1** y **MODIFICACIONES**.
+- **Lote 3**: incluye solo **SOP TI L3**.
+- **Formato**: Excel (`.xlsx`) basado en plantilla CGP + PDF automático.
+- **Carpeta**: `/mnt/documentacion/Informes/informe_diario_cgp/{año}/{mes}/`.
 
-Los informes semanales SERGAS generan ficheros CSV separados (uno por tipo).
+### 4.2. Informe diario interno
+
+- **Corte**: ayer 10:00h → hoy 10:00h.
+- **Contenido**: los 5 tipos de incidencia (VOZ, DATOS, SOP TI L1, SOP TI L3, Modificaciones).
+- **Formato**: Excel + PDF.
+- **Carpeta**: `informe_diario_interno/{año}/{mes}/`.
+
+### 4.3. Informe semanal interno
+
+- **Corte**: viernes 10:00h → lunes siguiente 10:00h.
+- **Contenido**: los 5 tipos.
+- **Formato**: Excel + PDF.
+- **Carpeta**: `informe_semanal_interno/{año}/{mes}/`.
+
+### 4.4. Semanal SERGAS (CSV)
+
+- **Corte**: viernes 15:00h → viernes siguiente 15:00h.
+- **Contenido**: 4 ficheros `.csv` separados (VOZ, DATOS, SOP L1, SOP L3). Modificaciones **no se incluye**.
+- **Formato**: CSV con separador `;` y codificación UTF-8 con BOM (para que Excel lo abra correctamente con tildes).
+- **Carpeta**: `informe_semanal_sergas/{año}/semana_NN/`.
 
 ---
 
-## 7. Errores
+## 5. Generar un informe
 
-- Si ocurre un error durante la generación, se mostrará un **mensaje de error** en lugar del enlace de descarga.
-- En ese caso, puedes intentar generar el informe de nuevo.
+1. Localizamos la tarjeta del informe que queremos generar.
+2. Verificamos que la **fecha de corte** mostrada es la correcta.
+3. Pulsamos el botón **📊 Generar…** (o **📊 Lote 1 / Lote 3** en el caso del CGP, o **📄 Generar CSVs Sergas** para el de SERGAS).
+4. La página recarga y muestra el aviso *"⏳ Generando: …"* mientras el informe se prepara.
+5. Mientras tanto podemos seguir trabajando en otras pestañas: la página se refresca sola cada 8 segundos y avisa cuando termina.
+
+![Tarjeta de un informe mostrando el indicador "Generando..." y, una vez listo, el aviso verde con el nombre del archivo](./imagenes/captura-02-tarjeta-de-un-informe-mostrando-el-indic.png)
+
+> **Importante:** mientras hay un job activo, los botones de generación de **todas** las tarjetas se deshabilitan a *"⏳ Generando..."*. Solo se puede tener un informe en preparación a la vez. Los enlaces a correos siguen disponibles.
+
+> **Si el informe falla**: aparece un aviso rojo con el mensaje del error. En ese caso volvemos a pulsar el botón para reintentarlo.
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.5 — Abril 2026.*
+## 6. Descargar informes (Excel y PDF)
+
+Los informes generados se listan en la tabla **"Últimos informes generados (mes actual)"** al final de la pantalla. Por cada fila tenemos hasta dos iconos en la columna **Desc.**:
+
+| Icono   | Para qué sirve                                                       |
+|---------|----------------------------------------------------------------------|
+| **📊**  | Descargar el Excel (`.xlsx`).                                        |
+| **📄**  | Descargar el CSV (en lugar del 📊, solo aparece para SERGAS).         |
+| **🔴**  | Descargar el PDF (solo aparece si el PDF se generó correctamente).   |
+
+Pulsamos el icono y el navegador descarga el fichero. La descarga se sirve desde un endpoint propio (`download.php`) que verifica que la ruta esté dentro de `/mnt/documentacion`, así que no podemos descargar nada fuera de la carpeta de informes.
+
+![Tabla de últimos informes generados con los iconos 📊 (Excel) y 🔴 (PDF) en la columna de descarga](./imagenes/captura-03-historial-de-archivos-generados-debajo-d.png)
+
+> **Cómo se genera el PDF**: una vez creado el `.xlsx`, el sistema lo convierte a PDF con LibreOffice en modo *headless*. El PDF queda en la subcarpeta `pdf/` junto al Excel.
+
+---
+
+## 7. Enlaces a correos del CGP
+
+Cada tarjeta de informe lleva un enlace **✉️** que abre directamente la plantilla de correo correspondiente en el módulo **Correos**, ya pre-rellenada para que solo tengamos que adjuntar el informe y enviar.
+
+| Tarjeta                 | Enlace a correo                            |
+|-------------------------|--------------------------------------------|
+| Informe diario CGP      | **✉️ Abrir correo "Informe Sergas"**       |
+| Informe diario interno  | **✉️ Abrir correo "Informe Telefónica"**   |
+| Informe semanal interno | **✉️ Abrir correo "Informe Telefónica"**   |
+| Semanal SERGAS (CSV)    | (sin enlace; los CSV se envían a parte)    |
+
+**Flujo habitual** al cerrar el día:
+
+1. Generamos el informe correspondiente y descargamos el `.xlsx` y/o el PDF.
+2. Pulsamos el enlace **✉️** de la misma tarjeta.
+3. Se abre la plantilla de correo en una pestaña nueva, lista para enviar.
+4. Adjuntamos el informe descargado y enviamos.
+
+![Tarjeta de informe con el botón Generar y el enlace a la plantilla de correo correspondiente](./imagenes/captura-04-tarjeta-con-enlace-correo.png)
+
+---
+
+## 8. Resumen del flujo habitual
+
+Para una nueva incorporación, el día a día con Informes suele ser:
+
+1. **Por la mañana** (antes de las 10:00): generamos los **Diarios CGP Lote 1 y Lote 3**, descargamos el PDF, pulsamos **✉️ Abrir correo "Informe Sergas"** y lo enviamos.
+2. **A continuación**: generamos el **Diario interno**, descargamos el PDF, pulsamos **✉️ Abrir correo "Informe Telefónica"** y lo enviamos al equipo interno.
+3. **Cada lunes** por la mañana: generamos el **Semanal interno** y lo enviamos por la plantilla "Informe Telefónica".
+4. **Cada viernes** después de las 15:00: generamos el **Semanal SERGAS (CSV)** y enviamos los 4 ficheros al destinatario habitual.
+5. Si necesitamos **reenviar** un informe ya generado, lo descargamos desde la tabla *"Últimos informes generados"* sin tener que regenerarlo.
+
+---
+
+*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
