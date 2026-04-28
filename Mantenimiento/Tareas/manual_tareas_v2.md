@@ -532,7 +532,13 @@ Si recogemos un nodo a mano, los campos a rellenar son: **IP** (instaladas/usada
 Antes de la importación CSV hacemos la **petición mensual a IVR**:
 
 1. Desde el mes activo, pulsamos el **botón habilitado en BDU** para descargar la **plantilla Word** de IVR.
+
+   ![Botón en BDU para descargar la plantilla Word de IVR](./imagenes/captura-10-ivr-descargar-plantilla-word.png)
+
 2. Adjuntamos esa plantilla al correo a **mantenedor**, indicando el mes correspondiente.
+
+   ![Correo a mantenedor con la plantilla Word adjunta](./imagenes/captura-11-ivr-enviar-correo-mantenedor.png)
+
 3. Mantenedor nos devuelve el correo con los datos cumplimentados.
 4. Esos datos los introducimos al final de la tarea CISCO.
 
@@ -551,8 +557,13 @@ En cada SSM:
 
 1. Entramos con `admintel` y la contraseña corporativa.
 2. Pulsamos en **Smart Licensing**.
+
+   ![Pantalla de Smart Licensing del SSM tras iniciar sesión](./imagenes/captura-12-ssm-smart-licensing.png)
+
 3. En el desplegable de la derecha vamos seleccionando cada cuenta de licencias del cuadro.
 4. Para cada cuenta: **Inventory → Licenses** y descargamos el CSV.
+
+   ![Vista Inventory → Licenses del SSM con la opción de descargar CSV](./imagenes/captura-13-ssm-inventory-licenses-csv.png)
 
 > Algunas cuentas tienen **2 páginas de licencias**: descargamos los CSV de las dos páginas.
 
@@ -604,13 +615,25 @@ Los indicadores de NGN se descargan de **OMEGA**:
 2. Navegamos a: **Consola Omega → NGN → BT-AUIP → AS-BT**.
 3. Ejecutamos la opción **Obtención de estadísticas de ocupación de canales eBTNG**.
 4. En el campo **Empresa** escribimos `segasa` y pulsamos **Buscar**.
+
+   ![OMEGA Consola → NGN → BT-AUIP → AS-BT con la búsqueda de la empresa segasa](./imagenes/captura-14-omega-consola-as-bt-segasa.png)
+
 5. Aparecen los **3 administrativos** del SERGAS — exportamos los datos de los tres, **uno a uno**:
    - Marcamos el administrativo.
    - Ponemos las **fechas de inicio y fin** del mes correspondiente.
    - Pulsamos **Ejecutar**.
+
+   ![OMEGA con un administrativo SERGAS marcado, fechas de inicio/fin y el botón Ejecutar](./imagenes/captura-15-omega-ejecutar-administrativo.png)
+
 6. Volvemos a la página anterior y vamos a **Consulta de ejecuciones anteriores**.
+
+   ![OMEGA Consulta de ejecuciones anteriores con la solicitud en estado OK](./imagenes/captura-16-omega-consulta-ejecuciones-anteriores.png)
+
 7. Esperamos a que la solicitud aparezca como **OK** y entramos a ella.
 8. En **Exportar resultado** descargamos el `.txt`.
+
+   ![OMEGA Exportar resultado para descargar el TXT](./imagenes/captura-17-omega-exportar-resultado.png)
+
 9. El fichero se descarga como `datos_consola.txt`. Lo **renombramos con el administrativo y la fecha** para diferenciar los 3.
 
 ### 18.2. Importar los TXT en la web BDU
@@ -644,11 +667,18 @@ Tenemos que entrar al **SBC activo** del CST y del 061:
 
 Para saber **cuál está activo** simplemente al iniciar sesión nos aparece indicado en la parte de arriba.
 
+![Pantalla del SBC mostrando cuál es el nodo activo en la cabecera](./imagenes/captura-18-sbc-cual-esta-activo.png)
+
 Una vez dentro:
 
 - Vamos a la sección **Xcode load** y obtenemos la gráfica de codecs.
 - En el caso del **CST** aparecen 3 sesiones TCM (`00`, `01` y `02`) con su porcentaje **MAXIMUM**.
+
+  ![Xcode load del SBC CST con las 3 sesiones TCM 00, 01 y 02](./imagenes/captura-19-sbc-cst-xcode-load.png)
+
 - En el caso del **061** solo hay **una sesión**.
+
+  ![Xcode load del SBC 061 con la única sesión TCM](./imagenes/captura-20-sbc-061-xcode-load.png)
 
 Apuntamos para cada sesión: **hora de la consulta**, **sesiones totales**, **TCM** y **porcentaje máximo de ocupación** (MAXIMUM).
 
@@ -681,12 +711,16 @@ Para todos los CUCM el flujo es: **System → Licensing → License Management**
 | **CUCM 061 PRO**      | https://10.168.0.36/ccmadmin/                        |
 | **CUCM 061 PRE**      | https://10.51.72.23/ccmadmin/                        |
 
+![Vista License Management de un CUCM (el flujo es idéntico para todos)](./imagenes/captura-21-cucm-license-management.png)
+
 ### 20.2. UCCX
 
 | UCCX                  | URL + ruta                                                       |
 |-----------------------|------------------------------------------------------------------|
 | **UCCX 061 PRO**      | https://us06172s.sergas.local/appadmin/main → **System → License Management** |
 | **UCCX 061 PRE**      | https://10.51.72.23/ccmadmin (mismo flujo que PRO).              |
+
+![Vista System → License Management del UCCX](./imagenes/captura-22-uccx-license-management.png)
 
 ### 20.3. SSM (Smart Software Manager)
 
@@ -696,6 +730,10 @@ Para todos los CUCM el flujo es: **System → Licensing → License Management**
 | **SSM PRE** | https://172.16.255.82:8443      | 2 cuentas del desplegable.                |
 
 Flujo: **Smart Licensing → Inventory → Licenses** y capturamos la página.
+
+![SSM PRO con el desplegable de cuentas en Smart Licensing → Inventory → Licenses](./imagenes/captura-23-ssm-pro-smart-licensing-cuentas.png)
+
+![SSM PRE con el desplegable de cuentas en Smart Licensing → Inventory → Licenses](./imagenes/captura-24-ssm-pre-smart-licensing-cuentas.png)
 
 ### 20.4. SBC Transcoding
 
@@ -707,6 +745,8 @@ Las capturas del Xcode load del CST y del 061 las sacamos durante la consulta ma
 2. Pulsamos **Calls** en el menú izquierdo.
 3. En la gráfica de llamadas marcamos **30 días**.
 4. Capturamos la gráfica de los últimos 30 días.
+
+![EOM Calls con la gráfica de los últimos 30 días para capturar](./imagenes/captura-25-eom-grafica-30-dias.png)
 
 ### 20.6. Subir capturas en la web BDU
 
