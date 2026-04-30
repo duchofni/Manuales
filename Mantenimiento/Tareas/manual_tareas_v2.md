@@ -321,7 +321,16 @@ Cada tabla tiene un botón **Copiar tabla** para llevarla al portapapeles.
 
 Pulsamos **Histórico** para ver comparaciones anteriores. Elegimos un fichero del desplegable y se muestran las mismas tablas de discrepancias y no encontrados.
 
-### 10.4. Nueva comparación
+### 10.4. Mail
+
+Tanto en la pantalla de **resultados** como al abrir un log del **histórico**, aparece el botón **📧 Mail** (igual que en las demás tareas).
+
+Al pulsarlo:
+
+- Si **hay discrepancias o administrativos no encontrados**, se copian al portapapeles las dos tablas combinadas (con encabezados y estilo listo para pegar en Outlook) y se abre el cliente de correo con el asunto preparado (`TAREAS CGP - Validación Logos-PT - DD/MM/YYYY`) y un cuerpo donde dice **[PEGAR TABLA AQUÍ]** — solo hay que pulsar **CTRL+V** ahí.
+- Si **no hay discrepancias ni administrativos ausentes**, se abre directamente el correo con un cuerpo indicando que la tarea ha finalizado correctamente, sin tabla que pegar.
+
+### 10.5. Nueva comparación
 
 Pulsamos **Nueva comparación** para volver al formulario y subir otro CSV.
 
