@@ -122,7 +122,7 @@ Si el tipo es **DATOS**, aparece un selector adicional:
 |--------------------------|----------------------------------------------------------------------|
 | Asunto                   | Texto libre. Para DATOS sobre línea se autogenera con el nemónico.   |
 | SIXPI                    | Ticket del cliente.                                                  |
-| Estado                   | EN SOLUCION (por defecto), OBSERVACION, PTE CONFIRMACION, CERRADA.   |
+| Estado                   | EN SOLUCION (por defecto), OBSERVACION, PTE CONFIRMACION. *(El estado CERRADA solo está disponible al editar una incidencia, no al crearla)*. |
 | Urgencia                 | 1, 2 o 3.                                                            |
 | Responsable              | Telefónica (T) o Cliente (C).                                        |
 | Fecha apertura cliente   | **Obligatoria**. Fecha en que el cliente abrió la incidencia.        |
@@ -293,7 +293,7 @@ Pulsamos el icono **✏️** de la primera columna de la fila. Se carga el formu
 2. **Crear** la incidencia con los datos del centro, tipo, GDIA, etc. ([sección 4](#4-crear-una-nueva-incidencia)).
 3. Gestionar la incidencia: añadir actuaciones, modificar estado conforme avanza ([sección 5](#5-editar-una-incidencia)).
 4. **Copiar para GDIA** cuando necesitemos abrir un ticket interno ([sección 5.2](#52-copiar-para-gdia)).
-5. Cuando se resuelva, ponemos estado **CERRADA** con todas las fechas obligatorias.
+5. Cuando se resuelva, ponemos estado **CERRADA** con todas las fechas obligatorias. Al guardar saldrá un aviso recordando que **revisemos bien todos los datos** (fechas, responsable, flags, comentarios) porque **en breve se eliminará la opción de editar incidencias cerradas**. Aplica tanto al cierre individual como al masivo.
 6. Para actualizaciones en bloque (cierre masivo, actuación común…), usamos la **edición masiva** ([sección 6](#6-edición-masiva)).
 7. Si necesitamos consultar incidencias antiguas, vamos a [Ver cerradas](#7-ver-incidencias-cerradas) y, si hace falta, activamos el **histórico completo**.
 
