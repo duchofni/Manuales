@@ -224,7 +224,7 @@ Cuando necesitamos aplicar un mismo cambio a varias incidencias a la vez (cerrar
 2. Se abre un modal con todos los campos modificables. **Solo se aplicará lo que rellenemos**: los campos vacíos y los selectores que dejemos en `-- Sin cambiar --` se ignoran.
 3. Campos disponibles:
    - **Estado**, **Urgencia**, **Responsable**.
-   - **Respuesta cliente**, **Fecha solución**, **Fecha cierre** (clic = ahora).
+   - **Apertura cliente**, **Respuesta cliente**, **Fecha solución**, **Fecha cierre** (clic = ahora).
    - **Añadir GDIA**: ticket + fecha.
    - **Añadir actuación**: tipo + ticket + fecha.
    - **Comentario cliente** (sobreescribe el existente).
@@ -236,7 +236,9 @@ Cuando necesitamos aplicar un mismo cambio a varias incidencias a la vez (cerrar
 
 ![Modal de edición masiva con los campos rellenables y el botón Aplicar a seleccionadas](./imagenes/captura-02-modal-de-edicion-masiva-con-los-campos-r.png)
 
-> **Cerrar en bloque:** si elegimos estado **CERRADA**, debemos rellenar obligatoriamente las fechas de **Respuesta**, **Solución** y **Cierre** en el modal masivo.
+> **Cerrar en bloque:** si elegimos estado **CERRADA**, debemos rellenar obligatoriamente las fechas de **Apertura**, **Respuesta**, **Solución** y **Cierre** en el modal masivo. Para **OBSERVACION** o **PTE CONFIRMACION** se exigen **Apertura**, **Respuesta** y **Solución**.
+
+> **Validación de coherencia temporal:** antes de aplicar nada, el sistema comprueba fila a fila que las fechas resultantes (las del form sobre las que ya tuviera cada incidencia) cumplen el orden lógico **apertura ≤ respuesta ≤ GDIA ≤ actuaciones ≤ solución ≤ cierre**. Si alguna incidencia incumple el orden, **no se aplica ningún cambio del lote** y se muestra una lista con las incidencias problemáticas (INC #Id y ticket cliente) y el motivo. Corregimos lo que sobre y volvemos a intentar. Es un comportamiento *todo o nada* para evitar dejar incidencias en estado inconsistente.
 
 > **Observaciones masivas:** se concatenan al final de las que ya tuviera cada incidencia (no las sobreescriben). El **comentario cliente**, en cambio, sí sobreescribe.
 
