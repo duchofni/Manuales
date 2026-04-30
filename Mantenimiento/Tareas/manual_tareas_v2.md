@@ -327,7 +327,7 @@ Tanto en la pantalla de **resultados** como al abrir un log del **histórico**, 
 
 Cuando lo pulsamos:
 
-- Si **hay discrepancias o administrativos no encontrados**, copiamos al portapapeles las dos tablas combinadas (con encabezados y estilo listo para pegar en Outlook) y se abre el cliente de correo con el asunto preparado (`TAREAS CGP - Validación Logos-PT - DD/MM/YYYY`) y un cuerpo en el que dice **[PEGAR TABLA AQUÍ]** — solo tenemos que pulsar **CTRL+V** ahí.
+- Si **hay discrepancias o administrativos no encontrados**, al pulsar el botón **Mail** se copia al portapapeles las dos tablas combinadas (con encabezados y estilo listo para pegar en Outlook) y se abre el cliente de correo con el asunto preparado (`TAREAS CGP - Validación Logos-PT - DD/MM/YYYY`) y un cuerpo en el que dice **[PEGAR TABLA AQUÍ]** — solo tenemos que pulsar **CTRL+V** ahí.
 - Si **no hay discrepancias ni administrativos ausentes**, se abre directamente el correo con un cuerpo que indica que la tarea ha finalizado correctamente, sin tabla que pegar.
 
 ### 10.5. Nueva comparación
