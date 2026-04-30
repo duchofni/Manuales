@@ -127,6 +127,42 @@ No tenemos que hacer nada especial: en el siguiente ciclo del worker, si Nagios 
 
 > **Importante:** la recuperación **no cierra** la incidencia. Somos nosotros quienes decidimos cerrarla desde el módulo de Incidencias cuando confirmemos que el problema está resuelto.
 
+### 4.4. Preparar correo de incidencia masiva
+
+Cuando una avería tira muchos hosts a la vez (un nodo, una zona) lo habitual es enviar un correo de **incidencia masiva** a Telefónica además de abrir las incidencias en BDU. El módulo Nagios genera ese correo automáticamente con los hosts ya marcados, evitándonos meterlos uno a uno en el módulo de Correos.
+
+1. Marcamos los hosts afectados igual que para crear incidencias (sección 4.1).
+2. Pulsamos el botón **📧 Preparar correo masiva** que aparece junto a "➕ Crear incidencias".
+3. Confirmamos el aviso: *"¿Preparar correo de incidencia masiva con N hosts? Se omitirán los equipos de voz (la plantilla es para datos)."*
+
+![Botón "Preparar correo masiva" en la barra de herramientas del panel principal](./imagenes/captura-11-boton-preparar-correo-masivo.png)
+
+4. Llegamos a la pantalla del **carrito** del correo:
+
+   - Lista de las líneas que se han cargado a partir de los hosts seleccionados (centro, función, número de línea, nemónico).
+   - Aviso si se omitieron hosts de voz o no encontrados en BD.
+   - Dos campos opcionales:
+     - **Número incidencia Telefónica**: si lo conocemos lo metemos (`INC-XXXXXXXXX`); si no, lo dejamos vacío.
+     - **Zona / Alias**: texto libre que se añade al asunto entre corchetes (p.ej. `PONTEVEDRA SUR`). Útil cuando enviamos varios correos en la misma jornada y queremos distinguirlos en bandejas.
+   - Botones **➕ Añadir otro centro** (para sumar líneas de un centro adicional, igual que en la plantilla manual de Correos) y **🗑 Vaciar y volver**.
+
+![Pantalla del carrito con la lista de líneas, los dos campos opcionales y los botones de acción](./imagenes/captura-12-carrito-correo-masivo.png)
+
+5. Pulsamos **Generar correo**. Aparece la **tabla de líneas** lista para copiar.
+
+6. Pulsamos **📋 Copiar tabla y abrir correo**:
+   - La tabla se copia al portapapeles (con formato).
+   - Se abre el cliente de correo con el destinatario, CC, asunto y cuerpo ya rellenos.
+   - Pegamos la tabla en el cuerpo del correo (donde dice `(PEGAR TABLA AQUÍ)`) y enviamos.
+
+7. (Opcional) Una vez copiada la tabla, el botón **➕ Crear incidencias** se activa. Lo pulsamos para abrir las incidencias en BDU sin tener que volver al panel principal de Nagios.
+
+![Pantalla del correo generado con la tabla y los dos botones (copiar y crear incidencias)](./imagenes/captura-13-correo-masivo-generado.png)
+
+> **Por qué se hace todo desde Nagios:** así no necesitamos volver al panel para pulsar "Crear incidencias" después de enviar el correo (al volver perderíamos la selección). Desde la misma pantalla del correo masivo enviamos a Telefónica y abrimos las incidencias en BDU.
+
+> **Variantes del cuerpo del correo:** si rellenamos el número de incidencia, el cuerpo dice "*posible avería masiva en la red de Telefónica con número INC-XXXXX*". Si lo dejamos vacío, dice "*estamos determinando la causa raíz; comunicaremos el número en cuanto se genere la incidencia*".
+
 ---
 
 ## 5. Log de eventos
@@ -257,7 +293,7 @@ Cuando damos de alta un equipo, la BDU elige el fichero CFG y la plantilla en fu
 Para una nueva incorporación, el día a día con el módulo Nagios suele ser:
 
 1. **Vigilancia continua**: cada vez que entramos al panel, comprobamos la barra de estadísticas y la tabla **Hosts DOWN sin incidencia**.
-2. **Crear incidencias**: si hay hosts caídos sin incidencia, los seleccionamos y pulsamos **➕ Crear incidencias** ([sección 4.2](#42-crear-las-incidencias)).
+2. **Crear incidencias**: si hay hosts caídos sin incidencia, los seleccionamos y pulsamos **➕ Crear incidencias** ([sección 4.2](#42-crear-las-incidencias)). Si la avería es **masiva** y queremos enviar también el correo a Telefónica, usamos **📧 Preparar correo masiva** ([sección 4.4](#44-preparar-correo-de-incidencia-masiva)).
 3. **Investigar el log**: cuando queremos contexto histórico (cuántas veces ha caído un host, si ha habido recoveries recientes, errores de monitorización), filtramos el [log de eventos](#5-log-de-eventos).
 4. **Cerrar incidencias**: cuando un host se recupera, recibimos automáticamente la nota `[NAGIOS RECOVERY]` en la incidencia. Confirmamos el cierre desde el módulo de Incidencias.
 5. **Mantenimiento del log**: de vez en cuando pulsamos **🧹 Limpiar > 30 días** para no acumular eventos viejos.
@@ -265,4 +301,4 @@ Para una nueva incorporación, el día a día con el módulo Nagios suele ser:
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 1.7 — Abril 2026.*
