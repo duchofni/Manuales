@@ -129,7 +129,7 @@ No tenemos que hacer nada especial: en el siguiente ciclo del worker, si Nagios 
 
 ### 4.4. Preparar correo de incidencia masiva
 
-Cuando una avería tira muchos hosts a la vez (un nodo, una zona) lo habitual es enviar un correo de **incidencia masiva** a Telefónica además de abrir las incidencias en BDU. El módulo Nagios genera ese correo automáticamente con los hosts ya marcados, evitándonos meterlos uno a uno en el módulo de Correos.
+Cuando una avería tira muchos hosts a la vez (masiva grande en una zona) lo habitual es enviar un correo de **incidencia masiva** a SERGAS además de abrir las incidencias en BDU. El módulo Nagios genera ese correo automáticamente con los hosts ya marcados, evitándonos meterlos uno a uno en el módulo de Correos.
 
 1. Marcamos los hosts afectados igual que para crear incidencias (sección 4.1).
 2. Pulsamos el botón **📧 Preparar correo masiva** que aparece junto a "➕ Crear incidencias".
@@ -143,7 +143,7 @@ Cuando una avería tira muchos hosts a la vez (un nodo, una zona) lo habitual es
    - Aviso si se omitieron hosts de voz o no encontrados en BD.
    - Dos campos opcionales:
      - **Número incidencia Telefónica**: si lo conocemos lo metemos (`INC-XXXXXXXXX`); si no, lo dejamos vacío.
-     - **Zona / Alias**: texto libre que se añade al asunto entre corchetes (p.ej. `PONTEVEDRA SUR`). Útil cuando enviamos varios correos en la misma jornada y queremos distinguirlos en bandejas.
+     - **Zona / Alias**: texto libre que se añade al asunto entre corchetes (p.ej. `PROVINCIA LUGO`). Útil cuando enviamos varios correos en la misma jornada y queremos distinguirlos en bandejas.
    - Botones **➕ Añadir otro centro** (para sumar líneas de un centro adicional, igual que en la plantilla manual de Correos) y **🗑 Vaciar y volver**.
 
 ![Pantalla del carrito con la lista de líneas, los dos campos opcionales y los botones de acción](./imagenes/captura-12-carrito-correo-masivo.png)
