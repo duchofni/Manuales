@@ -727,7 +727,7 @@ Para todos los CUCM el flujo es: **System → Licensing → License Management**
 | UCCX                  | URL + ruta                                                       |
 |-----------------------|------------------------------------------------------------------|
 | **UCCX 061 PRO**      | https://us06172s.sergas.local/appadmin/main → **System → License Management** |
-| **UCCX 061 PRE**      | https://10.51.72.23/ccmadmin (mismo flujo que PRO).              |
+| **UCCX 061 PRE**      | https://us06163s.sergas.local/appadmin/main (mismo flujo que PRO).              |
 
 ![Vista System → License Management del UCCX](./imagenes/captura-22-uccx-license-management.png)
 
