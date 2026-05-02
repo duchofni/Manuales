@@ -83,7 +83,7 @@ Una vez autenticados, la interfaz de BDU se compone de los siguientes elementos:
 
 En la parte superior de la pantalla se encuentra la barra de navegación con los módulos disponibles:
 
-**Inicio** | **Centros** | **Mantenimiento** | **Plantillas** | **Correos** | **Instalaciones** | **Consultas** | **Documentación** | **Provisión** | **Info/Ayuda** | **Stock** | **Mailviewer**
+**Inicio** | **Centros** | **Mantenimiento** | **Plantillas** | **Correos** | **Instalaciones** | **Consultas** | **Documentación** | **Provisión** | **Info/Ayuda** | **Stock**
 
 - Pulsamos sobre cualquier nombre de módulo para acceder a él.
 - El módulo activo se resalta visualmente para que siempre sepamos en qué sección estamos trabajando.
@@ -328,18 +328,21 @@ Tres secciones:
 
 ---
 
-### 3.12. Mailviewer
+### 3.12. Archivado de correo (MailPiler)
 
-**Visor de correos electrónicos del buzón operativo.**
+El antiguo módulo Mailviewer del Web BDU se ha retirado y sustituido por **MailPiler**, una aplicación dedicada al archivado y búsqueda de correo.
 
-Permite buscar y consultar los correos almacenados (más de 500.000):
+Para acceder pulsamos el icono del **sobre** ✉️ en la barra superior de BDU (junto a los botones de Nagios, Gitea y Vaultwarden). Se abre en una pestaña nueva sobre `https://piler.bdu.sergascge.local/`.
 
-- **Búsqueda** por texto libre (asunto o cuerpo), remitente, carpeta y rango de fechas.
-- **Sin filtros:** muestra los últimos 500 correos agrupados por conversación.
-- **Con filtros:** hasta 10.000 resultados.
-- **Agrupación por conversación**, hilo expandible, descarga `.eml`, ordenación y paginación.
+Mejoras frente al Mailviewer antiguo:
 
-![Vista de Mailviewer con resultados de búsqueda y un correo abierto](./imagenes/captura-14-vista-de-mailviewer-con-resultados-de-bu.png)
+- **Imágenes y firmas** de los correos se muestran tal cual fueron enviadas.
+- **Adjuntos descargables** uno a uno (PDF, Word, Excel...) con miniatura por tipo.
+- **Búsqueda dentro del contenido de los adjuntos** (PDF, Word, Excel) además del cuerpo.
+- **Login con la cuenta de SERGAS** habitual.
+- **Visibilidad por buzón:** cada operador ve los correos de los buzones a los que pertenece.
+
+El manual histórico del antiguo Mailviewer queda archivado en [`historico/mailviewer/`](historico/mailviewer/).
 
 ---
 
@@ -482,7 +485,6 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 | Plantillas        | `Plantillas/manual_plantillas.md`                  |
 | Documentación     | `Documentacion/manual_documentacion_v2.md`         |
 | Información / Ayuda | `Informacion/manual_informacion_v2.md`           |
-| Mailviewer        | `mailviewer/manual_mailviewer_v2.md`               |
 
 ### Submódulos de Mantenimiento (con manual propio)
 
