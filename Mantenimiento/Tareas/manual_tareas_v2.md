@@ -822,7 +822,12 @@ En el **NAS del CGE**, organizadas por año, mes y nodo.
 
 ## 24. Qué hace este submódulo
 
-Permite enviar **comandos arbitrarios** vía SSH a un conjunto **dinámico** de equipos de planta (Cisco / Teldat / Fortinet / Juniper) y, opcionalmente, **extraer valores concretos** de la salida (potencia óptica, SIM Card ID, versión IOS, etc.) que quedan disponibles en una tabla exportable a CSV / Excel.
+Permite enviar **comandos arbitrarios** vía SSH a un conjunto **dinámico** de equipos y, opcionalmente, **extraer valores concretos** de la salida (potencia óptica, SIM Card ID, versión IOS, etc.) que quedan disponibles en una tabla exportable a CSV / Excel.
+
+Hay **dos pestañas** en la cabecera del módulo:
+
+- **📡 Datos** — equipos de la tabla `Equipos_Datos`. Familias soportadas: **Cisco, Teldat, Fortinet, Juniper**. Permite LAN2LAN o Pasarela (Fortinet solo Pasarela).
+- **📞 Voz** — equipos de la tabla `Equipos_Voz`. Familias soportadas: **Cisco, Alcatel OXE**. **Siempre LAN2LAN** (en voz no se usa pasarela).
 
 Casos de uso típicos:
 
@@ -851,19 +856,23 @@ Si creemos que deberíamos tener acceso, contactamos con el equipo de administra
 
 > **Mantenimiento → Tareas → 🚀 Ejecuciones Masivas**
 
+### Paso 0 — Elegir pestaña
+
+Antes de los filtros elegimos arriba la pestaña **📡 Datos** o **📞 Voz** según el conjunto de equipos sobre el que queramos lanzar la ejecución. Cada pestaña tiene su propio histórico de ejecuciones (Monitor) y solo se cruzan los datos del lado correspondiente.
+
 ### Paso 1 — Seleccionar equipos
 
 Bloque *① Selección de equipos*. Hay **dos modos** (excluyentes):
 
 #### A) Por filtros (lo habitual)
 
-Tres grupos de filtros:
+Filtros disponibles según pestaña:
 
-| Grupo | Filtros |
-|---|---|
-| **Equipo** | Marca, Modelo, Tipo equipo, VLANs activas (10/12/37/38/39/40/60) |
-| **Centro** | Búsqueda libre por nombre/IdCliente, Área Sanitaria, Provincia, FlexWAN (5G), Crítica |
-| **Línea**  | Tipo línea (datos/voz), Función, Tipo acceso |
+| Grupo | Datos | Voz |
+|---|---|---|
+| **Equipo** | Marca, Modelo, Tipo equipo, VLANs (10/12/37/38/39/40/60) | Marca, Modelo, Tipo equipo |
+| **Centro** | Búsqueda libre, Área Sanitaria, Provincia, FlexWAN, Crítica | Búsqueda libre, Área Sanitaria, Provincia, Crítica |
+| **Línea**  | Tipo línea, Función, Tipo acceso | (no aplica) |
 
 Cada filtro multi-valor es un desplegable con casillas (mantenemos pulsado para elegir varios).
 
@@ -881,7 +890,9 @@ Al pulsar **🔍 Buscar equipos** aparece la tabla *② Equipos seleccionados* c
 
 ### Paso 2 — Escribir los comandos
 
-Bloque *③ Comandos a ejecutar*. **Cuatro cajas** (2×2), una por familia:
+Bloque *③ Comandos a ejecutar*. Las cajas dependen de la pestaña:
+
+**📡 Datos — cuatro cajas (2×2):**
 
 - **Cisco** — comandos IOS/IOS-XE. Botón **"Insertar Enter"** que añade `(enter)` (responde a `[confirm]`).
 - **Teldat** — comandos del CLI Teldat. Dos botones:
@@ -889,6 +900,11 @@ Bloque *③ Comandos a ejecutar*. **Cuatro cajas** (2×2), una por familia:
   - **"Insertar Enter"** → añade `(enter)` (responde a `(Yes/No)` con un Enter).
 - **Fortinet** — comandos del CLI FortiGate. **Solo funciona en modo Pasarela**.
 - **Juniper** — comandos Junos. Funciona en LAN2LAN o Pasarela.
+
+**📞 Voz — dos cajas:**
+
+- **Cisco** — comandos IOS/IOS-XE.
+- **Alcatel OXE** — comandos en bash sobre el sistema operativo OXE (CentOS modificado). Ejemplos: `swinst -nbcurr`, `hostmoderef`, `oamprint`, `id`, `date`, `df -h /`. Los menús interactivos (`mgr`, `spadmin`, `mtcl`, `netadmin`) **no se pueden usar aquí** — solo comandos no-interactivos del shell.
 
 Solo es obligatorio rellenar **una** caja: las familias que no tengan comandos se saltan automáticamente.
 
@@ -942,6 +958,8 @@ Pulsamos **+ Añadir extracción** para más filas. La **✕** quita la fila.
 
 Bloque *⑤ Lanzamiento*. Solo aparece tras buscar equipos.
 
+**📡 Datos:**
+
 | Campo | Significado |
 |---|---|
 | **Modo** | **LAN2LAN** (IP cliente, sin TOTP) o **Pasarela** (IP Telefónica + TOTP). |
@@ -949,7 +967,15 @@ Bloque *⑤ Lanzamiento*. Solo aparece tras buscar equipos.
 | **Password** | Nuestra password LDAP. |
 | **TOTP** | Solo en modo Pasarela: 6 dígitos. |
 
-Pulsamos **🚀 Lanzar ejecución**. La pantalla salta automáticamente al **Monitor**.
+**📞 Voz:**
+
+| Campo | Significado |
+|---|---|
+| **Modo** | **LAN2LAN** fijo (en voz no se usa pasarela). Sin selector. |
+| **Usuario SERGAS** | Nuestro usuario LDAP. |
+| **Password** | Nuestra password LDAP. |
+
+Pulsamos **🚀 Lanzar ejecución**. La pantalla salta automáticamente al **Monitor** correspondiente (Datos o Voz).
 
 ---
 
@@ -1199,6 +1225,26 @@ show interfaces terse | match "Local"
 | `show version` | `Model:` | `\S+$` | `Modelo` |
 | `show version` | `Junos:` | `\S+$` | `Junos_Version` |
 
+### 31.10. Inventario Alcatel OXE (pestaña 📞 Voz)
+
+**Comandos Alcatel** (usar pestaña Voz):
+```
+swinst -nbcurr
+swinst -nbnext
+hostmoderef
+date
+```
+
+**Extracciones:**
+
+| CMD origen | Buscar línea con | Regex | Etiqueta |
+|---|---|---|---|
+| `swinst -nbcurr` | (vacío) | `\S+$` | `SW_Activa` |
+| `swinst -nbnext` | (vacío) | `\S+$` | `SW_Inactiva` |
+| `hostmoderef` | (vacío) | `\S+$` | `Rol` |
+
+> Recordatorio: en Alcatel OXE solo funcionan comandos no-interactivos del shell bash. Los menús (`mgr`, `spadmin`, `mtcl`) **no** se pueden usar desde el SEM.
+
 ---
 
-*Manual para operadores y administradores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores y administradores CGE SERGAS. Versión 1.7 — Abril 2026.*
