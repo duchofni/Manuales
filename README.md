@@ -110,13 +110,15 @@ Este botón no está relacionado con las incidencias de red; es exclusivamente p
 
 ### 2.4. Accesos rápidos a herramientas externas
 
-En la barra superior disponemos de tres botones que abren en una pestaña nueva las herramientas externas más utilizadas en el día a día del CGE:
+En la barra superior disponemos de varios botones que abren en una pestaña nueva las herramientas externas más utilizadas en el día a día del CGE:
 
+- **Terminal SSH web** (icono **`>_`**) — abre un popup con un cliente SSH en el navegador para conectar a cualquier equipo de la red interna sin tener que usar PuTTY. Ver el manual [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
 - **Nagios** (icono **N**) — accede directamente al panel NagiosTV de monitorización de la infraestructura.
 - **Gitea / Git** (icono GitHub) — accede al repositorio interno de código y documentación de la propia aplicación BDU.
 - **Vaultwarden** (icono escudo) — accede al gestor de contraseñas corporativo.
+- **MailPiler** (icono sobre ✉️) — archivado y búsqueda de correo histórico CGE.
 
-> **Nota:** las tres herramientas requieren credenciales propias. La primera vez que accedemos en el navegador puede aparecer un popup pidiendo usuario y contraseña.
+> **Nota:** las herramientas externas requieren credenciales propias. La primera vez que accedemos en el navegador puede aparecer un popup pidiendo usuario y contraseña.
 
 ### 2.5. Cerrar sesión
 
@@ -463,6 +465,7 @@ Además de los módulos principales, BDU dispone de dos utilidades transversales
 
 - **Avisos entre turnos:** sistema de mensajes que los operadores se dejan al cambio de turno. Permite listar los avisos pendientes, crear nuevos y marcarlos como resueltos. Útil para registrar tareas en curso, incidencias abiertas o cualquier información que el siguiente turno deba conocer.
 - **Buscador global:** caja de búsqueda en la barra superior que consulta simultáneamente centros, líneas, equipos, BTPs e incidencias. Requiere al menos 2 caracteres y muestra hasta 15 resultados por categoría. Al pulsar un resultado se navega directamente al elemento.
+- **Terminal SSH web (`>_`):** cliente SSH integrado en el navegador para conectar a cualquier equipo de la red interna SERGAS. Funciona desde el icono `>_` de la cabecera (cualquier IP) y desde los iconos 🖧 que aparecen junto a equipos en el módulo Centros (host preseleccionado). Tiene manual propio: [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
 
 ---
 
@@ -508,6 +511,12 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 |---------------------------------------------------|------------------------------------------------|
 | Dispositivos de Control de Tensión (instalación)  | `Instalaciones/manual_dct_proyecto.md`         |
 | Unificación FILTRO_LAN_SEDE                       | `Instalaciones/manual_unificacion_acls.md`     |
+
+### Funcionalidades transversales (con manual propio)
+
+| Funcionalidad                                     | Ruta del manual                                |
+|---------------------------------------------------|------------------------------------------------|
+| Terminal SSH web (popup en el navegador)          | `WebSSH2/manual_webssh2.md`                    |
 
 > **Nota:** los manuales de los proyectos activos se separan deliberadamente del manual general del módulo Instalaciones para que, cuando un proyecto se cierre, su documentación pueda archivarse sin afectar al manual general.
 

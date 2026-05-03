@@ -110,6 +110,8 @@ Cada tabla tiene:
 - **Paginación** con información de página actual y total.
 - Un botón **Copiar tabla** para copiar las filas visibles al portapapeles.
 
+En las tablas de **Líneas de datos** y **Equipos de voz** aparece además un icono 🖧 junto al nemónico/IP de los equipos con IP de gestión: lo pulsamos para abrir una **terminal SSH directamente en el navegador** sin tener que usar PuTTY. Ver el manual independiente [`WebSSH2/manual_webssh2.md`](../WebSSH2/manual_webssh2.md) para el detalle.
+
 ![Vista general de la ficha de un centro con las tablas de líneas de datos, voz, equipos voz y equipos 2.º nivel](./imagenes/captura-05-vista-general-de-la-ficha-de-un-centro-c.png)
 
 ---
