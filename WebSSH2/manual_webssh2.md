@@ -73,7 +73,7 @@ Esta es la forma más rápida cuando ya estamos consultando un centro.
 
 ![Icono SSH en la pestaña Líneas de Datos](./imagenes/captura-03-icono-ssh-lineas-datos.png)
 
-> **Nota:** los **Equipos de 2.º nivel** (Cisco corporativos) no tienen icono SSH desde la BDU. Esos equipos solo son alcanzables a través de la pasarela del CGE con TOTP, y la terminal web no soporta ese flujo. Para esos equipos seguimos usando los métodos habituales fuera de BDU.
+> **Nota:** los **Equipos de 2.º nivel** no tienen icono SSH desde la BDU. Solo son alcanzables a través de la pasarela del CGE con TOTP, y la terminal web no soporta ese flujo. Para esos equipos seguimos usando los métodos habituales fuera de BDU.
 
 ---
 
@@ -131,7 +131,7 @@ La terminal web solo está autorizada a conectar a IPs internas de la red SERGAS
 
 ### ¿Por qué el icono SSH no aparece para los Equipos de 2.º Nivel?
 
-Los Cisco corporativos (Equipos de 2.º Nivel) están detrás de la pasarela del CGE que requiere TOTP. La terminal web actual no enruta por esa pasarela. Para conectar a esos equipos seguimos usando los procedimientos habituales fuera de BDU.
+Los Equipos de 2.º Nivel solo son alcanzables a través de la pasarela del CGE que requiere TOTP. La terminal web actual no enruta por esa pasarela. Para conectar a esos equipos seguimos usando los procedimientos habituales fuera de BDU.
 
 ### ¿Qué pasa si cierro la pestaña principal de BDU mientras tengo terminales SSH abiertas?
 
@@ -140,10 +140,6 @@ Los popups de SSH se cierran también, porque dependen del navegador. Antes de c
 ### Me aparece "Disconnected: connect_error" justo al pulsar Conectar.
 
 Si pasa de forma persistente, hay un fallo de configuración en el servidor BDU (probablemente el módulo Apache de WebSocket no está activo). Reportamos el problema con el botón de feedback (insecto) en la cabecera de BDU.
-
-### El operador anterior dejó una pestaña abierta con sesión SSH a un equipo. ¿Puedo aprovecharla?
-
-Sí, mientras la pestaña no se cierre la sesión SSH sigue activa. Pero conviene preguntar al compañero antes de teclear, para no interrumpirle un trabajo en curso.
 
 ---
 
