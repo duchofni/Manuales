@@ -503,6 +503,7 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 | KPIs Inelcom                           | `Mantenimiento/Herramientas/Kpis/manual_kpis_v2.md`                        |
 | KPIs Nubodata                          | `Mantenimiento/Herramientas/Kpis/manual_kpis_nubodata_v2.md`               |
 | KPIs CGE                               | `Mantenimiento/Herramientas/Kpis/manual_kpis_cge_v2.md`                    |
+| KPIs GDIA                              | `Mantenimiento/Herramientas/Kpis/manual_kpis_gdia_v2.md`                   |
 | Preventivo / DCT (operativa diaria)    | `Mantenimiento/Preventivo/DCT/manual_dct_v2.md`                            |
 
 ### Proyectos activos de Instalaciones (con manual propio)

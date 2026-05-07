@@ -83,6 +83,7 @@ Indicadores, métricas de cumplimiento y análisis de volumen.
 | KPIs Inelcom        | Dashboard de KPIs SLA del contrato Inelcom                                   |
 | KPIs Nubodata       | Dashboard de KPIs SLA del contrato Nubodata                                  |
 | KPIs CGE            | Dashboard de **volumen y tendencias** de incidencias (no SLA): evolución anual y mensual, top subtipos y centros, variación interanual y bloque específico de cortes eléctricos |
+| KPIs GDIA           | Dashboard de **incidencias internas** importadas del histórico Vantive/GDIA/ARGONAUTA: incidencias por mes y año, GDIA vs ASTRO, top tipos de servicio. |
 
 ### 3.5. Grilloweb
 
