@@ -842,11 +842,11 @@ Sustituye a la antigua **"SEM"** en SecureCRT (VBS), pero **full-web** y **escal
 
 ## 25. Acceso restringido
 
-Esta herramienta es muy potente y un comando inocuo mal escrito puede tirar la planta. Por eso el acceso está **restringido a miembros del grupo AD "Admins. del dominio"**.
+Esta herramienta es muy potente y un comando inocuo mal escrito puede tirar la planta. Por eso el acceso está **restringido a miembros del grupo AD "Ejecuciones_Masivas"**.
 
 Si no pertenecemos a ese grupo, al pulsar la entrada del menú vemos:
 
-> ⛔ **Esta herramienta es muy potente y está restringida a administradores del dominio SERGASCGE.**
+> ⛔ **Esta herramienta es muy potente y está restringida a los miembros del grupo Ejecuciones_Masivas del dominio SERGASCGE.**
 
 Si creemos que deberíamos tener acceso, contactamos con el equipo de administración del CGE SERGAS.
 
