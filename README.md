@@ -81,50 +81,76 @@ Una vez autenticados, la interfaz de BDU se compone de los siguientes elementos:
 
 ### 2.1. Menú superior (barra de navegación)
 
-En la parte superior de la pantalla se encuentra la barra de navegación con los módulos disponibles:
+En la parte superior de la pantalla se encuentra la barra de navegación, organizada en cuatro chips principales (acordeones desplegables) a la izquierda y unos botones de utilidad a la derecha:
 
-**Inicio** | **Centros** | **Mantenimiento** | **Plantillas** | **Correos** | **Instalaciones** | **Consultas** | **Documentación** | **Provisión** | **Info/Ayuda** | **Stock**
+```
+[🏠 Módulo activo ▾]  [▦ Servicios ▾]  [🧩 Utilidades ▾]  [🔍 Buscar...]   ...   🚨  🌙  ⎋
+```
 
-- Pulsamos sobre cualquier nombre de módulo para acceder a él.
-- El módulo activo se resalta visualmente para que siempre sepamos en qué sección estamos trabajando.
+**Comportamiento general de los acordeones:**
 
-### 2.2. Modo oscuro
+- Por defecto solo vemos el chip activo de cada acordeón.
+- Pulsamos un chip para desplegarlo hacia abajo en un panel con los elementos disponibles.
+- Pulsamos un elemento del panel y nos lleva a su destino, cerrando el panel.
+- Para cerrar sin elegir: clic fuera del panel o tecla **Esc**.
+- Solo un acordeón puede estar abierto a la vez. Si abrimos otro, el anterior se cierra automáticamente.
 
-En la barra superior, junto a los botones de utilidad, se encuentra el botón de modo oscuro/claro:
+#### Módulos (chip izquierdo)
 
-- Pulsamos el icono de luna para activar el **modo oscuro** (fondo oscuro, texto claro).
-- Pulsamos el icono de sol para volver al **modo claro** (fondo blanco, texto oscuro).
+Muestra el módulo en el que estamos. Al desplegar aparecen los demás módulos disponibles:
+
+**Inicio** · **Centros** · **Mantenimiento** · **Plantillas** · **Correos** · **Instalaciones** · **Consultas** · **Documentación** · **Provisión** · **Info/Ayuda** · **Stock**
+
+#### Servicios
+
+Acceso a las plataformas externas integradas con BDU. Al pulsarlas se abren en una pestaña nueva:
+
+- **Nagios** — panel NagiosTV de monitorización de la infraestructura.
+- **MailPiler** — archivado y búsqueda de correo histórico CGE.
+- **Vaultwarden** — gestor de contraseñas corporativo.
+- **Gitea** — repositorio interno de código y documentación de BDU.
+
+> **Nota:** las plataformas externas requieren credenciales propias. La primera vez que accedemos en el navegador puede aparecer un popup pidiendo usuario y contraseña.
+
+#### Utilidades
+
+Atajos a herramientas integradas en BDU:
+
+- **Nuevo documento** — abre el modal para crear un Word/Excel/PowerPoint/Texto colaborativo en OnlyOffice.
+- **Terminal SSH** — abre un popup con un cliente SSH en el navegador para conectar a cualquier equipo de la red interna sin tener que usar PuTTY. Ver el manual [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
+- **Esquema BDU** — diagrama técnico de la arquitectura y módulos.
+- **Reportar** — formulario de feedback para comunicar fallos o sugerencias sobre la propia aplicación BDU. **No** se usa para incidencias de red.
+
+#### Buscador global
+
+Cuarto chip a la derecha del cluster, con icono de lupa y un campo de texto integrado.
+
+- Tecleamos el término a buscar (mínimo 2 caracteres).
+- Pulsamos **Enter** y se abre el modal de búsqueda global con los resultados ya cargados.
+
+### 2.2. Avisos entre turnos
+
+A la derecha de la barra disponemos del icono **🚨**:
+
+- Muestra una pastilla con el número de avisos pendientes para nuestro turno.
+- Al pulsarlo se abre el panel de avisos.
+- El color del icono indica la urgencia (moderado / importante / urgente).
+
+### 2.3. Modo oscuro
+
+Botón con icono **🌙 / ☀️**:
+
+- Pulsamos la luna para activar el **modo oscuro** (fondo oscuro, texto claro).
+- Pulsamos el sol para volver al **modo claro** (fondo blanco, texto oscuro).
 - La preferencia se guarda automáticamente en el navegador: al volver a entrar, se mantiene el último modo seleccionado.
 
 ![Botón de modo oscuro en la barra superior](./imagenes/captura-03-boton-de-modo-oscuro-en-la-barra-superio.png)
 
-### 2.3. Botón de feedback
-
-El icono con forma de insecto permite **reportar incidencias o sugerencias** sobre la propia aplicación BDU.
-
-- Pulsamos el icono para abrir el formulario de feedback.
-- Describimos el problema o la sugerencia.
-- Enviamos el reporte.
-
-Este botón no está relacionado con las incidencias de red; es exclusivamente para comunicar fallos o mejoras de la herramienta BDU.
-
-### 2.4. Accesos rápidos a herramientas externas
-
-En la barra superior disponemos de varios botones que abren en una pestaña nueva las herramientas externas más utilizadas en el día a día del CGE:
-
-- **Terminal SSH web** (icono **`>_`**) — abre un popup con un cliente SSH en el navegador para conectar a cualquier equipo de la red interna sin tener que usar PuTTY. Ver el manual [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
-- **Nagios** (icono **N**) — accede directamente al panel NagiosTV de monitorización de la infraestructura.
-- **Gitea / Git** (icono GitHub) — accede al repositorio interno de código y documentación de la propia aplicación BDU.
-- **Vaultwarden** (icono escudo) — accede al gestor de contraseñas corporativo.
-- **MailPiler** (icono sobre ✉️) — archivado y búsqueda de correo histórico CGE.
-
-> **Nota:** las herramientas externas requieren credenciales propias. La primera vez que accedemos en el navegador puede aparecer un popup pidiendo usuario y contraseña.
-
-### 2.5. Cerrar sesión
+### 2.4. Cerrar sesión
 
 Para cerrar la sesión de forma segura:
 
-1. Pulsamos el botón de **Cerrar sesión** en la parte derecha de la barra superior.
+1. Pulsamos el icono de **puerta con flecha** en el extremo derecho de la barra superior.
 2. Volvemos a la portada pública.
 
 > **Importante:** si simplemente cerramos el navegador sin cerrar sesión, esta expira automáticamente a los 30 minutos.
