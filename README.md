@@ -467,7 +467,8 @@ Además de los módulos principales, BDU dispone de dos utilidades transversales
 - **Avisos entre turnos:** sistema de mensajes que los operadores se dejan al cambio de turno. Permite listar los avisos pendientes, crear nuevos y marcarlos como resueltos. Útil para registrar tareas en curso, incidencias abiertas o cualquier información que el siguiente turno deba conocer.
 - **Buscador global:** caja de búsqueda en la barra superior que consulta simultáneamente centros, líneas, equipos, BTPs e incidencias. Requiere al menos 2 caracteres y muestra hasta 15 resultados por categoría. Al pulsar un resultado se navega directamente al elemento.
 - **Terminal SSH web (`>_`):** cliente SSH integrado en el navegador para conectar a cualquier equipo de la red interna SERGAS. Funciona desde el icono `>_` de la cabecera (cualquier IP) y desde los iconos 🖧 que aparecen junto a equipos en el módulo Centros (host preseleccionado). Tiene manual propio: [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
-- **Visor y editor ofimático online (OnlyOffice):** desde mayo 2026, en cualquier listado de BDU que muestre ficheros Office (docx/xlsx/pptx/...), un icono de ojo **👁** abre el documento en modo solo lectura y un icono de lápiz **✏️** lo abre en modo edición, ambos en pestaña nueva. Los cambios al editar se guardan directamente sobre el fichero original al cerrar la pestaña. Funciona en *Documentación*, *Centros → Documentación del centro* (las cards con la flecha **↗**) y *Mantenimiento → Informes*. No tiene icono propio en la cabecera porque siempre se abre desde el listado del módulo correspondiente.
+- **Visor y editor ofimático online (OnlyOffice):** desde mayo 2026, en cualquier listado de BDU que muestre ficheros Office (docx/xlsx/pptx/...), un icono de ojo **👁** abre el documento en modo solo lectura y un icono de lápiz **✏️** lo abre en modo edición, ambos en pestaña nueva. Los cambios al editar se guardan directamente sobre el fichero original al cerrar la pestaña. Funciona en *Documentación*, *Centros → Documentación del centro* (las cards con la flecha **↗**) y *Mantenimiento → Informes*.
+- **Crear documentos online desde la cabecera:** icono **📄+** en la cabecera junto a SSH/Nagios/Gitea/Vault/MailPiler. Abre la ventana **Documentos** con dos pestañas — *Crear nuevo* (Word/Excel/PowerPoint/Texto, eligiendo destino: mi carpeta, común, o un centro concreto con explorador de carpetas y opción de crear nueva) y *Mis borradores* (lista los documentos creados anteriormente para reabrir). Manual: [`OnlyOffice/manual_documentos_online.md`](OnlyOffice/manual_documentos_online.md).
 
 ---
 
@@ -520,6 +521,7 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 | Funcionalidad                                     | Ruta del manual                                |
 |---------------------------------------------------|------------------------------------------------|
 | Terminal SSH web (popup en el navegador)          | `WebSSH2/manual_webssh2.md`                    |
+| Documentos online (crear y reabrir desde cabecera) | `OnlyOffice/manual_documentos_online.md`      |
 
 > **Nota:** los manuales de los proyectos activos se separan deliberadamente del manual general del módulo Instalaciones para que, cuando un proyecto se cierre, su documentación pueda archivarse sin afectar al manual general.
 
