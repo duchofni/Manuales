@@ -16,9 +16,10 @@
 3. [Buscar documentos](#3-buscar-documentos)
 4. [Subir un documento](#4-subir-un-documento)
 5. [Esperar la conversión a PDF](#5-esperar-la-conversión-a-pdf)
-6. [Ver un documento PDF](#6-ver-un-documento-pdf)
-7. [Descargar un documento](#7-descargar-un-documento)
-8. [Eliminar un documento](#8-eliminar-un-documento)
+6. [Ver un documento](#6-ver-un-documento)
+7. [Editar un documento Office online](#7-editar-un-documento-office-online)
+8. [Descargar un documento](#8-descargar-un-documento)
+9. [Eliminar un documento](#9-eliminar-un-documento)
 
 ---
 
@@ -113,25 +114,54 @@ Después de subir un documento, el sistema lo convierte automáticamente a PDF p
 
 ---
 
-## 6. Ver un documento PDF
+## 6. Ver un documento
 
-1. En la tabla de documentos buscamos el que queramos ver.
-2. Comprobamos que su estado sea **Listo** (punto verde).
-3. Pulsamos el botón **Ver** (icono de ojo).
-4. Se abre una ventana emergente con el visor de PDF integrado en el navegador.
-5. Dentro del visor podemos:
-   - Navegar por las páginas del documento.
-   - Hacer zoom.
-   - Usar las herramientas del visor PDF del navegador.
-6. Para cerrar el visor pulsamos **Cerrar** o la tecla **Escape**.
+En la tabla de documentos cada fila tiene una columna **Acciones** con varios iconos. Para ver un documento usamos el icono **👁** (ojo). Su comportamiento depende del tipo de fichero:
+
+### 6.1. Documentos PDF (subidos como PDF)
+
+1. Comprobamos que el estado del documento sea **Listo** (punto verde).
+2. Pulsamos el icono **👁**.
+3. Se abre una ventana emergente con el visor de PDF integrado en el navegador.
+4. Dentro del visor podemos navegar por las páginas, hacer zoom y usar las herramientas del visor PDF del navegador.
+5. Para cerrar pulsamos **Cerrar** o la tecla **Escape**.
 
 ![Visor de PDF mostrando un documento dentro de la ventana emergente con el botón Cerrar visible](./imagenes/captura-06-visor-de-pdf-mostrando-un-documento-dent.png)
 
-> **Nota:** el botón **Ver** solo está disponible cuando el documento está en estado *Listo*. Si está *Convirtiendo…*, esperamos a que termine.
+### 6.2. Documentos Office (docx, xlsx, pptx, ...)
+
+1. Pulsamos el icono **👁** en la fila del documento.
+2. Se abre una **pestaña nueva** con el editor online OnlyOffice **en modo solo lectura**.
+3. Podemos navegar por el documento, hacer zoom y consultarlo, pero sin posibilidad de modificarlo. Si queremos editarlo, usamos el botón ✏️ (ver siguiente apartado).
+4. Para cerrar simplemente cerramos la pestaña.
+
+![Documento docx abierto en OnlyOffice en modo solo lectura desde el módulo Documentación](./imagenes/captura-09-documentacion-onlyoffice-modo-vista.png)
+
+> **Nota:** el icono **👁** solo está disponible cuando el documento está en estado *Listo*. Si está *Convirtiendo…*, esperamos a que termine.
 
 ---
 
-## 7. Descargar un documento
+## 7. Editar un documento Office online
+
+Para los documentos Office (docx, xlsx, pptx, doc, xls, ppt, odt, ods, odp, rtf, txt, csv) la columna **Acciones** muestra, junto al icono **👁**, un icono **✏️** verde:
+
+1. Pulsamos el icono **✏️** en la fila del documento.
+2. Se abre una **pestaña nueva** con el editor online OnlyOffice **en modo edición**.
+3. Editamos el documento como en Word/Excel/PowerPoint: añadimos texto, cambiamos celdas, insertamos imágenes, etc.
+4. Para guardar:
+   - Desde el menú **Archivo → Guardar** del propio editor (guardado inmediato).
+   - O simplemente cerrando la pestaña: los cambios se escriben automáticamente sobre el fichero original al cerrar.
+5. Si dos personas abrimos el mismo documento a la vez, **vemos los cursores y los cambios en tiempo real** (estilo Google Docs). Cuando ambos cerramos, se guarda **una sola versión consolidada** con los cambios de los dos.
+
+![Editor OnlyOffice en modo edición desde el módulo Documentación con el icono guardar visible](./imagenes/captura-10-documentacion-onlyoffice-modo-edicion.png)
+
+> **Importante:** el PDF que se generó al subir el documento **no se actualiza automáticamente** cuando lo editamos online. Si necesitamos un PDF al día, descargamos el original modificado y lo convertimos manualmente, o resubimos el documento.
+
+> **Nota:** el icono **✏️** solo aparece para formatos Office. Los PDFs originales no se editan (Community Edition de OnlyOffice no edita PDF).
+
+---
+
+## 8. Descargar un documento
 
 1. En la tabla de documentos buscamos el que queramos descargar.
 2. Pulsamos el botón **Descargar** (icono de descarga).
@@ -145,7 +175,7 @@ Después de subir un documento, el sistema lo convierte automáticamente a PDF p
 
 ---
 
-## 8. Eliminar un documento
+## 9. Eliminar un documento
 
 1. En la tabla de documentos buscamos el que queramos eliminar.
 2. Pulsamos el botón **Eliminar** (icono de papelera).
@@ -161,17 +191,20 @@ Después de subir un documento, el sistema lo convierte automáticamente a PDF p
 
 ## Resumen rápido
 
-| Acción                        | Cómo lo hacemos                                          |
-|-------------------------------|----------------------------------------------------------|
-| Ver documentos de una carpeta | Pulsar la tarjeta de la carpeta.                         |
-| Ver últimas subidas           | Pulsar la tarjeta **"Últimas subidas"**.                 |
-| Buscar documento              | Escribir en el buscador + Filtrar.                       |
-| Filtrar por fecha             | Rellenar Desde/Hasta + Filtrar.                          |
-| Subir documento               | Botón **Subir documento** + rellenar formulario.         |
-| Ver PDF                       | Botón **Ver** (solo si el estado es *Listo*).            |
-| Descargar original            | Botón **Descargar** + Aceptar.                           |
-| Eliminar documento            | Botón **Eliminar** + Confirmar.                          |
-| Cerrar visor PDF              | Botón **Cerrar** o tecla **Escape**.                     |
+| Acción                            | Cómo lo hacemos                                                          |
+|-----------------------------------|--------------------------------------------------------------------------|
+| Ver documentos de una carpeta     | Pulsar la tarjeta de la carpeta.                                         |
+| Ver últimas subidas               | Pulsar la tarjeta **"Últimas subidas"**.                                 |
+| Buscar documento                  | Escribir en el buscador + Filtrar.                                       |
+| Filtrar por fecha                 | Rellenar Desde/Hasta + Filtrar.                                          |
+| Subir documento                   | Botón **Subir documento** + rellenar formulario.                         |
+| Ver PDF (originales en pdf)       | Icono **👁** (abre modal interno).                                       |
+| Ver Office (docx/xlsx/pptx)       | Icono **👁** (abre OnlyOffice solo lectura en pestaña nueva).            |
+| Editar Office                     | Icono **✏️** (abre OnlyOffice modo edición en pestaña nueva).             |
+| Descargar original                | Icono **⬇ Descargar** + Aceptar.                                         |
+| Eliminar documento                | Icono **🗑** + Confirmar.                                                 |
+| Cerrar visor PDF                  | Botón **Cerrar** o tecla **Escape**.                                     |
+| Cerrar editor OnlyOffice          | Cerrar la pestaña (los cambios se guardan automáticamente).              |
 
 ---
 

@@ -167,7 +167,7 @@ El módulo Centros nos permite buscar cualquier centro sanitario del SERGAS y ve
 - **Líneas de voz**.
 - **Equipos de voz** con imagen del modelo.
 - **Equipos de segundo nivel** con imagen del modelo.
-- **Documentación del centro** almacenada en el NAS (subida de archivos, carpetas, visor integrado).
+- **Documentación del centro** almacenada en el NAS (subida de archivos, carpetas, visor integrado y apertura inline de documentos Office en OnlyOffice).
 
 ![Ficha de un centro con sus líneas y equipos](./imagenes/captura-05-ficha-de-un-centro-con-sus-lineas-y-equi.png)
 
@@ -302,15 +302,16 @@ Cada configuración generada se guarda automáticamente en `/mnt/centros/plantil
 
 ### 3.10. Documentación
 
-**Repositorio de documentos con conversión automática a PDF.**
+**Repositorio de documentos con visor y editor online integrados.**
 
 - **Subida de ficheros** en cualquier formato (Word, Excel, PowerPoint, etc.).
-- **Conversión automática a PDF** en segundo plano.
-- **Visor integrado** para ver los PDF en el navegador.
+- **Conversión automática a PDF** en segundo plano (para los originales no-PDF).
+- **Visor online (icono 👁)**: PDFs originales se ven en visor interno; documentos Office (docx/xlsx/pptx) se abren en pestaña nueva con OnlyOffice en modo solo lectura.
+- **Editor online (icono ✏️ verde)**: documentos Office se editan en pestaña nueva con OnlyOffice y los cambios se guardan directamente sobre el fichero al cerrar la pestaña. Edición colaborativa: si dos personas abren el mismo fichero a la vez ven los cambios en tiempo real.
 - **Descarga del original** siempre disponible.
 - **Filtros por tipo** y rango de fechas.
 
-![Listado de documentos con visor PDF integrado](./imagenes/captura-12-listado-de-documentos-con-visor-pdf-inte.png)
+![Listado de documentos con los iconos 👁 (visor) y ✏️ (editar) en la columna de acciones](./imagenes/captura-12-listado-de-documentos-con-visor-pdf-inte.png)
 
 ---
 
@@ -466,6 +467,7 @@ Además de los módulos principales, BDU dispone de dos utilidades transversales
 - **Avisos entre turnos:** sistema de mensajes que los operadores se dejan al cambio de turno. Permite listar los avisos pendientes, crear nuevos y marcarlos como resueltos. Útil para registrar tareas en curso, incidencias abiertas o cualquier información que el siguiente turno deba conocer.
 - **Buscador global:** caja de búsqueda en la barra superior que consulta simultáneamente centros, líneas, equipos, BTPs e incidencias. Requiere al menos 2 caracteres y muestra hasta 15 resultados por categoría. Al pulsar un resultado se navega directamente al elemento.
 - **Terminal SSH web (`>_`):** cliente SSH integrado en el navegador para conectar a cualquier equipo de la red interna SERGAS. Funciona desde el icono `>_` de la cabecera (cualquier IP) y desde los iconos 🖧 que aparecen junto a equipos en el módulo Centros (host preseleccionado). Tiene manual propio: [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
+- **Visor y editor ofimático online (OnlyOffice):** desde mayo 2026, en cualquier listado de BDU que muestre ficheros Office (docx/xlsx/pptx/...), un icono de ojo **👁** abre el documento en modo solo lectura y un icono de lápiz **✏️** lo abre en modo edición, ambos en pestaña nueva. Los cambios al editar se guardan directamente sobre el fichero original al cerrar la pestaña. Funciona en *Documentación*, *Centros → Documentación del centro* (las cards con la flecha **↗**) y *Mantenimiento → Informes*. No tiene icono propio en la cabecera porque siempre se abre desde el listado del módulo correspondiente.
 
 ---
 

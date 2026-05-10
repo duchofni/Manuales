@@ -189,8 +189,23 @@ Pulsamos sobre el archivo que queramos ver. Según el tipo:
 
 - **Imágenes** (jpg, png, gif) — se muestran directamente en pantalla.
 - **PDF** — se abre un visor de PDF en el navegador.
-- **Texto** — se muestra el contenido en formato texto.
-- **Otros formatos** — se ofrece un botón de descarga.
+- **Texto** (txt, log, ini, cfg, md) — se muestra el contenido en formato texto.
+- **Documentos Office** (docx, xlsx, pptx y similares) — se abren **en una pestaña nueva** dentro del editor online OnlyOffice. Lo reconocemos por la flecha **↗** que aparece en la esquina superior derecha de la tarjeta.
+- **Otros formatos** (zip, mp4, etc.) — se ofrece un botón de descarga.
+
+![Card de un fichero docx con la flecha ↗ que indica apertura en pestaña nueva con OnlyOffice](./imagenes/captura-12-card-fichero-office-con-flecha-onlyoffice.png)
+
+### 7.2.1. Editar un documento Office desde el centro
+
+Cuando pulsamos sobre una tarjeta de fichero Office se abre OnlyOffice **en modo edición**. Podemos:
+
+- **Modificar** el contenido como en Word/Excel/PowerPoint.
+- **Guardar** desde el menú *Archivo → Guardar* o cerrando la pestaña: los cambios se escriben automáticamente sobre el fichero del centro.
+- Si dos personas abrimos el mismo fichero a la vez, **vemos los cursores y los cambios en tiempo real** (estilo Google Docs). Al cerrar todos, se guarda **una sola versión consolidada** con los cambios de los dos.
+
+> **Nota:** la primera vez que abrimos un documento Office del centro, OnlyOffice tarda unos segundos en cargar las fuentes; las siguientes ya van fluidas.
+
+![Editor OnlyOffice abierto a pantalla completa con un fichero docx del centro](./imagenes/captura-13-editor-onlyoffice-fichero-centro.png)
 
 ### 7.3. Subir un archivo
 

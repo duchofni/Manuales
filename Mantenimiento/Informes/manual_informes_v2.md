@@ -16,7 +16,7 @@
 3. [La pantalla principal](#3-la-pantalla-principal)
 4. [Tipos de informe disponibles](#4-tipos-de-informe-disponibles)
 5. [Generar un informe](#5-generar-un-informe)
-6. [Descargar informes (Excel y PDF)](#6-descargar-informes-excel-y-pdf)
+6. [Visualizar y descargar informes (online, Excel y PDF)](#6-visualizar-y-descargar-informes-online-excel-y-pdf)
 7. [Enlaces a correos del CGP](#7-enlaces-a-correos-del-cgp)
 8. [Resumen del flujo habitual](#8-resumen-del-flujo-habitual)
 
@@ -134,19 +134,33 @@ Tabla con los archivos generados durante el **mes en curso**, ordenados por fech
 
 ---
 
-## 6. Descargar informes (Excel y PDF)
+## 6. Visualizar y descargar informes (online, Excel y PDF)
 
-Los informes generados se listan en la tabla **"Últimos informes generados (mes actual)"** al final de la pantalla. Por cada fila tenemos hasta dos iconos en la columna **Desc.**:
+Los informes generados se listan en la tabla **"Últimos informes generados (mes actual)"** al final de la pantalla. Por cada fila tenemos hasta tres iconos en la columna **Desc.**:
 
-| Icono   | Para qué sirve                                                       |
-|---------|----------------------------------------------------------------------|
-| **📊**  | Descargar el Excel (`.xlsx`).                                        |
-| **📄**  | Descargar el CSV (en lugar del 📊, solo aparece para SERGAS).         |
-| **🔴**  | Descargar el PDF (solo aparece si el PDF se generó correctamente).   |
+| Icono   | Para qué sirve                                                                                |
+|---------|-----------------------------------------------------------------------------------------------|
+| **👁**  | **Abrir online en OnlyOffice** (solo lectura, pestaña nueva). Solo aparece para xlsx y csv.   |
+| **📊**  | Descargar el Excel (`.xlsx`).                                                                 |
+| **📄**  | Descargar el CSV (en lugar del 📊, solo aparece para SERGAS).                                  |
+| **🔴**  | Descargar el PDF (solo aparece si el PDF se generó correctamente).                            |
 
-Pulsamos el icono y el navegador descarga el fichero. La descarga se sirve desde un endpoint propio (`download.php`) que verifica que la ruta esté dentro de `/mnt/documentacion`, así que no podemos descargar nada fuera de la carpeta de informes.
+### 6.1. Visualizar online sin descargar (icono 👁)
 
-![Tabla de últimos informes generados con los iconos 📊 (Excel) y 🔴 (PDF) en la columna de descarga](./imagenes/captura-03-historial-de-archivos-generados-debajo-d.png)
+1. Pulsamos el icono **👁** de la fila del informe.
+2. Se abre una **pestaña nueva** con el editor online OnlyOffice mostrando el Excel o CSV en modo solo lectura.
+3. Podemos navegar por las hojas, hacer zoom y revisar el contenido sin tener que descargar nada ni abrir Excel en el equipo.
+4. Cuando terminamos, cerramos la pestaña.
+
+> **Nota:** los PDFs siguen descargándose con su icono **🔴** (la edición de PDF no está disponible en la versión Community de OnlyOffice).
+
+![Informe Excel abierto en OnlyOffice en modo solo lectura desde el módulo Informes](./imagenes/captura-05-informes-onlyoffice-modo-vista.png)
+
+### 6.2. Descargar el fichero
+
+Pulsamos el icono **📊** (xlsx), **📄** (csv) o **🔴** (pdf) y el navegador descarga el fichero. La descarga se sirve desde un endpoint propio (`download.php`) que verifica que la ruta esté dentro de `/mnt/documentacion`, así que no podemos descargar nada fuera de la carpeta de informes.
+
+![Tabla de últimos informes generados con los iconos 👁 (visor online), 📊 (Excel) y 🔴 (PDF) en la columna de descarga](./imagenes/captura-03-historial-de-archivos-generados-debajo-d.png)
 
 > **Cómo se genera el PDF**: una vez creado el `.xlsx`, el sistema lo convierte a PDF con LibreOffice en modo *headless*. El PDF queda en la subcarpeta `pdf/` junto al Excel.
 
