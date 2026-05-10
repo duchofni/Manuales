@@ -21,8 +21,9 @@
 8. [Realizar la prueba — flujo Checklist + Marcar](#8-realizar-la-prueba--flujo-checklist--marcar)
 9. [Estadísticas y exportación](#9-estadísticas-y-exportación)
 10. [Cierre automático del ciclo](#10-cierre-automático-del-ciclo)
-11. [Resumen rápido de botones](#11-resumen-rápido-de-botones)
-12. [Preguntas frecuentes](#12-preguntas-frecuentes)
+11. [Histórico de años anteriores (2021-2025)](#11-histórico-de-años-anteriores-2021-2025)
+12. [Resumen rápido de botones](#12-resumen-rápido-de-botones)
+13. [Preguntas frecuentes](#13-preguntas-frecuentes)
 
 ---
 
@@ -241,7 +242,44 @@ Cuando todos los centros del ciclo están **marcados como realizados**, el siste
 
 ---
 
-## 11. Resumen rápido de botones
+## 11. Histórico de años anteriores (2021-2025)
+
+Los ciclos de **2021, 2022, 2023, 2024 y 2025** se llevaban en hojas de Excel locales. En mayo de 2026 se importaron al Web BDU para tenerlo todo en un sitio.
+
+### 11.1. Cómo accedemos al histórico
+
+En el desplegable de años de la cabecera elegimos cualquier año entre 2021 y 2025. Vemos la misma tabla de siempre, con el mismo buscador y los mismos filtros (Fase, Semana, Estado).
+
+### 11.2. Qué cambia respecto a un ciclo vivo
+
+Los años históricos están siempre en **modo lectura** (chip ✓ Cerrado):
+
+- **No hay botón Marcar** (las pruebas se hicieron en su día; no se pueden remarcar).
+- **No hay botón 📋 Checklist** (la checklist no existía entonces como fichero).
+- **No hay botón 📅 Programar semanas**.
+- **F. Coordinada** sale en blanco (—) porque en los Excel no se separaba "coordinada" de "realizada".
+- **F. Realizada** muestra:
+  - La fecha y hora pactadas/realizadas (años 2023-2025).
+  - **✓ OK** sin fecha (años 2021-2022, donde el Excel sólo decía "OK" en una columna).
+- La columna **Usuario** muestra el nombre del operador tal cual aparece en el Excel original ("Javi", "Ángel", "Cristian"...).
+- Las celdas de cada línea (PRI/RED/RED2) **muestran también la IP de gestión** del equipo (el Excel la traía y el módulo vivo no).
+
+### 11.3. Limitaciones del histórico
+
+- Los nombres de centro vienen **tal cual del Excel**: hay centros que hoy se llaman de otra forma, otros que se cerraron, otros que se fusionaron. No están enlazados con la ficha actual del módulo Centros.
+- La criticidad de un centro y el "tipo de centro" no se conocen del Excel, así que la columna Tipo aparece vacía.
+- **Hojas omitidas** durante la importación:
+  - "FLEXWAN" (2024) — eran centros con conexión FlexWAN al margen del ciclo de pruebas.
+  - "Datos" (2025) — hoja auxiliar de control interno.
+  - Hoja "CdM" de cualquier año — eran resúmenes para el cliente, no pruebas en sí.
+
+### 11.4. Descargar el histórico en limpio
+
+Pulsamos **⬇ Excel** estando en un año histórico. Se descarga un xlsx con la foto del año tal cual, ya sin formato de hoja antigua: las mismas columnas que el ciclo vivo, listo para enviar al cliente o archivar.
+
+---
+
+## 12. Resumen rápido de botones
 
 | Botón                 | Dónde aparece                  | Qué hace                                                                |
 |-----------------------|--------------------------------|-------------------------------------------------------------------------|
@@ -256,7 +294,7 @@ Cuando todos los centros del ciclo están **marcados como realizados**, el siste
 
 ---
 
-## 12. Preguntas frecuentes
+## 13. Preguntas frecuentes
 
 ### ¿Por qué no veo a uno de mis centros en el ciclo?
 
