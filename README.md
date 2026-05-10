@@ -305,6 +305,7 @@ Cada submódulo tiene **manual propio** (ver [sección 7. Referencia de manuales
 - **Informes** — generación asíncrona de informes Excel/PDF y CSV SERGAS.
 - **KPIs Inelcom / Nubodata / CGE** — dashboards de SLA y volumen/tendencias.
 - **Preventivo / DCT** — operativa diaria de los Dispositivos de Control de Tensión (SMS, alertas, tests).
+- **Preventivo / Pruebas Backup** — ciclo anual de pruebas de líneas de respaldo: planificación por fases y semanas, checklist OnlyOffice por centro y marcado de realizadas.
 - **Grilloweb** — seguimiento de incidencias de Telefónica.
 
 > **Nota:** el acceso a los módulos de KPIs (Inelcom, Nubodata, CGE) y a Ejecuciones Masivas (SEM) está restringido a determinados usuarios según su grupo en el directorio.
@@ -534,6 +535,7 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 | KPIs CGE                               | `Mantenimiento/Herramientas/Kpis/manual_kpis_cge_v2.md`                    |
 | KPIs GDIA                              | `Mantenimiento/Herramientas/Kpis/manual_kpis_gdia_v2.md`                   |
 | Preventivo / DCT (operativa diaria)    | `Mantenimiento/Preventivo/DCT/manual_dct_v2.md`                            |
+| Preventivo / Pruebas Backup            | `Mantenimiento/Preventivo/Pruebas_Backup/manual_pruebas_backup_v1.md`      |
 
 ### Proyectos activos de Instalaciones (con manual propio)
 
