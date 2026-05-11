@@ -3,8 +3,8 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Módulo**  | Documentación                  |
-| **Versión** | 1.6                            |
-| **Fecha**   | Abril 2026                     |
+| **Versión** | 1.7                            |
+| **Fecha**   | Mayo 2026                      |
 | **Para**    | Operadores CGE SERGAS          |
 
 ---
@@ -15,11 +15,10 @@
 2. [Navegar por las carpetas](#2-navegar-por-las-carpetas)
 3. [Buscar documentos](#3-buscar-documentos)
 4. [Subir un documento](#4-subir-un-documento)
-5. [Esperar la conversión a PDF](#5-esperar-la-conversión-a-pdf)
-6. [Ver un documento](#6-ver-un-documento)
-7. [Editar un documento Office online](#7-editar-un-documento-office-online)
-8. [Descargar un documento](#8-descargar-un-documento)
-9. [Eliminar un documento](#9-eliminar-un-documento)
+5. [Ver un documento](#5-ver-un-documento)
+6. [Editar un documento Office online](#6-editar-un-documento-office-online)
+7. [Descargar un documento](#7-descargar-un-documento)
+8. [Eliminar un documento](#8-eliminar-un-documento)
 
 ---
 
@@ -90,45 +89,24 @@ Cuando tenemos una carpeta seleccionada podemos filtrar por rango de fechas:
 
 > **Nota:** si el formato no está en la lista o el archivo supera los 50 MB, aparece un mensaje de error y tenemos que seleccionar otro archivo.
 
----
-
-## 5. Esperar la conversión a PDF
-
-Después de subir un documento, el sistema lo convierte automáticamente a PDF para poder verlo en el navegador. Este proceso puede tardar unos segundos.
-
-### Qué vemos en la tabla
-
-| Estado              | Significado                                               | Icono         |
-|---------------------|-----------------------------------------------------------|---------------|
-| **Listo**           | El documento está disponible para ver.                    | Punto verde.  |
-| **Convirtiendo…**   | Se está generando el PDF (esperamos unos segundos).       | Rueda girando.|
-| **Error**           | Hubo un problema en la conversión.                        | X roja.       |
-
-- Si el archivo ya es un PDF, el estado es **Listo** inmediatamente.
-- Si es un Word, Excel o PowerPoint, el estado es **Convirtiendo…** durante unos segundos.
-- **No hace falta recargar la página.** La pantalla se actualiza automáticamente cuando termina la conversión.
-
-![Tabla de documentos mostrando un documento en estado "Convirtiendo…" con el icono de rueda girando](./imagenes/captura-05-tabla-de-documentos-mostrando-un-documen.png)
-
-> Si el estado queda en *Error*, podemos intentar subir el archivo de nuevo. Si el problema persiste, comprobamos que el archivo no esté dañado.
+> **Sobre el nombre del archivo:** el documento se guarda en el servidor con el mismo nombre con el que lo subimos. Si ya existía otro archivo con ese nombre en la misma carpeta, el sistema añade un sufijo automático (`_2`, `_3`…) para no sobreescribir el anterior.
 
 ---
 
-## 6. Ver un documento
+## 5. Ver un documento
 
 En la tabla de documentos cada fila tiene una columna **Acciones** con varios iconos. Para ver un documento usamos el icono **👁** (ojo). Su comportamiento depende del tipo de fichero:
 
-### 6.1. Documentos PDF (subidos como PDF)
+### 5.1. Documentos PDF
 
-1. Comprobamos que el estado del documento sea **Listo** (punto verde).
-2. Pulsamos el icono **👁**.
-3. Se abre una ventana emergente con el visor de PDF integrado en el navegador.
-4. Dentro del visor podemos navegar por las páginas, hacer zoom y usar las herramientas del visor PDF del navegador.
-5. Para cerrar pulsamos **Cerrar** o la tecla **Escape**.
+1. Pulsamos el icono **👁** en la fila del documento.
+2. Se abre una ventana emergente con el visor de PDF integrado en el navegador.
+3. Dentro del visor podemos navegar por las páginas, hacer zoom y usar las herramientas del visor PDF del navegador.
+4. Para cerrar pulsamos **Cerrar** o la tecla **Escape**.
 
 ![Visor de PDF mostrando un documento dentro de la ventana emergente con el botón Cerrar visible](./imagenes/captura-06-visor-de-pdf-mostrando-un-documento-dent.png)
 
-### 6.2. Documentos Office (docx, xlsx, pptx, ...)
+### 5.2. Documentos Office (docx, xlsx, pptx, ...)
 
 1. Pulsamos el icono **👁** en la fila del documento.
 2. Se abre una **pestaña nueva** con el editor online OnlyOffice **en modo solo lectura**.
@@ -137,11 +115,9 @@ En la tabla de documentos cada fila tiene una columna **Acciones** con varios ic
 
 ![Documento docx abierto en OnlyOffice en modo solo lectura desde el módulo Documentación](./imagenes/captura-09-documentacion-onlyoffice-modo-vista.png)
 
-> **Nota:** el icono **👁** solo está disponible cuando el documento está en estado *Listo*. Si está *Convirtiendo…*, esperamos a que termine.
-
 ---
 
-## 7. Editar un documento Office online
+## 6. Editar un documento Office online
 
 Para los documentos Office (docx, xlsx, pptx, doc, xls, ppt, odt, ods, odp, rtf, txt, csv) la columna **Acciones** muestra, junto al icono **👁**, un icono **✏️** verde:
 
@@ -155,32 +131,28 @@ Para los documentos Office (docx, xlsx, pptx, doc, xls, ppt, odt, ods, odp, rtf,
 
 ![Editor OnlyOffice en modo edición desde el módulo Documentación con el icono guardar visible](./imagenes/captura-10-documentacion-onlyoffice-modo-edicion.png)
 
-> **Importante:** el PDF que se generó al subir el documento **no se actualiza automáticamente** cuando lo editamos online. Si necesitamos un PDF al día, descargamos el original modificado y lo convertimos manualmente, o resubimos el documento.
-
 > **Nota:** el icono **✏️** solo aparece para formatos Office. Los PDFs originales no se editan (Community Edition de OnlyOffice no edita PDF).
 
 ---
 
-## 8. Descargar un documento
+## 7. Descargar un documento
 
 1. En la tabla de documentos buscamos el que queramos descargar.
 2. Pulsamos el botón **Descargar** (icono de descarga).
 3. Aparece un mensaje de confirmación preguntando si queremos descargar el archivo.
 4. Pulsamos **Aceptar**.
-5. El archivo original (en su formato: docx, xlsx, pdf, etc.) se descarga al equipo.
+5. El archivo (en su formato original: docx, xlsx, pdf, etc.) se descarga al equipo con su nombre original.
 
 ![Mensaje de confirmación de descarga con el nombre del archivo](./imagenes/captura-07-mensaje-de-confirmacion-de-descarga-con.png)
 
-> **Nota:** la descarga siempre es del archivo **original** (no del PDF convertido). Si subimos un Word, descargamos el Word original.
-
 ---
 
-## 9. Eliminar un documento
+## 8. Eliminar un documento
 
 1. En la tabla de documentos buscamos el que queramos eliminar.
 2. Pulsamos el botón **Eliminar** (icono de papelera).
 3. Aparece una ventana de confirmación con el título del documento.
-4. Leemos la advertencia: **esta acción es irreversible** (se eliminan tanto el archivo original como el PDF).
+4. Leemos la advertencia: **esta acción es irreversible**.
 5. Pulsamos **Eliminar** para confirmar, o **Cancelar** para volver atrás.
 
 ![Ventana de confirmación de eliminación mostrando el título del documento y la advertencia](./imagenes/captura-08-ventana-de-confirmacion-de-eliminacion-m.png)
@@ -198,14 +170,14 @@ Para los documentos Office (docx, xlsx, pptx, doc, xls, ppt, odt, ods, odp, rtf,
 | Buscar documento                  | Escribir en el buscador + Filtrar.                                       |
 | Filtrar por fecha                 | Rellenar Desde/Hasta + Filtrar.                                          |
 | Subir documento                   | Botón **Subir documento** + rellenar formulario.                         |
-| Ver PDF (originales en pdf)       | Icono **👁** (abre modal interno).                                       |
+| Ver PDF                           | Icono **👁** (abre modal interno).                                       |
 | Ver Office (docx/xlsx/pptx)       | Icono **👁** (abre OnlyOffice solo lectura en pestaña nueva).            |
 | Editar Office                     | Icono **✏️** (abre OnlyOffice modo edición en pestaña nueva).             |
-| Descargar original                | Icono **⬇ Descargar** + Aceptar.                                         |
+| Descargar archivo                 | Icono **⬇ Descargar** + Aceptar.                                         |
 | Eliminar documento                | Icono **🗑** + Confirmar.                                                 |
 | Cerrar visor PDF                  | Botón **Cerrar** o tecla **Escape**.                                     |
 | Cerrar editor OnlyOffice          | Cerrar la pestaña (los cambios se guardan automáticamente).              |
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 1.7 — Mayo 2026.*
