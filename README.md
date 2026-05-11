@@ -116,7 +116,7 @@ Acceso a las plataformas externas integradas con BDU. Al pulsarlas se abren en u
 
 Atajos a herramientas integradas en BDU:
 
-- **Nuevo documento** — abre el modal para crear un Word/Excel/PowerPoint/Texto colaborativo en OnlyOffice.
+- **Nuevo documento** — abre el modal para crear un Word/Excel/PowerPoint/Texto colaborativo en OnlyOffice, o un Diagrama en draw.io.
 - **Terminal SSH** — abre un popup con un cliente SSH en el navegador para conectar a cualquier equipo de la red interna sin tener que usar PuTTY. Ver el manual [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
 - **Esquema BDU** — diagrama técnico de la arquitectura y módulos.
 - **Reportar** — formulario de feedback para comunicar fallos o sugerencias sobre la propia aplicación BDU. **No** se usa para incidencias de red.
@@ -193,7 +193,7 @@ El módulo Centros nos permite buscar cualquier centro sanitario del SERGAS y ve
 - **Líneas de voz**.
 - **Equipos de voz** con imagen del modelo.
 - **Equipos de segundo nivel** con imagen del modelo.
-- **Documentación del centro** almacenada en el NAS (subida de archivos, carpetas, visor integrado y apertura inline de documentos Office en OnlyOffice).
+- **Documentación del centro** almacenada en el NAS (subida de archivos, carpetas, visor integrado, apertura inline de documentos Office en OnlyOffice y de diagramas `.drawio`/`.vsdx` en draw.io).
 
 ![Ficha de un centro con sus líneas y equipos](./imagenes/captura-05-ficha-de-un-centro-con-sus-lineas-y-equi.png)
 
@@ -331,10 +331,9 @@ Cada configuración generada se guarda automáticamente en `/mnt/centros/plantil
 
 **Repositorio de documentos con visor y editor online integrados.**
 
-- **Subida de ficheros** en cualquier formato (Word, Excel, PowerPoint, etc.).
-- **Conversión automática a PDF** en segundo plano (para los originales no-PDF).
-- **Visor online (icono 👁)**: PDFs originales se ven en visor interno; documentos Office (docx/xlsx/pptx) se abren en pestaña nueva con OnlyOffice en modo solo lectura.
-- **Editor online (icono ✏️ verde)**: documentos Office se editan en pestaña nueva con OnlyOffice y los cambios se guardan directamente sobre el fichero al cerrar la pestaña. Edición colaborativa: si dos personas abren el mismo fichero a la vez ven los cambios en tiempo real.
+- **Subida de ficheros** en los formatos aceptados: PDF, Word (`docx`/`doc`), Excel (`xlsx`/`xls`), PowerPoint (`pptx`/`ppt`), diagramas draw.io (`drawio`) y Visio (`vsdx`).
+- **Visor online (icono 👁)**: PDFs originales se ven en visor interno; documentos Office (docx/xlsx/pptx) se abren en pestaña nueva con OnlyOffice en modo solo lectura; diagramas `.drawio`/`.vsdx` se abren en pestaña nueva con draw.io.
+- **Editor online (icono ✏️ verde)**: documentos Office se editan en pestaña nueva con OnlyOffice y los cambios se guardan directamente sobre el fichero al cerrar la pestaña. Edición colaborativa: si dos personas abren el mismo fichero a la vez ven los cambios en tiempo real. Diagramas `.drawio` también se editan con draw.io desde el mismo icono (los Visio `.vsdx` no, son solo lectura).
 - **Descarga del original** siempre disponible.
 - **Filtros por tipo** y rango de fechas.
 
@@ -495,7 +494,8 @@ Además de los módulos principales, BDU dispone de dos utilidades transversales
 - **Buscador global:** caja de búsqueda en la barra superior que consulta simultáneamente centros, líneas, equipos, BTPs e incidencias. Requiere al menos 2 caracteres y muestra hasta 15 resultados por categoría. Al pulsar un resultado se navega directamente al elemento.
 - **Terminal SSH web (`>_`):** cliente SSH integrado en el navegador para conectar a cualquier equipo de la red interna SERGAS. Funciona desde el icono `>_` de la cabecera (cualquier IP) y desde los iconos 🖧 que aparecen junto a equipos en el módulo Centros (host preseleccionado). Tiene manual propio: [`WebSSH2/manual_webssh2.md`](WebSSH2/manual_webssh2.md).
 - **Visor y editor ofimático online (OnlyOffice):** desde mayo 2026, en cualquier listado de BDU que muestre ficheros Office (docx/xlsx/pptx/...), un icono de ojo **👁** abre el documento en modo solo lectura y un icono de lápiz **✏️** lo abre en modo edición, ambos en pestaña nueva. Los cambios al editar se guardan directamente sobre el fichero original al cerrar la pestaña. Funciona en *Documentación*, *Centros → Documentación del centro* (las cards con la flecha **↗**) y *Mantenimiento → Informes*.
-- **Crear documentos online desde la cabecera:** icono **📄+** en la cabecera junto a SSH/Nagios/Gitea/Vault/MailPiler. Abre la ventana **Documentos** con dos pestañas — *Crear nuevo* (Word/Excel/PowerPoint/Texto, eligiendo destino: mi carpeta, común, o un centro concreto con explorador de carpetas y opción de crear nueva) y *Mis borradores* (lista los documentos creados anteriormente para reabrir). Manual: [`OnlyOffice/manual_documentos_online.md`](OnlyOffice/manual_documentos_online.md).
+- **Visor y editor de diagramas online (draw.io):** desde mayo 2026, los diagramas `.drawio` y los Visio `.vsdx` se abren también con los iconos **👁** (ver) y **✏️** (editar; solo `.drawio`) en *Documentación* y en *Centros → Documentación del centro*. Sustituye al draw.io de escritorio para los esquemas de red y topologías existentes. Manual: [`Drawio/manual_diagramas_drawio.md`](Drawio/manual_diagramas_drawio.md).
+- **Crear documentos online desde la cabecera:** icono **📄+** en la cabecera junto a SSH/Nagios/Gitea/Vault/MailPiler. Abre la ventana **Documentos** con dos pestañas — *Crear nuevo* (Word/Excel/PowerPoint/Texto/Diagrama drawio, eligiendo destino: mi carpeta, común, o un centro concreto con explorador de carpetas y opción de crear nueva) y *Mis borradores* (lista los documentos creados anteriormente para reabrir, incluidos los diagramas con icono 🗺️). Manuales: [`OnlyOffice/manual_documentos_online.md`](OnlyOffice/manual_documentos_online.md) y [`Drawio/manual_diagramas_drawio.md`](Drawio/manual_diagramas_drawio.md).
 
 ---
 
@@ -550,6 +550,7 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 |---------------------------------------------------|------------------------------------------------|
 | Terminal SSH web (popup en el navegador)          | `WebSSH2/manual_webssh2.md`                    |
 | Documentos online (crear y reabrir desde cabecera) | `OnlyOffice/manual_documentos_online.md`      |
+| Diagramas online (draw.io: crear, ver y editar)   | `Drawio/manual_diagramas_drawio.md`            |
 
 > **Nota:** los manuales de los proyectos activos se separan deliberadamente del manual general del módulo Instalaciones para que, cuando un proyecto se cierre, su documentación pueda archivarse sin afectar al manual general.
 

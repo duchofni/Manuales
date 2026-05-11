@@ -191,6 +191,7 @@ Pulsamos sobre el archivo que queramos ver. Según el tipo:
 - **PDF** — se abre un visor de PDF en el navegador.
 - **Texto** (txt, log, ini, cfg, md) — se muestra el contenido en formato texto.
 - **Documentos Office** (docx, xlsx, pptx y similares) — se abren **en una pestaña nueva** dentro del editor online OnlyOffice. Lo reconocemos por la flecha **↗** que aparece en la esquina superior derecha de la tarjeta.
+- **Diagramas draw.io** (`.drawio`) y **Visio** (`.vsdx`) — se abren **en una pestaña nueva** dentro de draw.io. Misma flecha **↗** en la tarjeta, icono **🗺️**. Los `.drawio` se editan y guardan; los `.vsdx` son solo lectura. Detalle en [`Drawio/manual_diagramas_drawio.md`](../Drawio/manual_diagramas_drawio.md).
 - **Otros formatos** (zip, mp4, etc.) — se ofrece un botón de descarga.
 
 ![Card de un fichero docx con la flecha ↗ que indica apertura en pestaña nueva con OnlyOffice](./imagenes/captura-12-card-fichero-office-con-flecha-onlyoffice.png)
@@ -206,6 +207,14 @@ Cuando pulsamos sobre una tarjeta de fichero Office se abre OnlyOffice **en modo
 > **Nota:** la primera vez que abrimos un documento Office del centro, OnlyOffice tarda unos segundos en cargar las fuentes; las siguientes ya van fluidas.
 
 ![Editor OnlyOffice abierto a pantalla completa con un fichero docx del centro](./imagenes/captura-13-editor-onlyoffice-fichero-centro.png)
+
+### 7.2.2. Editar un diagrama draw.io desde el centro
+
+Al pulsar sobre una tarjeta `.drawio` se abre draw.io **en modo edición**. Dibujamos como en la aplicación de escritorio y guardamos con el icono de disquete o `Ctrl+S`. Los cambios se escriben sobre el fichero del centro.
+
+A diferencia de OnlyOffice, **draw.io no es colaborativo en tiempo real**: si dos operadores abrimos el mismo diagrama y guardamos, gana el último que guarde. Conviene avisar al compañero antes de tocar.
+
+Los `.vsdx` se abren solo en modo lectura. Si necesitamos modificar un diagrama Visio, lo guardamos *como .drawio* desde draw.io y lo subimos al centro como fichero nuevo.
 
 ### 7.3. Subir un archivo
 

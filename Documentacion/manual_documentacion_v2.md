@@ -83,9 +83,9 @@ Cuando tenemos una carpeta seleccionada podemos filtrar por rango de fechas:
 
 ### 4.1. Formatos y tamaño permitidos
 
-| Formatos aceptados                                                  | Tamaño máximo |
-|---------------------------------------------------------------------|---------------|
-| PDF, Word (docx, doc), Excel (xlsx, xls), PowerPoint (pptx, ppt).   | 50 MB         |
+| Formatos aceptados                                                                                              | Tamaño máximo |
+|-----------------------------------------------------------------------------------------------------------------|---------------|
+| PDF, Word (docx, doc), Excel (xlsx, xls), PowerPoint (pptx, ppt), diagramas draw.io (drawio) y Visio (vsdx).    | 50 MB         |
 
 > **Nota:** si el formato no está en la lista o el archivo supera los 50 MB, aparece un mensaje de error y tenemos que seleccionar otro archivo.
 
@@ -115,6 +115,14 @@ En la tabla de documentos cada fila tiene una columna **Acciones** con varios ic
 
 ![Documento docx abierto en OnlyOffice en modo solo lectura desde el módulo Documentación](./imagenes/captura-09-documentacion-onlyoffice-modo-vista.png)
 
+### 5.3. Diagramas draw.io (drawio) y Visio (vsdx)
+
+1. Pulsamos el icono **👁** en la fila del diagrama. Su icono en la columna del tipo es **🗺️**.
+2. Se abre una **pestaña nueva** con el editor draw.io. Para `.drawio` se abre en modo lectura; para `.vsdx` el editor importa el diagrama Visio y lo muestra (también en lectura).
+3. Para cerrar, cerramos la pestaña.
+
+Para más detalles ver el manual [`Drawio/manual_diagramas_drawio.md`](../Drawio/manual_diagramas_drawio.md).
+
 ---
 
 ## 6. Editar un documento Office online
@@ -131,7 +139,13 @@ Para los documentos Office (docx, xlsx, pptx, doc, xls, ppt, odt, ods, odp, rtf,
 
 ![Editor OnlyOffice en modo edición desde el módulo Documentación con el icono guardar visible](./imagenes/captura-10-documentacion-onlyoffice-modo-edicion.png)
 
-> **Nota:** el icono **✏️** solo aparece para formatos Office. Los PDFs originales no se editan (Community Edition de OnlyOffice no edita PDF).
+> **Nota:** el icono **✏️** solo aparece para formatos Office y para diagramas `.drawio`. Los PDFs originales no se editan (Community Edition de OnlyOffice no edita PDF). Los Visio `.vsdx` se pueden ver con draw.io pero NO se editan en BDU (para preservar la fidelidad Visio); si queremos modificar uno, lo guardamos *como .drawio* desde el editor y lo subimos a BDU como fichero nuevo.
+
+### 6.1. Editar un diagrama draw.io
+
+Para los `.drawio`, el icono **✏️** abre el editor draw.io en pestaña nueva. Dibujamos como en la aplicación de escritorio (mismas formas, mismos atajos) y guardamos con el icono de disquete o `Ctrl + S`. Los cambios se escriben sobre el `.drawio` original.
+
+A diferencia de OnlyOffice, **draw.io no es colaborativo en tiempo real**: si dos operadores abren y guardan el mismo diagrama a la vez, gana el último que guarde. Conviene avisar al compañero antes de tocar.
 
 ---
 
@@ -173,11 +187,14 @@ Para los documentos Office (docx, xlsx, pptx, doc, xls, ppt, odt, ods, odp, rtf,
 | Ver PDF                           | Icono **👁** (abre modal interno).                                       |
 | Ver Office (docx/xlsx/pptx)       | Icono **👁** (abre OnlyOffice solo lectura en pestaña nueva).            |
 | Editar Office                     | Icono **✏️** (abre OnlyOffice modo edición en pestaña nueva).             |
+| Ver diagrama drawio o Visio       | Icono **👁** (abre draw.io en pestaña nueva).                            |
+| Editar diagrama .drawio           | Icono **✏️** (abre draw.io modo edición). Visio `.vsdx` NO se edita.      |
 | Descargar archivo                 | Icono **⬇ Descargar** + Aceptar.                                         |
 | Eliminar documento                | Icono **🗑** + Confirmar.                                                 |
 | Cerrar visor PDF                  | Botón **Cerrar** o tecla **Escape**.                                     |
 | Cerrar editor OnlyOffice          | Cerrar la pestaña (los cambios se guardan automáticamente).              |
+| Cerrar editor draw.io             | Guardar (icono disquete o `Ctrl+S`) y cerrar la pestaña.                 |
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.7 — Mayo 2026.*
+*Manual para operadores CGE SERGAS. Versión 1.8 — Mayo 2026 (integración draw.io).*

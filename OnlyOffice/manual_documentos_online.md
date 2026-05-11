@@ -52,7 +52,7 @@ En la pestaña **📝 Crear nuevo** rellenamos tres bloques:
 
 ### 3.1. Elegir el tipo
 
-Pulsamos uno de los cuatro botones:
+Pulsamos uno de los cinco botones:
 
 | Botón | Tipo de fichero | Para qué |
 |---|---|---|
@@ -60,8 +60,11 @@ Pulsamos uno de los cuatro botones:
 | **📊 Excel** | `.xlsx` | Listas, cálculos, tablas |
 | **📋 PowerPoint** | `.pptx` | Presentaciones |
 | **📃 Texto** | `.txt` | Notas rápidas, configs Cisco/Teldat manuales |
+| **🗺️ Diagrama** | `.drawio` | Esquemas de red, topologías, diagramas de flujo |
 
 El botón elegido queda marcado en verde.
+
+> **Nota:** los cuatro primeros tipos abren **OnlyOffice** y el resto de este manual los cubre. Si elegimos **🗺️ Diagrama** el flujo de tipo + nombre + destino es idéntico pero al pulsar *Crear y abrir* se abre el editor **draw.io** en pestaña nueva. Para el detalle de cómo dibujar y guardar diagramas, ver [`Drawio/manual_diagramas_drawio.md`](../Drawio/manual_diagramas_drawio.md).
 
 ### 3.2. Poner el nombre
 
@@ -128,7 +131,7 @@ Para volver a abrir un documento que creamos antes en *Mi carpeta* o en *Carpeta
 3. Aparecen dos secciones:
    - **📁 Mi carpeta**: documentos que solo vemos nosotros.
    - **👥 Carpeta común (todo el CGE)**: documentos comunes a todo el equipo.
-4. Cada documento muestra: icono según tipo, nombre, fecha de modificación y tamaño. Los más recientes salen arriba.
+4. Cada documento muestra: icono según tipo (📝 Word, 📊 Excel, 📋 PowerPoint, 📃 Texto, 🗺️ Diagrama draw.io), nombre, fecha de modificación y tamaño. Los más recientes salen arriba.
 5. Pulsamos cualquiera y se abre en pestaña nueva con OnlyOffice listo para seguir editándolo.
 
 ![Pestaña "Mis borradores" con la lista de documentos personales y comunes](./imagenes/captura-05-pestaña-mis-borradores.png)
