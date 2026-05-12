@@ -1291,7 +1291,8 @@ Caso de uso típico del **modo C** (subida de fichero con variables): primero av
 **Comandos Teldat:**
 ```
 p 4
-list access-list 1000
+access-list 1000
+show config
 ```
 
 **Comandos Cisco:**
@@ -1299,11 +1300,11 @@ list access-list 1000
 show ip access-list FILTRO_LAN_SEDE
 ```
 
-**Extracciones** — buscamos la línea que contiene el destino del ACE (por ejemplo `69.168.10.0`) y sacamos el número:
+**Extracciones** — buscamos la línea que contiene el destino del ACE y sacamos el número. Ojo: la **máscara va al revés** entre Teldat (normal) y Cisco (wildcard).
 
 | CMD origen | Buscar línea con | Regex | Etiqueta |
 |---|---|---|---|
-| `list access-list 1000` (Teldat) | `69.168.10.0 0.0.0.255` | `(?<=entry )\d+` | `seq_old` |
+| `show config` (Teldat) | `69.168.10.0 255.255.255.0` | `(?<=entry )\d+` | `seq_old` |
 | `show ip access-list FILTRO_LAN_SEDE` (Cisco) | `69.168.10.0 0.0.0.255` | `^\s*\K\d+` | `seq_old` |
 
 > **Importante:** lanzamos dos veces, una por cada familia. Cada SEM trabaja sobre los equipos que correspondan; las extracciones inactivas en la otra familia se quedan vacías sin más.
@@ -1338,6 +1339,9 @@ exit
 exit
 exit
 save yes
+(ctrlp)
+p 4
+confirm-cfg
 ```
 
 **Comandos Cisco** (con placeholder):
