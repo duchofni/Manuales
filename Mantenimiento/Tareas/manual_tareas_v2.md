@@ -862,7 +862,7 @@ Antes de los filtros elegimos arriba la pestaña **📡 Datos** o **📞 Voz** s
 
 ### Paso 1 — Seleccionar equipos
 
-Bloque *① Selección de equipos*. Hay **dos modos** (excluyentes):
+Bloque *① Selección de equipos*. Hay **tres modos** (excluyentes — gana el último relleno: filtros < lista pegada < fichero):
 
 #### A) Por filtros (lo habitual)
 
@@ -881,6 +881,37 @@ Cada filtro multi-valor es un desplegable con casillas (mantenemos pulsado para 
 Pegamos los nemónicos uno por línea en el textarea **"O por lista de nemónicos"**. Si rellenamos esto, los filtros de arriba **se ignoran**. Líneas vacías y `#comentarios` se ignoran.
 
 Si alguno no se encuentra (no existe, dado de baja, centro cerrado, no gestionable), aparece listado en un panel **"⚠️ N nemónicos no encontrados"** sobre la tabla de resultados.
+
+#### C) Por fichero CSV / XLSX (con variables por nemónico)
+
+Subimos un fichero `.csv` o `.xlsx` con una primera columna obligatoria llamada **`Host`** (los nemónicos). El resto de cabeceras, si las hay, se publican como **variables** que podemos usar en los comandos como `{{NOMBRE}}` (sustitución directa) o como `{{NOMBRE+N}}` / `{{NOMBRE-N}}` (aritmética entera).
+
+Ejemplo de fichero:
+
+```
+Host;seq_old;descripcion
+SBETAN02R;150;Cabecera VOZ
+VPORRI02R;450;Cabecera VOZ
+FFONMA00R;1230;Cabecera VOZ
+```
+
+Caso de uso típico — **encadenar dos SEMs**:
+
+1. Primer SEM con extracciones: averiguamos un dato distinto por nemónico (p. ej. la secuencia donde está un ACE concreto en la ACL `FILTRO_LAN_SEDE`). Cada equipo devuelve su valor en la tabla del Monitor.
+2. Pulsamos **📊 Excel** en el monitor para descargar el resultado.
+3. Editamos el Excel si queremos: renombramos columnas, añadimos otras a mano.
+4. Volvemos a SEM → Nueva → subimos el fichero como modo C → escribimos los comandos del segundo SEM usando `{{NOMBRE}}` y/o `{{NOMBRE±N}}` → Lanzar.
+
+Reglas de las cabeceras:
+
+- **`Host`** es obligatoria y no puede usarse como nombre de variable.
+- Las demás cabeceras: alfanumérico y `_`, empezando por letra o `_`, máximo 30 caracteres. Cabeceras inválidas se descartan y se muestran en el aviso.
+- Si subimos un fichero solo con la columna `Host`, se comporta exactamente igual que el modo B (lista pegada).
+- Las filas duplicadas por `Host` se deduplican: gana la primera aparición.
+
+Tras pulsar **🔍 Buscar equipos**, debajo del campo del fichero vemos los **chips** de las variables detectadas (p. ej. <code>{{seq_old}}</code> <code>{{descripcion}}</code>). Esos son los nombres exactos que podemos escribir en los textareas de comandos.
+
+> **Importante:** si un comando contiene un `{{NOMBRE}}` que **no existe** en el fichero (typo en el nombre o variable ausente para ese equipo), ese equipo **no se ejecuta** y aparece en el Monitor con estado **`VAR_MISSING`**, indicando qué variable faltó.
 
 #### Búsqueda y resultados
 
