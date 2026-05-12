@@ -193,22 +193,13 @@ La consulta **Control de Cambios** tiene funcionalidades adicionales de edición
 
 ![Tabla de Control de Cambios en modo lectura con las columnas visibles](./imagenes/captura-08-tabla-de-control-de-cambios-en-modo-lect.png)
 
-### 8.2. Activar el modo editor
+### 8.2. Modo edición (solo administradores)
 
-Para poder editar la solución o marcar como corregido, necesitamos activar el modo editor:
-
-1. Pulsamos el botón **Activar edición** (en la barra de herramientas).
-2. Aparece una ventana pidiendo la contraseña de edición.
-3. Introducimos la contraseña y pulsamos **Entrar** (o pulsamos Enter).
-4. Si la contraseña es correcta, la página recarga con el modo editor activo.
-
-![Ventana emergente pidiendo la contraseña de edición](./imagenes/captura-09-ventana-emergente-pidiendo-la-contrasena.png)
-
-> **Importante:** si introducimos la contraseña incorrecta 3 veces, el acceso queda bloqueado durante unos minutos.
+La edición de **Control de Cambios** está restringida a los **administradores del dominio AD** del CGE SERGAS. No requiere introducir ninguna contraseña adicional: si nuestra cuenta tiene permisos de administrador del dominio, al entrar en la consulta vemos en la barra de herramientas el indicador **✏️ Modo edición** y las columnas *Solución* y *Corregido* se vuelven editables automáticamente. Si no somos administradores, vemos la tabla en modo lectura y no aparece el indicador.
 
 ### 8.3. Editar la solución de un registro
 
-1. Con el modo editor activo pulsamos en la celda **Solución** del registro que queramos editar.
+1. Pulsamos en la celda **Solución** del registro que queramos editar.
    - Si está vacía, muestra *"Clic para añadir…"* con un icono de lápiz.
 2. Se abre un área de texto donde escribimos la solución.
 3. Pulsamos **Guardar** para guardar los cambios.
@@ -218,17 +209,12 @@ Para poder editar la solución o marcar como corregido, necesitamos activar el m
 
 ### 8.4. Marcar un registro como corregido
 
-1. Con el modo editor activo pulsamos sobre la etiqueta **No** (roja) de la columna **Corregido**.
+1. Pulsamos sobre la etiqueta **No** (roja) de la columna **Corregido**.
 2. La etiqueta cambia automáticamente a **Sí** (verde).
 3. Si queremos desmarcar, pulsamos de nuevo en **Sí** y vuelve a **No**.
 4. El cambio se guarda automáticamente al pulsar.
 
 ![Columna Corregido mostrando la etiqueta cambiando de No (rojo) a Sí (verde)](./imagenes/captura-11-columna-corregido-mostrando-la-etiqueta.png)
-
-### 8.5. Desactivar el modo editor
-
-1. Pulsamos **Desactivar edición** en la barra de herramientas.
-2. La página recarga en modo lectura.
 
 ---
 
@@ -243,8 +229,8 @@ Para poder editar la solución o marcar como corregido, necesitamos activar el m
 | Cambiar de página               | Botones del paginador.                                |
 | Exportar datos                  | Botones CSV, PDF o Excel.                             |
 | Ver estadísticas                | Botón **📊 Estadísticas** en la barra de herramientas.|
-| Editar solución                 | Activar editor + pulsar celda Solución.               |
-| Marcar como corregido           | Activar editor + pulsar etiqueta No/Sí.               |
+| Editar solución                 | Pulsar celda Solución (solo admins del dominio).      |
+| Marcar como corregido           | Pulsar etiqueta No/Sí (solo admins del dominio).      |
 
 ---
 
