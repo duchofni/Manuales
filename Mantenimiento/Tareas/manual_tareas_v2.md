@@ -1097,6 +1097,10 @@ Una **regex** (expresión regular) es un patrón que describe texto. El SEM usa 
 | Un porcentaje | `\d+\s*%` | `Memory used: 45 %` | `45 %` |
 | Una versión X.Y.Z.W | `\d+(\.\d+){3}` | `Software release: 11.02.01.20` | `11.02.01.20` |
 | Estado up/down | `up\|down` | `Status: up` | `up` |
+| Nº de entry **Teldat** | `(?<=entry )\d+` | `entry 180 source address 192.168.134.87 255.255.255.255` | `180` |
+| Nº de secuencia **Cisco ACL** | `^\s*\K\d+` | ` 150 permit udp any 10.233.0.0 0.0.255.255 range netbios-ns netbios-dgm` | `150` |
+
+> El `\K` de PCRE descarta del match todo lo que va antes (espacios de indentación, en este caso), así que el SEM guarda solo el número. El `(?<=entry )` es un *lookbehind*: exige que justo antes del número haya `entry ` pero no lo incluye en el resultado.
 
 ### 30.3. Trucos útiles
 
@@ -1275,6 +1279,77 @@ date
 | `hostmoderef` | (vacío) | `\S+$` | `Rol` |
 
 > Recordatorio: en Alcatel OXE solo funcionan comandos no-interactivos del shell bash. Los menús (`mgr`, `spadmin`, `mtcl`) **no** se pueden usar desde el SEM.
+
+### 31.11. Localizar la secuencia de un ACE y reusarla en otro SEM (encadenado)
+
+Caso de uso típico del **modo C** (subida de fichero con variables): primero averiguamos en qué número de secuencia está un ACE concreto en cada centro, y luego lanzamos un segundo SEM que inserta otro ACE relativo a ese número.
+
+#### Paso 1 — SEM 1: averiguar la secuencia
+
+**Pestaña 📡 Datos**, filtros o lista de nemónicos para seleccionar los equipos.
+
+**Comandos Teldat:**
+```
+p 4
+list access-list 1000
+```
+
+**Comandos Cisco:**
+```
+show ip access-list FILTRO_LAN_SEDE
+```
+
+**Extracciones** — buscamos la línea que contiene el destino del ACE (por ejemplo `69.168.10.0`) y sacamos el número:
+
+| CMD origen | Buscar línea con | Regex | Etiqueta |
+|---|---|---|---|
+| `list access-list 1000` (Teldat) | `69.168.10.0 0.0.0.255` | `(?<=entry )\d+` | `seq_old` |
+| `show ip access-list FILTRO_LAN_SEDE` (Cisco) | `69.168.10.0 0.0.0.255` | `^\s*\K\d+` | `seq_old` |
+
+> **Importante:** lanzamos dos veces, una por cada familia. Cada SEM trabaja sobre los equipos que correspondan; las extracciones inactivas en la otra familia se quedan vacías sin más.
+
+Al terminar, en el Monitor pulsamos **📊 Excel** para descargar el resultado. El fichero tiene una columna `seq_old` con el número de secuencia detectado en cada nemónico.
+
+#### Paso 2 — preparar el fichero para el SEM 2
+
+Abrimos el Excel descargado y renombramos la columna del nemónico a **`Host`** (si no se llamaba así). Mantenemos `seq_old`. Borramos columnas que no nos interesen.
+
+```
+Host;seq_old
+SBETAN02R;150
+VPORRI02R;450
+FFONMA00R;1230
+```
+
+#### Paso 3 — SEM 2: insertar el ACE nuevo justo debajo
+
+Volvemos a SEM → Nueva → en sección ① subimos el fichero como **fichero CSV/XLSX** (modo C). Tras pulsar **🔍 Buscar equipos** vemos el chip <code>{{seq_old}}</code> bajo el campo del fichero.
+
+**Comandos Teldat** (con placeholder):
+```
+p 5
+feature access-lists
+access-list 1000
+entry {{seq_old+5}} default
+entry {{seq_old+5}} permit
+entry {{seq_old+5}} source address any
+entry {{seq_old+5}} destination address 69.168.13.0 255.255.255.0
+exit
+exit
+exit
+save yes
+```
+
+**Comandos Cisco** (con placeholder):
+```
+conf t
+ip access-list extended FILTRO_LAN_SEDE
+ {{seq_old+5}} permit ip any 69.168.13.0 0.0.0.255
+end
+wr
+```
+
+Cada equipo recibe el comando con su propio número calculado (`seq_old + 5`). Si en algún centro la extracción del paso 1 quedó vacía (porque el ACE buscado no existía), ese equipo aparece en el Monitor como **`VAR_MISSING`** y no se le manda nada — es la red de seguridad del modo C.
 
 ---
 
