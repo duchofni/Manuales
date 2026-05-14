@@ -3,8 +3,8 @@
 | Campo       | Valor                    |
 |-------------|--------------------------|
 | **Módulo**  | Mantenimiento            |
-| **Versión** | 1.5                      |
-| **Fecha**   | Abril 2026               |
+| **Versión** | 1.6                      |
+| **Fecha**   | Mayo 2026                |
 | **Para**    | Operadores CGE SERGAS    |
 
 ---
@@ -93,6 +93,16 @@ Seguimiento de incidencias de Telefónica.
 |---------------------|--------------------------------------------------------------------|
 | Seguimiento INC     | Buscar, suscribirse y hacer seguimiento de INC en Grilloweb       |
 
+### 3.6. Mantenimiento Preventivo
+
+Proyectos preventivos: detección anticipada de problemas y rutinas semanales.
+
+| Herramienta             | Descripción                                                                                |
+|-------------------------|--------------------------------------------------------------------------------------------|
+| Pruebas Backup          | Programación y seguimiento del ciclo anual de pruebas de líneas backup por centro          |
+| Control de Tensión (DCT)| Monitorización de cortes eléctricos en centros mediante dispositivos DCT                   |
+| Drift de configs        | Comparador semanal de configuraciones de routers — detecta qué equipos han sido modificados |
+
 ---
 
 ## 4. Consejos de uso
@@ -103,4 +113,4 @@ Seguimiento de incidencias de Telefónica.
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.5 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 1.6 — Mayo 2026.*
