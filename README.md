@@ -303,13 +303,13 @@ Cada submódulo tiene **manual propio** (ver [sección 7. Referencia de manuales
 - **DDIs GDIA** — gestión de DDIs (números marcación directa) para incidencias GDIA.
 - **Nagios** — panel hosts caídos, creación de incidencias en lote, planta Nagios.
 - **Informes** — generación asíncrona de informes Excel/PDF y CSV SERGAS.
-- **KPIs Inelcom / Nubodata / CGE** — dashboards de SLA y volumen/tendencias.
+- **KPIs Inelcom / Nubodata / EECC / CGE / GDIA** — dashboards de SLA, seguimiento operativo y volumen/tendencias.
 - **Preventivo / DCT** — operativa diaria de los Dispositivos de Control de Tensión (SMS, alertas, tests).
 - **Preventivo / Pruebas Backup** — ciclo anual de pruebas de líneas de respaldo: planificación por fases y semanas, checklist OnlyOffice por centro y marcado de realizadas.
 - **Preventivo / Drift de configuraciones** — comparador semanal de configuraciones de routers: detecta qué equipos han cambiado entre dos viernes y guarda el diff en histórico.
 - **Grilloweb** — seguimiento de incidencias de Telefónica.
 
-> **Nota:** el acceso a los módulos de KPIs (Inelcom, Nubodata, CGE) y a Ejecuciones Masivas (SEM) está restringido a determinados usuarios según su grupo en el directorio.
+> **Nota:** el acceso a los módulos de KPIs (Inelcom, Nubodata, EECC, CGE, GDIA) y a Ejecuciones Masivas (SEM) está restringido a determinados usuarios según su grupo en el directorio.
 
 ![Panel de Mantenimiento con las tarjetas desplegables](./imagenes/captura-11-panel-de-mantenimiento-con-las-tarjetas.png)
 
@@ -533,6 +533,7 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 | DDIs GDIA                              | `Mantenimiento/ddis/manual_ddi_v2.md`                                      |
 | KPIs Inelcom                           | `Mantenimiento/Herramientas/Kpis/manual_kpis_v2.md`                        |
 | KPIs Nubodata                          | `Mantenimiento/Herramientas/Kpis/manual_kpis_nubodata_v2.md`               |
+| KPIs EECC                              | `Mantenimiento/Herramientas/Kpis/manual_kpis_eecc_v2.md`                   |
 | KPIs CGE                               | `Mantenimiento/Herramientas/Kpis/manual_kpis_cge_v2.md`                    |
 | KPIs GDIA                              | `Mantenimiento/Herramientas/Kpis/manual_kpis_gdia_v2.md`                   |
 | Preventivo / DCT (operativa diaria)    | `Mantenimiento/Preventivo/DCT/manual_dct_v2.md`                            |
