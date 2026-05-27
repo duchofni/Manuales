@@ -81,7 +81,7 @@ Indicadores, métricas de cumplimiento y análisis de volumen.
 | Herramienta         | Descripción                                                                  |
 |---------------------|------------------------------------------------------------------------------|
 | KPIs Inelcom        | Dashboard de KPIs SLA del contrato Inelcom                                   |
-| KPIs Nubodata       | Dashboard de KPIs SLA del contrato Nubodata                                  |
+| KPIs Nubodata       | SLA del contrato Nubodata (Material No Ibercom) **por urgencia** (U1≤24h, U2≤48h, U3≤72h laborables) y tabla en tiempo real de incidencias abiertas fuera de SLA |
 | KPIs EECC           | Seguimiento de incidencias **VOZ Ibercom Terminales** abiertas en la EECC con más de 48 h (ticket SIRIO) y gráficas históricas mensuales y anuales |
 | KPIs CGE            | Dashboard de **volumen y tendencias** de incidencias (no SLA): evolución anual y mensual, top subtipos y centros, variación interanual y bloque específico de cortes eléctricos |
 | KPIs GDIA           | Dashboard de **incidencias internas** importadas del histórico Vantive/GDIA/ARGONAUTA: incidencias por mes y año, GDIA vs ASTRO, top tipos de servicio. |
