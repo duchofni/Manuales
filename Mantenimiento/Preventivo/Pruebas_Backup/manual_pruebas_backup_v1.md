@@ -1512,7 +1512,7 @@ Probamos primero a **reiniciar el equipo**. Si sigue sin levantar (problema de c
 
 #### Tras aislar el principal Teldat, los comandos no me funcionan
 
-Es normal: al tirar la WAN, el usuario EDOMUS con el que estamos conectados pierde privilegios. Hay que abrir una **sesión nueva desde el EDC Backup con el usuario Local `cgpsergas`**.
+Es normal: al tirar la WAN, el usuario EDOMUS con el que estamos conectados pierde privilegios. Hay que abrir una **sesión nueva desde el EDC Backup con el usuario Local `sergascge`**.
 
 #### Programé un reinicio Teldat pero no se reinició
 
