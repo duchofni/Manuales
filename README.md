@@ -173,7 +173,7 @@ Al entrar en BDU, el módulo Inicio muestra un panel con la visión global del e
 - **Gráficos:** tipo de sede, líneas activas por tipo, equipos gestionados, equipos por modelo (top 12).
 - **Incidencias:** resumen de incidencias abiertas clasificadas por tipo.
 - **Pedidos pendientes:** estado de instalaciones en curso.
-- **Infraestructura:** estado de los servidores Proxmox, NAS y base de datos.
+- **Estado del sistema:** el estado de los servidores (Proxmox, NAS) y de la base de datos ya **no está en la portada**, vive en una vista aparte que se abre con el botón **«Estado del sistema»** (carga bajo demanda).
 
 Los datos se actualizan automáticamente cada 2 minutos. Este módulo es solo de lectura.
 

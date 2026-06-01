@@ -20,7 +20,7 @@
 7. [Equipos por modelo](#7-equipos-por-modelo)
 8. [Incidencias abiertas](#8-incidencias-abiertas)
 9. [Pedidos pendientes de instalaciones](#9-pedidos-pendientes-de-instalaciones)
-10. [Infraestructura](#10-infraestructura)
+10. [Estado del sistema (servidores y base de datos)](#10-estado-del-sistema-servidores-y-base-de-datos)
 
 ---
 
@@ -148,9 +148,11 @@ Cada tarjeta muestra el número de pedidos pendientes.
 
 ---
 
-## 10. Infraestructura
+## 10. Estado del sistema (servidores y base de datos)
 
-La sección inferior muestra el estado en tiempo real de los servidores y sistemas que soportan la aplicación BDU. Útil para saber si hay algún problema en la infraestructura.
+> **Importante:** esta información **ya no aparece en la portada de Inicio** (la portada se aligeró para que cargue al instante). Ahora vive en una vista aparte llamada **«Estado del sistema»**. La abrimos pulsando el botón **«Estado del sistema →»** que hay en Inicio, **debajo del badge "Base de datos"** (parte superior derecha). Se carga bajo demanda (tarda un poco porque consulta los servidores en vivo) y se refresca sola. Para volver pulsamos **«← Volver a inicio»**.
+
+En esta vista vemos el estado en tiempo real de los servidores y sistemas que soportan la aplicación BDU. Útil para saber si hay algún problema en la infraestructura.
 
 ### 10.1. Servidores Proxmox (PVE)
 
@@ -247,7 +249,7 @@ Muestra estadísticas de la base de datos de la aplicación:
 | Equipos por modelo      | Los 12 modelos más frecuentes.                    |
 | Incidencias abiertas    | Total y desglose por tipo.                        |
 | Pedidos pendientes      | LOGOS, BJ, ATLAS.                                 |
-| Infraestructura         | Estado de servidores, NAS y base de datos.        |
+| Estado del sistema      | Servidores, NAS y base de datos (vista aparte, botón en Inicio). |
 
 > **Recuerda:** todo el panel se actualiza automáticamente cada 2 minutos. Si necesitamos datos al momento, podemos recargar la página manualmente con **F5**.
 
