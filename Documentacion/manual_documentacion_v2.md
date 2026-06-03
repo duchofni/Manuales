@@ -67,7 +67,7 @@ Cuando tenemos una carpeta seleccionada podemos filtrar por rango de fechas:
 ## 4. Subir un documento
 
 1. Pulsamos el botón **Subir documento** (en la parte superior derecha).
-2. Se abre el formulario de subida con los siguientes campos:
+2. Se abre una ventana (modal) de subida **sin salir del listado**, con los siguientes campos:
 
 | Campo            | Descripción                                           | Obligatorio |
 |------------------|-------------------------------------------------------|-------------|
