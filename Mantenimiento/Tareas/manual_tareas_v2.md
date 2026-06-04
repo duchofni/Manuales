@@ -245,15 +245,14 @@ Revisión **semanal** del estado de las 3 DIBAs. Nos conectamos a los **2 PEs de
 3. Introducimos credenciales LDAP + **TOTP** (siempre Pasarela).
 4. Esperamos al resultado.
 
-### 9.2. Las tres vistas
+### 9.2. Las dos vistas
 
-Esta tarea tiene tres pestañas además del histórico:
+Esta tarea tiene dos pestañas:
 
 | Vista                  | Para qué sirve                                                                       |
 |------------------------|--------------------------------------------------------------------------------------|
-| **Tabla**              | Una tabla por revisión, con 3 filas (una por DIBA) y todas las métricas relevantes. |
+| **Tabla histórica**    | Una tabla por revisión, con 3 filas (una por DIBA) y todas las métricas relevantes. Cada revisión lleva un botón **RAW** que abre el volcado crudo de ese log en una ventana, sin salir de la página (para diagnóstico fino). |
 | **Métricas**           | 6 gráficas (canvas 2D): RTT, transiciones, RX, TX, loss, bit error.                  |
-| **Texto**              | Visor del raw completo del log seleccionado (para diagnóstico fino).                 |
 
 ![Vista Tabla de DIBAs con la última revisión y las columnas LOSS, RTT, ERR.ENT, TRANS, BIT ERR, ERR.BLK, TOTAL, BGP y ÓPTICAS](./imagenes/captura-09-vista-tabla-dibas.png)
 

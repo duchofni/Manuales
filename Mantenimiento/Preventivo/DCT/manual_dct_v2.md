@@ -235,8 +235,10 @@ Por cada comando podemos elegir el destino:
 |-------------------|--------------------------------------------------------------------------|
 | **Individual**    | Selector de centro. Envía el comando solo a ese DCT.                     |
 | **Masivo por AS** | Selector de Área Sanitaria. Envía a todos los DCTs activos de esa área.  |
-| **Masivo total**  | A los ~405 DCTs (requiere confirmación tecleando `MASIVO`).              |
+| **Masivo total**  | A los ~405 DCTs.                                                          |
 | **Manual**        | Introducimos un número de teléfono arbitrario (para depuración).         |
+
+> ⚠ **Todo envío Masivo o por Área** (sea cual sea el comando) exige confirmación: escribimos `MASIVO` en el recuadro de aviso para desbloquear el botón **Enviar comando**. Solo el envío Individual no la pide.
 
 ![Pantalla de Configuración con el catálogo de comandos y el formulario de envío con los destinos](./imagenes/captura-06-configuracion-comandos-dct.png)
 
