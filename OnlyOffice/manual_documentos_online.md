@@ -25,11 +25,13 @@
 
 Desde la cabecera de BDU podemos **crear documentos Word, Excel, PowerPoint o de texto plano desde cero** sin necesidad de tener Office instalado en el equipo. Los documentos se editan en el navegador (motor OnlyOffice) y se guardan automáticamente en una carpeta del NAS.
 
-Tres ubicaciones de destino disponibles:
+Cinco ubicaciones de destino disponibles:
 
 - **📁 Mi carpeta** — privada para cada operador (`/mnt/documentacion/borradores/<usuario>/`).
 - **👥 Carpeta común** — visible para todos los operadores del CGE.
 - **🏥 Un centro concreto** — dentro del árbol de carpetas del centro (con buscador y explorador para elegir o crear la carpeta exacta).
+- **🔧 Mantenimiento** — dentro del repositorio de documentación de Mantenimiento (`/mnt/documentacion/Mantenimiento/`), con explorador de carpetas.
+- **📦 Provisión** — dentro del repositorio de documentación de Provisión (`/mnt/documentacion/Provision/`), con explorador de carpetas.
 
 ---
 
@@ -74,11 +76,12 @@ Ejemplo: `notas_turno_mañana_2026-05-12`.
 
 ### 3.3. Elegir dónde se guarda
 
-Pulsamos uno de los tres destinos:
+Pulsamos uno de los destinos:
 
 - **📁 Mi carpeta**: solo lo vemos nosotros desde la pestaña *Mis borradores*. Útil para borradores personales o trabajo en curso que aún no está listo para compartir.
 - **👥 Carpeta común**: lo ven todos los operadores. Útil para dejar a un compañero de turno un documento que está revisando.
 - **🏥 Un centro**: el documento se guarda dentro del árbol de carpetas del centro elegido (igual que si lo subiéramos por *Centros → Documentación*).
+- **🔧 Mantenimiento** / **📦 Provisión**: el documento se guarda dentro del repositorio de documentación de Mantenimiento o de Provisión. Al pulsarlos aparece directamente el explorador de carpetas (sin buscar centro) para elegir o crear la subcarpeta exacta.
 
 ### 3.4. Crear y abrir
 
@@ -93,6 +96,8 @@ Pulsamos el botón verde **Crear y abrir** abajo a la derecha. Se abre **una pes
 ## 4. Guardar el documento dentro de un centro
 
 Cuando elegimos el destino **🏥 Un centro**, aparecen herramientas extra para localizar la carpeta exacta dentro del centro.
+
+> El **explorador de carpetas** (§4.2) funciona igual para los destinos **🔧 Mantenimiento** y **📦 Provisión**, con la diferencia de que en esos no buscamos centro: el explorador aparece directamente sobre su carpeta raíz.
 
 ### 4.1. Buscar el centro
 
