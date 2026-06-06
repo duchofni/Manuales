@@ -3,7 +3,7 @@
 | Campo       | Valor                              |
 |-------------|------------------------------------|
 | **Módulo**  | Mantenimiento > BTPs               |
-| **Versión** | 1.6                                |
+| **Versión** | 2.1                                |
 | **Fecha**   | Abril 2026                         |
 | **Para**    | Operadores CGE SERGAS              |
 
@@ -489,4 +489,4 @@ Sí: si el número de BTP ya existe en la BDU, se actualiza con los datos del fi
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

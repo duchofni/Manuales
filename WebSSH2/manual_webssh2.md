@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Funcionalidad** | Terminal SSH web (webssh2)  |
-| **Versión** | 1.0                            |
+| **Versión** | 2.1                            |
 | **Fecha**   | Mayo 2026                      |
 | **Para**    | Operadores CGE SERGAS          |
 

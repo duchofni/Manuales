@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Módulo**  | Documentación                  |
-| **Versión** | 1.7                            |
+| **Versión** | 2.1                            |
 | **Fecha**   | Mayo 2026                      |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -197,4 +197,4 @@ A diferencia de OnlyOffice, **draw.io no es colaborativo en tiempo real**: si do
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.8 — Mayo 2026 (integración draw.io).*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026 (integración draw.io).*

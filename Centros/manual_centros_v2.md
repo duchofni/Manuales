@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Módulo**  | Centros                        |
-| **Versión** | 1.6                            |
+| **Versión** | 2.1                            |
 | **Fecha**   | Abril 2026                     |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -295,4 +295,4 @@ Si el centro tiene un dispositivo de control de tensión (tensiómetro), podemos
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

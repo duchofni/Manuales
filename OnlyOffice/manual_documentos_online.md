@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Función** | Crear y abrir documentos office desde la cabecera de BDU |
-| **Versión** | 1.0                            |
+| **Versión** | 2.1                            |
 | **Fecha**   | Mayo 2026                      |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -170,4 +170,4 @@ Esto es especialmente útil para borradores comunes que se redactan entre varios
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.0 — Mayo 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

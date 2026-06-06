@@ -3,7 +3,7 @@
 | Campo       | Valor                                |
 |-------------|--------------------------------------|
 | **Módulo**  | Grilloweb (dentro de Mantenimiento)  |
-| **Versión** | 1.6                                  |
+| **Versión** | 2.1                                  |
 | **Fecha**   | Abril 2026                           |
 | **Para**    | Operadores CGE SERGAS                |
 
@@ -325,4 +325,4 @@ Gana el **último** que lo haya puesto. El alias es compartido, no personal: pon
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

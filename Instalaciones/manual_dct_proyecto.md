@@ -4,7 +4,7 @@
 |--------------|--------------------------------------|
 | **Módulo**   | Instalaciones — Proyectos            |
 | **Proyecto** | Dispositivos de Control de Tensión / Tensiómetros |
-| **Versión**  | 1.0                                  |
+| **Versión**  | 2.1                                  |
 | **Fecha**    | Abril 2026                           |
 | **Para**     | Operadores CGE SERGAS                |
 

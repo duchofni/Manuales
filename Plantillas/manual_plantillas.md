@@ -3,7 +3,7 @@
 | Campo       | Valor                                |
 |-------------|--------------------------------------|
 | **Módulo**  | Plantillas (dentro de Mantenimiento) |
-| **Versión** | 1.6                                  |
+| **Versión** | 2.1                                  |
 | **Fecha**   | Abril 2026                           |
 | **Para**    | Operadores CGE SERGAS                |
 
@@ -359,4 +359,4 @@ No es un error, es **lo correcto**. En FLEXWAN el servicio es siempre 5G y el ro
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

@@ -3,7 +3,7 @@
 | Campo       | Valor                              |
 |-------------|------------------------------------|
 | **Módulo**  | Stock                              |
-| **Versión** | 1.6                                |
+| **Versión** | 2.1                                |
 | **Fecha**   | Abril 2026                         |
 | **Para**    | Operadores CGE SERGAS              |
 
@@ -117,4 +117,4 @@ La vista de Stock Almacén funciona de forma similar a Stock EECC:
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

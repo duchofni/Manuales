@@ -4,7 +4,7 @@
 |--------------|--------------------------------------|
 | **Módulo**   | Instalaciones — Proyectos            |
 | **Proyecto** | Unificación FILTRO_LAN_SEDE          |
-| **Versión**  | 1.6                                  |
+| **Versión**  | 2.1                                  |
 | **Fecha**    | Abril 2026                           |
 | **Para**     | Operadores CGE SERGAS                |
 

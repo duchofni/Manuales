@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Función** | Crear, ver y editar diagramas `.drawio` desde la cabecera y desde los listados de Documentación y Centros |
-| **Versión** | 1.0                            |
+| **Versión** | 2.1                            |
 | **Fecha**   | Mayo 2026                      |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -138,4 +138,4 @@ Tenemos diagramas históricos en formato Visio (`.vsdx`). draw.io los lee, así 
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.0 — Mayo 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

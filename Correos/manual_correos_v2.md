@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Módulo**  | Correos                        |
-| **Versión** | 1.6                            |
+| **Versión** | 2.1                            |
 | **Fecha**   | Abril 2026                     |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -292,4 +292,4 @@ Cada una tiene sus plantillas específicas. El flujo es siempre el mismo:
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

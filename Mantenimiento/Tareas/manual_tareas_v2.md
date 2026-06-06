@@ -4,7 +4,7 @@
 |-------------|------------------------------------------------------------------------|
 | **Módulo**  | Mantenimiento > Tareas                                                 |
 | **Submódulos** | Tareas SSH · Licencias OXE/CISCO/SBC/NGN · Ejecuciones Masivas (SEM) |
-| **Versión** | 1.6                                                                    |
+| **Versión** | 2.1                                                                    |
 | **Fecha**   | Abril 2026                                                             |
 | **Para**    | Operadores y administradores del CGE SERGAS                            |
 
@@ -1356,4 +1356,4 @@ Cada equipo recibe el comando con su propio número calculado (`seq_old + 5`). S
 
 ---
 
-*Manual para operadores y administradores CGE SERGAS. Versión 1.7 — Abril 2026.*
+*Manual para operadores y administradores CGE SERGAS. Versión 2.1 — Junio 2026.*

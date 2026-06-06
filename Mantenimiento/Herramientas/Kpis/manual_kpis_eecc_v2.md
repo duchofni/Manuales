@@ -3,7 +3,7 @@
 | Campo       | Valor                                          |
 |-------------|------------------------------------------------|
 | **Módulo**  | Mantenimiento > Herramientas > KPIs EECC       |
-| **Versión** | 1.0                                            |
+| **Versión** | 2.1                                            |
 | **Fecha**   | Mayo 2026                                      |
 | **Para**    | Operadores CGE SERGAS                          |
 
@@ -149,4 +149,4 @@ Si nos corresponde el acceso pero no entramos, debemos contactar con el administ
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.0 — Mayo 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

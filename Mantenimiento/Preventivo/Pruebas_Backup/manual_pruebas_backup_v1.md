@@ -3,7 +3,7 @@
 | Campo       | Valor                                                                            |
 |-------------|----------------------------------------------------------------------------------|
 | **Módulo**  | Mantenimiento > Preventivo > Pruebas Backup                                      |
-| **Versión** | 2.0                                                                              |
+| **Versión** | 2.1                                                                              |
 | **Fecha**   | Mayo 2026                                                                        |
 | **Para**    | Operadores CGE SERGAS                                                            |
 | **Sustituye a** | `manual_pruebas_backup_v1.md` (sólo uso BDU) + `PRO_009_Procedimiento_Pruebas_Backup.docx` (operativa + técnica). El `.docx` corporativo Telefónica sigue siendo la versión oficial con su Control de Cambios; este `.md` es la versión viva del CGE. |

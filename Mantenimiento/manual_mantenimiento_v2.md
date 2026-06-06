@@ -3,7 +3,7 @@
 | Campo       | Valor                    |
 |-------------|--------------------------|
 | **Módulo**  | Mantenimiento            |
-| **Versión** | 1.6                      |
+| **Versión** | 2.1                      |
 | **Fecha**   | Mayo 2026                |
 | **Para**    | Operadores CGE SERGAS    |
 
@@ -114,4 +114,4 @@ Proyectos preventivos: detección anticipada de problemas y rutinas semanales.
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Mayo 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

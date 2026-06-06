@@ -3,7 +3,7 @@
 | Campo       | Valor                                          |
 |-------------|------------------------------------------------|
 | **Módulo**  | Mantenimiento > Herramientas > KPIs CGE        |
-| **Versión** | 1.6                                            |
+| **Versión** | 2.1                                            |
 | **Fecha**   | Abril 2026                                     |
 | **Para**    | Operadores y administradores CGE SERGAS        |
 
@@ -247,4 +247,4 @@ Si nos corresponde el acceso pero no entramos, debemos contactar con el administ
 
 ---
 
-*Manual para operadores y administradores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores y administradores CGE SERGAS. Versión 2.1 — Junio 2026.*

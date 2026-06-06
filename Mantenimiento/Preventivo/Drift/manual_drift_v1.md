@@ -3,7 +3,7 @@
 | Campo       | Valor                                                   |
 |-------------|---------------------------------------------------------|
 | **Módulo**  | Mantenimiento > Preventivo > Drift de configuraciones   |
-| **Versión** | 1.0                                                     |
+| **Versión** | 2.1                                                     |
 | **Fecha**   | Mayo 2026                                               |
 | **Para**    | Operadores CGE SERGAS                                   |
 
@@ -202,4 +202,4 @@ La exportación a CSV/PDF no está en la versión 1.0. Si la necesitas, comuníc
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.0 — Mayo 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

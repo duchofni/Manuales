@@ -3,7 +3,7 @@
 | Campo       | Valor                              |
 |-------------|------------------------------------|
 | **Módulo**  | Mantenimiento > DDIs GDIA          |
-| **Versión** | 1.6                                |
+| **Versión** | 2.1                                |
 | **Fecha**   | Abril 2026                         |
 | **Para**    | Operadores CGE SERGAS              |
 
@@ -161,4 +161,4 @@ Para una nueva incorporación, el día a día con DDIs GDIA suele ser:
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*

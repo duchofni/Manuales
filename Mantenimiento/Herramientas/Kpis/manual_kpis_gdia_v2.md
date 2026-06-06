@@ -3,7 +3,7 @@
 | Campo       | Valor                                          |
 |-------------|------------------------------------------------|
 | **Módulo**  | Mantenimiento > Herramientas > KPIs GDIA       |
-| **Versión** | 1.0                                            |
+| **Versión** | 2.1                                            |
 | **Fecha**   | Mayo 2026                                      |
 | **Para**    | Operadores y administradores CGE SERGAS        |
 
@@ -225,4 +225,4 @@ Como regla práctica:
 
 ---
 
-*Manual para operadores y administradores CGE SERGAS. Versión 1.0 — Mayo 2026.*
+*Manual para operadores y administradores CGE SERGAS. Versión 2.1 — Junio 2026.*

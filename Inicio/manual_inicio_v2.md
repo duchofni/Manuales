@@ -3,7 +3,7 @@
 | Campo       | Valor                          |
 |-------------|--------------------------------|
 | **Módulo**  | Inicio                         |
-| **Versión** | 1.6                            |
+| **Versión** | 2.1                            |
 | **Fecha**   | Abril 2026                     |
 | **Para**    | Operadores CGE SERGAS          |
 
@@ -255,4 +255,4 @@ Muestra estadísticas de la base de datos de la aplicación:
 
 ---
 
-*Manual para operadores CGE SERGAS. Versión 1.6 — Abril 2026.*
+*Manual para operadores CGE SERGAS. Versión 2.1 — Junio 2026.*
