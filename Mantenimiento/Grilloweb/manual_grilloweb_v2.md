@@ -4,7 +4,7 @@
 |-------------|--------------------------------------|
 | **Módulo**  | Grilloweb (dentro de Mantenimiento)  |
 | **Versión** | 2.1                                  |
-| **Fecha**   | Abril 2026                           |
+| **Fecha**   | Junio 2026                           |
 | **Para**    | Operadores CGE SERGAS                |
 
 ---

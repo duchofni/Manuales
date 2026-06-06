@@ -4,7 +4,7 @@
 |---|---|
 | **Aplicación** | BDU (Base de Datos Unificada) |
 | **Versión** | 2.1 |
-| **Fecha** | Abril 2026 |
+| **Fecha** | Junio 2026 |
 | **Para** | Operadores CGE SERGAS |
 
 ---
@@ -559,4 +559,4 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 
 ---
 
-*Manual generado en abril 2026. Versión 2.1 de BDU.*
+*Manual generado en junio 2026. Versión 2.1 de BDU.*

@@ -4,7 +4,7 @@
 |-------------|--------------------------------|
 | **Función** | Crear, ver y editar diagramas `.drawio` desde la cabecera y desde los listados de Documentación y Centros |
 | **Versión** | 2.1                            |
-| **Fecha**   | Mayo 2026                      |
+| **Fecha**   | Junio 2026                      |
 | **Para**    | Operadores CGE SERGAS          |
 
 ---

@@ -4,7 +4,7 @@
 |-------------|--------------------------|
 | **Módulo**  | Mantenimiento            |
 | **Versión** | 2.1                      |
-| **Fecha**   | Mayo 2026                |
+| **Fecha**   | Junio 2026                |
 | **Para**    | Operadores CGE SERGAS    |
 
 ---

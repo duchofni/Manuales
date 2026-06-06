@@ -5,7 +5,7 @@
 | **Módulo**  | Mantenimiento > Tareas                                                 |
 | **Submódulos** | Tareas SSH · Licencias OXE/CISCO/SBC/NGN · Ejecuciones Masivas (SEM) |
 | **Versión** | 2.1                                                                    |
-| **Fecha**   | Abril 2026                                                             |
+| **Fecha**   | Junio 2026                                                             |
 | **Para**    | Operadores y administradores del CGE SERGAS                            |
 
 ---

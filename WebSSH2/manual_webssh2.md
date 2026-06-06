@@ -4,7 +4,7 @@
 |-------------|--------------------------------|
 | **Funcionalidad** | Terminal SSH web (webssh2)  |
 | **Versión** | 2.1                            |
-| **Fecha**   | Mayo 2026                      |
+| **Fecha**   | Junio 2026                      |
 | **Para**    | Operadores CGE SERGAS          |
 
 ---
@@ -143,4 +143,4 @@ Si pasa de forma persistente, hay un fallo de configuración en el servidor BDU 
 
 ---
 
-*Manual generado en mayo 2026. Versión 1.0 de la terminal SSH web.*
+*Manual generado en junio 2026. Versión 1.0 de la terminal SSH web.*
