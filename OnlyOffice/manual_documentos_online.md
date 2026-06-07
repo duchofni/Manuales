@@ -44,7 +44,7 @@ En la cabecera de BDU abrimos el acordeón **Utilidades** y pulsamos la opción 
    - **📝 Crear nuevo** (donde aterrizamos por defecto).
    - **📂 Mis borradores**.
 
-![Cabecera de BDU con el nuevo icono de documento+más resaltado](./imagenes/captura-01-cabecera-icono-nuevo-documento.png)
+![Acordeón Utilidades de la cabecera de BDU con la opción Nuevo documento](./imagenes/captura-01-cabecera-icono-nuevo-documento.png)
 
 ---
 
