@@ -62,14 +62,16 @@ Cada módulo de BDU tiene su propio manual detallado con instrucciones paso a pa
 3. Pulsamos **ACCEDER**.
 4. Introducimos las credenciales del dominio (usuario y contraseña de red, las mismas que usamos para iniciar sesión en el ordenador).
 5. Pulsamos **Entrar**.
+6. Introducimos el **código de verificación en dos pasos (2FA)** de 6 dígitos que muestra nuestra app de autenticación y pulsamos **Verificar**. La primera vez configuramos el 2FA escaneando un código QR; a partir de ahí se nos pide el código en cada acceso.
 
 ![Pantalla de login con campos de usuario y contraseña](./imagenes/captura-01-pantalla-de-login-con-campos-de-usuario.png)
 
 **Información importante sobre el acceso:**
 
 - La autenticación se realiza contra el directorio LDAP del dominio `sergascge.local`.
+- El acceso exige **verificación en dos pasos (2FA)** obligatoria: además de la contraseña, un código temporal de una app de autenticación (Google/Microsoft Authenticator, FreeOTP, Vaultwarden o KeePassXC). Lo detallamos en el manual de [Verificación en dos pasos (2FA)](Seguridad/manual_seguridad_2fa.md).
 - Tras **3 intentos fallidos** de contraseña, la cuenta se bloquea durante **5 minutos**.
-- La sesión expira automáticamente tras **30 minutos de inactividad**. Si esto ocurre, se redirige a la pantalla de login con un aviso de sesión expirada.
+- La sesión expira automáticamente tras **2 horas de inactividad**. Si esto ocurre, se redirige a la pantalla de login con un aviso de sesión expirada.
 
 ---
 
@@ -153,7 +155,7 @@ Para cerrar la sesión de forma segura:
 1. Pulsamos el icono de **puerta con flecha** en el extremo derecho de la barra superior.
 2. Volvemos a la portada pública.
 
-> **Importante:** si simplemente cerramos el navegador sin cerrar sesión, esta expira automáticamente a los 30 minutos.
+> **Importante:** si simplemente cerramos el navegador sin cerrar sesión, esta expira automáticamente a las 2 horas.
 
 ---
 
@@ -474,7 +476,7 @@ Cada módulo tiene su propio manual detallado. Ver la tabla completa en la [secc
 
 ### La sesión ha expirado y he perdido lo que estaba haciendo, ¿qué pasó?
 
-La sesión de BDU expira automáticamente tras **30 minutos de inactividad** (sin hacer ninguna acción en la aplicación). Al expirar, se redirige a la pantalla de login con un aviso.
+La sesión de BDU expira automáticamente tras **2 horas de inactividad** (sin hacer ninguna acción en la aplicación). Al expirar, se redirige a la pantalla de login con un aviso.
 
 Para evitarlo, basta con interactuar periódicamente con la aplicación (cambiar de módulo, realizar una consulta, etc.).
 
@@ -519,6 +521,7 @@ Cada módulo dispone de un manual detallado con instrucciones paso a paso. Todos
 | Plantillas        | `Plantillas/manual_plantillas.md`                  |
 | Documentación     | `Documentacion/manual_documentacion_v2.md`         |
 | Información / Ayuda | `Informacion/manual_informacion_v2.md`           |
+| Seguridad / 2FA   | `Seguridad/manual_seguridad_2fa.md`                |
 
 ### Submódulos de Mantenimiento (con manual propio)
 
