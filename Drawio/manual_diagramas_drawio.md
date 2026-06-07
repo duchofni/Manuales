@@ -52,7 +52,7 @@ Es **exactamente el mismo flujo** que para crear un Word/Excel/PowerPoint nuevo.
 
 ### 3.1. Abrir el modal
 
-En la cabecera de BDU pulsamos el icono **📄+** (Nuevo documento). Se abre la ventana **"Documentos"** y aterrizamos en la pestaña **📝 Crear nuevo**.
+En la cabecera de BDU abrimos el acordeón **Utilidades** y pulsamos **Nuevo documento**. Se abre la ventana **"Documentos"** y aterrizamos en la pestaña **📝 Crear nuevo**.
 
 ### 3.2. Elegir el tipo "Diagrama"
 
@@ -129,11 +129,11 @@ Tenemos diagramas históricos en formato Visio (`.vsdx`). draw.io los lee, así 
 
 | Acción | Cómo |
 |---|---|
-| Crear un diagrama nuevo en blanco | Cabecera **📄+** → **Crear nuevo** → 🗺️ **Diagrama** → nombre + destino → **Crear y abrir** |
+| Crear un diagrama nuevo en blanco | Cabecera **Utilidades → Nuevo documento** → **Crear nuevo** → 🗺️ **Diagrama** → nombre + destino → **Crear y abrir** |
 | Editar un diagrama del NAS | Documentación o Centro → botón **✏️** sobre el fichero `.drawio` |
 | Solo verlo | Botón **👁** en Documentación o tarjeta **↗** en la ficha del centro |
 | Guardar mientras editamos | Icono de disquete dentro de draw.io o `Ctrl + S` (también hay autosave) |
-| Volver a abrir un borrador propio | Cabecera **📄+** → pestaña **Mis borradores** → click en el `.drawio` |
+| Volver a abrir un borrador propio | Cabecera **Utilidades → Nuevo documento** → pestaña **Mis borradores** → click en el `.drawio` |
 | Abrir un Visio (.vsdx) | Botón **👁**; para modificarlo, *Guardar como .drawio* desde el editor y subirlo a BDU |
 
 ---
