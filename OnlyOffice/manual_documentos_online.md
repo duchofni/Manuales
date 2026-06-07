@@ -37,9 +37,9 @@ Cinco ubicaciones de destino disponibles:
 
 ## 2. Cómo accedemos
 
-En la cabecera de BDU, junto a los iconos de SSH (`>_`), Nagios, Gitea, Vault y MailPiler, encontramos un icono nuevo de **documento con un signo más** (📄+).
+En la cabecera de BDU abrimos el acordeón **Utilidades** y pulsamos la opción **Nuevo documento**.
 
-1. Pulsamos el icono.
+1. Pulsamos **Utilidades → Nuevo documento**.
 2. Se abre la ventana **"Documentos"** con dos pestañas:
    - **📝 Crear nuevo** (donde aterrizamos por defecto).
    - **📂 Mis borradores**.
@@ -131,7 +131,7 @@ Cuando estemos en la carpeta donde queremos dejar el documento, pulsamos **Crear
 
 Para volver a abrir un documento que creamos antes en *Mi carpeta* o en *Carpeta común*:
 
-1. Pulsamos el icono de cabecera (📄+).
+1. Abrimos **Utilidades → Nuevo documento** en la cabecera.
 2. En la ventana, pulsamos la pestaña **📂 Mis borradores**.
 3. Aparecen dos secciones:
    - **📁 Mi carpeta**: documentos que solo vemos nosotros.
@@ -161,7 +161,7 @@ Esto es especialmente útil para borradores comunes que se redactan entre varios
 
 | Acción | Cómo |
 |---|---|
-| Abrir el creador de documentos | Icono **📄+** en la cabecera |
+| Abrir el creador de documentos | Acordeón **Utilidades → Nuevo documento** en la cabecera |
 | Crear un Word/Excel/PowerPoint/Texto en blanco | Pestaña **Crear nuevo** → tipo + nombre + destino + **Crear y abrir** |
 | Guardar dentro de un centro en una carpeta concreta | Destino **🏥 Un centro** → buscar centro → navegar/crear carpeta → **Crear y abrir** |
 | Volver a abrir un borrador propio | Pestaña **📂 Mis borradores** → click en el documento |
