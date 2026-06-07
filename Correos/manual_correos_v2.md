@@ -235,6 +235,15 @@ Muchas plantillas de correo permiten crear automáticamente una incidencia en la
 
 > **Importante:** el botón solo se activa después de copiar la tabla o abrir el correo, para asegurar que se ha enviado la comunicación antes de registrar la incidencia.
 
+### Ir y volver entre Correos e Incidencias
+
+Los módulos **Correos** e **Incidencias** están enlazados para movernos rápido entre ellos:
+
+- **Desde Incidencias a Correos:** en la barra superior del módulo Incidencias tenemos el botón **✉ Correos**, que nos trae directamente a este módulo para preparar la comunicación de la avería.
+- **Desde Correos a Incidencias:** cuando creamos una incidencia desde un correo (lo visto arriba), al terminar nos lleva automáticamente al módulo Incidencias, con la incidencia ya registrada.
+
+Así, ante una avería podemos enviar el aviso y dejar la incidencia abierta sin salir del flujo.
+
 ---
 
 ## 10. Tipos de plantillas disponibles

@@ -56,8 +56,11 @@ Al entrar vemos la barra superior con los botones de acción y, debajo, la zona 
 | Botón                                  | Para qué sirve                                                  |
 |----------------------------------------|------------------------------------------------------------------|
 | **➕ Nueva incidencia**                | Carga el formulario de creación en el panel de detalle.          |
+| **✉ Correos**                          | Abre el módulo de Correos para preparar la comunicación de la avería (plantillas de aviso, escalado, incidencia masiva…). |
 | **📁 Ver cerradas**                    | Cambia a la vista en tabla de incidencias cerradas.              |
 | **✏️ Editar N seleccionadas**          | Aparece cuando hay incidencias marcadas. Abre el modal masivo.   |
+
+> Los módulos **Incidencias** y **Correos** están enlazados: con **✉ Correos** vamos a preparar el aviso, y muchas plantillas de Correos permiten **crear la incidencia automáticamente** y volver aquí (lo vemos en el manual de Correos).
 
 ### 3.2. Sidebar de incidencias activas
 
