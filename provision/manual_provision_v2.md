@@ -257,10 +257,10 @@ Marcamos la casilla de la VLAN para habilitar el campo de red.
 | **Centro**                     | Buscar y seleccionar (autocompletado).                     | Sí          |
 | **Nemónico Telefónica**        | Nombre del equipo en Telefónica.                           | Sí          |
 | **Nemónico Cliente**           | Nombre del equipo en cliente.                              | Sí          |
-| **Equipo (modelo)**            | Seleccionar modelo del catálogo.                           | No          |
+| **Equipo (modelo)**            | Seleccionar modelo del catálogo.                           | Sí          |
 | **IP Gestión**                 | IP del equipo.                                             | Sí          |
-| **Equipo 1.er Nivel**          | Nemónico del equipo principal (con sugerencias).           | No          |
-| **Administrativo 1.er Nivel**  | Número administrativo de la línea (con sugerencias).       | No          |
+| **Equipo 1.er Nivel**          | Nemónico del equipo principal (con sugerencias).           | Sí          |
+| **Administrativo 1.er Nivel**  | Se completa **automáticamente** al elegir el equipo de 1.er nivel (campo de solo lectura). | Auto |
 | **Observaciones**              | Texto libre.                                               | No          |
 
 3. Al escribir en **Equipo 1.er Nivel** aparecen sugerencias de equipos existentes.
